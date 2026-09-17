@@ -1,25 +1,22 @@
 # Orion’s Expedition / Orion 的失落文明
 
-An expanding world of independent treasure, mystery, and puzzle missions for learning computing and mathematics.
+Treasure and mystery games for learning computing and maths, in one repository.
 
-[Choose a mission](https://teze3808.github.io/orion-games/)
+- [Mission hub](https://teze3808.github.io/orion-games/)
+- [Treasure Gate — hash collisions](https://teze3808.github.io/orion-games/games/orion-hash/)
 
-## Projects
+```text
+dist/
+  index.html              Mission hub
+  missions.js             Mission registry
+  shared/                 Language, sigil storage, artwork
+  games/orion-hash/        Treasure Gate
+```
 
-- `dist/`: mission hub and browser-local sigil collection.
-- [`orion-hash/`](https://github.com/teze3808/orion-hash): hash-collision game, tracked as a Git submodule and independently published at https://teze3808.github.io/orion-hash/.
+English and Traditional Chinese are supported throughout. Progress and language are saved in the same browser. The hub can reset the collection with confirmation. The hash mission awards the Echo Sigil on any successful opening; restarting changes its target hash while preserving collected sigils.
 
-The hash mission is playable. Nine additional stories are planned; new games can be added without imposing an order or changing existing rewards.
+Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to deploy the entire site through GitHub Pages. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Clone with `git clone --recurse-submodules https://github.com/teze3808/orion-games.git`. Serve the hub with `python3 -m http.server 8766 --directory dist`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Nine more missions are planned. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
-Read [PROJECT.md](PROJECT.md) for the story, mission registry, rewards, and architecture, and [AGENTS.md](AGENTS.md) for development instructions. Commit game edits within their repository first, then update the master’s submodule pointer. Main pushes publish the hub through GitHub Pages.
-
-## English and Traditional Chinese
-All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
-
-## Reset collection
-The hub provides a bilingual “Reset all sigils / 重設所有符印” button with confirmation. It resets the entire browser-local collection, including unknown/future sigil IDs, through `OrionProgress.reset()`. Cancellation changes nothing. It preserves language preferences and other browser data. Save failure leaves the collection unchanged and reports failure. Open game tabs refresh their reward display on the storage event; gameplay can earn rewards again afterward. This explicit full-collection reset is the exception to the normal rule that replay/restart preserves earned sigils.
-
-## Mission cards and new puzzles
-Available mission cards are clickable across their entire area with keyboard link support; planned missions remain inactive. The hash game starts with target 0 and original 1234. Every Restart adventure generates a target hash different from the previous target and a matching four-digit original code. Acceptance, hidden hints, worked examples, and parent notes must use the current target. Relock retains the same puzzle for collision exploration; restarting preserves collected sigils and hides hints again.
+The former standalone orion-hash history is preserved in this repository’s merge history.

@@ -36,14 +36,15 @@ Read `PROJECT.md` before changing this project. These instructions apply to this
 - Never deploy to the legacy Sites host or change repository visibility without a user request.
 - Report what is playable versus planned, the live URL, and any material limitations accurately.
 
-## Subprojects
-- Each game has a topic-specific repository and nested Git submodule. `orion-hash/` is the first.
-- Commit/push within a changed game first, then commit its submodule pointer in the master. Never flatten nested Git history.
-- The hub is published at `/orion-games/`; hash gameplay is published at `/orion-hash/`. Keep navigation consistent.
-- Shared progress relies on the same GitHub Pages origin and stable storage schema. Keep master and game progress helpers compatible.
+## Games in one repository
+- Store games under `dist/games/<topic-name>/` as ordinary tracked files; no submodules or separate game repositories.
+- Load shared language and progress helpers from `dist/shared/`; do not duplicate them.
+- Commit/push all changes in this master repository. One Pages workflow publishes the hub and games together.
+- Use relative links for game navigation and shared assets; hash gameplay is at `/orion-games/games/orion-hash/`.
+- Preserve the imported hash history and stable storage keys.
 
 ## English and Traditional Chinese
-All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. All pages use `dist/shared/i18n.js`. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
 
 ## Reset collection
 The hub provides a bilingual “Reset all sigils / 重設所有符印” button with confirmation. It resets the entire browser-local collection, including unknown/future sigil IDs, through `OrionProgress.reset()`. Cancellation changes nothing. It preserves language preferences and other browser data. Save failure leaves the collection unchanged and reports failure. Open game tabs refresh their reward display on the storage event; gameplay can earn rewards again afterward. This explicit full-collection reset is the exception to the normal rule that replay/restart preserves earned sigils.

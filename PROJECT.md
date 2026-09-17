@@ -34,21 +34,22 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 The gate accepts four digits, including leading zeroes. Its teaching hash is digit sum modulo 10; the original code is 1234 and stored hash is 0. Any hash-0 code opens it. Earn the Echo Sigil on the first successful gate opening, including the original code. Finding additional distinct collision codes is an optional learning challenge. Repeated attempts do not award duplicate sigils. The reward goal is shown after opening the gate; the hash rule stays in the hidden notes.
 
 ## Architecture
-Buildless HTML, CSS, and JavaScript. All public assets live in `dist/`.
-- `index.html`, `hub.css`, `hub.js`: mission hub and collection.
-- `missions.js`: trusted, static mission registry; unique IDs, title, story, topic, sigil, symbol, optional `href`. Absence of `href` means planned, not playable.
-- `progress.js`: shared `OrionProgress.read()`, `.has(id)`, `.earn(id)` API.
-- `orion-hash/`: Git submodule containing the separate hash game repository. Its `dist/index.html` is published independently at https://teze3808.github.io/orion-hash/.
-- `dist/gate.png`: shared generated artwork used by the hub.
-- `.github/workflows/pages.yml`: automatic deployment of `dist` on main pushes.
+One buildless HTML/CSS/JavaScript repository; all public assets live in `dist/`.
+- `dist/index.html`, `hub.css`, `hub.js`: hub and collection.
+- `dist/missions.js`: mission registry; an entry without `href` is planned.
+- `dist/shared/progress.js`: shared sigil storage API, including reset.
+- `dist/shared/i18n.js`: shared language preference and translation helper.
+- `dist/shared/gate.png`: shared generated artwork.
+- `dist/games/orion-hash/`: hash mission HTML, JavaScript and CSS.
+- `.github/workflows/pages.yml`: one deployment of the whole `dist` tree.
 
 ## Progress contract
 Browser-local storage only, explicitly requested for collecting sigils. Key: `orion-expedition-progress-v1`; shape: `{version:1,sigils:["echo"]}`. Stable sigil IDs must never be renamed or reused for a different achievement. Unknown IDs are preserved for future compatibility. Rewards are idempotent. Restarting a mission clears its session, not earned sigils. No cross-device sync is promised. Clearing browser data removes saved progress. Corrupt/unavailable storage must not break gameplay; failed saves produce an honest in-session reward message. Never store names, passwords, contact information, or analytics.
 
 ## Adding a mission
 1. Define an independent story, one learning objective, exact success/reward criteria, and three optional hint levels.
-2. Implement each game in its own topic-named repository/subfolder, with public assets under its `dist`; use relative URLs for GitHub Pages subpath compatibility.
-3. Include navigation back to `https://teze3808.github.io/orion-games/`, accessible keyboard/touch controls, and shared progress handling.
+2. Implement each game under `dist/games/<topic-name>/`; use relative URLs for GitHub Pages subpath compatibility.
+3. Include relative navigation back to the hub (`../../` for a game entrypoint), accessible keyboard/touch controls, and shared progress handling.
 4. Award its stable sigil only after the defined challenge is verified.
 5. Add/update the registry entry; supply `href` only once fully playable and checked.
 6. Verify hub counts, reward persistence, replay, mobile layout, and return navigation. Add a row here; do not hardcode a ten-mission cap.
@@ -57,18 +58,19 @@ Browser-local storage only, explicitly requested for collecting sigils. Key: `or
 Repository: https://github.com/teze3808/orion-games
 Primary public site: https://teze3808.github.io/orion-games/
 Run: `python3 -m http.server 8765 --directory dist`.
-GitHub Pages is the user-selected host; keep all new publication here. The hash subproject retains legacy `.openai/hosting.json` metadata, not the active publishing target. The old Sites URL is not kept in sync.
+GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
 The hub and gate are implemented. Nine mission cards describe planned games and must not be represented as playable. Build those games in future requests. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
-The master repository is `orion-games`. The first topic repository is `orion-hash`, tracked as a Git submodule at `orion-hash/`. Clone with `git clone --recurse-submodules`. Commit game edits within the game repository and push them there, then update the master submodule pointer. The master Pages workflow publishes only the hub’s `dist`, not nested games. Game links are explicit GitHub Pages URLs.
+`orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
 
-Both Pages sites share the origin `https://teze3808.github.io`, so the same localStorage key preserves the collection across them. `dist/progress.js` is the canonical progress contract; games carry a compatible copy for independent hosting. Keep copies compatible when changing it.
+Hash game: https://teze3808.github.io/orion-games/games/orion-hash/
+The old hash commit history was merged into this repository before retiring its standalone repository. The GitHub Pages origin and storage keys remain unchanged, preserving browser-local progress and language preferences.
 
 ## English and Traditional Chinese
-All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. All pages load the single `dist/shared/i18n.js` helper. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
 
 ## Reset collection
 The hub provides a bilingual “Reset all sigils / 重設所有符印” button with confirmation. It resets the entire browser-local collection, including unknown/future sigil IDs, through `OrionProgress.reset()`. Cancellation changes nothing. It preserves language preferences and other browser data. Save failure leaves the collection unchanged and reports failure. Open game tabs refresh their reward display on the storage event; gameplay can earn rewards again afterward. This explicit full-collection reset is the exception to the normal rule that replay/restart preserves earned sigils.

@@ -1,6 +1,6 @@
 'use strict';
 window.ORION_MISSIONS=[
-{sigilEnglish:"Echo",storyEnglish:"The bronze gate\u2019s code is lost. Can you find more than one way to open it?",id:'gate',title:'古城的密碼門',english:'The Treasure Gate',sigil:'echo',sigilName:'回聲',symbol:'◈',topic:'Hash collisions / 雜湊碰撞',story:'青銅門的密碼遺失了。你能找到不只一種方法，讓它再次打開嗎？',href:'https://teze3808.github.io/orion-hash/'},
+{sigilEnglish:"Echo",storyEnglish:"The bronze gate\u2019s code is lost. Can you find more than one way to open it?",id:'gate',title:'古城的密碼門',english:'The Treasure Gate',sigil:'echo',sigilName:'回聲',symbol:'◈',topic:'Hash collisions / 雜湊碰撞',story:'青銅門的密碼遺失了。你能找到不只一種方法，讓它再次打開嗎？',href:'games/orion-hash/'},
 {sigilEnglish:"Moonlight",storyEnglish:"Moonlight reveals a strange letter. Turn the alphabet rings to uncover a hidden route.",id:'moon',title:'月光下的密信',english:'The Moonlit Letter',sigil:'moonlight',sigilName:'月光',symbol:'☾',topic:'Encryption / 加密',story:'月光照亮一封奇怪的信。轉動字母環，找出藏在文字裡的路線。'},
 {sigilEnglish:"Starlight",storyEnglish:"A tower has no stairs, only four star lamps. Light the right combination to reach the top.",id:'tower',title:'星燈塔',english:'The Starlight Tower',sigil:'starlight',sigilName:'星光',symbol:'✦',topic:'Binary / 二進位',story:'沒有樓梯的高塔，只有四盞星燈。點亮正確的組合，向塔頂出發。'},
 {sigilEnglish:"Mist",storyEnglish:"Which cave hides the boat? The keeper only says higher or lower. Every answer is a clue.",id:'mist',title:'霧海守望者',english:'The Mist Keeper',sigil:'mist',sigilName:'迷霧',symbol:'≋',topic:'Binary search / 二分搜尋',story:'渡船藏在哪個洞穴？守望者只說更大或更小，每個回答都是線索。'},
