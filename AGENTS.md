@@ -4,7 +4,7 @@ Read this repository’s PROJECT.md and the master project’s PROJECT.md/AGENTS
 
 - Work on the hash mission here; mission hub changes belong in the parent master repository.
 - Preserve the treasure/mystery atmosphere, independent access, hidden progressive hints, and accessible keyboard/touch controls.
-- The Echo Sigil requires three distinct accepted codes other than 1234. Do not award for duplicate inputs or the original code.
+- Award the Echo Sigil on any successful opening, including 1234. Award idempotently; never award on invalid or rejected inputs. Preserve collision counting as an optional learning challenge.
 - Preserve the `echo` sigil ID and `orion-expedition-progress-v1` storage key/schema. Restart must not erase saved progress. Preserve unknown IDs and handle unavailable/corrupt storage gracefully.
 - Keep `dist/progress.js` compatible with the master’s canonical helper.
 - Use Traditional Chinese for Chinese content; preserve English technical terms where helpful.
@@ -13,3 +13,6 @@ Read this repository’s PROJECT.md and the master project’s PROJECT.md/AGENTS
 - Commit and push requested game changes here, verify GitHub Pages deployment, then update the master’s submodule pointer.
 - GitHub Pages at /orion-hash/ is the authorized host. Do not publish to legacy Sites or change visibility without a request.
 - Never commit credentials, personal school information, or analytics. Preserve unrelated user edits.
+
+## English and Traditional Chinese
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.

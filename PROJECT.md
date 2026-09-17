@@ -12,7 +12,7 @@ This topic-specific game is a subproject of Orion’s Expedition. The master mis
 ## Learning and play
 Orion explores a treasure gate with a four-digit keypad. The teaching hash sums digits modulo 10. Original code: 1234; accepted hash: 0. Leading zeroes are allowed. Different accepted codes collide with the original. The original itself is not a collision.
 
-Earn the Echo Sigil / 回聲符印 (`echo`) after finding three distinct accepted codes other than 1234 in one session. Duplicate attempts do not count twice. All games remain independently accessible. Restart clears session attempts but never removes earned sigils. Hints, calculations, and parent explanations start hidden behind the discreet rune.
+Earn the Echo Sigil / 回聲符印 (`echo`) on the first successful gate opening, including the original code. The sigil is awarded once; additional collision discovery is optional. All games remain independently accessible. Restart clears session attempts but never removes earned sigils. Hints, calculations, and parent explanations start hidden behind the discreet rune.
 
 ## Files and progress
 `dist/index.html` is the game entrypoint; `style.css`, `game.js`, and `gate.png` implement the game. `gate.html` redirects older direct game links to the new entrypoint. `progress.js` is a compatible copy of the master’s progress helper.
@@ -26,3 +26,6 @@ Push main to deploy `dist` through `.github/workflows/pages.yml`. After a game c
 
 ## Validation
 Check input validation, accepted/rejected codes, collision uniqueness, reward threshold, replay, hidden hints, storage persistence/failure, and navigation. Keep the toy hash explanation accurate: this is not a real password security system.
+
+## English and Traditional Chinese
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
