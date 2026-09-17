@@ -77,3 +77,6 @@ The hub provides a bilingual “Reset all sigils / 重設所有符印” button 
 
 ## Mission cards and new puzzles
 Available mission cards are clickable across their entire area with keyboard link support; planned missions remain inactive. The hash game starts with target 0 and original 1234. Every Restart adventure generates a target hash different from the previous target and a matching four-digit original code. Acceptance, hidden hints, worked examples, and parent notes must use the current target. Relock retains the same puzzle for collision exploration; restarting preserves collected sigils and hides hints again.
+
+## Collection reset and puzzle target
+The shared progress record also includes `hashTarget` (integer 0–9; legacy records default to 0). Reset all sigils clears rewards and chooses a target different from the previously saved target. Restart adventure also persists its different target. A fresh game visit loads that target; open tabs and restored pages synchronize it, clear current attempts, and hide hints. Language and other browser data remain unchanged. Failed collection-reset saves leave both rewards and target unchanged.

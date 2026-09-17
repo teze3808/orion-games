@@ -20,3 +20,6 @@ Clone normally; there are no submodules. Run `python3 -m http.server 8765 --dire
 Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Nine more missions are planned. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
+
+## Collection reset and puzzle target
+The shared progress record also includes `hashTarget` (integer 0–9; legacy records default to 0). Reset all sigils clears rewards and chooses a target different from the previously saved target. Restart adventure also persists its different target. A fresh game visit loads that target; open tabs and restored pages synchronize it, clear current attempts, and hide hints. Language and other browser data remain unchanged. Failed collection-reset saves leave both rewards and target unchanged.
