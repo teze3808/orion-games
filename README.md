@@ -1,4 +1,4 @@
-# Orion & the Treasure Gate
+# Orion’s Expedition / Orion 的失落文明
 
 A small browser game for discovering hash collisions. Enter four digits to try opening an ancient treasure gate. A discreet ✧ rune opens progressive hints and a parent guide.
 
@@ -26,3 +26,9 @@ Open http://localhost:8765/.
 - `dist/gate.png`: AI-generated temple artwork
 
 GitHub Actions publishes `dist` to GitHub Pages on pushes to `main`.
+
+## Mission hub
+
+The home page lists independent missions and a browser-local sigil collection. The treasure gate is playable; nine more adventures are planned. Earn its Echo Sigil by discovering three distinct alternative opening codes in one session. Replay does not remove saved sigils. Progress does not sync between devices.
+
+See [PROJECT.md](PROJECT.md) for the story, mission roadmap, architecture, and reward contract, and [AGENTS.md](AGENTS.md) for implementation instructions.

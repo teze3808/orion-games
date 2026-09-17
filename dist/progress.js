@@ -1,0 +1,2 @@
+'use strict';
+window.OrionProgress=(()=>{const key='orion-expedition-progress-v1';let memory={version:1,sigils:[]};function read(){try{const d=JSON.parse(localStorage.getItem(key));if(d&&d.version===1&&Array.isArray(d.sigils))memory={version:1,sigils:[...new Set(d.sigils.filter(s=>typeof s==='string'))]};}catch{}return memory;}return{read,has:id=>read().sigils.includes(id),earn(id){const d=read();if(!d.sigils.includes(id))d.sigils.push(id);try{localStorage.setItem(key,JSON.stringify(d));return true;}catch{return false;}}};})();
