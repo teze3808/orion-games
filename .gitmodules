@@ -1,0 +1,3 @@
+[submodule "orion-hash"]
+	path = orion-hash
+	url = https://github.com/teze3808/orion-hash.git
