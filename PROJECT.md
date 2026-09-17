@@ -10,7 +10,7 @@ Build an expandable collection of treasure, mystery, and puzzle games that teach
 - Discover first; terminology and explanation follow exploration.
 - Hints start hidden behind a discreet, keyboard-accessible rune and reveal progressively.
 - A distinct sigil rewards a meaningful learning challenge, once per mission. Replay stays available.
-- Traditional Chinese story text with English computing terms where useful; the existing gate is primarily English.
+- Full English and Traditional Chinese support across the hub and every game.
 - Child-friendly mystery, realistic treasure atmosphere, no frightening punishment, advertising, accounts, or purchases.
 
 ## Story
@@ -31,7 +31,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | maze | 智慧之心的地下迷城 | Weighted graphs and shortest paths | wisdom / 智慧 | Planned |
 
 ## Current game and reward
-The gate accepts four digits, including leading zeroes. Its teaching hash is digit sum modulo 10; the original code is 1234 and stored hash is 0. Any hash-0 code opens it. Earn the Echo Sigil by finding three distinct accepted codes other than 1234 in one play session. Repeating a code does not increase the count. Opening the gate once is a success but does not itself demonstrate three collisions. The reward goal is shown after opening the gate; the hash rule stays in the hidden notes.
+The gate accepts four digits, including leading zeroes. Its teaching hash is digit sum modulo 10; the original code is 1234 and stored hash is 0. Any hash-0 code opens it. Earn the Echo Sigil on the first successful gate opening, including the original code. Finding additional distinct collision codes is an optional learning challenge. Repeated attempts do not award duplicate sigils. The reward goal is shown after opening the gate; the hash rule stays in the hidden notes.
 
 ## Architecture
 Buildless HTML, CSS, and JavaScript. All public assets live in `dist/`.
@@ -66,3 +66,6 @@ The hub and gate are implemented. Nine mission cards describe planned games and 
 The master repository is `orion-games`. The first topic repository is `orion-hash`, tracked as a Git submodule at `orion-hash/`. Clone with `git clone --recurse-submodules`. Commit game edits within the game repository and push them there, then update the master submodule pointer. The master Pages workflow publishes only the hub’s `dist`, not nested games. Game links are explicit GitHub Pages URLs.
 
 Both Pages sites share the origin `https://teze3808.github.io`, so the same localStorage key preserves the collection across them. `dist/progress.js` is the canonical progress contract; games carry a compatible copy for independent hosting. Keep copies compatible when changing it.
+
+## English and Traditional Chinese
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.

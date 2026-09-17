@@ -14,3 +14,6 @@ The hash mission is playable. Nine additional stories are planned; new games can
 Clone with `git clone --recurse-submodules https://github.com/teze3808/orion-games.git`. Serve the hub with `python3 -m http.server 8766 --directory dist`.
 
 Read [PROJECT.md](PROJECT.md) for the story, mission registry, rewards, and architecture, and [AGENTS.md](AGENTS.md) for development instructions. Commit game edits within their repository first, then update the master’s submodule pointer. Main pushes publish the hub through GitHub Pages.
+
+## English and Traditional Chinese
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.

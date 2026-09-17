@@ -41,3 +41,6 @@ Read `PROJECT.md` before changing this project. These instructions apply to this
 - Commit/push within a changed game first, then commit its submodule pointer in the master. Never flatten nested Git history.
 - The hub is published at `/orion-games/`; hash gameplay is published at `/orion-hash/`. Keep navigation consistent.
 - Shared progress relies on the same GitHub Pages origin and stable storage schema. Keep master and game progress helpers compatible.
+
+## English and Traditional Chinese
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. Both pages use `dist/i18n.js`; keep the copies compatible. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
