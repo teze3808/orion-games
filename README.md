@@ -17,3 +17,6 @@ All user-facing content must support English (`en`) and Traditional Chinese (`zh
 
 ## Reset collection
 The hub provides a bilingual “Reset all sigils / 重設所有符印” button with confirmation. It resets the entire browser-local collection, including unknown/future sigil IDs, through `OrionProgress.reset()`. Cancellation changes nothing. It preserves language preferences and other browser data. Save failure leaves the collection unchanged and reports failure. Open game tabs refresh their reward display on the storage event; gameplay can earn rewards again afterward. This explicit full-collection reset is the exception to the normal rule that replay/restart preserves earned sigils.
+
+## Mission cards and new puzzles
+Available mission cards are clickable across their entire area with keyboard link support; planned missions remain inactive. The hash game starts with target 0 and original 1234. Every Restart adventure generates a target hash different from the previous target and a matching four-digit original code. Acceptance, hidden hints, worked examples, and parent notes must use the current target. Relock retains the same puzzle for collision exploration; restarting preserves collected sigils and hides hints again.
