@@ -1,6 +1,6 @@
 # Orion’s Expedition / Orion 的失落文明
 
-Treasure and mystery games for learning computing and maths, in one repository.
+Treasure and mystery games for learning mathematics, computing, chemistry, biology, engineering, and broader science, in one repository.
 
 - [Mission hub](https://teze3808.github.io/orion-games/)
 - [Treasure Gate — hash collisions](https://teze3808.github.io/orion-games/games/orion-hash/)
@@ -17,7 +17,7 @@ English and Traditional Chinese are supported throughout. Progress and language 
 
 Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to deploy the entire site through GitHub Pages. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Eight more missions are planned. Add each future game under `dist/games/` and reuse `dist/shared/`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Eight more missions are planned in the initial collection; new science adventures can join alongside them. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
 

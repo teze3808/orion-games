@@ -4,7 +4,23 @@
 The realistic Moonlit Letter moon door and atmospheric background are the minimum visual quality for every future mission. Create original mission-specific artwork with ImageGen: believable materials, cinematic lighting, environmental depth, and a child-friendly sense of treasure and mystery. Integrate finished artwork into the main scene and background; verify desktop/mobile framing and readable bilingual controls in the browser before release. Each game should have its own setting while matching this quality. Preserve progressive hidden hints and reliable sigil collection. Record artwork prompts in ARTWORK.md and store optimized assets in the repository.
 
 ## Purpose
-Build an expandable collection of treasure, mystery, and puzzle games that teach Orion computing and mathematics through discovery. The story is a lost civilization whose mysteries yield unique sigils (符印). New islands and missions can keep joining the world; ten is the initial collection, not a permanent limit.
+Build an expandable collection of treasure, mystery, and puzzle games that teach Orion mathematics, computing, chemistry, biology, engineering, and broader science through discovery. The story is a lost civilization whose mysteries yield unique sigils (符印). New islands and missions can keep joining the world; ten is the initial collection, not a permanent limit.
+
+## Learning scope and expansion
+The world can grow across disciplines, including physics, astronomy, Earth science, and environmental science. The first ten missions are a starting collection, not a subject boundary or a required release order. New science missions can be added now, alongside the existing roadmap.
+
+| Subject | Possible concepts | Example story direction (not yet playable) |
+|---|---|---|
+| Mathematics / 數學 | Patterns, measurement, probability, equations | Restore a treasure vault’s balance |
+| Computing / 電腦科學 | Algorithms, codes, logic, data | Decode the lost city’s messages |
+| Chemistry / 化學 | States of matter, mixtures, separation, particle models | Restore an ancient laboratory through virtual experiments |
+| Biology / 生物學 | Plant needs, life cycles, habitats, food webs | Revive a hidden garden and its ecosystem |
+| Engineering / 工程 | Structures, gears, mechanisms, design trade-offs | Repair a bridge or water-lifting machine |
+| Broader science / 科學 | Light, forces, energy, space, weather, water cycle | Redirect observatory light or investigate a mysterious island |
+
+Choose a varied mix of subjects over time. Missions may combine subjects when one clear learning objective guides the gameplay. Encourage observing, predicting, experimenting, comparing evidence, and improving a design. Keep concepts appropriate for Orion, with explanations that follow discovery. Scientific simulations should state meaningful simplifications in optional notes, distinguish fantasy from scientific facts, and reward reasoning consistent with the model. Record sources supporting scientific claims when implementing a mission. Chemistry and biology adventures use safe virtual experiments; they must not require handling chemicals or living specimens at home.
+
+All subjects retain the same treasure/mystery story, independent mission choice, collectible sigils, realistic generated artwork, hidden hints, bilingual support, and quality checks.
 
 ## Product requirements
 - A mission-selection home page: choose any available mission in any order.
@@ -64,7 +80,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub, gate and Moonlit Letter are implemented. Eight mission cards describe planned games and must not be represented as playable. Build those games in future requests. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub, gate and Moonlit Letter are implemented. Eight mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.

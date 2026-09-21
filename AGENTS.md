@@ -13,6 +13,15 @@ Read `PROJECT.md` before changing this project. These instructions apply to this
 - Do not claim a planned game is playable. Coming-soon cards must not link to broken routes or empty games.
 - Preserve the orion-hash subproject and all unrelated user changes.
 
+## Subject scope and mission planning
+- Build for mathematics, computing, chemistry, biology, engineering, and broader science, including physics, astronomy, Earth science, and environmental science.
+- Treat the original ten missions as an expandable starting collection. Introduce new subjects alongside existing plans; do not wait for the computing/maths roadmap to finish.
+- Choose a varied subject mix across releases. Cross-disciplinary missions are welcome with one explicit primary learning objective.
+- Teach through observation, prediction, virtual experimentation, evidence, and design iteration. Preserve the shared treasure/mystery world and the approved visual quality across every subject.
+- Verify scientific claims using authoritative educational or primary sources and record references in the mission documentation. Explain consequential model simplifications in optional learning/parent notes, and keep story magic distinct from scientific explanations.
+- Use child-appropriate virtual chemistry and biology activities. Do not require real-world handling of chemicals or living specimens to complete a mission.
+- Keep proposed science missions marked as ideas/planned until implemented and validated; preserve stable IDs and progress for existing games.
+
 ## Learning and reward correctness
 - Each mission needs one explicit learning objective and a meaningful, testable sigil criterion.
 - Distinguish an input collision from reusing the same input. Avoid presenting weak teaching hashes/ciphers as secure.
