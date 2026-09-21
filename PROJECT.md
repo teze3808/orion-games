@@ -1,5 +1,8 @@
 # Orion’s Expedition / Orion 的失落文明
 
+## Approved visual standard
+The realistic Moonlit Letter moon door and atmospheric background are the minimum visual quality for every future mission. Create original mission-specific artwork with ImageGen: believable materials, cinematic lighting, environmental depth, and a child-friendly sense of treasure and mystery. Integrate finished artwork into the main scene and background; verify desktop/mobile framing and readable bilingual controls in the browser before release. Each game should have its own setting while matching this quality. Preserve progressive hidden hints and reliable sigil collection. Record artwork prompts in ARTWORK.md and store optimized assets in the repository.
+
 ## Purpose
 Build an expandable collection of treasure, mystery, and puzzle games that teach Orion computing and mathematics through discovery. The story is a lost civilization whose mysteries yield unique sigils (符印). New islands and missions can keep joining the world; ten is the initial collection, not a permanent limit.
 

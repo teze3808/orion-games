@@ -1,5 +1,8 @@
 # Agent instructions — Orion’s Expedition
 
+## Required visual quality for future games
+For every future game, match or exceed the approved Moonlit Letter artwork update (moon-door.jpg and ARTWORK.md). Use the built-in ImageGen tool, following its skill, for original mission-specific realistic cinematic artwork and an atmospheric treasure/mystery environment. Integrate the artwork into the main scene and a coherent background, with detailed believable materials, moonlight or other story-appropriate lighting, depth and a welcoming child-friendly mood. Do not ship placeholder geometric scenery as the finished visual. Keep controls and text readable, hints hidden, and both English and Traditional Chinese polished. Verify the actual artwork loads, desktop and mobile crops preserve the focal subject, and success feedback fits the scene. Save generated assets inside the repository, optimize delivery, and record prompts in ARTWORK.md. Use the Moonlit Letter as the quality reference, while giving each mission its own setting and identity.
+
 Read `PROJECT.md` before changing this project. These instructions apply to this game repository, not the parent HKBUAS school organizer.
 
 ## Preserve the experience
