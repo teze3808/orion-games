@@ -17,7 +17,7 @@ English and Traditional Chinese are supported throughout. Progress and language 
 
 Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to deploy the entire site through GitHub Pages. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Nine more missions are planned. Add each future game under `dist/games/` and reuse `dist/shared/`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Eight more missions are planned. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
 
@@ -26,3 +26,7 @@ The shared progress record also includes `hashTarget` (integer 0–9; legacy rec
 
 ## Passcode clearing
 After submitting a code, clear the input after two seconds without resetting the puzzle, result, or reward. New typing/keypad input cancels the pending clear so it never erases a fresh attempt. There is no in-game Restart adventure button. Relock keeps the current puzzle; only the hub’s full collection reset requests a different saved target.
+
+- [The Moonlit Letter — Caesar cipher](https://teze3808.github.io/orion-games/games/orion-cipher/)
+
+Run `node tests/cipher.cjs` for the three-stage cipher, language, rewards and reset checks. Daily mission history is in [RELEASES.md](RELEASES.md).

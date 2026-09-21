@@ -20,7 +20,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | Stable mission ID | Story | Learning concept | Sigil ID / name | Status |
 |---|---|---|---|---|
 | gate | 古城的密碼門 | Hash collisions | echo / 回聲 | Playable |
-| moon | 月光下的密信 | Caesar cipher; encryption and decryption | moonlight / 月光 | Planned |
+| moon | 月光下的密信 | Caesar cipher; encryption and decryption | moonlight / 月光 | Playable |
 | tower | 星燈塔 | Binary representation | starlight / 星光 | Planned |
 | mist | 霧海守望者 | Binary search | mist / 迷霧 | Planned |
 | bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Planned |
@@ -61,7 +61,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and gate are implemented. Nine mission cards describe planned games and must not be represented as playable. Build those games in future requests. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub, gate and Moonlit Letter are implemented. Eight mission cards describe planned games and must not be represented as playable. Build those games in future requests. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -83,3 +83,8 @@ The shared progress record also includes `hashTarget` (integer 0–9; legacy rec
 
 ## Passcode clearing
 After submitting a code, clear the input after two seconds without resetting the puzzle, result, or reward. New typing/keypad input cancels the pending clear so it never erases a fresh attempt. There is no in-game Restart adventure button. Relock keeps the current puzzle; only the hub’s full collection reset requests a different saved target.
+
+## Moonlit Letter — 2026-09-21
+`dist/games/orion-cipher/` teaches Caesar encryption and decryption through two decoded letters (EAST at shift 3, MOON at shift 7) and an encoded reply (FOX → KTC at shift 5). To earn `moonlight`, align the wheel correctly and submit the correct answer in all three stages. The wheel previews the transformation. Hints are hidden and progressive; full teaching notes appear after completion. English and Traditional Chinese share the same A–Z puzzle, with translated vocabulary clues. Replay preserves sigils; collection reset clears the mission session on storage sync. Failed saving offers a retry without claiming persistence.
+
+Daily releases are recorded in RELEASES.md by Asia/Hong_Kong date to avoid duplicate daily missions.
