@@ -1,5 +1,10 @@
 # Moonlit Letter artwork
 
+## Counterweight Vault — 2026-09-22
+Built-in ImageGen; generated PNG exported to JPEG for the website. Asset: `dist/games/orion-levers/vault.jpg`.
+
+Prompt: Use case: stylized-concept with photorealistic cinematic realism. Create portrait 2:3 environmental artwork for a child-friendly mysterious engineering treasure game. A vast ancient underground counterweight vault, centered circular sealed bronze treasure door carved with a subtle balanced-lever emblem, heavy weathered stone arches, bronze chains descending beside the door, a beautifully crafted old balance beam on a stone pedestal in the lower middle foreground, no numbers or labels. Detailed damp sandstone, aged bronze, carved stone, moss in cracks, warm amber lanterns against cool turquoise shafts of daylight through a high opening, floating dust, atmospheric depth and gentle mystery. Realistic believable material textures and high-end adventure-film photography. Welcoming discovery not horror. Entire door clearly visible with central focal subject that survives mobile cropping. No characters, no text, no UI, no watermark. Rich detailed surroundings suitable as a darkened full-page backdrop as well as left-side game art.
+
 Created with the built-in ImageGen tool on 2026-09-21. Web asset: `dist/games/orion-cipher/moon-door.jpg`. The generated PNG was exported to JPEG for web delivery.
 
 ## Generation prompt

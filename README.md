@@ -30,3 +30,7 @@ After submitting a code, clear the input after two seconds without resetting the
 - [The Moonlit Letter — Caesar cipher](https://teze3808.github.io/orion-games/games/orion-cipher/)
 
 Run `node tests/cipher.cjs` for the three-stage cipher, language, rewards and reset checks. Daily mission history is in [RELEASES.md](RELEASES.md).
+
+- [The Counterweight Vault — levers and balance](https://teze3808.github.io/orion-games/games/orion-levers/)
+
+Three missions are now playable. Run `node tests/levers.cjs` for prediction, lever physics, distinct solutions, bilingual state, and progress checks. See [SCIENCE.md](SCIENCE.md) for science sources and model limitations.

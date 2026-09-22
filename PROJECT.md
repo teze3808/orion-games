@@ -80,7 +80,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub, gate and Moonlit Letter are implemented. Eight mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub, gate, Moonlit Letter and Counterweight Vault are implemented. Eight mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -107,3 +107,11 @@ After submitting a code, clear the input after two seconds without resetting the
 `dist/games/orion-cipher/` teaches Caesar encryption and decryption through two decoded letters (EAST at shift 3, MOON at shift 7) and an encoded reply (FOX → KTC at shift 5). To earn `moonlight`, align the wheel correctly and submit the correct answer in all three stages. The wheel previews the transformation. Hints are hidden and progressive; full teaching notes appear after completion. English and Traditional Chinese share the same A–Z puzzle, with translated vocabulary clues. Replay preserves sigils; collection reset clears the mission session on storage sync. Failed saving offers a retry without claiming persistence.
 
 Daily releases are recorded in RELEASES.md by Asia/Hong_Kong date to avoid duplicate daily missions.
+
+## Counterweight Vault — 2026-09-22
+- Mission `levers`, sigil `ingenuity` / Ingenuity / 巧思; playable at `games/orion-levers/`.
+- Learning objective: predict and balance the turning effects of loads using both mass and distance from a pivot.
+- Three stages: equal loads (2 × 3), unequal loads (4 × 2 versus 2 × distance), then two distinct balanced designs against 3 × 4. A seal requires a correct prediction of balance and an actually balanced configuration. Repeating one final design does not count twice.
+- Controls adjust identical block count and equal-spacing positions; a labeled SVG is the functional model over a generated realistic vault environment. The initial beam is explicitly held level; release shows only the direction of initial tilt, not a physical trajectory or final angle. Failed predictions are logged, without penalty.
+- The model neglects beam weight and pivot friction and assumes common gravity. Optional bilingual notes explain these simplifications and separate fantasy rewards from science. Sources and validation: `SCIENCE.md`.
+- Shared language/progress APIs preserve prior sigils. Replay preserves rewards; full collection reset restarts this mission on storage/pageshow synchronization. Failed reward saves have an explicit retry.
