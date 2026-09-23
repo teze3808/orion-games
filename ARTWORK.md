@@ -1,5 +1,10 @@
 # Moonlit Letter artwork
 
+## Crystal Alchemist’s Workshop — 2026-09-23
+Built-in ImageGen. Original PNG exported using JPEG quality 82 to `dist/games/orion-mixtures/workshop.jpg`. Used in the main scene and darkened page backdrop. Desktop portrait and 390px mobile crops verified in Chrome; cabinet and workbench remain visible.
+
+Prompt: Use case: stylized-concept, photorealistic cinematic environment. Portrait 2:3 artwork for a child-friendly chemistry treasure game, The Crystal Alchemist's Workshop. A forgotten subterranean stone laboratory beneath a lost city, elegant arched windows admitting turquoise dawn light, richly textured aged bronze fittings, dusty apothecary shelves and glass vessels, a large central stone workbench with clear glass bowls of pale sand and white salt crystals, a small horseshoe magnet lying on the bench, a paper-lined glass funnel in a brass stand, no flames. Behind the workbench a closed ornate bronze cabinet with a small crystal-shaped emblem, warmly lit from within at its seams. Detailed realistic glass reflections, sandstone, patinated bronze, subtle ivy, tiny airborne dust, cinematic depth. Inviting mystery and discovery, no horror. Central bench and cabinet clearly framed so the main subject also survives a horizontal mobile crop. No people, no writing, no labels, no letters, no numbers, no UI, no watermark. Finely crafted realistic adventure-film photography, atmospheric amber and teal palette.
+
 ## Counterweight Vault — 2026-09-22
 Built-in ImageGen; generated PNG exported to JPEG for the website. Asset: `dist/games/orion-levers/vault.jpg`.
 
