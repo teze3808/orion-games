@@ -43,4 +43,4 @@ Run `node tests/mixtures.cjs` for chemistry, wrong-order retries, bilingual stat
 
 Run `node tests/binary.cjs` for all 16 lamp patterns, encoding/decoding challenges, invalid answers, bilingual state, rewards and reset checks.
 
-Workshop UI (2026-09-25): illustrated materials, large tool cards, a live treasure checklist and a guided uncover → experiment → check flow. Tap tools directly; no dragging is needed.
+Workshop UI (2026-09-25): illustrated materials, large tool cards, a live treasure checklist and a guided uncover → experiment → check flow. Drag a tool onto the jar, or tap/select a tool and then activate the jar. Realistic tool pictures, picture goals and material-transfer animations show the experiment.

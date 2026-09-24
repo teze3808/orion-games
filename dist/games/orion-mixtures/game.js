@@ -4,6 +4,7 @@ const stages=[{title:['The iron key','鐵之鑰'],goal:['Recover iron alone on t
 const names={iron:['Iron','鐵'],sand:['Quartz sand','石英沙'],water:['Water','水'],salt:['Salt','鹽']};
 const messages={inspect:['Sample inspected. Choose a tool and observe the result.','觀察完成。選擇工具，看看結果。'],first:['Inspect your sample before using a tool.','使用工具前，先觀察樣本。'],magnet:['Iron moved to the magnet tray. The other material stayed behind.','鐵移到磁鐵托盤，其他材料留在原處。'],none:['Nothing moved. Compare the materials with your earlier observations.','沒有材料移動。把這些材料與之前的觀察比較。'],filter:['Sand stayed in the filter. The liquid passed through into the sample jar.','沙留在濾紙上，液體通過濾紙，流回樣本瓶。'],dissolved:['Sand stayed in the filter. Water AND dissolved salt passed through together.','沙留在濾紙上。水和已溶解的鹽一起通過濾紙。'],dry:['There is no liquid to pour. Nothing changed — try another tool, or start with a new sample.','沒有液體可以倒入濾紙。材料沒有改變；試試另一工具，或換新樣本。'],evaporate:['Water entered the air as vapour. All other materials stayed in the vessel.','水變成水蒸氣進入空氣。其他材料都留在容器裡。'],wrong:['Not separated as requested yet. Compare each container with your mission. You can take a fresh sample and try another order.','還未按任務要求分離。比較各容器和任務目標。可以換新樣本，試試另一個次序。'],solved:['Recovered! A bronze seal opens.','成功分離！一道青銅封印開啟了。'],complete:['Three samples, three discoveries. The crystal cabinet opens!','三份樣本，三次發現。晶石寶櫃打開了！'],fresh:['A fresh sample is ready. Your observations remain in the log.','新樣本準備好了。之前的觀察仍留在紀錄裡。']};
 let stage=0,working=[],magnet=[],filter=[],vapor=[],inspected=false,solved=false,saveFailed=false,hintDepth=0,feedback='',history=[];
+let selectedTool=null, pointerDrag=null, suppressClick=false;
 let observedTarget=OrionProgress.read().hashTarget;
 function materialList(a){return a.length?a.map(m=>m==='salt'&&a.includes('water')?t('Dissolved salt','已溶解的鹽'):t(...names[m])).join(' · '):t('Empty','空');}
 function hints(){return [[t('Inspect each material. Which one responds to a magnet?','觀察每種材料。哪一種會被磁鐵吸引？'),t('Iron is magnetic; quartz sand is not.','鐵會被磁鐵吸引，石英沙不會。'),t('Inspect, then use the magnet. Present your materials.','先觀察，再使用磁鐵，然後展示材料。')],[t('You need to keep the water as a liquid.','你需要保留液態水。'),t('Sand does not dissolve in water. A paper filter can catch it.','沙不溶於水，濾紙能截留它。'),t('Inspect, then filter. Present your materials.','先觀察，再過濾，然後展示材料。')],[t('The salt travels with the water until the water evaporates.','在水蒸發前，鹽會跟著水一起移動。'),t('Separate the sand while the water is still liquid. Then recover the salt.','趁水仍是液體時，先分離沙，再收集鹽。'),t('Inspect → filter → evaporate → present. If you evaporated first, take a fresh sample.','觀察 → 過濾 → 蒸發 → 展示。如果先蒸發了，請換一份新樣本。')]][stage];}
@@ -27,24 +28,77 @@ function jarDrawing(a,covered=false,air=false){
 }
 function renderWorkbench(){
  const checks=goalChecks(),ready=inspected&&checks.every(g=>g.ok);
- $('goals').innerHTML=checks.map(g=>`<p class="goal ${inspected&&g.ok?'done':''}"><span aria-hidden="true">${inspected&&g.ok?'✓':'○'}</span> ${t(g.en,g.zh)} <small>${inspected&&g.ok?t('Collected','已收集'):t('Not yet','未完成')}</small></p>`).join('');
- $('stepGuide').textContent=solved?t('Seal unlocked! Continue your adventure below.','封印解開了！在下方繼續探險。'):!inspected?t('Start here: uncover the sample to see what is inside.','從這裡開始：打開樣本，看看裡面有甚麼。'):ready?t('You have everything! Tap “Unlock this seal”.','全部收集好了！點「解開這道封印」。'):t('Choose a tool below. Your goal is to separate the materials on the checklist.','選擇下方的工具，把清單上的材料分開收集。');
+ $('goals').innerHTML=checks.map((g,i)=>`<p class="goal ${inspected&&g.ok?'done':''}"><span aria-hidden="true">${inspected&&g.ok?'✓':'○'}</span> ${jarDrawing(stage===0?(i===0?['iron']:['sand']):stage===1?(i===0?['sand']:['water']):(i===0?['sand']:['salt']))}${t(g.en,g.zh)} <small>${inspected&&g.ok?t('Collected','已收集'):t('Not yet','未完成')}</small></p>`).join('');
+ $('stepGuide').textContent=solved?t('Seal unlocked! Continue your adventure below.','封印解開了！在下方繼續探險。'):!inspected?t('Start here: uncover the sample to see what is inside.','從這裡開始：打開樣本，看看裡面有甚麼。'):ready?t('You have everything! Tap “Unlock this seal”.','全部收集好了！點「解開這道封印」。'):selectedTool?t('Now drop it on the jar — or tap the jar.','現在拖到瓶子上放開，或點一下瓶子。'):t('Drag a tool onto the jar. See what happens!','把工具拖到瓶子上，看看會怎樣！');
  $('inspect').hidden=inspected||solved;
  $('sample').textContent=inspected?t('You started with: ','最初的材料：')+materialList(stages[stage].mix):t('A covered jar is waiting for you.','一瓶蓋著的樣本在等你。');
- $('vessels').innerHTML=`<section class="main-jar"><h3>${t('Your sample jar','你的樣本瓶')}</h3>${jarDrawing(working,!inspected)}<p>${inspected?materialList(working):t('Tap “Uncover the sample” above','點上方「打開樣本」')}</p>${inspected&&working.includes('salt')&&working.includes('water')?`<small>${t('Salt is dissolved in the water; you cannot see separate salt grains.','鹽已溶解在水裡，看不見獨立鹽粒。')}</small>`:''}</section><div class="collection-trays">${[[t('Magnet tray','磁鐵托盤'),magnet],[t('Filter paper','濾紙'),filter],[t('Into the air','進入空氣'),vapor]].map(([label,a],i)=>`<section class="tray ${a.length?'filled':''}"><h3>${label}</h3>${jarDrawing(a,false,i===2)}<p>${a.length?(i===2?t('Water vapour','水蒸氣'):materialList(a)):t('Nothing collected yet','還未收集到材料')}</p></section>`).join('')}</div>`;
+ $('vessels').innerHTML=`<button type="button" id="dropJar" class="main-jar" aria-label="${t('Sample jar: drop or apply selected tool','樣本瓶：放下或使用已選工具')}" ${!inspected||solved?'disabled':''}><h3>${t('Your sample jar','你的樣本瓶')}</h3>${jarDrawing(working,!inspected)}<p>${inspected?materialList(working):t('Tap “Uncover the sample” above','點上方「打開樣本」')}</p>${inspected&&working.includes('salt')&&working.includes('water')?`<small>${t('Salt is dissolved in the water; you cannot see separate salt grains.','鹽已溶解在水裡，看不見獨立鹽粒。')}</small>`:''}<span class="drop-cue">${selectedTool?t('↓ Use here','↓ 用在這裡'):t('↓ Drop tool here','↓ 把工具放在這裡')}</span></button><div class="collection-trays">${[[t('Magnet tray','磁鐵托盤'),magnet],[t('Filter paper','濾紙'),filter],[t('Into the air','進入空氣'),vapor]].map(([label,a],i)=>`<section class="tray ${a.length?'filled':''}"><h3>${label}</h3>${jarDrawing(a,false,i===2)}<p>${a.length?(i===2?t('Water vapour','水蒸氣'):materialList(a)):t('Nothing collected yet','還未收集到材料')}</p></section>`).join('')}</div>`;
  $('controls').hidden=!inspected||solved;
  $('finishControls').hidden=!inspected||solved;
  $('check').textContent=ready?t('3 · Unlock this seal ✦','3 · 解開這道封印 ✦'):t('3 · Check my collection','3 · 檢查我的收集');
  $('check').classList.toggle('ready',ready);
+ $('dropJar').onclick=applySelected;
+ $('dropJar').classList.toggle('target-ready',!!selectedTool);
+ for(const tool of ['magnet','filter','evaporate'])$(tool).setAttribute('aria-pressed',String(selectedTool===tool));
+
 }
 
 function say(k){feedback=k;history.unshift(k);history=history.slice(0,12);render();}
 function useTool(tool){if(solved)return;if(!inspected){say('first');return;}if(tool==='magnet'){if(working.includes('iron')){magnet.push('iron');working=working.filter(m=>m!=='iron');say('magnet');}else say('none');}else if(tool==='filter'){if(!working.includes('water'))say('dry');else if(working.includes('sand')){filter.push('sand');working=working.filter(m=>m!=='sand');say(working.includes('salt')?'dissolved':'filter');}else say('none');}else if(tool==='evaporate'){if(working.includes('water')){vapor.push('water');working=working.filter(m=>m!=='water');say('evaporate');}else say('none');}}
 function exactly(a,b){return a.length===b.length&&b.every(m=>a.includes(m));}
 function check(){if(solved)return;const ok=inspected&&(stage===0?exactly(magnet,['iron'])&&exactly(working,['sand']):stage===1?exactly(filter,['sand'])&&exactly(working,['water']):exactly(filter,['sand'])&&exactly(working,['salt'])&&exactly(vapor,['water']));if(!ok){say('wrong');return;}solved=true;if(stage===2)saveFailed=!OrionProgress.earn('crystal');say(stage===2?'complete':'solved');if(stage<2)$('next').focus();}
-function fresh(){working=[...stages[stage].mix];magnet=[];filter=[];vapor=[];inspected=false;solved=false;feedback='';render();}
+function fresh(){selectedTool=null;working=[...stages[stage].mix];magnet=[];filter=[];vapor=[];inspected=false;solved=false;feedback='';render();}
 function resetStage(){hintDepth=0;history=[];saveFailed=false;$('notes').open=false;fresh();}
 function resetMission(){stage=0;resetStage();}
-$('inspect').onclick=()=>{inspected=true;say('inspect');};for(const tool of ['magnet','filter','evaporate'])$(tool).onclick=()=>useTool(tool);$('check').onclick=check;$('fresh').onclick=()=>{fresh();say('fresh');};$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();$('inspect').focus();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};$('replay').onclick=()=>{resetMission();$('inspect').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('crystal');render();};
+$('inspect').onclick=()=>{inspected=true;say('inspect');};for(const tool of ['magnet','filter','evaporate'])$(tool).onclick=()=>{if(suppressClick){suppressClick=false;return;}selectTool(tool);};$('check').onclick=check;$('fresh').onclick=()=>{fresh();say('fresh');};$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();$('inspect').focus();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};$('replay').onclick=()=>{resetMission();$('inspect').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('crystal');render();};
 function syncProgress(){const target=OrionProgress.read().hashTarget,reset=target!==observedTarget&&!OrionProgress.has('crystal');observedTarget=target;if(reset||(solved&&stage===2&&!OrionProgress.has('crystal')&&!saveFailed))resetMission();else render();}
+
+function selectTool(tool){
+ if(!inspected||solved||!['magnet','filter','evaporate'].includes(tool))return;
+ selectedTool=tool;render();
+}
+function applySelected(){
+ if(!selectedTool||!inspected||solved)return;
+ const tool=selectedTool;selectedTool=null;useTool(tool);
+ const target=$('dropJar');
+ if(target.animate&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  target.animate([{filter:'brightness(1.8)',transform:'scale(.97)'},{filter:'brightness(1)',transform:'scale(1)'}],{duration:650});
+  const destination={magnet:0,filter:1,dissolved:1,evaporate:2}[feedback];
+  if(destination!==undefined){
+   const from=target.getBoundingClientRect(),to=document.querySelectorAll('.tray')[destination].getBoundingClientRect();
+   const particle=document.createElement('div');particle.className='flying-material';particle.setAttribute('aria-hidden','true');
+   particle.innerHTML=jarDrawing(destination===0?['iron']:destination===1?['sand']:['water'],false,destination===2);
+   particle.style.left=(from.left+from.width/2-24)+'px';particle.style.top=(from.top+from.height/2-24)+'px';document.body.appendChild(particle);
+   particle.animate([{transform:'translate(0,0) scale(1.4)',opacity:1},{transform:`translate(${to.left+to.width/2-from.left-from.width/2}px,${to.top+to.height/2-from.top-from.height/2}px) scale(.8)`,opacity:.2}],{duration:900,easing:'ease-in-out'}).onfinish=()=>particle.remove();
+  }
+ }
+}
+function finishDrag(event,cancel=false){
+ if(!pointerDrag||pointerDrag.id!==event.pointerId)return;
+ const drag=pointerDrag;pointerDrag=null;$('dragGhost').hidden=true;
+ if(!drag.moved)return;
+ suppressClick=true;setTimeout(()=>{suppressClick=false;},0);
+ const rect=$('dropJar').getBoundingClientRect();
+ const inside=!cancel&&event.clientX>=rect.left&&event.clientX<=rect.right&&event.clientY>=rect.top&&event.clientY<=rect.bottom;
+ if(inside){applySelected();}else{selectedTool=null;render();}
+}
+for(const tool of ['magnet','filter','evaporate']){
+ const button=$(tool);
+ button.addEventListener('pointerdown',e=>{
+  if(!inspected||solved||e.button!==0)return;
+  suppressClick=false;pointerDrag={id:e.pointerId,tool,x:e.clientX,y:e.clientY,moved:false};
+  button.setPointerCapture(e.pointerId);
+ });
+ button.addEventListener('pointermove',e=>{
+  if(!pointerDrag||pointerDrag.id!==e.pointerId)return;
+  if(!pointerDrag.moved&&Math.hypot(e.clientX-pointerDrag.x,e.clientY-pointerDrag.y)<8)return;
+  if(!pointerDrag.moved){pointerDrag.moved=true;selectTool(tool);}
+  const ghost=$('dragGhost');ghost.className='tool-picture '+tool;ghost.hidden=false;ghost.style.left=e.clientX+'px';ghost.style.top=e.clientY+'px';
+ });
+ button.addEventListener('pointerup',e=>finishDrag(e));
+ button.addEventListener('pointercancel',e=>finishDrag(e,true));
+ button.addEventListener('lostpointercapture',e=>{if(pointerDrag)finishDrag(e,true);});
+}
+window.addEventListener('keydown',e=>{if(e.key==='Escape'){pointerDrag=null;selectedTool=null;$('dragGhost').hidden=true;render();}});
+
 window.addEventListener('orion-language',render);window.addEventListener('storage',e=>{if(e.key==='orion-expedition-progress-v1'||e.key===null)syncProgress();});window.addEventListener('pageshow',syncProgress);resetMission();OrionI18n.apply();

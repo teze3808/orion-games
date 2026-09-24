@@ -1,5 +1,10 @@
 # Moonlit Letter artwork
 
+## Workshop draggable tool pictures — 2026-09-25
+Mode: built-in ImageGen. Saved as `dist/games/orion-mixtures/tools.jpg` (JPEG quality 82); CSS displays each third as one inventory picture. Verified desktop and 390px mobile framing. Vapour wisps are a visual symbol for evaporation, not a claim that water vapour is visible.
+
+Prompt: Create a realistic game inventory artwork strip, landscape 3:1 ratio, exactly three equal square panels side by side with no borders or text. Every panel has the same dark teal stone tabletop and warm cinematic museum lighting. Left third: a single large red and aged steel horseshoe magnet lying diagonally, centered and fully visible. Middle third: a single clear glass laboratory funnel holding folded white filter paper, on a small bronze stand, centered and fully visible. Right third: a shallow glazed ceramic evaporating bowl containing a little clear water, with three gentle wisps of water vapour rising above it, centered and fully visible, no flames and no heater. Believable photographic materials, crisp detailed objects, child-friendly treasure laboratory inventory, ample space around each object so each third can be used as a separate square tool button. No words, no letters, no labels, no watermark, no people. These are illustrative game tool pictures.
+
 ## Starlight Tower — 2026-09-24
 Mode: built-in ImageGen. Original PNG exported to JPEG quality 82 for web delivery. Asset: `dist/games/orion-binary/tower.jpg`. Used for the main scene and subdued page background; four lamp controls are a separate accessible functional model. Verified desktop portrait and 390 × 844 mobile layouts in Chrome; the gate and four-lamp console remain visible, and the completion glow fits the scene.
 
