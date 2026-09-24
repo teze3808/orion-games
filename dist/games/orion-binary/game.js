@@ -27,7 +27,7 @@ function hints() {
      t('The signal 1101 means 8 + 4 + 1. Enter 13.', '訊號 1101 表示 8 + 4 + 1。輸入 13。')]
   ][stage];
 }
-function render() {
+function render() {window.OrionLayout?.update(stage, solved, 3);
   document.title = t('The Starlight Tower · Orion’s Expedition', '星燈塔 · Orion 的探險');
   $('stageLabel').textContent = t(`SIGNAL ${stage + 1} OF 3 · COMPUTING`, `第 ${stage + 1} 個訊號，共 3 個 · 電腦科學`);
   $('stageTitle').textContent = t(...stages[stage].title);

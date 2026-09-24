@@ -5,3 +5,8 @@ header{flex-wrap:wrap}.language-control{display:inline-flex;margin:0}.language-c
 .reset-sigils{font:inherit;font-size:14px;color:#e5c7b4;background:transparent;border:1px solid #aa8974;border-radius:6px;padding:10px 16px;min-height:44px;cursor:pointer}.reset-sigils:hover{background:#47352e}.reset-sigils:focus-visible{outline:3px solid #a8e7d6;outline-offset:4px}#resetStatus{font-size:14px}
 
 .mission.available{position:relative;cursor:pointer}.mission.available .card-footer a::after{content:"";position:absolute;inset:0;border-radius:12px}.mission.available:hover{border-color:#ffe2a1;background:#23413c}.mission.available:focus-within{outline:3px solid #a8e7d6;outline-offset:4px}
+
+/* Tablet map: collection first, independent touch-friendly missions below. */
+main{display:flex;flex-direction:column}header{order:-3}.collection{order:-2;margin:12px 0 24px;padding:20px}.intro{min-height:0;padding:28px 32px;margin-bottom:24px}.intro h1{font-size:42px}.intro p{font-size:16px}.sigils{grid-template-columns:repeat(auto-fit,minmax(64px,1fr));margin:14px 0}.mission{min-width:0}.missions{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}summary,button,select{min-height:44px}@media(max-width:699px){.intro h1{font-size:34px}.collection{padding:16px}.sigils{grid-template-columns:repeat(4,minmax(0,1fr))}.missions{grid-template-columns:1fr}}
+
+.collection-details summary{cursor:pointer;color:#e9cc8b;display:list-item;padding:12px 0;font-size:15px}.collection>div>.eyebrow{margin:0}.collection>div>p:last-child{font-size:14px;margin:6px 0}.collection{padding:16px 22px}.collection h2{font-size:23px}.sigils{grid-template-columns:repeat(6,minmax(0,1fr))}@media(max-width:699px){.sigils{grid-template-columns:repeat(4,minmax(0,1fr))}}
