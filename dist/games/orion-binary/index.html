@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Starlight Tower</title><link rel="stylesheet" href="style.css?v=20260924"><link rel="icon" href="data:,"></head>
+<body><main><header>
+<a data-en="← Mission map" data-zh="← 任務地圖" href="../../"></a>
+<label>Language / 語言 <select id="language"><option value="en">English</option><option value="zh-Hant">繁體中文</option></select></label></header><section class="intro">
+<p data-en="ORION’S EXPEDITION · THE STARKEEPER’S SIGNAL" data-zh="ORION 的探險 · 守星者的訊號" class="eyebrow"></p>
+<h1 data-en="The Starlight Tower" data-zh="星燈塔" ></h1>
+<p data-en="The tower has no stairs. Four crystal lamps speak to a forgotten star gate. Discover their language to raise a path through the night." data-zh="高塔沒有樓梯。四盞水晶燈向被遺忘的星門傳送訊號。找出它們的語言，讓夜空中的通道升起。" ></p>
+</section><div class="adventure"><aside class="scene" id="scene"><div class="scene-caption"><p id="sceneStatus"></p><div id="seals" aria-hidden="true"></div></div></aside><section class="desk"><p id="stageLabel" class="eyebrow"></p><h2 id="stageTitle"></h2><p id="mission"></p>
+<div class="target"><span id="targetLabel"></span><strong id="targetValue"></strong></div><section class="console" aria-labelledby="consoleTitle"><h3 id="consoleTitle"></h3><div class="lamps">
+<button type="button" id="lamp0" class="lamp" aria-pressed="false"><span class="weight">8</span><span class="orb" aria-hidden="true"></span><span id="bit0" class="bit">0</span><span id="state0" class="state"></span></button>
+<button type="button" id="lamp1" class="lamp" aria-pressed="false"><span class="weight">4</span><span class="orb" aria-hidden="true"></span><span id="bit1" class="bit">0</span><span id="state1" class="state"></span></button>
+<button type="button" id="lamp2" class="lamp" aria-pressed="false"><span class="weight">2</span><span class="orb" aria-hidden="true"></span><span id="bit2" class="bit">0</span><span id="state2" class="state"></span></button>
+<button type="button" id="lamp3" class="lamp" aria-pressed="false"><span class="weight">1</span><span class="orb" aria-hidden="true"></span><span id="bit3" class="bit">0</span><span id="state3" class="state"></span></button>
+</div><p id="reading" aria-live="polite"></p></section><form id="answerForm" novalidate><div id="decode" hidden><label data-en="What ordinary number does this signal represent?" data-zh="這個訊號代表哪個日常使用的數字？" for="answer"></label>
+<input id="answer" type="text" inputmode="numeric" autocomplete="off" maxlength="2" aria-describedby="answerHelp"><p data-en="Enter a whole number from 0 to 15." data-zh="輸入 0 至 15 的整數。" id="answerHelp" class="small"></p>
+</div><button data-en="Send the signal" data-zh="傳送訊號" id="submit" type="submit" class="primary"></button>
+</form><p id="feedback" role="status"></p><button type="button" id="next" class="primary" hidden></button><section id="reward" hidden><div class="reward-symbol" aria-hidden="true">✦</div><h2 data-en="The Starlight Sigil" data-zh="星光符印" ></h2>
+<p data-en="The four lamps answer in harmony. A silver path rises, and the tower shares its star map with you." data-zh="四盞燈互相呼應。銀色通道升起，高塔把星圖交給了你。" ></p>
+<p id="saveStatus" role="status"></p><button data-en="Save my sigil again" data-zh="再次儲存符印" id="retrySave" type="button" hidden></button>
+<a data-en="Return to my sigils" data-zh="返回我的符印" class="button" href="../../"></a>
+<button data-en="Explore the lamps again" data-zh="再次探索星燈" id="replay" type="button"></button>
+</section><details><summary data-en="My signal log" data-zh="我的訊號紀錄" ></summary>
+<ol id="log"></ol></details><div class="hint-area"><button type="button" id="hint" class="rune" aria-expanded="false" aria-controls="hints">✧</button><ol id="hints" hidden></ol></div><details id="notes" hidden><summary data-en="Starkeeper’s notes · discover binary" data-zh="守星者筆記 · 認識二進位" ></summary>
+<p data-en="Each lamp has two states: off (0) and on (1). Its position gives it a value: 8, 4, 2 or 1, from left to right. Add only the values of the lit lamps. The pattern 0101 represents 4 + 1 = 5, while 1010 represents 8 + 2 = 10." data-zh="每盞燈有兩種狀態：關（0）和開（1）。位置決定它的數值：從左至右是 8、4、2、1。只把亮燈的數值加起來。0101 代表 4 + 1 = 5；1010 代表 8 + 2 = 10。" ></p>
+<p data-en="This is binary place value. Each position to the left is worth twice as much. Four bits can represent 16 different whole numbers: 0 to 15. All lamps off means 0, not a missing signal in this game. A fifth position worth 16 would let us count higher." data-zh="這就是二進位的位值。每向左一位，數值便加倍。四個位元能表示 16 個不同整數：0 至 15。在這個遊戲中，所有燈關掉表示 0，不代表沒有訊號。加上數值為 16 的第五位，就能表示更大的數字。" ></p>
+<p data-en="We model non-negative whole numbers only. Real computers use many bits and agreed encodings for numbers, text and pictures. Crystal lamps are our story model; the rising path is fantasy." data-zh="這個模型只表示非負整數。真實電腦使用許多位元，按照約定的編碼表示數字、文字和圖片。水晶燈是故事中的模型；升起的通道則是幻想。" ></p>
+<a data-en="Learn more: CS Unplugged · Binary numbers" data-zh="延伸閱讀：CS Unplugged · 二進位數字" href="https://www.csunplugged.org/en/topics/binary-numbers/" target="_blank" rel="noopener"></a>
+</details></section></div><footer data-en="Take your time. Every signal is a discovery. Sigils are saved in this browser." data-zh="慢慢探索，每個訊號都是新發現。符印儲存在目前的瀏覽器。" ></footer>
+</main><script src="../../shared/i18n.js?v=20260924"></script><script src="../../shared/progress.js?v=20260924"></script><script src="game.js?v=20260924"></script></body></html>

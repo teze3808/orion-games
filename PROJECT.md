@@ -40,7 +40,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 |---|---|---|---|---|
 | gate | 古城的密碼門 | Hash collisions | echo / 回聲 | Playable |
 | moon | 月光下的密信 | Caesar cipher; encryption and decryption | moonlight / 月光 | Playable |
-| tower | 星燈塔 | Binary representation | starlight / 星光 | Planned |
+| tower | 星燈塔 | Binary representation | starlight / 星光 | Playable |
 | mist | 霧海守望者 | Binary search | mist / 迷霧 | Planned |
 | bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Planned |
 | fox | 迷路的機械狐狸 | Algorithms, loops, debugging | footprint / 足跡 | Planned |
@@ -80,7 +80,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub, gate, Moonlit Letter and Counterweight Vault are implemented. Eight mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub, Treasure Gate, Moonlit Letter, Counterweight Vault, Crystal Alchemist’s Workshop and Starlight Tower are implemented. Seven mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -118,3 +118,11 @@ Daily releases are recorded in RELEASES.md by Asia/Hong_Kong date to avoid dupli
 
 ## Crystal Alchemist’s Workshop — released 2026-09-23
 Route `games/orion-mixtures/`, mission `mixtures`, sigil `crystal` / Crystal / 晶石. Three virtual chemistry samples teach magnetic separation, filtration and evaporation. Reward requires iron alone on the magnet tray, liquid water separated from sand, then sand in the filter and solid salt in the working vessel. Filtering before evaporation is essential in the final sample. Fresh samples support recovery without penalty. Notes explain ideal separation, water vapour, dissolved salt, and fictional magic. Scientific sources and model boundaries are in SCIENCE.md.
+
+## Starlight Tower — 2026-09-24
+- Existing mission `tower` and sigil `starlight` / Starlight / 星光 are now playable at `games/orion-binary/`.
+- Objective: represent and decode unsigned four-bit numbers using place values 8, 4, 2, 1.
+- Three challenges: send 5 with a live total, send 10 without a live total, then decode fixed pattern 1101 as 13. All three are required for the sigil. Incorrect signals show evidence without penalty; invalid answers never award a reward.
+- Four keyboard/touch lamp controls expose on/off state and bit values. The final incoming pattern is read-only. Three progressive hints per challenge; teaching notes appear only after completion.
+- Shared language and progress helpers preserve session input across language changes and preserve sigils across replay. Collection reset synchronizes on storage/pageshow; blocked saves have an honest retry.
+- Original ImageGen tower scene and mobile crop are recorded in ARTWORK.md; source and model limitations in SCIENCE.md. Tests: `node tests/binary.cjs`.

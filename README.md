@@ -17,7 +17,7 @@ English and Traditional Chinese are supported throughout. Progress and language 
 
 Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to deploy the entire site through GitHub Pages. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Eight more missions are planned in the initial collection; new science adventures can join alongside them. Add each future game under `dist/games/` and reuse `dist/shared/`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Seven more missions are planned in the initial collection; new science adventures can join alongside them. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
 
@@ -37,4 +37,8 @@ Three missions are now playable. Run `node tests/levers.cjs` for prediction, lev
 
 - [The Crystal Alchemist’s Workshop — separating mixtures](https://teze3808.github.io/orion-games/games/orion-mixtures/)
 
-Run `node tests/mixtures.cjs` for chemistry, wrong-order retries, bilingual state, rewards and storage checks. Four missions are playable.
+Run `node tests/mixtures.cjs` for chemistry, wrong-order retries, bilingual state, rewards and storage checks. Five missions are playable.
+
+- [The Starlight Tower — binary place value](https://teze3808.github.io/orion-games/games/orion-binary/)
+
+Run `node tests/binary.cjs` for all 16 lamp patterns, encoding/decoding challenges, invalid answers, bilingual state, rewards and reset checks.

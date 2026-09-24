@@ -1,5 +1,10 @@
 # Moonlit Letter artwork
 
+## Starlight Tower — 2026-09-24
+Mode: built-in ImageGen. Original PNG exported to JPEG quality 82 for web delivery. Asset: `dist/games/orion-binary/tower.jpg`. Used for the main scene and subdued page background; four lamp controls are a separate accessible functional model. Verified desktop portrait and 390 × 844 mobile layouts in Chrome; the gate and four-lamp console remain visible, and the completion glow fits the scene.
+
+Prompt: Use case: stylized-concept. Asset: original photorealistic cinematic scene for a child-friendly treasure mystery game, The Starlight Tower. Portrait 2:3 composition. Inside an ancient open-air astronomical tower, a central tall carved sandstone arch opens onto a luminous starry indigo sky. A beautiful circular bronze star gate on the far wall, with fine celestial engravings, stands above a stone console bearing exactly four separate spherical crystal lamps in a horizontal row, each in an aged brass cradle. Lamps emit gentle warm amber light. Believable detailed weathered stone, patinated bronze, clear crystal, moss at the edges, deep architectural perspective, soft silver moonlight and warm lamps, welcoming sense of discovery, no horror. Main gate and four-lamp console concentrated in the central composition so both remain recognizable in a horizontal mobile crop. Rich realistic adventure-film photography. No people, no writing, no numbers, no letters, no labels, no UI, no watermark. Artwork is an atmospheric environment rather than a scientific diagram.
+
 ## Crystal Alchemist’s Workshop — 2026-09-23
 Built-in ImageGen. Original PNG exported using JPEG quality 82 to `dist/games/orion-mixtures/workshop.jpg`. Used in the main scene and darkened page backdrop. Desktop portrait and 390px mobile crops verified in Chrome; cabinet and workbench remain visible.
 
