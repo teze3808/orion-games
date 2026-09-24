@@ -134,3 +134,6 @@ The workshop now uses original realistic inventory pictures for all three tools,
 
 ## Counterweight controls — 2026-09-25
 The right-hand load can be dragged or positioned by tapping the right half of the beam. It snaps to positions 1–6; a native range slider provides touch and keyboard alternatives. Weight count uses +/− buttons and a 1–4 slider, unlocked only for the final seal. Changes clear the previous prediction and tilt before the next test. Cancelled pointer gestures restore the previous distance, prediction and result; the left load stays fixed. Existing balance solutions, distinct-design reward rules and progress storage are unchanged.
+
+## Moonlit Letter circular wheel — 2026-09-25
+A fixed outer A–Z alphabet surrounds a draggable inner secret alphabet. Setting n rotates the inner ring by −n × 360/26 degrees, so ordinary A aligns with its shifted secret letter. Pointer movement tracks angular deltas across the ±180° seam and snaps to whole letters; cancelled gestures restore the starting setting. Keyboard arrows and ±1 buttons provide alternatives. The old pairing table is an optional disclosure. Bilingual hints refer to outer/inner rings. Cipher answers, settings, sigil rules and storage remain unchanged.

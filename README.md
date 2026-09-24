@@ -46,3 +46,5 @@ Run `node tests/binary.cjs` for all 16 lamp patterns, encoding/decoding challeng
 Workshop UI (2026-09-25): illustrated materials, large tool cards, a live treasure checklist and a guided uncover → experiment → check flow. Drag a tool onto the jar, or tap/select a tool and then activate the jar. Realistic tool pictures, picture goals and material-transfer animations show the experiment.
 
 Counterweight Vault: drag the glowing right-hand stack along the beam, tap a position, or use the position slider. The final seal adds +/− and a draggable weight-count slider. Both controls support keyboard input and English/繁體中文.
+
+Moonlit Letter: drag the inner alphabet ring to rotate the cipher wheel. The outer alphabet stays fixed. Use ±1 buttons or keyboard arrows for precise alignment; the complete letter-pair table remains available on request.
