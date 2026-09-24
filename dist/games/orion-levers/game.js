@@ -6,6 +6,7 @@ const stages=[
  {mass:3,distance:4,right:1,title:['The engineer’s two keys','工程師的兩把鑰匙'],mission:['Choose both the number of blocks and their position. Find TWO different balanced designs to open the vault.','選擇砝碼數量和位置。找出兩種不同的平衡設計，就能打開密庫。']}
 ];
 let stage=0,mass=2,distance=1,prediction='',result=null,feedback='',history=[],solutions=[],solved=false,saveFailed=false;
+let beamDrag=null;
 let observedTarget=OrionProgress.read().hashTarget;
 function outcome(m=mass,d=distance){const left=stages[stage].mass*stages[stage].distance,right=m*d;return left===right?'balanced':left>right?'left':'right';}
 function outcomeText(value){return value==='balanced'?t('Stays level','保持水平'):value==='left'?t('Left drops','左邊下降'):t('Right drops','右邊下降');}
@@ -19,11 +20,49 @@ function render(){const c=stages[stage];document.title=t('The Counterweight Vaul
  $('next').hidden=!solved||stage===2;$('reward').hidden=!(solved&&stage===2);$('notes').hidden=!(solved&&stage===2);$('scene').classList.toggle('complete',solved&&stage===2);$('seals').textContent=Array.from({length:3},(_,i)=>i<stage||(i===stage&&solved)?'◆':'◇').join(' ');$('sceneStatus').textContent=solved&&stage===2?t('The engineer’s secret is revealed.','工程師的秘密揭開了。'):t('Balance the mechanism. Unseal the story.','平衡機關，解開故事。');$('solutions').textContent=stage===2&&solutions.length?t('Recorded designs: ','已記錄設計：')+solutions.map(k=>{const [m,d]=k.split(':');return t(`${m} blocks at ${d}`,`${m} 個砝碼，距離 ${d}`);}).join(' · '):'';
  $('log').innerHTML=history.length?history.map(h=>`<li>${t(`${h.mass} blocks at distance ${h.distance}`,`${h.mass} 個砝碼，距離 ${h.distance}`)} — ${t('predicted','預測')} ${outcomeText(h.prediction)}; ${t('observed','觀察')} ${outcomeText(h.result)}.</li>`).join(''):`<li>${t('Your tests will appear here.','你的測試會顯示在這裡。')}</li>`;
  $('hints').hidden=!hintDepth;$('hints').innerHTML=hintTexts().slice(0,hintDepth).map(h=>`<li>${h}</li>`).join('');$('hint').disabled=hintDepth===3;$('hint').setAttribute('aria-expanded',String(hintDepth>0));$('hint').setAttribute('aria-label',t('Reveal the next clue','顯示下一個提示'));$('retrySave').hidden=!saveFailed;$('saveStatus').textContent=saveFailed?t('Sigil earned, but this browser could not save it. You can retry saving.','你獲得了符印，但瀏覽器無法儲存。可以再次嘗試儲存。'):OrionProgress.has('ingenuity')?t('Ingenuity Sigil saved in your collection.','巧思符印已存入你的收藏。'):'';
+ $('distanceValue').textContent=t(`Position ${distance}`,`位置 ${distance}`);
+ $('massValue').textContent=t(`${mass} blocks`,`${mass} 個砝碼`);
+ $('massHelp').textContent=stage<2?t('Locked for this seal. Move the weight to explore. You can change the block count at the final seal.','這道封印的數量已固定。移動砝碼來探索；最後一道封印可以改變數量。'):t('Tap + / − or drag the slider. Find two different balanced designs.','點 +／− 或拖動滑桿，找出兩種不同的平衡設計。');
+ $('lessMass').disabled=solved||stage<2||mass<=1;$('moreMass').disabled=solved||stage<2||mass>=4;
+ $('mass').disabled=solved||stage<2;$('distance').disabled=solved;
+ $('dragHandle').setAttribute('x',String(320+distance*43-28));
+ $('dragHandle').setAttribute('visibility',solved?'hidden':'visible');
+ $('distance').setAttribute('aria-valuetext',t(`Position ${distance} from the pivot`,`距離支點 ${distance} 格`));
+ $('mass').setAttribute('aria-valuetext',t(`${mass} identical blocks`,`${mass} 個相同砝碼`));
+
 }
-function changeSetting(){mass=Number($('mass').value);distance=Number($('distance').value);prediction='';result=null;feedback='';render();}
+function changeSetting(){if(solved)return;mass=Number($('mass').value);distance=Number($('distance').value);prediction='';result=null;feedback='';render();}
 function testBeam(){if(solved)return;if(!Number.isInteger(mass)||mass<1||mass>4||!Number.isInteger(distance)||distance<1||distance>6||(stage<2&&mass!==stages[stage].right)){feedback='invalid';render();return;}if(!['left','right','balanced'].includes(prediction)){feedback='choose';render();return;}result=outcome();history.unshift({mass,distance,prediction,result});history=history.slice(0,8);if(prediction!==result)feedback='wrong';else if(result!=='balanced')feedback='observe';else{const key=`${mass}:${distance}`;if(solutions.includes(key))feedback='duplicate';else{solutions.push(key);if(stage<2||solutions.length===2){solved=true;feedback=stage===2?'complete':'balanced';if(stage===2)saveFailed=!OrionProgress.earn('ingenuity');}else feedback='another';}}render();if(solved&&stage<2)$('next').focus();}
-function resetStage(){mass=stages[stage].right;distance=1;prediction='';result=null;feedback='';history=[];solutions=[];solved=false;saveFailed=false;hintDepth=0;$('notes').open=false;render();}
+function resetStage(){beamDrag=null;mass=stages[stage].right;distance=1;prediction='';result=null;feedback='';history=[];solutions=[];solved=false;saveFailed=false;hintDepth=0;$('notes').open=false;render();}
 function resetMission(){stage=0;resetStage();}
-$('mass').addEventListener('change',changeSetting);$('distance').addEventListener('change',changeSetting);document.querySelectorAll('[data-prediction]').forEach(b=>b.addEventListener('click',()=>{prediction=b.dataset.prediction;feedback='';render();}));$('test').onclick=testBeam;$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();$('distance').focus();};$('replay').onclick=()=>{resetMission();$('distance').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('ingenuity');render();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};
+$('mass').addEventListener('input',changeSetting);$('distance').addEventListener('input',changeSetting);
+$('mass').addEventListener('change',changeSetting);$('distance').addEventListener('change',changeSetting);
+$('lessMass').onclick=()=>adjustMass(-1);$('moreMass').onclick=()=>adjustMass(1);
+document.querySelectorAll('[data-prediction]').forEach(b=>b.addEventListener('click',()=>{prediction=b.dataset.prediction;feedback='';render();}));$('test').onclick=testBeam;$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();$('distance').focus();};$('replay').onclick=()=>{resetMission();$('distance').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('ingenuity');render();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};
 function syncProgress(){const target=OrionProgress.read().hashTarget,reset=target!==observedTarget&&!OrionProgress.has('ingenuity');observedTarget=target;if(reset||(solved&&stage===2&&!OrionProgress.has('ingenuity')&&!saveFailed))resetMission();else render();}
+
+function adjustMass(delta){
+ if(solved||stage<2)return;
+ $('mass').value=String(Math.max(1,Math.min(4,mass+delta)));changeSetting();
+}
+function distanceFromX(x,left,width){return Math.max(1,Math.min(6,Math.round(((x-left)*640/width-320)/43)));}
+function moveWeight(e){
+ const rect=$('diagram').getBoundingClientRect();
+ const next=distanceFromX(e.clientX,rect.left,rect.width);
+ if(next!==distance||result!==null){$('distance').value=String(next);changeSetting();}
+}
+$('diagram').addEventListener('pointerdown',e=>{
+ if(solved||e.button!==0)return;
+ const rect=$('diagram').getBoundingClientRect();
+ if(e.clientX<rect.left+rect.width/2)return;
+ beamDrag={id:e.pointerId,distance,prediction,result,feedback};
+ $('diagram').setPointerCapture(e.pointerId);moveWeight(e);
+});
+$('diagram').addEventListener('pointermove',e=>{if(beamDrag&&beamDrag.id===e.pointerId)moveWeight(e);});
+$('diagram').addEventListener('pointerup',e=>{if(beamDrag&&beamDrag.id===e.pointerId){moveWeight(e);beamDrag=null;}});
+function cancelBeamDrag(){if(!beamDrag)return;({distance,prediction,result,feedback}=beamDrag);beamDrag=null;render();}
+$('diagram').addEventListener('pointercancel',cancelBeamDrag);
+$('diagram').addEventListener('lostpointercapture',cancelBeamDrag);
+window.addEventListener('keydown',e=>{if(e.key==='Escape')cancelBeamDrag();});
+
 window.addEventListener('orion-language',render);window.addEventListener('storage',e=>{if(e.key==='orion-expedition-progress-v1'||e.key===null)syncProgress();});window.addEventListener('pageshow',syncProgress);OrionI18n.apply();
