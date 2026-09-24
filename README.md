@@ -42,3 +42,5 @@ Run `node tests/mixtures.cjs` for chemistry, wrong-order retries, bilingual stat
 - [The Starlight Tower — binary place value](https://teze3808.github.io/orion-games/games/orion-binary/)
 
 Run `node tests/binary.cjs` for all 16 lamp patterns, encoding/decoding challenges, invalid answers, bilingual state, rewards and reset checks.
+
+Workshop UI (2026-09-25): illustrated materials, large tool cards, a live treasure checklist and a guided uncover → experiment → check flow. Tap tools directly; no dragging is needed.

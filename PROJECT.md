@@ -126,3 +126,6 @@ Route `games/orion-mixtures/`, mission `mixtures`, sigil `crystal` / Crystal / �
 - Four keyboard/touch lamp controls expose on/off state and bit values. The final incoming pattern is read-only. Three progressive hints per challenge; teaching notes appear only after completion.
 - Shared language and progress helpers preserve session input across language changes and preserve sigils across replay. Collection reset synchronizes on storage/pageshow; blocked saves have an honest retry.
 - Original ImageGen tower scene and mobile crop are recorded in ARTWORK.md; source and model limitations in SCIENCE.md. Tests: `node tests/binary.cjs`.
+
+## Workshop interface update — 2026-09-25
+The chemistry mission now guides players through uncovering the sample, tapping a pictured tool and checking their collection. An illustrated sample jar and collection trays show material locations, including dissolved-salt labels and water vapour. A bilingual live checklist states the collection goals without giving tool solutions. Tools appear after uncovering; the final action changes to “Unlock this seal” when ready. Existing chemistry rules, sigil IDs, hidden hints and saved progress are preserved.
