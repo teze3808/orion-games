@@ -1,0 +1,38 @@
+/* A single-screen tablet workbench. Small phones retain natural scrolling. */
+@media (min-width:700px) and (min-height:600px){
+ body[data-mission=levers] main{height:100dvh;padding:8px 16px;display:grid;grid-template-rows:44px 40px clamp(64px,12dvh,112px) 44px minmax(0,1fr);gap:6px;max-width:1440px}
+ body[data-mission=levers] .mission-intro{margin:0;display:flex;align-items:center;justify-content:space-between;gap:12px}
+ body[data-mission=levers] .mission-intro>.eyebrow,body[data-mission=levers] footer{display:none}
+ body[data-mission=levers] .mission-intro h1{font-size:25px;margin:0}
+ body[data-mission=levers] .story-disclosure{position:relative;font-size:13px}
+ body[data-mission=levers] .story-disclosure[open] p{position:absolute;right:0;top:38px;width:min(480px,80vw);padding:16px;background:#10272c;border:1px solid #b6a778;border-radius:8px;z-index:30}
+ body[data-mission=levers] main>.scene{height:100%;margin:0;border-radius:10px;background-position:center 48%}
+ body[data-mission=levers] .scene-caption{padding:8px;background:#061716b0;display:flex;align-items:center;justify-content:space-between;gap:12px}
+ body[data-mission=levers] .scene-caption>.eyebrow{display:none}
+ body[data-mission=levers] .mission-progress{margin:0!important;padding:6px 12px;position:static;border-radius:8px!important}
+ body[data-mission=levers] .play-grid{min-height:0;gap:12px;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);align-items:stretch}
+ body[data-mission=levers] .experiment-panel,body[data-mission=levers] .result-panel{padding:12px;min-height:0}
+ body[data-mission=levers] .experiment-panel{display:flex;flex-direction:column;gap:6px}
+ body[data-mission=levers] .panel-label,body[data-mission=levers] .instrument-heading,body[data-mission=levers] #fixedLoad,body[data-mission=levers] .range-ends{display:none}
+ body[data-mission=levers] #stageTitle{font-size:20px;margin:0}
+ body[data-mission=levers] #mission{font-size:14px;line-height:1.35;margin:0}
+ body[data-mission=levers] .instrument{flex:1;min-height:110px;margin:0;display:flex;align-items:center}
+ body[data-mission=levers] #diagram{height:100%;max-height:290px}
+ body[data-mission=levers] .drag-help{font:12px/1.35 system-ui;margin:0}
+ body[data-mission=levers] .adjustments{grid-template-columns:1fr 1fr;gap:8px}
+ body[data-mission=levers] .adjustment{padding:6px 10px}
+ body[data-mission=levers] .adjustment label{font-size:12px}
+ body[data-mission=levers] .adjustment output{font-size:17px;margin:0;line-height:44px}
+ body[data-mission=levers] .adjustment input{display:block;margin:0;height:44px}
+ body[data-mission=levers] #massHelp{font-size:11px;line-height:1.3;margin:0}
+ body[data-mission=levers] .result-panel{position:relative;top:auto;max-height:none;overflow:auto;scrollbar-gutter:auto}
+ body[data-mission=levers] #reading{font-size:20px;padding:10px;margin:0 0 8px}
+ body[data-mission=levers] #feedback{min-height:0;font-size:14px;margin:8px 0}
+ body[data-mission=levers] #solutions{font-size:13px;margin:8px 0}
+ body[data-mission=levers] .hint-area{margin:8px 0;padding:0;border:0}
+ body[data-mission=levers] details{margin-top:8px;font-size:13px}
+ body[data-mission=levers] .reward-symbol{font-size:30px}
+ body[data-mission=levers] #reward h2{font-size:20px;margin:4px 0}
+ body[data-mission=levers] #reward p{font-size:13px;margin:6px 0}
+ body[data-mission=levers] #replay{margin:6px 0}
+}

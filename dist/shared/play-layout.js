@@ -41,8 +41,8 @@
       ['.letter','#context','#controls','.hint-area'].forEach(s=>move(s,work));
       ['#preview','#status','#next','#treasure','#notes'].forEach(s=>move(s,result));
     } else if(kind==='levers') {
-      ['.instrument','#fixedLoad','.drag-help','#controls','.hint-area'].forEach(s=>move(s,work));
-      ['#reading','#feedback','#solutions','#next','#reward','#observations','#notes'].forEach(s=>move(s,result));
+      ['.instrument','#fixedLoad','.drag-help','#controls'].forEach(s=>move(s,work));
+      ['#reading','#feedback','#solutions','#next','#reward','.hint-area','#observations','#notes'].forEach(s=>move(s,result));
     } else if(kind==='binary') {
       ['.target','.console','#answerForm','.hint-area'].forEach(s=>move(s,work));
       ['#reading','#feedback','#next','#reward'].forEach(s=>move(s,result));

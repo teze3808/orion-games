@@ -155,3 +155,5 @@ Browser QA for the seed mission covered English landscape at 1024×768, Traditio
 
 ## Direct balance and top scene — 2026-09-25
 All six mission pictures now sit directly above the top progress bar, retaining their live scene status and seal displays; experiments remain on the left and results on the right for tablets. Future missions must follow this arrangement. The Counterweight Vault shows live tilt without predictions or a release button. Release a drag or finish a slider adjustment at balance to record it. Drag horizontally for position, vertically up/down for block count on the final seal; sliders and +/− remain accessible alternatives. Cancelled drags restore both settings and cannot earn a seal. The final challenge still requires two distinct balanced designs.
+
+Counterweight Vault now uses a viewport-fitted tablet workbench at widths ≥700px and heights ≥600px. Picture, progress, beam, controls and current result fit together; optional hints, logs and notes expand in the result panel. Smaller screens retain natural scrolling for accessible controls.
