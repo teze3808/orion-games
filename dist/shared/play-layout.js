@@ -33,7 +33,7 @@
     top.before(intro);
     ['.console-top','#form','.console-foot'].forEach(s=>move(s,work));
     ['#gateState','#status','#treasure','.attempt-heading','#history','.bottom-story'].forEach(s=>move(s,result));
-    const art=make('div','gate-art'); art.setAttribute('aria-hidden','true');result.append(art);
+    const art=make('div','gate-art'); art.setAttribute('aria-hidden','true');top.before(art);
     story.remove();
   } else {
     ['#stageTitle','#taskTitle','#mission','#instruction'].forEach(s=>move(s,work));
@@ -53,7 +53,7 @@
       const trays=make('div','result-trays');trays.id='resultTrays';result.append(trays);
       oldDesk.querySelectorAll('details').forEach(n=>result.append(n));
     }
-    move('.scene',result);
+    const scene=find('.scene'); if(scene)top.before(scene);
   }
   oldDesk.remove();
   root.className='play-grid';root.append(work,result);

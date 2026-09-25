@@ -50,3 +50,9 @@
 
 @media(min-width:700px){.play-layout .tool-picture{width:64px;height:60px;aspect-ratio:auto}.play-layout .tool{gap:3px;padding:5px}.play-layout .tool strong{font-size:13px}.play-layout .play-surface .tools{gap:6px}.play-layout .play-surface .small{margin:8px 0}.play-layout .step-guide{padding:0;margin:8px 0}.play-layout .tool-heading{font-size:12px}.play-layout .main-jar{min-height:235px}.play-layout .hint-area{margin-top:14px;padding-top:10px}}
 @media(min-width:700px){.result-panel{position:sticky;top:76px;max-height:calc(100dvh - 92px);overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable}.play-layout :is(button,input,svg,summary):focus-visible{scroll-margin-top:90px}}
+
+/* The mission picture and its live seals form the top progress scene. */
+.play-layout main>.scene,.play-layout main>.gate-art,.play-layout main>.vault-art{position:relative;inset:auto;width:100%;height:180px;aspect-ratio:auto;margin:12px 0 0;border-radius:12px 12px 0 0;background-position:center 48%;overflow:hidden}
+.play-layout main>.scene+.mission-progress,.play-layout main>.gate-art+.mission-progress,.play-layout main>.vault-art+.mission-progress{margin-top:0;border-radius:0 0 10px 10px}
+.play-layout main>.vault-art #sceneStatus{position:absolute;bottom:0;left:0;right:0;padding:12px;background:#061716d9;text-align:center}
+@media(max-width:699px){.play-layout main>.scene,.play-layout main>.gate-art,.play-layout main>.vault-art{height:150px}}
