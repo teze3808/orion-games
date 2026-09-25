@@ -6,13 +6,21 @@ const chapters=[
  {plain:'MOON',shift:7,title:['The garden seal','花園封印'],task:['The route leads to a garden of four symbols. This letter uses a different wheel setting. Enter its hidden symbol in A–Z.','路線通往有四個標記的花園。這封信用了不同的轉輪設定。用 A–Z 輸入藏著的標記。'],context:['The stone signs read: SUN · 太陽 / MOON · 月亮 / STAR · 星星 / RAIN · 雨.','石牌上寫著：SUN · 太陽 / MOON · 月亮 / STAR · 星星 / RAIN · 雨。']},
  {plain:'FOX',shift:5,title:['A reply for the keeper','給守望者的回信'],task:['The silver fox asks you to send FOX using setting 5. Turn the wheel, then enter the three secret letters for your reply.','銀色狐狸請你用設定 5 寄出 FOX。轉動字母輪，再輸入回信的三個秘密字母。'],context:['FOX means 狐狸. This time you are writing a secret message, not reading one.','FOX 的意思是狐狸。這次要寫出密信，而不是解讀它。']}
 ];
+let questionVariant=0;
+function configureQuestions(v=OrionProgress.variant('cipher')){questionVariant=v;
+ chapters[0].plain=['EAST','NORTH','SOUTH','WEST'][v%4];chapters[1].plain=['MOON','SUN','STAR','RAIN'][v%4];
+ [3,7,5].forEach((base,i)=>chapters[i].shift=(base-1+v*2)%25+1);
+ const c=chapters[2];c.plain=['FOX','OWL','CAT','BAT','BEE'][v%5];
+ c.task=[`Send ${c.plain} using setting ${c.shift}. Turn the wheel, then enter the secret letters for your reply.`,`用設定 ${c.shift} 寄出 ${c.plain}。轉動字母輪，再輸入回信的秘密字母。`];
+ c.context=[`${c.plain} · ${['狐狸','貓頭鷹','貓','蝙蝠','蜜蜂'][v%5]}. This time you are writing a secret message.`,`${c.plain} 的意思是${['狐狸','貓頭鷹','貓','蝙蝠','蜜蜂'][v%5]}。這次要寫出密信。`];
+}
 let wheelDrag=null;
 let chapter=0,offset=0,hintDepth=0,solved=false,messageState='',saveFailed=false;
 function shift(text,n){return text.replace(/[A-Z]/g,c=>letters[(letters.indexOf(c)+n+26)%26]);}
 function hints(){const c=chapters[chapter];return chapter===2?[
  t('Use the outer letter as the letter you want to send. The inner letter is its secret partner.','外圈是你想寄出的字母，內圈是它的秘密搭檔。'),
- t('At setting 5, A becomes F. Count forward five places for every letter; after Z comes A.','設定 5 時，A 變成 F。每個字母向前數五格，Z 之後回到 A。'),
- t('FOX becomes KTC. Set the wheel to 5 and follow F → K, O → T, X → C.','FOX 會變成 KTC。把轉輪設為 5，再找出 F → K、O → T、X → C。')]:[
+ t(`At setting ${c.shift}, A becomes ${shift('A',c.shift)}. Move forward ${c.shift} places; after Z comes A.`,`設定 ${c.shift} 時，A 變成 ${shift('A',c.shift)}。向前數 ${c.shift} 格，Z 之後回到 A。`),
+ t(`${c.plain} becomes ${shift(c.plain,c.shift)} at setting ${c.shift}.`,`${c.plain} 在設定 ${c.shift} 時變成 ${shift(c.plain,c.shift)}。`)]:[
  t('Outer letters are ordinary; inner letters are their secret partners. Find a setting that makes a word.','外圈是普通字母，內圈是它的秘密搭檔。試找出能讀成單字的設定。'),
  t('Read backward from each secret letter to its outer partner. The wheel wraps from Z to A.','從每個秘密字母往回找外圈的搭檔。字母輪從 Z 繞回 A。'),
  t(`Try setting ${c.shift}. ${shift(c.plain,c.shift)} reads ${c.plain}.`,`試試設定 ${c.shift}。${shift(c.plain,c.shift)} 可以讀成 ${c.plain}。`)];}
@@ -22,14 +30,15 @@ function render(){window.OrionLayout?.update(chapter, solved, 3);renderWheel();c
  if(saveFailed){$('controls').hidden=false;}
 }
 function submitAnswer(value){if(solved&&!saveFailed)return;const answer=value.trim().toUpperCase();const c=chapters[chapter],expected=chapter===2?shift(c.plain,c.shift):c.plain;if(!/^[A-Z]+$/.test(answer)){messageState='invalid';}else if(answer!==expected){messageState='wrong';}else if(offset!==c.shift){messageState='setting';}else{solved=true;messageState='success';if(chapter===2)saveFailed=!OrionProgress.earn('moonlight');}render();if(solved&&chapter<2)$('next').focus();}
-function resetMission(){wheelDrag=null;chapter=0;offset=0;hintDepth=0;solved=false;messageState='';saveFailed=false;$('answer').value='';$('notes').open=false;render();}
+function resetMission(){configureQuestions();wheelDrag=null;chapter=0;offset=0;hintDepth=0;solved=false;messageState='';saveFailed=false;$('answer').value='';$('notes').open=false;render();}
 $('answerForm').addEventListener('submit',e=>{e.preventDefault();submitAnswer($('answer').value);});
 $('left').onclick=()=>turnWheel(-1);$('right').onclick=()=>turnWheel(1);
 $('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};
 $('next').onclick=()=>{if(!solved||chapter>=2)return;wheelDrag=null;chapter++;offset=0;hintDepth=0;solved=false;messageState='';$('answer').value='';render();$('answer').focus();};
-$('replay').onclick=()=>{resetMission();$('answer').focus();};
+$('replay').onclick=()=>{const next=OrionProgress.nextVariant('cipher',questionVariant);resetMission();configureQuestions(next);observedVariant=OrionProgress.variant('cipher');render();$('answer').focus();};
 let observedTarget=OrionProgress.read().hashTarget;
-function syncProgress(){const target=OrionProgress.read().hashTarget;const collectionReset=target!==observedTarget&&!OrionProgress.has('moonlight');observedTarget=target;if(collectionReset||(solved&&chapter===2&&!OrionProgress.has('moonlight')&&!saveFailed))resetMission();else render();}
+let observedVariant=OrionProgress.variant('cipher');
+function syncProgress(){const v=OrionProgress.variant('cipher');if(v!==observedVariant){observedVariant=v;observedTarget=OrionProgress.read().hashTarget;resetMission();return;}const target=OrionProgress.read().hashTarget;const collectionReset=target!==observedTarget&&!OrionProgress.has('moonlight');observedTarget=target;if(collectionReset||(solved&&chapter===2&&!OrionProgress.has('moonlight')&&!saveFailed))resetMission();else render();}
 
 function ringLetters(radius){return [...letters].map((letter,i)=>{
  const angle=i*360/26;
@@ -67,4 +76,4 @@ $('cipherWheel').addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==
 window.addEventListener('orion-language',render);
 window.addEventListener('storage',e=>{if(e.key==='orion-expedition-progress-v1'||e.key===null)syncProgress();});
 window.addEventListener('pageshow',syncProgress);
-OrionI18n.apply();
+configureQuestions();OrionI18n.apply();

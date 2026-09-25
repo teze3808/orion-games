@@ -5,6 +5,15 @@ const stages=[
  {title:['The pale seedlings','蒼白的幼苗'],mission:['These beans have already sprouted. Help B grow green, sturdy leaves. Explore the lighting while moisture stays the same.','這些豆子已經發芽。幫助 B 長出健康的綠葉。保持相同濕度，探索光照的影響。'],type:'seedling',aWater:1,aLight:false,startWater:1,startLight:false},
  {title:['The keeper’s final question','守護者的最後一問'],mission:['Do bean seeds need light to start growing? Set up B so only the lighting differs from A. Predict which seeds will sprout, then compare.','豆種子開始萌發需要光嗎？設定 B，讓它只有光照與 A 不同。預測哪邊會萌發，再比較。'],type:'seed',aWater:1,aLight:true,startWater:0,startLight:false}
 ];
+const originalMissions=stages.map(c=>[...c.mission]);
+let questionVariant=0;
+function configureQuestions(v=OrionProgress.variant('seeds')){questionVariant=v;
+ stages.forEach((c,i)=>c.mission=[...originalMissions[i]]);
+ stages[0].aWater=v?1:0;stages[0].startWater=v?1:0;stages[0].goalWater=v?0:1;
+ stages[1].aLight=!!v;stages[1].startLight=!!v;stages[1].goalLight=!v;
+ stages[2].aLight=!v;stages[2].startLight=!!v;
+ if(v){stages[0].mission=['A is moist. Make B stay dry so only A sprouts. Predict the result and compare.','A 是濕潤的。讓 B 保持乾燥，只有 A 萌發。預測結果，再比較。'];stages[1].mission=['A has light. Use B to show how darkness changes seedling growth while keeping moisture equal. Predict the healthier seedling.','A 有光照。用 B 展示黑暗如何改變幼苗生長，保持相同濕度。預測哪邊較健康。'];}
+}
 let stage=0,water=0,light=false,prediction='',solved=false,hintDepth=0,feedback='ready',result=null,history=[],saveFailed=false;
 let observedTarget=OrionProgress.read().hashTarget;
 const moisture=()=>[t('Dry','乾燥'),t('Moist','濕潤'),t('Flooded','積水')];
@@ -16,16 +25,13 @@ function setWater(value){if(solved||stage===1||!Number.isInteger(value)||value<0
 function toggleLight(){if(solved||stage===0)return;light=!light;changed();}
 function changed(){prediction='';result=null;feedback='ready';render();}
 function choose(value){if(solved||!['A','B','same'].includes(value))return;prediction=value;feedback='ready';render();}
-function hints(){return [
- [t('Try a different moisture setting in B. A stays dry.','試改變 B 的濕度。A 保持乾燥。'),t('Dry seeds lack water. Flooded soil has less air available.','乾燥種子缺水；積水土壤可用的空氣較少。'),t('Set B to Moist and predict B. Run the trial.','把 B 設為「濕潤」，預測 B，再開始試驗。')],
- [t('Compare their leaves, not just their height.','比較葉片，不只看高度。'),t('The moisture is already matched. Try opening B to the light.','兩邊濕度已相同。試讓光照進 B。'),t('Turn B’s light on and predict B.','開啟 B 的光照，預測 B。')],
- [t('To test light, keep the moisture the same in A and B.','要測試光照，就讓 A 和 B 的濕度相同。'),t('These are seeds again, not the leafy seedlings from the last trial.','這次又是種子，不是上次已長葉的幼苗。'),t('A is moist and lit. Make B moist and dark. Predict Same: both bean seeds can begin growing.','A 濕潤而有光。把 B 設為濕潤、黑暗。預測「相同」：兩邊豆種子都能開始生長。')]
- ][stage];}
+function hints(){const c=stages[stage];return [t('Compare the fixed conditions in A with the mission for B.','把 A 的固定條件與 B 的任務目標比較。'),t('Keep other conditions alike when testing one factor. A seed and a leafy seedling have different needs.','測試一項因素時，其餘條件保持相同。種子和長葉幼苗的需要不同。'),stage===0?t(`Set B to ${c.goalWater===1?'Moist':'Dry'}. Predict ${c.goalWater===1?'B':'A'}.`,`把 B 設為「${c.goalWater===1?'濕潤':'乾燥'}」，預測 ${c.goalWater===1?'B':'A'}。`):stage===1?t(`Make B ${c.goalLight?'lit':'dark'}. Predict ${c.goalLight?'B':'A'}.`,`讓 B ${c.goalLight?'有光':'黑暗'}，預測 ${c.goalLight?'B':'A'}。`):t(`Make B moist and ${c.aLight?'dark':'lit'}. Predict Same.`,`把 B 設為濕潤、${c.aLight?'黑暗':'有光'}，預測「相同」。`)];}
 function evidence(r){
- if(r.water===0)return t('B stayed dry. Without enough water, this trial cannot support the expected growth.','B 保持乾燥。水分不足，這次試驗無法支持預期的生長。');
+ if(r.water===0&&stage!==0)return t('B stayed dry. Without enough water, this trial cannot support the expected growth.','B 保持乾燥。水分不足，這次試驗無法支持預期的生長。');
  if(r.water===2)return t('B stayed flooded. Prolonged waterlogging reduces the oxygen available in the soil; more water is not always better.','B 一直積水。長期積水減少土壤中可用的氧氣；水不是越多越好。');
- if(stage===1)return r.light?t('B grew green leaves in the light; A became pale and stretched in darkness. The water was the same.','B 在光下長出綠葉；A 在黑暗中變得蒼白、細長。兩邊水分相同。'):t('Both seedlings became pale in darkness. Taller does not mean healthier.','兩邊幼苗在黑暗中都變蒼白。較高不代表較健康。');
- return stage===2?t('Both bean seeds began growing. They can use food stored inside the seed. This does not mean seedlings can stay healthy in darkness.','兩邊豆種子都開始生長，能利用種子內儲存的養分。這不代表幼苗能一直在黑暗中健康生長。'):t('The moist bean seed in B sprouted. The dry seed in A did not. Moisture was the only changed factor.','B 的濕潤豆種子萌發了，A 的乾燥種子沒有。唯一改變的因素是水分。');
+ if(stage===1)return t(`A: ${describe(r.a)}. B: ${describe(r.b)}. Both had the same moisture; light changed their growth.`,`A：${describe(r.a)}。B：${describe(r.b)}。兩邊濕度相同，光照改變了生長。`);
+ return stage===2?t('Both bean seeds began growing using stored food. This does not mean seedlings stay healthy in darkness.','兩邊豆種子利用儲存養分開始生長。這不代表幼苗能一直在黑暗中健康生長。'):t(`A: ${describe(r.a)}. B: ${describe(r.b)}. Compare the moisture settings.`,`A：${describe(r.a)}。B：${describe(r.b)}。比較兩邊的濕度設定。`);
+
 }
 function trial(){
  if(solved)return;
@@ -33,8 +39,8 @@ function trial(){
  if(!['A','B','same'].includes(prediction)){feedback='predict';render();return;}
  const c=stages[stage],a=outcome(c.type,c.aWater,c.aLight),b=outcome(c.type,water,light),actual=compare(a,b);
  result={water,light,a,b,actual,prediction};history.unshift({...result});history=history.slice(0,6);
- const goal=stage===0?b==='sprout':stage===1?b==='green':water===c.aWater&&light!==c.aLight&&b==='sprout';
- if(!goal)feedback=stage===2&&water===1&&light===true?'fair':'adjust';
+ const goal=stage===0?water===c.goalWater:stage===1?light===c.goalLight:water===c.aWater&&light!==c.aLight&&b==='sprout';
+ if(!goal)feedback=stage===2&&water===1&&light===c.aLight?'fair':'adjust';
  else if(prediction!==actual)feedback='prediction';
  else{solved=true;feedback=stage===2?'complete':'solved';if(stage===2)saveFailed=!OrionProgress.earn('verdant');}
  render();if(solved&&stage<2)$('next').focus();
@@ -65,9 +71,10 @@ function render(){
  $('vaultArt').classList.toggle('awake',complete);$('sceneStatus').textContent=complete?t('The Verdant Sigil is yours.','青翠符印屬於你了。'):t('Three leaf seals protect the sleeping seeds.','三道葉形封印守護沉睡的種子。');
 }
 function resetStage(){water=stages[stage].startWater;light=stages[stage].startLight;prediction='';solved=false;hintDepth=0;feedback='ready';result=null;history=[];saveFailed=false;$('notes').open=false;render();}
-function resetMission(){stage=0;resetStage();}
+function resetMission(){configureQuestions();stage=0;resetStage();}
 $('water').addEventListener('input',()=>setWater(Number($('water').value)));$('lessWater').onclick=()=>setWater(water-1);$('moreWater').onclick=()=>setWater(water+1);$('light').onclick=toggleLight;
 for(const [id,value] of [['predictA','A'],['predictB','B'],['predictSame','same']])$(id).onclick=()=>choose(value);
-$('run').onclick=trial;$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();(stage===1?$('light'):$('water')).focus();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};$('replay').onclick=()=>{resetMission();$('water').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('verdant');render();};
-function syncProgress(){const target=OrionProgress.read().hashTarget,reset=target!==observedTarget&&!OrionProgress.has('verdant');observedTarget=target;if(reset||(solved&&stage===2&&!OrionProgress.has('verdant')&&!saveFailed))resetMission();else render();}
-window.addEventListener('orion-language',syncProgress);window.addEventListener('storage',e=>{if(e.key==='orion-expedition-progress-v1')syncProgress();});window.addEventListener('pageshow',syncProgress);OrionI18n.apply();
+$('run').onclick=trial;$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();(stage===1?$('light'):$('water')).focus();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};$('replay').onclick=()=>{const next=OrionProgress.nextVariant('seeds',questionVariant);resetMission();configureQuestions(next);observedVariant=OrionProgress.variant('seeds');resetStage();$('water').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('verdant');render();};
+let observedVariant=OrionProgress.variant('seeds');
+function syncProgress(){const v=OrionProgress.variant('seeds');if(v!==observedVariant){observedVariant=v;observedTarget=OrionProgress.read().hashTarget;resetMission();return;}const target=OrionProgress.read().hashTarget,reset=target!==observedTarget&&!OrionProgress.has('verdant');observedTarget=target;if(reset||(solved&&stage===2&&!OrionProgress.has('verdant')&&!saveFailed))resetMission();else render();}
+window.addEventListener('orion-language',syncProgress);window.addEventListener('storage',e=>{if(e.key==='orion-expedition-progress-v1')syncProgress();});window.addEventListener('pageshow',syncProgress);configureQuestions();resetStage();OrionI18n.apply();

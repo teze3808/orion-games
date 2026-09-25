@@ -5,12 +5,17 @@ const stages=[
  {mass:4,distance:2,right:2,title:['The lighter counterweight','較輕的配重'],mission:['Your right load now has fewer blocks than the left. Can changing its position still keep the beam level?','右邊的砝碼現在比左邊少。改變位置，仍能讓橫桿保持水平嗎？']},
  {mass:3,distance:4,right:1,title:['The engineer’s two keys','工程師的兩把鑰匙'],mission:['Choose both the number of blocks and their position. Find TWO different balanced designs to open the vault.','選擇砝碼數量和位置。找出兩種不同的平衡設計，就能打開密庫。']}
 ];
+let questionVariant=0;
+function configureQuestions(v=OrionProgress.variant('levers')){questionVariant=v;
+ const rows=[[[2,3,2],[4,2,2],[3,4,1]],[[2,4,2],[4,3,2],[2,3,1]],[[3,2,3],[2,2,1],[2,4,1]],[[1,5,1],[3,2,1],[3,1,1]],[[3,6,3],[2,1,1],[4,1,1]]][v];
+ rows.forEach(([mass,distance,right],i)=>Object.assign(stages[i],{mass,distance,right}));
+}
 let stage=0,mass=2,distance=1,result=null,feedback='',history=[],solutions=[],solved=false,saveFailed=false;
 let beamDrag=null;
 let observedTarget=OrionProgress.read().hashTarget;
 function outcome(m=mass,d=distance){const left=stages[stage].mass*stages[stage].distance,right=m*d;return left===right?'balanced':left>right?'left':'right';}
 function outcomeText(value){return value==='balanced'?t('Stays level','保持水平'):value==='left'?t('Left drops','左邊下降'):t('Right drops','右邊下降');}
-function hintTexts(){const c=stages[stage];return [t('Try keeping the same number of blocks and moving them. Watch which side starts to drop.','試保持砝碼數量不變，只移動位置。觀察哪邊開始下降。'),t('Both the number of blocks and the distance from the pivot matter. Compare blocks × distance on each side.','砝碼數量和與支點的距離都重要。比較兩邊的「數量 × 距離」。'),stage===2?t('The left side is 3 × 4 = 12. Try 2 blocks at distance 6, then 4 blocks at distance 3.','左邊是 3 × 4 = 12。試把 2 個砝碼放在距離 6，再把 4 個放在距離 3。'):t(`Try ${c.right} blocks at distance ${c.mass*c.distance/c.right}.`,`試把 ${c.right} 個砝碼放在距離 ${c.mass*c.distance/c.right}。`)];}
+function hintTexts(){const c=stages[stage];return [t('Try keeping the same number of blocks and moving them. Watch which side starts to drop.','試保持砝碼數量不變，只移動位置。觀察哪邊開始下降。'),t('Both the number of blocks and the distance from the pivot matter. Compare blocks × distance on each side.','砝碼數量和與支點的距離都重要。比較兩邊的「數量 × 距離」。'),stage===2?t(`Find two products equal to ${c.mass} × ${c.distance} = ${c.mass*c.distance}. Try different block counts from 1 to 4.`,`找出兩個乘積等於 ${c.mass} × ${c.distance} = ${c.mass*c.distance} 的組合。試試 1 至 4 個砝碼。`):t(`Try ${c.right} blocks at distance ${c.mass*c.distance/c.right}.`,`試把 ${c.right} 個砝碼放在距離 ${c.mass*c.distance/c.right}。`)];}
 let hintDepth=0;
 function blocks(x,n){return Array.from({length:n},(_,i)=>`<rect x="${x-15}" y="${99-i*20}" width="30" height="18" rx="3" fill="url(#brass)" stroke="#f7dc9f"/>`).join('');}
 function render(){window.OrionLayout?.update(stage, solved, 3);const c=stages[stage];document.title=t('The Counterweight Vault · Orion’s Expedition','配重密庫 · Orion 的探險');$('stageLabel').textContent=t(`SEAL ${stage+1} OF 3 · ENGINEERING`,`第 ${stage+1} 道封印，共 3 道 · 工程`);$('stageTitle').textContent=t(...c.title);$('mission').textContent=t(...c.mission);$('fixedLoad').textContent=t(`Left side: ${c.mass} identical blocks, ${c.distance} spaces from the pivot.`,`左邊：${c.mass} 個相同砝碼，距離支點 ${c.distance} 格。`);$('mass').value=String(mass);$('mass').disabled=stage<2;$('distance').value=String(distance);$('controls').hidden=solved;
@@ -33,12 +38,13 @@ function render(){window.OrionLayout?.update(stage, solved, 3);const c=stages[st
 function changeSetting(){if(solved)return;mass=Number($('mass').value);distance=Number($('distance').value);result=outcome();feedback='';render();}
 function testBeam(){if(solved)return;if(!Number.isInteger(mass)||mass<1||mass>4||!Number.isInteger(distance)||distance<1||distance>6||(stage<2&&mass!==stages[stage].right)){feedback='invalid';render();return;}result=outcome();history.unshift({mass,distance,result});history=history.slice(0,8);if(result!=='balanced')feedback='observe';else{const key=`${mass}:${distance}`;if(solutions.includes(key))feedback='duplicate';else{solutions.push(key);if(stage<2||solutions.length===2){solved=true;feedback=stage===2?'complete':'balanced';if(stage===2)saveFailed=!OrionProgress.earn('ingenuity');}else feedback='another';}}render();if(solved&&stage<2)$('next').focus();}
 function resetStage(){beamDrag=null;mass=stages[stage].right;distance=1;result=null;feedback='';history=[];solutions=[];solved=false;saveFailed=false;hintDepth=0;$('notes').open=false;render();}
-function resetMission(){stage=0;resetStage();}
+function resetMission(){configureQuestions();stage=0;resetStage();}
 $('mass').addEventListener('input',changeSetting);$('distance').addEventListener('input',changeSetting);
 $('mass').addEventListener('change',()=>{changeSetting();testBeam();});$('distance').addEventListener('change',()=>{changeSetting();testBeam();});
 $('lessMass').onclick=()=>adjustMass(-1);$('moreMass').onclick=()=>adjustMass(1);
-$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();$('distance').focus();};$('replay').onclick=()=>{resetMission();$('distance').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('ingenuity');render();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};
-function syncProgress(){const target=OrionProgress.read().hashTarget,reset=target!==observedTarget&&!OrionProgress.has('ingenuity');observedTarget=target;if(reset||(solved&&stage===2&&!OrionProgress.has('ingenuity')&&!saveFailed))resetMission();else render();}
+$('next').onclick=()=>{if(!solved||stage===2)return;stage++;resetStage();$('distance').focus();};$('replay').onclick=()=>{const next=OrionProgress.nextVariant('levers',questionVariant);resetMission();configureQuestions(next);observedVariant=OrionProgress.variant('levers');resetStage();$('distance').focus();};$('retrySave').onclick=()=>{saveFailed=!OrionProgress.earn('ingenuity');render();};$('hint').onclick=()=>{hintDepth=Math.min(3,hintDepth+1);render();};
+let observedVariant=OrionProgress.variant('levers');
+function syncProgress(){const v=OrionProgress.variant('levers');if(v!==observedVariant){observedVariant=v;observedTarget=OrionProgress.read().hashTarget;resetMission();return;}const target=OrionProgress.read().hashTarget,reset=target!==observedTarget&&!OrionProgress.has('ingenuity');observedTarget=target;if(reset||(solved&&stage===2&&!OrionProgress.has('ingenuity')&&!saveFailed))resetMission();else render();}
 
 function adjustMass(delta){
  if(solved||stage<2)return;
@@ -67,4 +73,4 @@ $('diagram').addEventListener('pointercancel',cancelBeamDrag);
 $('diagram').addEventListener('lostpointercapture',cancelBeamDrag);
 window.addEventListener('keydown',e=>{if(e.key==='Escape')cancelBeamDrag();});
 
-window.addEventListener('orion-language',render);window.addEventListener('storage',e=>{if(e.key==='orion-expedition-progress-v1'||e.key===null)syncProgress();});window.addEventListener('pageshow',syncProgress);OrionI18n.apply();
+window.addEventListener('orion-language',render);window.addEventListener('storage',e=>{if(e.key==='orion-expedition-progress-v1'||e.key===null)syncProgress();});window.addEventListener('pageshow',syncProgress);configureQuestions();resetStage();OrionI18n.apply();

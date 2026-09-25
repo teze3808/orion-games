@@ -9,7 +9,7 @@ function setup(language = 'en', blocked = false, saved) {
   const run=s=>vm.runInContext(s,c);
   return {c,e:elements,data,run};
 }
-function complete(h){const {c,e}=h;c.setWater(1);c.choose('B');c.trial();e.next.onclick();c.toggleLight();c.choose('B');c.trial();e.next.onclick();c.setWater(1);c.choose('same');c.trial();}
+function complete(h){const {c,e,run}=h;c.setWater(run('stages[0].goalWater'));c.choose(run('stages[0].goalWater')===1?'B':'A');c.trial();e.next.onclick();if(run('light')!==run('stages[1].goalLight'))c.toggleLight();c.choose(run('stages[1].goalLight')?'B':'A');c.trial();e.next.onclick();c.setWater(1);if(run('light')===run('stages[2].aLight'))c.toggleLight();c.choose('same');c.trial();}
 for(const language of ['en','zh-Hant']){
  const h=setup(language),{c,e,run}=h;
  assert(e.hints.hidden);assert(e.notes.hidden);assert(e.reward.hidden);assert.equal(e.progressBar.value,0);
@@ -32,5 +32,5 @@ const matrix=setup();for(const type of ['seed','seedling'])for(const water of [0
 const bad=setup();bad.run('water=99');bad.c.choose('B');bad.c.trial();assert.equal(bad.run('feedback'),'invalid');assert(!bad.c.OrionProgress.has('verdant'));
 const blocked=setup('en',true);complete(blocked);assert.match(blocked.e.saveStatus.textContent,/could not save/);assert(!blocked.e.retrySave.hidden);blocked.c.localStorage.setItem=(k,v)=>blocked.data[k]=v;blocked.e.retrySave.onclick();assert(blocked.e.retrySave.hidden);assert.match(blocked.e.saveStatus.textContent,/saved/);
 const corrupt=setup('zh-Hant',false,'oops');complete(corrupt);assert(corrupt.c.OrionProgress.has('verdant'));
-const other=setup();other.c.setWater(2);other.c.OrionProgress.earn('echo');other.c.dispatchEvent({type:'storage',key:'orion-expedition-progress-v1'});assert.equal(other.run('water'),2);other.c.OrionProgress.reset();other.c.dispatchEvent({type:'pageshow'});assert.equal(other.run('water'),0);
+const other=setup();other.c.setWater(2);other.c.OrionProgress.earn('echo');other.c.dispatchEvent({type:'storage',key:'orion-expedition-progress-v1'});assert.equal(other.run('water'),2);other.c.OrionProgress.reset();other.c.dispatchEvent({type:'pageshow'});assert.equal(other.run('water'),other.run('stages[0].startWater'));
 console.log('PASS seeds: moisture/light outcomes, prediction gates, fair comparison, locked factors, invalid controls, bilingual trial state and hints, three-seal progress, idempotent rewards, replay/reload/reset, unrelated awards, corrupt/blocked storage and save retry.');

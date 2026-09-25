@@ -9,24 +9,14 @@ const stages = [
   {title: ['The tower replies', '高塔的回信'], target: 13,
    mission: ['The tower has set the lamps. Read this fixed pattern and tell the keeper which ordinary number it represents.', '高塔已設定星燈。讀取這個固定圖案，告訴守星者它代表哪個日常使用的數字。']}
 ];
+let questionVariant=0;
+function configureQuestions(v=OrionProgress.variant('binary')){questionVariant=v;[5,10,13].forEach((base,i)=>stages[i].target=(base-1+v)%15+1);}
 let stage = 0, bits = [0, 0, 0, 0], solved = false, hintDepth = 0;
 let feedback = '', lastValue = null, history = [], saveFailed = false;
 let observedTarget = OrionProgress.read().hashTarget;
 function valueOf(pattern) { return pattern.reduce((sum, bit, i) => sum + bit * weights[i], 0); }
 function validPattern(pattern) { return Array.isArray(pattern) && pattern.length === 4 && pattern.every(bit => bit === 0 || bit === 1); }
-function hints() {
-  return [
-    [t('Try one lamp at a time. Compare its engraved number with the reading.', '試試每次只開一盞燈，比較燈上的數字和讀數。'),
-     t('Only lit lamps contribute to the total. Can you split 5 into two lamp values?', '只有亮燈的數值會加入總數。你能把 5 分成兩盞燈的數值嗎？'),
-     t('Light 4 and 1; leave 8 and 2 off. Send 0101.', '開啟 4 和 1，關掉 8 和 2。傳送 0101。')],
-    [t('The rules are the same even with the live meter hidden.', '即使即時讀數隱藏了，規則仍然相同。'),
-     t('Start with the largest lamp value that fits inside 10. What is left?', '先選不超過 10 的最大燈值。還差多少？'),
-     t('Light 8 and 2; leave 4 and 1 off. Send 1010.', '開啟 8 和 2，關掉 4 和 1。傳送 1010。')],
-    [t('A 1 means that lamp is on; a 0 means it is off.', '1 表示燈開著，0 表示燈關掉。'),
-     t('Read positions from left to right: 8, 4, 2, 1. Add only the lit positions.', '從左至右的位值是 8、4、2、1。只把亮燈位置的數值相加。'),
-     t('The signal 1101 means 8 + 4 + 1. Enter 13.', '訊號 1101 表示 8 + 4 + 1。輸入 13。')]
-  ][stage];
-}
+function hints(){const n=stages[stage].target,pattern=n.toString(2).padStart(4,'0'),sum=weights.filter((_,i)=>pattern[i]==='1').join(' + ');return [t('Read the lamp values from left to right: 8, 4, 2, 1.','從左至右讀取燈值：8、4、2、1。'),t('Only lit lamps count. Add their values to find the number.','只有亮燈才計算在內。把它們的數值相加。'),t(`${pattern} means ${sum} = ${n}. ${stage===2?'Enter the number.':'Set these lamps and send.'}`,`${pattern} 表示 ${sum} = ${n}。${stage===2?'輸入數字。':'設定星燈，再傳送。'}`)];}
 function render() {window.OrionLayout?.update(stage, solved, 3);
   document.title = t('The Starlight Tower · Orion’s Expedition', '星燈塔 · Orion 的探險');
   $('stageLabel').textContent = t(`SIGNAL ${stage + 1} OF 3 · COMPUTING`, `第 ${stage + 1} 個訊號，共 3 個 · 電腦科學`);
@@ -52,7 +42,7 @@ function render() {window.OrionLayout?.update(stage, solved, 3);
     invalidPattern: t('The lamps need four on/off states. Explore the lamps again.', '星燈需要四個開／關狀態。請重新探索星燈。'),
     wrong: stage === 2 ? t('That number does not match the lit lamps. Compare the positions and try again.', '這個數字與亮燈不符。比較各個位置，再試一次。') : t(`The gate received ${lastValue}. It needs ${stages[stage].target}. Adjust the lamps and try again.`, `星門收到 ${lastValue}，它需要 ${stages[stage].target}。調整星燈，再試一次。`),
     solved: t(`Signal accepted: ${bits.join('')} represents ${stages[stage].target}. A platform rises!`, `訊號獲接納：${bits.join('')} 代表 ${stages[stage].target}。平台升起了！`),
-    complete: t('Decoded! 1101 represents 13. The star gate opens to the night sky.', '解開了！1101 代表 13。星門向夜空敞開。')
+    complete: t(`Decoded! ${bits.join('')} represents ${stages[stage].target}. The star gate opens.`, `解開了！${bits.join('')} 代表 ${stages[stage].target}。星門敞開了。`)
   };
   $('feedback').textContent = messages[feedback] || '';
   $('next').hidden = !solved || stage === 2;
@@ -95,18 +85,19 @@ function submitSignal() {
   if (solved && stage < 2) $('next').focus();
 }
 function resetStage() {
-  bits = stage === 2 ? [1, 1, 0, 1] : [0, 0, 0, 0];
+  bits = stage === 2 ? stages[stage].target.toString(2).padStart(4,'0').split('').map(Number) : [0, 0, 0, 0];
   solved = false; hintDepth = 0; feedback = ''; lastValue = null; history = []; saveFailed = false;
   $('answer').value = ''; $('notes').open = false; render();
 }
-function resetMission() { stage = 0; resetStage(); }
+function resetMission() {configureQuestions(); stage = 0; resetStage(); }
 weights.forEach((_, i) => $('lamp' + i).addEventListener('click', () => toggleLamp(i)));
 $('answerForm').addEventListener('submit', event => { event.preventDefault(); submitSignal(); });
 $('next').onclick = () => { if (!solved || stage === 2) return; stage++; resetStage(); $(stage === 2 ? 'answer' : 'lamp0').focus(); };
 $('hint').onclick = () => { hintDepth = Math.min(3, hintDepth + 1); render(); };
-$('replay').onclick = () => { resetMission(); $('lamp0').focus(); };
+$('replay').onclick = () => {const next=OrionProgress.nextVariant('binary',questionVariant);resetMission();configureQuestions(next);observedVariant=OrionProgress.variant('binary');resetStage(); $('lamp0').focus(); };
 $('retrySave').onclick = () => { saveFailed = !OrionProgress.earn('starlight'); render(); };
-function syncProgress() {
+let observedVariant=OrionProgress.variant('binary');
+function syncProgress() {const v=OrionProgress.variant('binary');if(v!==observedVariant){observedVariant=v;observedTarget=OrionProgress.read().hashTarget;resetMission();return;}
   const target = OrionProgress.read().hashTarget, reset = target !== observedTarget && !OrionProgress.has('starlight');
   observedTarget = target;
   if (reset || (solved && stage === 2 && !OrionProgress.has('starlight') && !saveFailed)) resetMission(); else render();

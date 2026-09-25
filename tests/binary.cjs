@@ -9,8 +9,8 @@ function setup(language = 'en', blocked = false, saved) {
   const run=s=>vm.runInContext(s,c);
   return {c,e:elements,data,run,send(pattern){for(let i=0;i<4;i++)if(run(`bits[${i}]`)!==Number(pattern[i]))c.toggleLamp(i);c.submitSignal();}};
 }
-function decodeStage(h){h.send('0101');h.e.next.onclick();h.send('1010');h.e.next.onclick();}
-function complete(h){decodeStage(h);h.e.answer.value='13';h.c.submitSignal();}
+function decodeStage(h){h.send(h.run('stages[0].target').toString(2).padStart(4,'0'));h.e.next.onclick();h.send(h.run('stages[1].target').toString(2).padStart(4,'0'));h.e.next.onclick();}
+function complete(h){decodeStage(h);h.e.answer.value=String(h.run('stages[2].target'));h.c.submitSignal();}
 for(const language of ['en','zh-Hant']) {
   const h=setup(language),{c,e,run}=h;
   assert(e.hints.hidden);assert(e.notes.hidden);assert(e.reward.hidden);
