@@ -1,6 +1,6 @@
 'use strict';
 window.OrionProgress=(()=>{
-const counts={cipher:10,binary:10,levers:5,mixtures:3,seeds:2};
+const counts={cipher:10,binary:10,levers:5,mixtures:3,seeds:2,mist:8};
 function variants(d){return Object.fromEntries(Object.entries(counts).map(([id,n])=>[id,Number.isInteger(d?.[id])&&d[id]>=0&&d[id]<n?d[id]:0]));}
 function different(old,n){return (old+1+Math.floor(Math.random()*(n-1)))%n;}
 const key='orion-expedition-progress-v1';let memory={version:1,sigils:[],hashTarget:0,variants:variants()};
