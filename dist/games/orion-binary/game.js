@@ -17,7 +17,7 @@ let observedTarget = OrionProgress.read().hashTarget;
 function valueOf(pattern) { return pattern.reduce((sum, bit, i) => sum + bit * weights[i], 0); }
 function validPattern(pattern) { return Array.isArray(pattern) && pattern.length === 4 && pattern.every(bit => bit === 0 || bit === 1); }
 function hints(){const n=stages[stage].target,pattern=n.toString(2).padStart(4,'0'),sum=weights.filter((_,i)=>pattern[i]==='1').join(' + ');return [t('Read the lamp values from left to right: 8, 4, 2, 1.','從左至右讀取燈值：8、4、2、1。'),t('Only lit lamps count. Add their values to find the number.','只有亮燈才計算在內。把它們的數值相加。'),t(`${pattern} means ${sum} = ${n}. ${stage===2?'Enter the number.':'Set these lamps and send.'}`,`${pattern} 表示 ${sum} = ${n}。${stage===2?'輸入數字。':'設定星燈，再傳送。'}`)];}
-function render() {window.OrionLayout?.update(stage, solved, 3);
+function render() {window.OrionDiscovery?.update(solved && stage === 2);window.OrionLayout?.update(stage, solved, 3);
   document.title = t('The Starlight Tower · Orion’s Expedition', '星燈塔 · Orion 的探險');
   $('stageLabel').textContent = t(`SIGNAL ${stage + 1} OF 3 · COMPUTING`, `第 ${stage + 1} 個訊號，共 3 個 · 電腦科學`);
   $('stageTitle').textContent = t(...stages[stage].title);

@@ -87,3 +87,9 @@ Lantern Circuit adds six persistent circuit sets and sigil `spark`. Preserve com
 
 ## One visible progress display — 2026-09-27
 All games show progress in the top artwork only. The duplicate counter/bar row beneath it is visually hidden, with its text retained for screen readers. Viewport-fitted games reclaim the removed row for play space. Future missions must follow this single visible progress arrangement.
+
+
+## Completion discoveries — 2026-09-27
+All eight playable missions open a child-friendly bilingual discovery dialog on session completion. Shared `discovery.js` / `discovery.css` provide three illustrated animated steps, a short explanation and an optional thinking question. Examples are labelled; they do not claim to be the current randomized question. The dialog does not award or save rewards. It appears once per completed session, can be closed with Escape or the visible controls, and can be reopened from results. Replay or collection reset hides it until completion again. The hash game shows it on the first opening and keeps it available during collision exploration.
+
+Use native modal focus containment, an in-dialog language switch, 44px controls, manual back/next, pause/replay, and a scrollable small-screen layout. Automatic steps run once, seven seconds apart; reduced-motion users get manual steps by default. No third-party video, accounts or network requests are needed. Future games must provide a similarly understandable post-completion explanation, keeping it hidden before success. Science explanations retain the model limits documented in SCIENCE.md.

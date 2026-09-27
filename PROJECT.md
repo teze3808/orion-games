@@ -185,3 +185,11 @@ All games show progress in the top artwork only. The duplicate counter/bar row b
 
 ## Treasure Gate visual alignment — 2026-09-27
 The hash mission reuses its realistic gate artwork in the same top captioned scene as the other games, with live sealed/open feedback and a discovery seal. A subdued matching background, compact story disclosure, consistent teal panels/gold actions, and tablet viewport layout put passcode controls left and results right. Phone controls stack. The duplicate progress row remains screen-reader-only. Existing hash, reset, sigil and two-second clearing behavior is unchanged.
+
+
+## Completion discoveries — 2026-09-27
+All eight playable missions open a child-friendly bilingual discovery dialog on session completion. Shared `discovery.js` / `discovery.css` provide three illustrated animated steps, a short explanation and an optional thinking question. Examples are labelled; they do not claim to be the current randomized question. The dialog does not award or save rewards. It appears once per completed session, can be closed with Escape or the visible controls, and can be reopened from results. Replay or collection reset hides it until completion again. The hash game shows it on the first opening and keeps it available during collision exploration.
+
+Use native modal focus containment, an in-dialog language switch, 44px controls, manual back/next, pause/replay, and a scrollable small-screen layout. Automatic steps run once, seven seconds apart; reduced-motion users get manual steps by default. No third-party video, accounts or network requests are needed. Future games must provide a similarly understandable post-completion explanation, keeping it hidden before success. Science explanations retain the model limits documented in SCIENCE.md.
+
+Validation: all ten test suites pass, including discovery lifecycle tests across all eight lessons, both languages and both motion preferences. Browser QA verified gate and circuit completion, no overlay at partial completion, closing/reopening, language switching and replay reset. All eight routes load with the lesson hidden initially. Layout was checked at 1024×768, 768×1024 and 390×844. These are Chrome viewport checks, not a physical iPad Safari test.

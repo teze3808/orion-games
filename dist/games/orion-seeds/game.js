@@ -47,7 +47,7 @@ function trial(){
 }
 function picture(id,state,label){const el=$(id);el.classList.toggle('seed',state==='seed'||state==='waiting');el.classList.toggle('sprout',state==='sprout');el.classList.toggle('green',state==='green');el.classList.toggle('pale',state==='pale');el.setAttribute('aria-label',label);}
 function describe(state){return {waiting:t('No successful growth in this trial','這次試驗未能成功生長'),sprout:t('Seed sprouted','種子萌發了'),green:t('Green, sturdy seedling','綠色、健壯的幼苗'),pale:t('Pale, stretched seedling','蒼白、細長的幼苗')}[state];}
-function render(){
+function render(){window.OrionDiscovery?.update(solved && stage === 2);
  const c=stages[stage],complete=solved&&stage===2;
  document.title=t('The Sleeping Seed Vault · Orion','沉睡種子寶庫 · Orion');
  $('progressCount').textContent=t(`Seals opened · ${stage+(solved?1:0)} / 3`,`已解開 ${stage+(solved?1:0)} / 3 道封印`);$('progressBar').value=stage+(solved?1:0);

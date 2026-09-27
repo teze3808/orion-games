@@ -76,3 +76,9 @@ Variant banks: Moonlit Letter (10 message/shift sets), Starlight Tower (10 numbe
 
 All eight games use the top artwork for visible progress; the duplicate progress row has been removed from the visual layout.
 The Treasure Gate now shares the collection’s top artwork, compact story, teal/gold workbench and viewport-fitted tablet layout.
+
+
+## Completion discoveries — 2026-09-27
+All eight playable missions open a child-friendly bilingual discovery dialog on session completion. Shared `discovery.js` / `discovery.css` provide three illustrated animated steps, a short explanation and an optional thinking question. Examples are labelled; they do not claim to be the current randomized question. The dialog does not award or save rewards. It appears once per completed session, can be closed with Escape or the visible controls, and can be reopened from results. Replay or collection reset hides it until completion again. The hash game shows it on the first opening and keeps it available during collision exploration.
+
+Use native modal focus containment, an in-dialog language switch, 44px controls, manual back/next, pause/replay, and a scrollable small-screen layout. Automatic steps run once, seven seconds apart; reduced-motion users get manual steps by default. No third-party video, accounts or network requests are needed. Future games must provide a similarly understandable post-completion explanation, keeping it hidden before success. Science explanations retain the model limits documented in SCIENCE.md.
