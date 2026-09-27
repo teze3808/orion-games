@@ -10,3 +10,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-09-24 | The Starlight Tower / 星燈塔 | Computing: binary place value, encoding and decoding | games/orion-binary/ |
 | 2026-09-25 | The Sleeping Seed Vault / 沉睡種子寶庫 | Biology: germination, seedling light needs and fair comparisons | games/orion-seeds/ |
 | 2026-09-26 | The Mist Keeper / 霧海守望者 | Computing: ordered search, intervals and binary search | games/orion-mist/ |
+| 2026-09-27 | The Lantern Circuit / 星燈迴路 | Physics: complete circuits, branch and shared switches | games/orion-circuits/ |

@@ -1,5 +1,10 @@
 # Moonlit Letter artwork
 
+## The Lantern Circuit — 2026-09-27
+Mode: built-in ImageGen, original generation. Saved as `dist/games/orion-circuits/lantern-room.jpg` (JPEG quality 82, 1536×1024); original PNG retained in the Codex generated-images directory. Used for the top progress scene and atmospheric page background. Functional circuit diagrams are separate SVG models so wiring and lamp states remain scientifically consistent. Verified lantern crops at landscape and portrait tablet and phone widths.
+
+Prompt: Use case: illustration-story. Asset type: realistic cinematic environment for a child-friendly treasure science game, The Lantern Circuit. A forgotten lantern gallery inside an ancient coastal observatory, richly weathered bronze electrical lantern housings and polished copper conduits on carved stone, three beautiful glass lanterns clustered centrally on a stone workbench, one softly glowing warm amber, cool moonlight through tall arched windows, hidden treasure cabinet behind them, believable aged brass, clear glass reflections, moss and depth, inviting mystery without horror. Landscape 1536x1024, central three lanterns and cabinet composed to remain recognizable in a shallow horizontal progress banner and phone crop. Photorealistic high-end adventure film environment. No people, writing, numbers, letters, labels, UI, diagrams or watermark. This is atmospheric story scenery, not a circuit diagram.
+
 ## Sleeping Seed Vault — 2026-09-25
 Mode: built-in ImageGen, two original assets. Saved and optimized as `dist/games/orion-seeds/conservatory.jpg` (JPEG quality 82) and `dist/games/orion-seeds/plants.jpg` (JPEG quality 85). The conservatory is the main result scene and subdued page background. The square plant sheet supplies four pictured growth states through CSS background positions. The first seed is visible on soil as an instructional symbol; this is not a planting-depth instruction. Sprout pictures denote germination rather than exact colour or size in each lighting condition. The seedling comparison separately shows green leaves versus pale elongated growth. No exact elapsed growth time is claimed.
 

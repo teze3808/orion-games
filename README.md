@@ -69,3 +69,7 @@ Variant banks: Moonlit Letter (10 message/shift sets), Starlight Tower (10 numbe
 
 ## The Mist Keeper / 霧海守望者
 [Play the numbered sea-cave mystery](https://teze3808.github.io/orion-games/games/orion-mist/). Learn ordered search and discover binary search through higher/lower clues across three shores. Earn the Mist / 迷霧 sigil; eight new-question sets support replay and reset. Seven missions are playable; six remain planned. Tests: `node tests/mist.cjs`.
+
+
+## The Lantern Circuit / 星燈迴路
+[Play](https://teze3808.github.io/orion-games/games/orion-circuits/) — physics through complete circuits, branch switches and a shared switch. Match three pictured lamp patterns for the Spark / 火花 sigil. Six randomized puzzle sets, bilingual hidden hints and a tablet workbench. Eight missions are now playable; six remain planned. `node tests/circuits.cjs` checks circuit truth tables independently, all variants, rewards and reset/storage behavior.

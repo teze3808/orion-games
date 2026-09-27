@@ -41,7 +41,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | gate | 古城的密碼門 | Hash collisions | echo / 回聲 | Playable |
 | moon | 月光下的密信 | Caesar cipher; encryption and decryption | moonlight / 月光 | Playable |
 | tower | 星燈塔 | Binary representation | starlight / 星光 | Playable |
-| mist | 霧海守望者 | Binary search | mist / 迷霧 | Planned |
+| mist | 霧海守望者 | Binary search | mist / 迷霧 | Playable |
 | bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Planned |
 | fox | 迷路的機械狐狸 | Algorithms, loops, debugging | footprint / 足跡 | Planned |
 | balance | 寶石天平室 | Equality and unknown quantities | balance / 平衡 | Planned |
@@ -80,7 +80,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub, Treasure Gate, Moonlit Letter, Counterweight Vault, Crystal Alchemist’s Workshop, Starlight Tower and Sleeping Seed Vault are implemented. Seven mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and eight missions are implemented: Treasure Gate, Moonlit Letter, Counterweight Vault, Crystal Alchemist’s Workshop, Starlight Tower, Sleeping Seed Vault, Mist Keeper and Lantern Circuit. Six mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -171,3 +171,11 @@ Existing mission `mist` and sigil `mist` / Mist / 迷霧 are playable at `games/
 Original built-in ImageGen harbor artwork is optimized in `dist/games/orion-mist/harbor.jpg` and recorded in ARTWORK.md. Static top scene and live progress, experiment left/results right on tablets, stacked phone layout. Tablet play is fitted to the viewport; optional notes/logs scroll inside results. Scientific/model notes are in SCIENCE.md. Run `node tests/mist.cjs` for exhaustive target/variant, interval, reward and storage tests.
 
 Browser QA: English at 1024×768, Traditional Chinese at 768×1024, phone at 390×844; verified wrong guesses, shore retry, hidden hints, all three boats, saved hub sigil, distinct replay, and reload persistence. Tablet controls fit one screen; phones stack vertically. The browser controller stalled on the hub confirmation dialog; atomic collection reset, synchronization, non-repeating targets and storage failures are covered by automated tests. These are Chrome viewport checks, not physical iPad Safari checks. All eight test suites pass.
+
+
+## The Lantern Circuit — 2026-09-27
+Mission `circuits`, sigil `spark` / Spark / 火花, route `games/orion-circuits/`. Physics objective: identify complete paths through a battery-powered lamp and distinguish individual branch switches from a shared switch. Three panels: close a single loop with two series switches; match a two-lamp parallel pattern; match a selective pattern with a shared supply switch. Restore all three by matching the pictured goal and checking it. Switches update lamps and complete-path highlights immediately, with no prediction gate, timer or penalty.
+
+Six distinct persistent sets vary initial open switches and the two branch patterns. Reset-panel retries the same problem; full replay and hub collection reset choose a different set. Some individual panel goals repeat across sets, but a whole set never repeats immediately. Bilingual hints derive from the current goal, and notes explain idealized on/off behavior. Original ImageGen environment and prompt: ARTWORK.md. Sources/model: SCIENCE.md. Tests: `node tests/circuits.cjs`. The registry now has eight playable missions and six planned (14 total).
+
+Browser QA: English and Traditional Chinese gameplay, hidden/progressive hints, wrong-pattern retry, all three panels, saved sigil, replay set persistence after reload, whole-card navigation, and collection reset cancellation/confirmation were verified. Reset changed the open game from set 3 to set 4, hid hints and cleared the collection; completing the new set saved the sigil again. Artwork and single-screen controls checked at 1024×768 and 768×1024; phone framing at 390×844 stacks vertically. No browser console errors. These are Chrome viewport checks, not a physical iPad Safari test. All nine regression suites passed.
