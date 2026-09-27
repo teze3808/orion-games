@@ -182,3 +182,6 @@ Browser QA: English and Traditional Chinese gameplay, hidden/progressive hints, 
 
 ## One visible progress display — 2026-09-27
 All games show progress in the top artwork only. The duplicate counter/bar row beneath it is visually hidden, with its text retained for screen readers. Viewport-fitted games reclaim the removed row for play space. Future missions must follow this single visible progress arrangement.
+
+## Treasure Gate visual alignment — 2026-09-27
+The hash mission reuses its realistic gate artwork in the same top captioned scene as the other games, with live sealed/open feedback and a discovery seal. A subdued matching background, compact story disclosure, consistent teal panels/gold actions, and tablet viewport layout put passcode controls left and results right. Phone controls stack. The duplicate progress row remains screen-reader-only. Existing hash, reset, sigil and two-second clearing behavior is unchanged.

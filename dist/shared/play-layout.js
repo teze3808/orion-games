@@ -33,7 +33,14 @@
     top.before(intro);
     ['.console-top','#form','.console-foot'].forEach(s=>move(s,work));
     ['#gateState','#status','#treasure','.attempt-heading','#history','.bottom-story'].forEach(s=>move(s,result));
-    const art=make('div','gate-art'); art.setAttribute('aria-hidden','true');top.before(art);
+    const art=make('div','gate-art');
+    const caption=make('div','scene-caption');
+    caption.append(find('#gateState'));
+    const seal=make('span','gate-seal');seal.setAttribute('aria-hidden','true');caption.append(seal);
+    art.append(caption);top.before(art);
+    const storyText=intro.querySelector('.intro');
+    const details=make('details','story-disclosure');
+    details.append(make('summary','','Read the story','閱讀故事'),storyText);intro.append(details);
     story.remove();
   } else {
     ['#stageTitle','#taskTitle','#mission','#instruction'].forEach(s=>move(s,work));
@@ -63,7 +70,7 @@
     if(story){const details=make('details','story-disclosure');details.append(make('summary','','Read the story','閱讀故事'),story);intro.append(details);}}
   window.OrionLayout = {
     update(stage, solved, total) {
-      const completed=stage+(solved?1:0);bar.max=total;bar.value=completed;
+      const completed=stage+(solved?1:0);if(kind==='hash')find('.gate-seal').textContent=completed?'◆':'◇';bar.max=total;bar.value=completed;
       count.textContent=OrionI18n.t(`Seals opened · ${completed} / ${total}`, `已解開 ${completed} / ${total} 道封印`);
     },
     moveTrays() {
