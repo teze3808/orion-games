@@ -84,3 +84,6 @@ Variant banks: Moonlit Letter (10 message/shift sets), Starlight Tower (10 numbe
 Mist Keeper adds eight persistent three-shore target sets. Retry keeps the current target; full replay and collection reset change every shore target. Preserve interval-based elimination, unlimited attempts, and three-boat sigil criteria.
 
 Lantern Circuit adds six persistent circuit sets and sigil `spark`. Preserve complete-loop correctness and separate branch versus shared-switch behavior. Highlight only paths through lit lamps; never imply an open branch carries current. This is an ideal on/off model, not a brightness/current simulation. Panel retry retains the problem; replay/reset changes the full set without changing physical rules.
+
+## One visible progress display — 2026-09-27
+All games show progress in the top artwork only. The duplicate counter/bar row beneath it is visually hidden, with its text retained for screen readers. Viewport-fitted games reclaim the removed row for play space. Future missions must follow this single visible progress arrangement.

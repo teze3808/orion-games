@@ -56,3 +56,8 @@
 .play-layout main>.scene+.mission-progress,.play-layout main>.gate-art+.mission-progress,.play-layout main>.vault-art+.mission-progress{margin-top:0;border-radius:0 0 10px 10px}
 .play-layout main>.vault-art #sceneStatus{position:absolute;bottom:0;left:0;right:0;padding:12px;background:#061716d9;text-align:center}
 @media(max-width:699px){.play-layout main>.scene,.play-layout main>.gate-art,.play-layout main>.vault-art{height:150px}}
+
+/* Progress is shown in the artwork. Retain the textual counter for screen readers. */
+.play-layout main>.mission-progress{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+.play-layout main>.scene,.play-layout main>.gate-art,.play-layout main>.vault-art,.play-layout main>.harbor{border-radius:12px}
+.play-layout main>.mission-progress+.play-grid{margin-top:8px}

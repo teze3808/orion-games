@@ -1,6 +1,6 @@
 /* A single-screen tablet workbench. Small phones retain natural scrolling. */
 @media (min-width:700px) and (min-height:600px){
- body[data-mission=levers] main{height:100dvh;padding:8px 16px;display:grid;grid-template-rows:44px 40px clamp(64px,12dvh,112px) 44px minmax(0,1fr);gap:6px;max-width:1440px}
+ body[data-mission=levers] main{height:100dvh;padding:8px 16px;display:grid;grid-template-rows:44px 40px clamp(64px,12dvh,112px) minmax(0,1fr);gap:6px;max-width:1440px}
  body[data-mission=levers] .mission-intro{margin:0;display:flex;align-items:center;justify-content:space-between;gap:12px}
  body[data-mission=levers] .mission-intro>.eyebrow,body[data-mission=levers] footer{display:none}
  body[data-mission=levers] .mission-intro h1{font-size:25px;margin:0}

@@ -73,3 +73,5 @@ Variant banks: Moonlit Letter (10 message/shift sets), Starlight Tower (10 numbe
 
 ## The Lantern Circuit / 星燈迴路
 [Play](https://teze3808.github.io/orion-games/games/orion-circuits/) — physics through complete circuits, branch switches and a shared switch. Match three pictured lamp patterns for the Spark / 火花 sigil. Six randomized puzzle sets, bilingual hidden hints and a tablet workbench. Eight missions are now playable; six remain planned. `node tests/circuits.cjs` checks circuit truth tables independently, all variants, rewards and reset/storage behavior.
+
+All eight games use the top artwork for visible progress; the duplicate progress row has been removed from the visual layout.
