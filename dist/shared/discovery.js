@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    logic: {
+      title: ['Little rules can make big decisions!', '小規則，也能作出大決定！'],
+      steps: [
+        ['A ✓ + B ✓ → AND ✓', 'AND means both. The bridge opens only when A and B are both present.', 'AND（且）表示兩者都要有。只有 A 和 B 都在，橋才打開。'],
+        ['A ✓ or B ✓ → OR ✓', 'OR means at least one. A alone works, B alone works, and both together work too!', 'OR（或）表示至少一個。只有 A、只有 B，或兩個都有，都可以！'],
+        ['A ✓ → NOT ✕    A ✕ → NOT ✓', 'NOT turns one answer around. If A is present the bridge closes; if A is absent it opens.', 'NOT（非）把一個答案反轉。有 A 就關橋，沒有 A 就開橋。']
+      ],
+      takeaway: ['Computers use true and false rules to make decisions. In this game a gem is either present or absent. Your test rows are a truth table: evidence for every possible input.', '電腦會用真和假的規則作決定。遊戲中的寶石只有「有」和「沒有」兩種狀態。你的測試紀錄就是「真值表」：記下每個可能輸入的結果。'],
+      question: ['A door needs a ticket AND a key. Would a key by itself be enough?', '一道門需要門票「且」需要鑰匙。只有鑰匙夠不夠？']
+    },
     hash: {
       title: ['Different codes, same little label!', '不同密碼，相同小標籤！'],
       steps: [

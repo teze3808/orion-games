@@ -42,7 +42,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | moon | 月光下的密信 | Caesar cipher; encryption and decryption | moonlight / 月光 | Playable |
 | tower | 星燈塔 | Binary representation | starlight / 星光 | Playable |
 | mist | 霧海守望者 | Binary search | mist / 迷霧 | Playable |
-| bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Planned |
+| bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Playable |
 | fox | 迷路的機械狐狸 | Algorithms, loops, debugging | footprint / 足跡 | Planned |
 | balance | 寶石天平室 | Equality and unknown quantities | balance / 平衡 | Planned |
 | train | 水晶列車站 | Sorting and comparison cost | order / 秩序 | Planned |
@@ -193,3 +193,10 @@ All eight playable missions open a child-friendly bilingual discovery dialog on 
 Use native modal focus containment, an in-dialog language switch, 44px controls, manual back/next, pause/replay, and a scrollable small-screen layout. Automatic steps run once, seven seconds apart; reduced-motion users get manual steps by default. No third-party video, accounts or network requests are needed. Future games must provide a similarly understandable post-completion explanation, keeping it hidden before success. Science explanations retain the model limits documented in SCIENCE.md.
 
 Validation: all ten test suites pass, including discovery lifecycle tests across all eight lessons, both languages and both motion preferences. Browser QA verified gate and circuit completion, no overlay at partial completion, closing/reopening, language switching and replay reset. All eight routes load with the lesson hidden initially. Layout was checked at 1024×768, 768×1024 and 390×844. These are Chrome viewport checks, not a physical iPad Safari test.
+
+## The Bridge of Truth — 2026-09-28
+Existing mission `bridge`, sigil `truth` / Truth / 真理, is now playable at `games/orion-logic/`. Nine playable missions, five planned (14 total). Orion offers gems to three stone owl guardians, records whether the bridge opens for every combination, and identifies each rule: AND, inclusive OR, unary NOT. All evidence and a correct rule identification are required for each seal; all three seals earn the sigil. The rule choices stay hidden until the evidence table is complete; progressive optional hints remain behind the rune.
+
+Six saved guardian orders provide non-repeating whole-mission replay/reset variants. Individual guardians may retain a position across resets; the complete order changes. Retry clears only the current trial, replay preserves sigils, and hub reset clears collection and synchronizes open games. A bilingual completion discovery overlay explains the three rules after success. Original cinematic bridge artwork, matching background and its prompt are recorded in ARTWORK.md. The tablet layout keeps artwork/progress above the left experiment and right results; phones stack.
+
+Validation: eleven suites pass. Browser verified all three rules, wrong-choice retry, hidden hints, language switching, completion overlay, saved Truth Sigil in hub, whole-card navigation, distinct replay order and reload persistence. Confirmed hub reset cleared test sigils and changed the open game from set 6 to set 1 while preserving Traditional Chinese. Desktop/iPad layouts checked at 1024×768 and 768×1024; mobile at 390×844. Actual artwork loads and shows owl focal subjects in each crop; no browser errors. These are Chrome viewport checks, not physical iPad Safari tests.
