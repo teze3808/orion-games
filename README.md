@@ -85,3 +85,6 @@ Use native modal focus containment, an in-dialog language switch, 44px controls,
 
 ### New mission: The Bridge of Truth / 石像的真假橋
 Play `games/orion-logic/`: test gems, compare bridge outcomes and discover AND, OR and NOT to collect the Truth Sigil. Includes original cinematic owl-bridge artwork, full English/Traditional Chinese, tablet layout, saved randomized guardian order and a child-friendly animated completion explanation. Nine missions are playable. Run `node tests/logic.cjs` for the logic/persistence checks; `node tests/discovery.cjs` covers all nine completion lessons.
+
+### The Cloudkeeper’s Vault / 雲守者的水之密庫
+`games/orion-water/` explores ice, liquid water and invisible water vapour through virtual warming/cooling. Earn the Transformation / 幻化 Sigil across three target forms. Includes six saved randomized journeys, bilingual play, realistic mountain-observatory art and an animated completion lesson. Ten missions are now playable. Test with `node tests/water.cjs`.

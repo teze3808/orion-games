@@ -96,3 +96,6 @@ Use native modal focus containment, an in-dialog language switch, 44px controls,
 
 ## Bridge of Truth — 2026-09-28
 The planned `bridge` mission is playable at `games/orion-logic/`, sigil `truth`. Keep AND, inclusive OR and single-input NOT accurate; NOT ignores and hides B. Require every input combination and correct rule identification before awarding each seal. Repeated combinations cannot fill new evidence rows. Six persistent permutations change whole-mission guardian order on replay/full reset without altering truth tables. Keep the post-completion discovery lesson, shared helpers, saved-sigil retry and one visible progress display in the artwork.
+
+## Water forms — 2026-09-29
+`orion-water` uses sigil `transformation` and six persistent three-trial journeys. Preserve the distinction between invisible water vapour and cloud droplets; label dot illustrations as a model. Warming/cooling represents complete changes with sufficient time, not fixed temperature steps. No pressure, volume, mixed phases or direct solid/gas transitions are simulated. Each journey includes all four adjacent phase changes. Keep all three target-form stores necessary for reward and preserve existing collection/reset/discovery helpers.

@@ -12,3 +12,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-09-26 | The Mist Keeper / 霧海守望者 | Computing: ordered search, intervals and binary search | games/orion-mist/ |
 | 2026-09-27 | The Lantern Circuit / 星燈迴路 | Physics: complete circuits, branch and shared switches | games/orion-circuits/ |
 | 2026-09-28 | The Bridge of Truth / 石像的真假橋 | Computing/maths: AND, inclusive OR, NOT and truth tables | games/orion-logic/ |
+| 2026-09-29 | The Cloudkeeper’s Vault / 雲守者的水之密庫 | Science: water states, melting, freezing, evaporation and condensation | games/orion-water/ |

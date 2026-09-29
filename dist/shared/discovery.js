@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    water: {
+      title: ['Different forms, still water!', '形態不同，仍然是水！'],
+      steps: [
+        ['❄ → 💧 → · · ·', 'Warmth can melt ice into liquid water and help water evaporate into a gas. Evaporation can happen without boiling.', '加暖可以讓冰融化成液態水，也能幫助水蒸發成氣體。不沸騰也能蒸發。'],
+        ['· · · → 💧 → ❄', 'Cooling water vapour can make liquid water: condensation. Cooling liquid water enough makes ice: freezing.', '冷卻水蒸氣可以變回液態水，叫凝結。液態水冷卻到足夠程度會結冰，叫凝固。'],
+        ['❄ = H₂O    💧 = H₂O', 'The form changes, but the substance is still water. Water vapour is invisible; our dots are only a model.', '形態改變了，但物質仍然是水。水蒸氣看不見；圓點只是模型。']
+      ],
+      takeaway: ['Ice is solid, water can be liquid, and water vapour is gas. Real changes take time. Clouds contain tiny liquid droplets or ice crystals, not visible water vapour.', '冰是固態，水可以是液態，水蒸氣是氣態。真實變化需要時間。雲含有微小水滴或冰晶，不是看得見的水蒸氣。'],
+      question: ['Water drops appear on the outside of a cold glass. Did they come through the glass, or from water vapour in the air?', '冷杯外面出現水珠。它們穿過杯子而來，還是來自空氣中的水蒸氣？']
+    },
     logic: {
       title: ['Little rules can make big decisions!', '小規則，也能作出大決定！'],
       steps: [
