@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    sort: {
+      title: ['Compare, swap, put in order!', '比較、交換、排好次序！'],
+      steps: [
+        ['3  1  2 → 1  3  2', 'Example: smallest first. Compare the numbers. Swap 3 and 1 to put the smallest at the left.', '例子：由小到大。比較數字，把 3 和 1 交換，讓最小的在左邊。'],
+        ['1  3  2 → 1  2  3', 'Now swap 3 and 2. Read every neighbouring pair: the numbers never go down. Sorted!', '再把 3 和 2 交換。逐對看相鄰數字，數字沒有變小。排好了！'],
+        ['1  1  2  3   ↔   3  2  1  1', 'Equal values may stay together. A largest-first rule changes the direction. The rule tells us which order to use.', '相同數值可以並排。如果規則是由大到小，方向就反過來。規則告訴我們該用哪種次序。']
+      ],
+      takeaway: ['Sorting arranges a list by a rule. Computers follow step-by-step sorting methods called algorithms. This game lets you choose your own swaps; you do not need to find the fewest moves.', '排序把一列資料按規則排列。電腦會按照逐步的方法排序，這些方法叫演算法。本遊戲讓你自己選擇交換方法，不需要追求最少步數。'],
+      question: ['To arrange books from shortest to tallest, which book would you put at the left first?', '要把書本由矮到高排列，你會先把哪本放在最左邊？']
+    },
     water: {
       title: ['Different forms, still water!', '形態不同，仍然是水！'],
       steps: [

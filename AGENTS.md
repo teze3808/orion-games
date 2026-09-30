@@ -99,3 +99,6 @@ The planned `bridge` mission is playable at `games/orion-logic/`, sigil `truth`.
 
 ## Water forms — 2026-09-29
 `orion-water` uses sigil `transformation` and six persistent three-trial journeys. Preserve the distinction between invisible water vapour and cloud droplets; label dot illustrations as a model. Warming/cooling represents complete changes with sufficient time, not fixed temperature steps. No pressure, volume, mixed phases or direct solid/gas transitions are simulated. Each journey includes all four adjacent phase changes. Keep all three target-form stores necessary for reward and preserve existing collection/reset/discovery helpers.
+
+## Crystal Express — 2026-09-30
+Mission `train` uses the `sort` variant key (six sets) and stable `order` sigil. Keep ascending/descending comparisons inclusive of equal values. All three trains must be correct before reward; any valid swap sequence is accepted. Retry restores the same current train, replay changes labels while retaining sigils, and collection reset uses the shared helpers. Preserve keyboard/touch two-carriage selection, cancellation by selecting the same carriage, bilingual generated hints and completion discovery. Do not describe the swap log as comparison cost or an optimality score.

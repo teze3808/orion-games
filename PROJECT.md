@@ -45,7 +45,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Playable |
 | fox | 迷路的機械狐狸 | Algorithms, loops, debugging | footprint / 足跡 | Planned |
 | balance | 寶石天平室 | Equality and unknown quantities | balance / 平衡 | Planned |
-| train | 水晶列車站 | Sorting and comparison cost | order / 秩序 | Planned |
+| train | 水晶列車站 | Number sorting and pairwise swaps | order / 秩序 | Playable |
 | signal | 被干擾的星空訊號 | Parity and error detection | starspeech / 星語 | Planned |
 | maze | 智慧之心的地下迷城 | Weighted graphs and shortest paths | wisdom / 智慧 | Planned |
 
@@ -80,7 +80,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and eight missions are implemented: Treasure Gate, Moonlit Letter, Counterweight Vault, Crystal Alchemist’s Workshop, Starlight Tower, Sleeping Seed Vault, Mist Keeper and Lantern Circuit. Six mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and eleven missions are implemented, including the Crystal Express. Four mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -207,3 +207,10 @@ Mission `water`, sigil `transformation` / Transformation / 幻化, at `games/ori
 Includes original realistic ImageGen observatory artwork, atmospheric background, English/Traditional Chinese, hidden progressive hints, shared completion lesson and shared persistence helpers. Science/model scope is recorded in SCIENCE.md; prompts in ARTWORK.md. Water vapour is explicitly invisible and dot illustrations are labelled as a model.
 
 Validation: twelve suites pass, including all six journeys in both languages, invalid/wrong/duplicate actions, reward/reload/replay/reset, storage failures and all ten completion lessons. Browser checks covered wrong form, restore, hints, all three seals, both languages, saved sigil, replay/reload and whole-card hub navigation. Crops and layouts checked at 1024×768, 768×1024 and 390×844. The native hub reset-dialog check could not run because the Mac was locked; automated reset and synchronization checks passed. These are Chrome viewport checks, not physical iPad Safari tests.
+
+## The Crystal Express — 2026-09-30
+Existing mission `train`, sigil `order` / Order / 秩序, is playable at `games/orion-sort/`. Eleven playable, four planned (15 total). Three trains teach ascending order, descending order and equal values. Tap two carriages to swap positions, then send the train. Keyboard Enter/Space works with the same buttons. Tapping the selected carriage cancels selection. All three correct trains are required for the sigil; any number of swaps is allowed. Incorrect sends allow continued play. Retry restores only the current train.
+
+Six persistent sets change number labels on replay/full reset, excluding the previous set; each has solvable unsorted trains. Relative starting permutations are shared across sets. Replay preserves sigils; full reset changes questions and clears the collection. Language switching preserves the current train and selected carriage. Storage failures offer a save retry. The shared completion overlay explains ordering, pairwise swaps and equal values in child-friendly language. Comparison counts and optimal algorithms are outside this introductory mission.
+
+Original built-in ImageGen station art and prompt: ARTWORK.md. Concept source and model limits: SCIENCE.md. One visible progress display in the top artwork; experiment left/results right on tablets, stacked phone layout. All thirteen regression suites pass. Browser QA verified incorrect order, hidden hints, retry, all three trains, keyboard input, language preservation, completion explanation, saved hub sigil and new-set reload persistence. Layout/artwork checked at 1024×768, 768×1024 and 390×844. Confirmed the native hub reset: test sigils cleared, Traditional Chinese remained selected, and the train changed from set 4 to set 2. Whole-card navigation was verified. These are Chrome viewport checks, not physical iPad Safari tests.

@@ -88,3 +88,6 @@ Play `games/orion-logic/`: test gems, compare bridge outcomes and discover AND, 
 
 ### The Cloudkeeper’s Vault / 雲守者的水之密庫
 `games/orion-water/` explores ice, liquid water and invisible water vapour through virtual warming/cooling. Earn the Transformation / 幻化 Sigil across three target forms. Includes six saved randomized journeys, bilingual play, realistic mountain-observatory art and an animated completion lesson. Ten missions are now playable. Test with `node tests/water.cjs`.
+
+## September 30: The Crystal Express
+[Play the sorting mission](https://teze3808.github.io/orion-games/games/orion-sort/): tap two carriages to swap numbers into ascending or descending order. Three trains earn the Order / 秩序 Sigil. Bilingual, keyboard/touch friendly, six saved question sets and a completion explanation. Eleven missions are playable; four remain planned. Run `node tests/sort.cjs` for its behavioral checks.
