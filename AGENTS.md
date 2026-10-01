@@ -102,3 +102,6 @@ The planned `bridge` mission is playable at `games/orion-logic/`, sigil `truth`.
 
 ## Crystal Express — 2026-09-30
 Mission `train` uses the `sort` variant key (six sets) and stable `order` sigil. Keep ascending/descending comparisons inclusive of equal values. All three trains must be correct before reward; any valid swap sequence is accepted. Retry restores the same current train, replay changes labels while retaining sigils, and collection reset uses the shared helpers. Preserve keyboard/touch two-carriage selection, cancellation by selecting the same carriage, bilingual generated hints and completion discovery. Do not describe the swap log as comparison cost or an optimality score.
+
+## Prism Lantern Vault — 2026-10-01
+Mission/variant `light` uses six sets and sigil `radiance`. Preserve exact additive RGB outcomes and all-three-seal reward. Fixed balanced lights: red+green yellow, red+blue magenta, green+blue cyan, all white, none dark. Keep colour names beside swatches and on/off text with toggle semantics. Never imply these are paint-mixing rules or a prism dispersion simulation. Preserve shared reset, storage-failure honesty, bilingual hints and post-completion discovery.

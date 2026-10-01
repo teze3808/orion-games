@@ -91,3 +91,6 @@ Play `games/orion-logic/`: test gems, compare bridge outcomes and discover AND, 
 
 ## September 30: The Crystal Express
 [Play the sorting mission](https://teze3808.github.io/orion-games/games/orion-sort/): tap two carriages to swap numbers into ascending or descending order. Three trains earn the Order / 秩序 Sigil. Bilingual, keyboard/touch friendly, six saved question sets and a completion explanation. Eleven missions are playable; four remain planned. Run `node tests/sort.cjs` for its behavioral checks.
+
+## October 1: The Prism Lantern Vault
+[Play the light-mixing mission](https://teze3808.github.io/orion-games/games/orion-light/): switch red, green and blue lanterns to match three glowing seals and earn the Radiance / 光華 Sigil. Six saved question sets, bilingual touch/keyboard controls and a completion explanation. Twelve missions playable, four planned. Test with `node tests/light.cjs`.

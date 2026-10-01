@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    light: {
+      title: ['Light colours add together!', '光的顏色可以相加！'],
+      steps: [
+        ['🔴 + 🟢 → 🟡', 'Red and green light shining on the same white screen can look yellow. You discovered a new colour by adding light!', '紅光和綠光照在同一片白色屏幕上，可以看起來是黃色。加上光，就發現新顏色！'],
+        ['🔴 + 🔵 → 🟣 · 🟢 + 🔵 → 🩵', 'The other pairs make magenta and cyan. Switching one lamp off changes the mixture again.', '另外兩種配搭會產生洋紅和青色。關掉一盞光燈，混合結果又會改變。'],
+        ['🔴 + 🟢 + 🔵 → ⚪', 'With the three lights balanced, red, green and blue together look white. With every lamp off, the screen is dark.', '三種光強度配合時，紅、綠、藍一起會看起來是白色。全部關掉，屏幕就變暗。']
+      ],
+      takeaway: ['This is additive colour mixing: adding light. Screens use red, green and blue light too. Paint and ink mix differently. Our virtual lamps have fixed strengths; real colours depend on the lamps and surface.', '這叫加色混合：把光相加。顯示屏也會用紅、綠、藍光。顏料和墨水的混合方式不同。虛擬光燈強度固定；真實顏色會受光燈和表面影響。'],
+      question: ['All three lamps are on. If you switch off blue, what colour will remain?', '三盞光燈都開着。如果關掉藍光，會留下甚麼顏色？']
+    },
     sort: {
       title: ['Compare, swap, put in order!', '比較、交換、排好次序！'],
       steps: [
