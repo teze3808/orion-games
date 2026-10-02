@@ -44,7 +44,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | mist | 霧海守望者 | Binary search | mist / 迷霧 | Playable |
 | bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Playable |
 | fox | 迷路的機械狐狸 | Algorithms, loops, debugging | footprint / 足跡 | Planned |
-| balance | 寶石天平室 | Equality and unknown quantities | balance / 平衡 | Planned |
+| balance | 寶石天平室 | Equality and unknown quantities | balance / 平衡 | Playable |
 | train | 水晶列車站 | Number sorting and pairwise swaps | order / 秩序 | Playable |
 | signal | 被干擾的星空訊號 | Parity and error detection | starspeech / 星語 | Planned |
 | maze | 智慧之心的地下迷城 | Weighted graphs and shortest paths | wisdom / 智慧 | Planned |
@@ -80,7 +80,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and twelve missions are implemented, including the Prism Lantern Vault. Four mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and thirteen missions are implemented, including the Gem Balance. Three mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -221,3 +221,7 @@ Mission `light`, sigil `radiance` / Radiance / 光華, route `games/orion-light/
 Original built-in ImageGen artwork, matching background, top-only progress, tablet experiment-left/results-right layout and stacked phone controls. Source/model limits are in SCIENCE.md; prompt in ARTWORK.md. The game models fixed balanced RGB lights on a white screen in darkness, not paint mixing, spectral analysis or variable intensity. Colour names and on/off text make it usable without relying on hue alone.
 
 Validation: fourteen suites passed, including an explicit oracle for all eight light combinations, six complete sets, bilingual state, invalid/wrong/retry, idempotent rewards, replay/reload/full reset and storage failure recovery. Browser checks verified wrong colour, hidden hints, keyboard control, all three seals, bilingual gameplay, completion explanation, saved hub sigil and replay/reload persistence. Layout/artwork inspected at 1024×768, 768×1024 and 390×844. The native reset confirmation could not be completed while the Mac was locked; automated reset tests passed. These are Chrome viewport checks, not physical iPad Safari tests.
+
+## The Gem Balance — 2026-10-02
+Mission `balance`, sigil `balance` / Balance / 平衡, route `games/orion-balance/`. Thirteen playable missions, three planned. Equality and unknown quantities: solve one gem, a gem plus known blocks, and two identical gems. A slider and +/− controls test each gem’s value, updating an equal-arm balance and both totals immediately. Three correct checks award the sigil; hints are progressive and hidden. Six solvable sets change on replay and full collection reset, without losing existing sigils on replay. Shared bilingual completion lesson explains substitution, subtraction and equal sharing with examples.
+Original built-in ImageGen treasury artwork is used in the top progress scene and background. Tablet landscape and portrait layouts fit one screen; phone panels stack. All fifteen test suites pass, including exhaustive 180 guess checks, bilingual state, persistence, replay/reset, and failed saves. Browser play verified wrong/retry, hints, keyboard controls, all three seals, Traditional Chinese/English, completion overlay, saved hub sigil and replay/reload. Artwork and layout inspected at 1024×768, 768×1024 and 390×844. Automatic approval review blocked the browser reset-confirmation acceptance; automated reset tests passed. These are Chrome viewport checks, not physical iPad Safari tests.

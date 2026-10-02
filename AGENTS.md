@@ -105,3 +105,6 @@ Mission `train` uses the `sort` variant key (six sets) and stable `order` sigil.
 
 ## Prism Lantern Vault — 2026-10-01
 Mission/variant `light` uses six sets and sigil `radiance`. Preserve exact additive RGB outcomes and all-three-seal reward. Fixed balanced lights: red+green yellow, red+blue magenta, green+blue cyan, all white, none dark. Keep colour names beside swatches and on/off text with toggle semantics. Never imply these are paint-mixing rules or a prism dispersion simulation. Preserve shared reset, storage-failure honesty, bilingual hints and post-completion discovery.
+
+## Gem Balance preservation
+Keep `balance` as both mission and sigil ID. Equal-arm pans compare `gems × guessed value + extra blocks` with the given total. This is substitution in an equality model, not changing a real gemstone’s mass. All three puzzles must pass before award. Keep six non-repeating reset/replay sets, accessible slider and buttons, hidden clues, bilingual completion lesson and honest failed-save retry.

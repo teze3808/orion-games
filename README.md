@@ -94,3 +94,6 @@ Play `games/orion-logic/`: test gems, compare bridge outcomes and discover AND, 
 
 ## October 1: The Prism Lantern Vault
 [Play the light-mixing mission](https://teze3808.github.io/orion-games/games/orion-light/): switch red, green and blue lanterns to match three glowing seals and earn the Radiance / 光華 Sigil. Six saved question sets, bilingual touch/keyboard controls and a completion explanation. Twelve missions playable, four planned. Test with `node tests/light.cjs`.
+
+### The Gem Balance / 寶石天平室
+Play `games/orion-balance/`: test a mystery gem’s value with a live balance, then solve extra-block and equal-pair puzzles to collect the Balance / 平衡 sigil. Six reset variants, English/Traditional Chinese, touch/keyboard controls and a completion explanation. The hub now has thirteen playable missions and three planned stories.

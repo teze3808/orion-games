@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    balance: {
+      title: ['Equal means the same value!', '相等，就是數值相同！'],
+      steps: [
+        ['◆ = 4', 'A gem can stand for a hidden number. If one gem balances four blocks, its value is four.', '寶石可以代表隱藏數字。如果一顆寶石跟四塊方塊平衡，它的數值就是四。'],
+        ['◆ + 2 = 6 → ◆ = 4', 'Some blocks are already on the gem side. In this example, two plus four makes six!', '寶石那邊已經有一些方塊。這個例子中，二加四就是六！'],
+        ['◆ + ◆ = 8 → ◆ = 4', 'Two identical gems share the total equally. Half of eight is four. Each gem is four.', '兩顆相同寶石平分總數。八的一半是四，所以每顆都是四。']
+      ],
+      takeaway: ['The equals sign is like a level balance: both sides have the same value. Test your answer by putting it back in the puzzle. Our moving scale shows the totals for your guess; it does not change a real gem.', '等號就像水平天平：兩邊數值相同。把答案放回題目，就能檢查。模型天平顯示你猜的數字所產生的總數，不是改變真實寶石。'],
+      question: ['If a gem plus three blocks equals seven blocks, what is the gem’s value?', '如果一顆寶石加三塊方塊等於七塊方塊，寶石的數值是多少？']
+    },
     light: {
       title: ['Light colours add together!', '光的顏色可以相加！'],
       steps: [
