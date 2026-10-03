@@ -240,3 +240,6 @@ The hub opens with the collection and mission cards, without the introductory he
 
 ## Visible sigil overview — 2026-10-03
 The mission title/count and sigil collection share one compact panel. Show all sigils directly as small labelled icons, with gold and a check mark for collected sigils and accessible bilingual collection states. No disclosure hides the collection. Reset all sigils sits beside the language selector in the top header; preserve its confirmation and shared reset behavior.
+
+## Icon-only sigils — 2026-10-03
+Sigils are 44px icon buttons without permanent name labels. Hover, keyboard focus or tapping reveals the bilingual name, collection state, mission title and story in a tooltip. Hover/focus adds a soft glow and lift; reduced motion disables movement. Escape dismisses descriptions. Preserve gold/check-mark earned indicators and the header reset control.

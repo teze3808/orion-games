@@ -34,3 +34,17 @@ header{gap:12px;letter-spacing:.1em}.header-controls{display:flex;gap:10px;align
 .mission-overview .sigil.earned{background:#4b4028;border:1px solid #e1bc69;color:#ffe4a5}.mission-overview .sigil.earned b{color:#ffe4a5}.sigil i{font-style:normal;color:#ffe4a5}
 .mission-overview .storage{font-size:12px!important;margin:6px 0 0}.mission-overview #resetStatus:empty{display:none}
 @media(max-width:699px){header{padding:18px 0}.header-controls{gap:8px}.overview-heading{display:block}.overview-heading>p{max-width:none}.collection-caption{gap:6px 12px}.mission-overview .sigils{gap:6px}.mission-overview .sigil{padding:6px 8px;font-size:11px}.reset-sigils{font-size:12px;padding:10px}.language-control select{font-size:12px}}
+
+/* Icon-only collection: descriptions appear on hover, focus or tap. */
+.mission-overview .sigils{position:relative;gap:9px}
+.sigil-slot{display:inline-flex}
+.mission-overview .sigil{width:44px;height:44px;min-height:44px;padding:0;justify-content:center;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.mission-overview .sigil b{font-size:27px}.sigil i{position:absolute;right:2px;bottom:0;font-size:11px}
+.mission-overview .sigil:hover,.mission-overview .sigil:focus-visible{transform:translateY(-3px);border:1px solid #ffe1a0;box-shadow:0 0 18px #efc77566;background:#30473b}
+.mission-overview .sigil:focus-visible{outline:2px solid #b7eee0;outline-offset:3px}
+.sigil-tooltip{display:none;position:absolute;left:0;top:100%;width:min(360px,100%);padding:14px 16px;border:1px solid #cbb177;border-radius:10px;background:#0a2228;color:#e5ece7;box-shadow:0 12px 28px #0008;z-index:10;font-size:14px;line-height:1.55;text-align:left}
+.sigil-tooltip strong{display:block;color:#ffe1a0;margin-bottom:5px}.sigil-tooltip>span{display:block}.sigil-tooltip>span:last-child{color:#becfc9;font-size:13px;margin-top:5px}
+.sigil-slot:hover .sigil-tooltip,.sigil-slot:focus-within .sigil-tooltip{display:block}.sigil-slot.dismissed .sigil-tooltip{display:none}
+@media(prefers-reduced-motion:reduce){.mission-overview .sigil{transition:none}.mission-overview .sigil:hover,.mission-overview .sigil:focus-visible{transform:none}}
+
+.sigils:has(.sigil-slot:hover) .sigil-slot:not(:hover) .sigil-tooltip{display:none}
