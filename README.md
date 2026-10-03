@@ -106,3 +106,6 @@ The public site is **Orion’s Lost City / Orion 的失落古城**, https://orio
 
 ## Mission-map background — 2026-10-03
 The hub opens with the collection and mission cards, without the introductory hero panel or separate Treasure Gate call-to-action. Reuse the approved lost-city gate artwork as a full-viewport decorative background, with dark readable panels and responsive framing. Keep every available mission independently clickable and retain bilingual controls.
+
+## Visible sigil overview — 2026-10-03
+The mission title/count and sigil collection share one compact panel. Show all sigils directly as small labelled icons, with gold and a check mark for collected sigils and accessible bilingual collection states. No disclosure hides the collection. Reset all sigils sits beside the language selector in the top header; preserve its confirmation and shared reset behavior.

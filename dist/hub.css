@@ -23,3 +23,14 @@ header{text-shadow:0 2px 8px #000}
 .mission.available{background:linear-gradient(145deg,#244039f5,#122a2cf5)}
 footer{background:#071a1edb;padding:20px;border-radius:12px}
 @media(max-width:699px){body::before{background-position:58% center}.section-heading{padding:14px 16px}}
+
+/* One compact mission/collection panel, with every sigil always visible. */
+header{gap:12px;letter-spacing:.1em}.header-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-left:auto;letter-spacing:0}
+.overview-heading{display:flex;justify-content:space-between;align-items:center;gap:20px}.overview-heading .eyebrow{margin:0}.overview-heading>p{font-size:13px;max-width:260px}
+.collection-caption{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:14px}.collection-caption h2{font-size:17px;margin:0}.collection-caption>span{font-size:13px;color:#b5cac4}
+.mission-overview .sigils{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 8px}
+.mission-overview .sigil{position:relative;display:flex;align-items:center;gap:6px;border:1px dashed #657e76;border-radius:8px;padding:6px 9px;font-size:12px;color:#b5c7c0;min-height:38px;background:#0a2025}
+.mission-overview .sigil b{display:inline;padding:0;margin:0;border:0;font-size:24px;line-height:1;color:#90aaa1;background:none;box-shadow:none}
+.mission-overview .sigil.earned{background:#4b4028;border:1px solid #e1bc69;color:#ffe4a5}.mission-overview .sigil.earned b{color:#ffe4a5}.sigil i{font-style:normal;color:#ffe4a5}
+.mission-overview .storage{font-size:12px!important;margin:6px 0 0}.mission-overview #resetStatus:empty{display:none}
+@media(max-width:699px){header{padding:18px 0}.header-controls{gap:8px}.overview-heading{display:block}.overview-heading>p{max-width:none}.collection-caption{gap:6px 12px}.mission-overview .sigils{gap:6px}.mission-overview .sigil{padding:6px 8px;font-size:11px}.reset-sigils{font-size:12px;padding:10px}.language-control select{font-size:12px}}
