@@ -1,9 +1,9 @@
-# Orion’s Expedition / Orion 的失落文明
+# Orion’s Lost City / Orion 的失落古城
 
 Treasure and mystery games for learning mathematics, computing, chemistry, biology, engineering, and broader science, in one repository.
 
-- [Mission hub](https://teze3808.github.io/orion-games/)
-- [Treasure Gate — hash collisions](https://teze3808.github.io/orion-games/games/orion-hash/)
+- [Mission hub](https://orion-lost-city.onrender.com/)
+- [Treasure Gate — hash collisions](https://orion-lost-city.onrender.com/games/orion-hash/)
 
 ```text
 dist/
@@ -15,7 +15,7 @@ dist/
 
 English and Traditional Chinese are supported throughout. Progress and language are saved in the same browser. The hub can reset the collection with confirmation. The hash mission awards the Echo Sigil on any successful opening; resetting all sigils in the hub changes its target hash.
 
-Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to deploy the entire site through GitHub Pages. Run `node tests/language-and-rewards.cjs` for behavior checks.
+Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to auto-deploy the entire site through Render after its build-time regression checks. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
 Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Seven more missions are planned in the initial collection; new science adventures can join alongside them. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
@@ -27,19 +27,19 @@ The shared progress record also includes `hashTarget` (integer 0–9; legacy rec
 ## Passcode clearing
 After submitting a code, clear the input after two seconds without resetting the puzzle, result, or reward. New typing/keypad input cancels the pending clear so it never erases a fresh attempt. There is no in-game Restart adventure button. Relock keeps the current puzzle; only the hub’s full collection reset requests a different saved target.
 
-- [The Moonlit Letter — Caesar cipher](https://teze3808.github.io/orion-games/games/orion-cipher/)
+- [The Moonlit Letter — Caesar cipher](https://orion-lost-city.onrender.com/games/orion-cipher/)
 
 Run `node tests/cipher.cjs` for the three-stage cipher, language, rewards and reset checks. Daily mission history is in [RELEASES.md](RELEASES.md).
 
-- [The Counterweight Vault — levers and balance](https://teze3808.github.io/orion-games/games/orion-levers/)
+- [The Counterweight Vault — levers and balance](https://orion-lost-city.onrender.com/games/orion-levers/)
 
 Three missions are now playable. Run `node tests/levers.cjs` for prediction, lever physics, distinct solutions, bilingual state, and progress checks. See [SCIENCE.md](SCIENCE.md) for science sources and model limitations.
 
-- [The Crystal Alchemist’s Workshop — separating mixtures](https://teze3808.github.io/orion-games/games/orion-mixtures/)
+- [The Crystal Alchemist’s Workshop — separating mixtures](https://orion-lost-city.onrender.com/games/orion-mixtures/)
 
 Run `node tests/mixtures.cjs` for chemistry, wrong-order retries, bilingual state, rewards and storage checks. Five missions are playable.
 
-- [The Starlight Tower — binary place value](https://teze3808.github.io/orion-games/games/orion-binary/)
+- [The Starlight Tower — binary place value](https://orion-lost-city.onrender.com/games/orion-binary/)
 
 Run `node tests/binary.cjs` for all 16 lamp patterns, encoding/decoding challenges, invalid answers, bilingual state, rewards and reset checks.
 
@@ -68,11 +68,11 @@ Reset all sigils now atomically changes the hash target and a persistent variant
 Variant banks: Moonlit Letter (10 message/shift sets), Starlight Tower (10 number sets), Counterweight Vault (5 solvable load sets, each with two or more final balanced designs), Crystal Workshop (3 material/collection-goal sets), Sleeping Seed Vault (2 contrasting comparison sets). Hints, pictured goals and success checks derive from the selected set in both languages. Science variants reuse the documented material properties and bean model; they change experimental conditions or collection goals, not scientific rules. Taking a fresh chemistry sample retries the current problem; relocking the hash gate retains the puzzle for collision exploration. Future games must provide non-repeating reset variants, solvability checks, and generated hints before publication.
 
 ## The Mist Keeper / 霧海守望者
-[Play the numbered sea-cave mystery](https://teze3808.github.io/orion-games/games/orion-mist/). Learn ordered search and discover binary search through higher/lower clues across three shores. Earn the Mist / 迷霧 sigil; eight new-question sets support replay and reset. Seven missions are playable; six remain planned. Tests: `node tests/mist.cjs`.
+[Play the numbered sea-cave mystery](https://orion-lost-city.onrender.com/games/orion-mist/). Learn ordered search and discover binary search through higher/lower clues across three shores. Earn the Mist / 迷霧 sigil; eight new-question sets support replay and reset. Seven missions are playable; six remain planned. Tests: `node tests/mist.cjs`.
 
 
 ## The Lantern Circuit / 星燈迴路
-[Play](https://teze3808.github.io/orion-games/games/orion-circuits/) — physics through complete circuits, branch switches and a shared switch. Match three pictured lamp patterns for the Spark / 火花 sigil. Six randomized puzzle sets, bilingual hidden hints and a tablet workbench. Eight missions are now playable; six remain planned. `node tests/circuits.cjs` checks circuit truth tables independently, all variants, rewards and reset/storage behavior.
+[Play](https://orion-lost-city.onrender.com/games/orion-circuits/) — physics through complete circuits, branch switches and a shared switch. Match three pictured lamp patterns for the Spark / 火花 sigil. Six randomized puzzle sets, bilingual hidden hints and a tablet workbench. Eight missions are now playable; six remain planned. `node tests/circuits.cjs` checks circuit truth tables independently, all variants, rewards and reset/storage behavior.
 
 All eight games use the top artwork for visible progress; the duplicate progress row has been removed from the visual layout.
 The Treasure Gate now shares the collection’s top artwork, compact story, teal/gold workbench and viewport-fitted tablet layout.
@@ -90,13 +90,16 @@ Play `games/orion-logic/`: test gems, compare bridge outcomes and discover AND, 
 `games/orion-water/` explores ice, liquid water and invisible water vapour through virtual warming/cooling. Earn the Transformation / 幻化 Sigil across three target forms. Includes six saved randomized journeys, bilingual play, realistic mountain-observatory art and an animated completion lesson. Ten missions are now playable. Test with `node tests/water.cjs`.
 
 ## September 30: The Crystal Express
-[Play the sorting mission](https://teze3808.github.io/orion-games/games/orion-sort/): tap two carriages to swap numbers into ascending or descending order. Three trains earn the Order / 秩序 Sigil. Bilingual, keyboard/touch friendly, six saved question sets and a completion explanation. Eleven missions are playable; four remain planned. Run `node tests/sort.cjs` for its behavioral checks.
+[Play the sorting mission](https://orion-lost-city.onrender.com/games/orion-sort/): tap two carriages to swap numbers into ascending or descending order. Three trains earn the Order / 秩序 Sigil. Bilingual, keyboard/touch friendly, six saved question sets and a completion explanation. Eleven missions are playable; four remain planned. Run `node tests/sort.cjs` for its behavioral checks.
 
 ## October 1: The Prism Lantern Vault
-[Play the light-mixing mission](https://teze3808.github.io/orion-games/games/orion-light/): switch red, green and blue lanterns to match three glowing seals and earn the Radiance / 光華 Sigil. Six saved question sets, bilingual touch/keyboard controls and a completion explanation. Twelve missions playable, four planned. Test with `node tests/light.cjs`.
+[Play the light-mixing mission](https://orion-lost-city.onrender.com/games/orion-light/): switch red, green and blue lanterns to match three glowing seals and earn the Radiance / 光華 Sigil. Six saved question sets, bilingual touch/keyboard controls and a completion explanation. Twelve missions playable, four planned. Test with `node tests/light.cjs`.
 
 ### The Gem Balance / 寶石天平室
 Play `games/orion-balance/`: test a mystery gem’s value with a live balance, then solve extra-block and equal-pair puzzles to collect the Balance / 平衡 sigil. Six reset variants, English/Traditional Chinese, touch/keyboard controls and a completion explanation. The hub now has thirteen playable missions and three planned stories.
 
 ### The Sunstone Courtyard / 日影石庭
 Play `games/orion-shadows/`: move virtual sunlight around a pillar and raise/lower it to discover shadow direction and length. Match three outlines to earn the Sunshadow / 日影 sigil. Eight replay/reset sets, English/Traditional Chinese, original cinematic artwork, tablet controls and a completion explanation. The hub now offers fourteen playable missions and three planned stories.
+
+## Render hosting — 2026-10-03
+The public site is **Orion’s Lost City / Orion 的失落古城**, https://orion-lost-city.onrender.com/. Source remains `teze3808/orion-games`, branch `main`; the working copy remains `/Users/vincent/Documents/ChatGPT/HKBUAS/work/orion-games`. Render service `srv-db060c9srm7s73e7vsq0` publishes `dist` and runs every `tests/*.cjs` before deployment. Automatic deploys are enabled on commit. `render.yaml` records the matching configuration; the service was created directly, not as a linked Blueprint. `.github/workflows/ci.yml` provides checks only; the Pages publishing workflow has been removed. Future releases must verify Render deployment status and the live hub/game, not GitHub Pages. The daily 09:00 Asia/Hong_Kong automation is retained with the new publication destination. The user explicitly chose to start fresh on Render. Browser saves on the old GitHub origin are not imported or cleared; storage keys on Render stay stable.

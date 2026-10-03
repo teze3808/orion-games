@@ -1,0 +1,10 @@
+# Matches the existing Render service; do not create a duplicate site.
+services:
+  - type: web
+    name: orion-lost-city
+    runtime: static
+    repo: https://github.com/teze3808/orion-games
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: 'for f in tests/*.cjs; do node "$f" || exit 1; done'
+    staticPublishPath: dist

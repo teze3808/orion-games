@@ -1,4 +1,4 @@
-# Orion’s Expedition / Orion 的失落文明
+# Orion’s Lost City / Orion 的失落古城
 
 ## Approved visual standard
 The realistic Moonlit Letter moon door and atmospheric background are the minimum visual quality for every future mission. Create original mission-specific artwork with ImageGen: believable materials, cinematic lighting, environmental depth, and a child-friendly sense of treasure and mystery. Integrate finished artwork into the main scene and background; verify desktop/mobile framing and readable bilingual controls in the browser before release. Each game should have its own setting while matching this quality. Preserve progressive hidden hints and reliable sigil collection. Record artwork prompts in ARTWORK.md and store optimized assets in the repository.
@@ -60,14 +60,15 @@ One buildless HTML/CSS/JavaScript repository; all public assets live in `dist/`.
 - `dist/shared/i18n.js`: shared language preference and translation helper.
 - `dist/shared/gate.png`: shared generated artwork.
 - `dist/games/orion-hash/`: hash mission HTML, JavaScript and CSS.
-- `.github/workflows/pages.yml`: one deployment of the whole `dist` tree.
+- `render.yaml`: Render static-site configuration for the whole `dist` tree.
+- `.github/workflows/ci.yml`: regression checks on pushes and pull requests; no hosting.
 
 ## Progress contract
 Browser-local storage only, explicitly requested for collecting sigils. Key: `orion-expedition-progress-v1`; shape: `{version:1,sigils:["echo"]}`. Stable sigil IDs must never be renamed or reused for a different achievement. Unknown IDs are preserved for future compatibility. Rewards are idempotent. Restarting a mission clears its session, not earned sigils. No cross-device sync is promised. Clearing browser data removes saved progress. Corrupt/unavailable storage must not break gameplay; failed saves produce an honest in-session reward message. Never store names, passwords, contact information, or analytics.
 
 ## Adding a mission
 1. Define an independent story, one learning objective, exact success/reward criteria, and three optional hint levels.
-2. Implement each game under `dist/games/<topic-name>/`; use relative URLs for GitHub Pages subpath compatibility.
+2. Implement each game under `dist/games/<topic-name>/`; use relative URLs so both root and subpath hosting work.
 3. Include relative navigation back to the hub (`../../` for a game entrypoint), accessible keyboard/touch controls, and shared progress handling.
 4. Award its stable sigil only after the defined challenge is verified.
 5. Add/update the registry entry; supply `href` only once fully playable and checked.
@@ -75,9 +76,9 @@ Browser-local storage only, explicitly requested for collecting sigils. Key: `or
 
 ## Hosting and development
 Repository: https://github.com/teze3808/orion-games
-Primary public site: https://teze3808.github.io/orion-games/
+Primary public site: https://orion-lost-city.onrender.com/
 Run: `python3 -m http.server 8765 --directory dist`.
-GitHub Pages is the user-selected host; keep all new publication here. There is no active Sites deployment. The former standalone hash repository is retired.
+Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
 The hub and fourteen missions are implemented, including the Sunstone Courtyard. Three mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
@@ -85,11 +86,11 @@ The hub and fourteen missions are implemented, including the Sunstone Courtyard.
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
 
-Hash game: https://teze3808.github.io/orion-games/games/orion-hash/
-The old hash commit history was merged into this repository before retiring its standalone repository. The GitHub Pages origin and storage keys remain unchanged, preserving browser-local progress and language preferences.
+Hash game: https://orion-lost-city.onrender.com/games/orion-hash/
+The old hash commit history was merged into this repository before retiring its standalone repository. The storage keys remain unchanged. On 2026-10-03 the user chose a fresh collection on the new Render origin; old-origin saves are not transferred or erased.
 
 ## English and Traditional Chinese
-All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. All pages load the single `dist/shared/i18n.js` helper. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. All pages load the single `dist/shared/i18n.js` helper. Persist the preference under `orion-expedition-language`, shared on the current hosting origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
 
 ## Reset collection
 The hub provides a bilingual “Reset all sigils / 重設所有符印” button with confirmation. It resets the entire browser-local collection, including unknown/future sigil IDs, through `OrionProgress.reset()`. Cancellation changes nothing. It preserves language preferences and other browser data. Save failure leaves the collection unchanged and reports failure. Open game tabs refresh their reward display on the storage event; gameplay can earn rewards again afterward. This explicit full-collection reset is the exception to the normal rule that replay/restart preserves earned sigils.
@@ -230,3 +231,6 @@ Original built-in ImageGen treasury artwork is used in the top progress scene an
 Mission/variant `shadows`, sigil `sunshadow` / Sunshadow / 日影, route `games/orion-shadows/`. Fourteen playable missions and three planned (17 total). Science objective: discover that shadows point away from a light and that higher light makes a shorter shadow for an unchanged upright pillar on level ground. Choose one of four light directions and move a low/high slider; the top-down diagram updates immediately. Match both direction and length for three seals. Eight saved sets vary all target pairs across replay/full collection reset; every set is solvable, and each trial starts unmatched. Retry restores that trial, replay preserves sigils, language changes preserve play. Hints start hidden behind a rune and progressively reveal the relationship and then the current answer.
 Original built-in ImageGen courtyard artwork appears in the top progress scene and background. Tablet framing preserves the central pillar with a smaller sharp image over a dim atmospheric crop; phones show the wider scene. The experiment is left and the results right, with one visible progress display. Landscape overflow found during browser checks was fixed with compact controls and an optional clue popover. A shared bilingual completion overlay explains blocking light, opposite directions and shadow length. Science sources and model limits: SCIENCE.md; art prompt: ARTWORK.md.
 Validation: sixteen suites pass, including all 192 direction/height/trial combinations, eight journeys, bilingual state, wrong/invalid/retry paths, hidden hints, reward persistence/idempotency, reload/replay/full reset, corrupted storage and saving recovery. Browser checks verified wrong answer, hints, retry, keyboard slider, all three seals, both languages, completion explanation, saved hub sigil, whole-card navigation and replay persistence. Artwork and layout checked at 1024×768, 768×1024 and 390×844; tablet document height equals viewport height. Collection reset is covered by automated tests; the browser’s destructive reset confirmation remains unverified following the prior approval restriction. These are Chrome viewport checks, not physical iPad Safari tests.
+
+## Render hosting — 2026-10-03
+The public site is **Orion’s Lost City / Orion 的失落古城**, https://orion-lost-city.onrender.com/. Source remains `teze3808/orion-games`, branch `main`; the working copy remains `/Users/vincent/Documents/ChatGPT/HKBUAS/work/orion-games`. Render service `srv-db060c9srm7s73e7vsq0` publishes `dist` and runs every `tests/*.cjs` before deployment. Automatic deploys are enabled on commit. `render.yaml` records the matching configuration; the service was created directly, not as a linked Blueprint. `.github/workflows/ci.yml` provides checks only; the Pages publishing workflow has been removed. Future releases must verify Render deployment status and the live hub/game, not GitHub Pages. The daily 09:00 Asia/Hong_Kong automation is retained with the new publication destination. The user explicitly chose to start fresh on Render. Browser saves on the old GitHub origin are not imported or cleared; storage keys on Render stay stable.

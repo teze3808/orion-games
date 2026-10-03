@@ -33,7 +33,7 @@ Read `PROJECT.md` before changing this project. These instructions apply to this
 ## Implementation
 - Use the static stack unless a requested capability requires more. No unnecessary frameworks or dependencies.
 - Mission definitions belong in `dist/missions.js`; derive collection and availability counts from the registry.
-- Keep public assets in `dist`; use relative paths so `/orion-games/` works on GitHub Pages.
+- Keep public assets in `dist`; use relative paths so Render root hosting and local previews work.
 - Treat the registry as developer-authored data. If external/user content is introduced, render it safely rather than interpolating untrusted HTML.
 - Support keyboard, touch, visible focus, readable type, reduced motion, mobile widths, and accessible dialogs/status announcements.
 - Keep secrets and personal/school information out of the public repository. No telemetry or third-party account requirements.
@@ -44,7 +44,7 @@ Read `PROJECT.md` before changing this project. These instructions apply to this
 - Confirm hints begin hidden and only appear after explicit interaction.
 - Verify mission navigation and registry counts; do not add tests that merely mirror styling.
 - Update PROJECT.md and README.md when behavior, scope, storage, or deployment changes.
-- GitHub Pages is the authorized host. Commit and push requested website updates to `main`; inspect the resulting deployment before reporting the live update as complete.
+- Render is the authorized host. Commit and push requested website updates to `main`; inspect the Render deployment before reporting the live update as complete. GitHub hosts the source repository and CI only. Do not re-enable GitHub Pages.
 - Never deploy to the legacy Sites host or change repository visibility without a user request.
 - Report what is playable versus planned, the live URL, and any material limitations accurately.
 
@@ -56,7 +56,7 @@ Read `PROJECT.md` before changing this project. These instructions apply to this
 - Preserve the imported hash history and stable storage keys.
 
 ## English and Traditional Chinese
-All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. All pages use `dist/shared/i18n.js`. Persist the preference under `orion-expedition-language`, shared on the GitHub Pages origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
+All user-facing content must support English (`en`) and Traditional Chinese (`zh-Hant`), including mission stories, controls, status messages, rewards, progressive hints, parent explanations, accessibility labels, and page titles. All pages use `dist/shared/i18n.js`. Persist the preference under `orion-expedition-language`, shared on the current hosting origin. Browser language determines the first visit; stored preference takes precedence. Switching language must preserve the current puzzle, hint depth, input, and sigils. Every future mission must meet this requirement before becoming playable.
 
 ## Reset collection
 The hub provides a bilingual “Reset all sigils / 重設所有符印” button with confirmation. It resets the entire browser-local collection, including unknown/future sigil IDs, through `OrionProgress.reset()`. Cancellation changes nothing. It preserves language preferences and other browser data. Save failure leaves the collection unchanged and reports failure. Open game tabs refresh their reward display on the storage event; gameplay can earn rewards again afterward. This explicit full-collection reset is the exception to the normal rule that replay/restart preserves earned sigils.
