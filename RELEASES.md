@@ -16,3 +16,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-09-30 | The Crystal Express / 水晶列車站 | Computing/maths: sorting, comparison and equal values | games/orion-sort/ |
 | 2026-10-01 | The Prism Lantern Vault / 稜光燈密庫 | Physics: additive RGB light mixing | games/orion-light/ |
 | 2026-10-02 | The Gem Balance / 寶石天平室 | Mathematics: equality, unknown values and equal sharing | games/orion-balance/ |
+| 2026-10-03 | The Sunstone Courtyard / 日影石庭 | Science: light, opposite shadow direction and shadow length | games/orion-shadows/ |

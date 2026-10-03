@@ -97,3 +97,6 @@ Play `games/orion-logic/`: test gems, compare bridge outcomes and discover AND, 
 
 ### The Gem Balance / 寶石天平室
 Play `games/orion-balance/`: test a mystery gem’s value with a live balance, then solve extra-block and equal-pair puzzles to collect the Balance / 平衡 sigil. Six reset variants, English/Traditional Chinese, touch/keyboard controls and a completion explanation. The hub now has thirteen playable missions and three planned stories.
+
+### The Sunstone Courtyard / 日影石庭
+Play `games/orion-shadows/`: move virtual sunlight around a pillar and raise/lower it to discover shadow direction and length. Match three outlines to earn the Sunshadow / 日影 sigil. Eight replay/reset sets, English/Traditional Chinese, original cinematic artwork, tablet controls and a completion explanation. The hub now offers fourteen playable missions and three planned stories.

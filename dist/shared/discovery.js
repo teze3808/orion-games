@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    shadows: {
+      title: ['Shadows tell us where light is!', '影子告訴我們光在哪裡！'],
+      steps: [
+        ['☀ → ▣ → ▰', 'Light travels towards the pillar. The stone blocks it, leaving a shadow on the other side.', '光向石柱照過來。石頭擋住光，另一邊就留下影子。'],
+        ['☀ → ▣ → ▰', 'Example: light from the east makes a shadow towards the west. Moving the light changes the shadow’s direction.', '例子：光從東方照來，影子就指向西方。移動光，影子的方向也會改變。'],
+        ['☀ ↑ → ▰   ☀ ↓ → ▰▰▰', 'For the same upright pillar on flat ground, higher light makes a shorter shadow. Lower light makes a longer one.', '同一根直立石柱放在平地上，光越高，影子越短；光越低，影子越長。']
+      ],
+      takeaway: ['A shadow is a place where an object blocks light. Our game moves a virtual light freely. Outdoors the Sun’s apparent position changes as Earth turns; this model does not simulate a day or tell the time.', '物體擋住光的地方，就形成影子。遊戲中可以自由移動虛擬光源。戶外，地球轉動令太陽看起來改變位置；這個模型沒有模擬一天，也不能報時。'],
+      question: ['Keep the light on the same side, but raise it. Will the shadow change direction, length, or both?', '光保持在同一邊，但把它升高。影子會改變方向、長短，還是兩者都會改變？']
+    },
     balance: {
       title: ['Equal means the same value!', '相等，就是數值相同！'],
       steps: [

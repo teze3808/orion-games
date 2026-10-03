@@ -108,3 +108,6 @@ Mission/variant `light` uses six sets and sigil `radiance`. Preserve exact addit
 
 ## Gem Balance preservation
 Keep `balance` as both mission and sigil ID. Equal-arm pans compare `gems × guessed value + extra blocks` with the given total. This is substitution in an equality model, not changing a real gemstone’s mass. All three puzzles must pass before award. Keep six non-repeating reset/replay sets, accessible slider and buttons, hidden clues, bilingual completion lesson and honest failed-save retry.
+
+## Sunstone Courtyard — 2026-10-03
+Keep `shadows` mission/variant and `sunshadow` sigil stable. Four cardinal light directions map to opposite shadows; low/high light maps to long/short. Require both attributes for all three seals before award. Preserve eight reset/replay sets, shared progress and bilingual discovery. This is a freely movable virtual parallel light, not a Sun-path, season or clock simulation. Keep the pillar fixed, the ground level, the dashed target visually distinct, and qualitative length labels available without relying on shape alone.
