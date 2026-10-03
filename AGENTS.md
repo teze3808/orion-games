@@ -111,3 +111,6 @@ Keep `balance` as both mission and sigil ID. Equal-arm pans compare `gems × gue
 
 ## Sunstone Courtyard — 2026-10-03
 Keep `shadows` mission/variant and `sunshadow` sigil stable. Four cardinal light directions map to opposite shadows; low/high light maps to long/short. Require both attributes for all three seals before award. Preserve eight reset/replay sets, shared progress and bilingual discovery. This is a freely movable virtual parallel light, not a Sun-path, season or clock simulation. Keep the pillar fixed, the ground level, the dashed target visually distinct, and qualitative length labels available without relying on shape alone.
+
+## Mission-map background — 2026-10-03
+The hub opens with the collection and mission cards, without the introductory hero panel or separate Treasure Gate call-to-action. Reuse the approved lost-city gate artwork as a full-viewport decorative background, with dark readable panels and responsive framing. Keep every available mission independently clickable and retain bilingual controls.
