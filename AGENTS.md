@@ -120,3 +120,6 @@ The mission title/count and sigil collection share one compact panel. Show all s
 
 ## Icon-only sigils — 2026-10-03
 Sigils are 44px icon buttons without permanent name labels. Hover, keyboard focus or tapping reveals the bilingual name, collection state, mission title and story in a tooltip. Hover/focus adds a soft glow and lift; reduced motion disables movement. Escape dismisses descriptions. Preserve gold/check-mark earned indicators and the header reset control.
+
+## Clockwork Fox — 2026-10-04
+Preserve mission/variant `fox`, eight sets, and `footprint` sigil. Commands use absolute screen directions and repeat one movement one to three times. Check every expanded step for collision; never jump hedges. Success requires ending at the treasure after all commands in all three gardens, not merely touching it. Repeats are optional, and valid nonoptimal routes are welcome. Cancel pending run callbacks on stop, reset, replay and pagehide; language changes must preserve the running program. Keep both languages, shared discovery/progress and one top artwork progress display.

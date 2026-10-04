@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    fox: {
+      title: ['A program is a plan the fox can follow!', '程式是狐狸能跟着做的計劃！'],
+      steps: [
+        ['🦊 → → ↑ → ◆', 'Put commands in order. The fox follows the first arrow, then the next. This step-by-step plan is an algorithm.', '把指令排好次序。狐狸先跟第一個箭頭，再跟下一個。這個逐步執行的計劃就是演算法。'],
+        ['→ → → = [→ ×3]', 'Repeat does the same action again. In this example, Right repeated three times means three steps right, not a jump.', '重複會把同一動作再做一次。例子中，向右重複三次，就是逐步向右走三步，不是跳過去。'],
+        ['🦊 → ♣ · ↶ · 🦊 ↑ → ◆', 'A wrong step is a clue. Watch where the fox stops, change your instructions, then test again. This is debugging!', '走錯一步也是線索。看看狐狸停在哪裡，修改指令，再試一次。這就是除錯！']
+      ],
+      takeaway: ['Computers follow precise instructions. Our arrows use screen directions; Repeat repeats just one movement. Longer programs can repeat whole groups of actions. You can reach a goal with different working programs.', '電腦會按照明確指令執行。這裡的箭頭依畫面方向移動；「重複」只重複一個動作。更長的程式可以重複整組動作。不同的可行程式也能到達同一目標。'],
+      question: ['Would Right, then Up always follow the same path as Up, then Right? What if a hedge is in the way?', '先右後上，跟先上後右，路線總是一樣嗎？如果途中有樹籬呢？']
+    },
     shadows: {
       title: ['Shadows tell us where light is!', '影子告訴我們光在哪裡！'],
       steps: [

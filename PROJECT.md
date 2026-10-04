@@ -43,7 +43,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | tower | 星燈塔 | Binary representation | starlight / 星光 | Playable |
 | mist | 霧海守望者 | Binary search | mist / 迷霧 | Playable |
 | bridge | 石像的真假橋 | AND, OR, NOT | truth / 真理 | Playable |
-| fox | 迷路的機械狐狸 | Algorithms, loops, debugging | footprint / 足跡 | Planned |
+| fox | 迷路的機械狐狸 | Algorithms, loops, debugging | footprint / 足跡 | Playable |
 | balance | 寶石天平室 | Equality and unknown quantities | balance / 平衡 | Playable |
 | train | 水晶列車站 | Number sorting and pairwise swaps | order / 秩序 | Playable |
 | signal | 被干擾的星空訊號 | Parity and error detection | starspeech / 星語 | Planned |
@@ -81,7 +81,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and fourteen missions are implemented, including the Sunstone Courtyard. Three mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and fifteen missions are implemented, including the Clockwork Fox. Two mission cards describe planned games and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -243,3 +243,9 @@ The mission title/count and sigil collection share one compact panel. Show all s
 
 ## Icon-only sigils — 2026-10-03
 Sigils are 44px icon buttons without permanent name labels. Hover, keyboard focus or tapping reveals the bilingual name, collection state, mission title and story in a tooltip. Hover/focus adds a soft glow and lift; reduced motion disables movement. Escape dismisses descriptions. Preserve gold/check-mark earned indicators and the header reset control.
+
+## The Clockwork Fox — 2026-10-04
+Daily Hong Kong release: 2026-10-04. Existing mission `fox` is playable at `games/orion-fox/`; stable sigil `footprint` / Footprint / 足跡. Fifteen playable missions and two planned stories. Arrange absolute-direction command cards, choose one to three repetitions per new command, and watch the fox execute the sequence on a 5×5 garden map. Run restarts from the flag; stop permits inspection; wrong steps stop at hedges without penalty. Tap a card to remove it. All three gardens must finish at their treasures. Repeat is optional; all valid programs are accepted.
+Eight persistent rotated/reflected sets change on replay/full collection reset. Existing sigils and language survive replay. Timer cancellation prevents a stopped/reset run from earning rewards later. Shared progress, hidden hints and bilingual completion discovery are retained. Original built-in ImageGen garden artwork: `dist/games/orion-fox/garden.jpg`; prompt in ARTWORK.md. Educational references and model limits: SCIENCE.md. The left board/controls and right program/results fit tablets; phone panels stack. Release validation is recorded below after browser checks.
+
+Validation for 2026-10-04: all seventeen suites pass. The new suite independently searches each of the eight garden sets, checks every generated hint route, both languages, empty/invalid/blocked/unfinished programs, stop and stale callbacks, all-three-garden reward, save recovery and replay/reset synchronization. Browser play verified blocked-step feedback, clear/retry, optional hints, repeated commands through all three gardens, bilingual completion explanation, saved Footprint Sigil in the hub, full-card navigation, and a different replay set retained after reload. Artwork and layout were checked at 1024×768, 768×1024 and 390×844; the landscape document fits its viewport. A shared treasure style that distorted one grid tile was corrected. These are Chrome viewport checks, not physical iPad Safari tests. The empty-collection native browser reset confirmation could not be verified because the Mac locked during that check; automated reset checks passed. Render-origin saves were not modified during local testing.

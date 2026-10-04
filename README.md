@@ -112,3 +112,6 @@ The mission title/count and sigil collection share one compact panel. Show all s
 
 ## Icon-only sigils — 2026-10-03
 Sigils are 44px icon buttons without permanent name labels. Hover, keyboard focus or tapping reveals the bilingual name, collection state, mission title and story in a tooltip. Hover/focus adds a soft glow and lift; reduced motion disables movement. Escape dismisses descriptions. Preserve gold/check-mark earned indicators and the header reset control.
+
+## Clockwork Fox — 2026-10-04
+Play [The Clockwork Fox](https://orion-lost-city.onrender.com/games/orion-fox/): plan a route, add arrow commands and repeats, and watch a brass fox find three treasures. Learn sequencing, counted repetition and debugging; earn the Footprint / 足跡 sigil. Eight replay/reset sets, bilingual explanations, original cinematic garden art and tablet-friendly controls. Fifteen missions are now playable; two remain planned.
