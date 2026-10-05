@@ -123,3 +123,6 @@ Sigils are 44px icon buttons without permanent name labels. Hover, keyboard focu
 
 ## Clockwork Fox — 2026-10-04
 Preserve mission/variant `fox`, eight sets, and `footprint` sigil. Commands use absolute screen directions and repeat one movement one to three times. Check every expanded step for collision; never jump hedges. Success requires ending at the treasure after all commands in all three gardens, not merely touching it. Repeats are optional, and valid nonoptimal routes are welcome. Cancel pending run callbacks on stop, reset, replay and pagehide; language changes must preserve the running program. Keep both languages, shared discovery/progress and one top artwork progress display.
+
+## Gearkeeper’s Vault — 2026-10-05
+Keep `gears` mission/variant (six sets) and `motion` sigil stable. Model external spur gears: fixed 12-tooth clockwise driver, output 6/12/24 teeth giving 2×/1×/½× speed. Each mesh reverses direction; adding one simple idler restores driver direction without changing output speed ratio. Require both attributes for all three seals. Preserve pause/reduced-motion support, numeric/direction labels, shared reset/replay/progress and bilingual discovery. Artwork is decorative; do not imply the simplified tooth shapes are a manufacturing design.

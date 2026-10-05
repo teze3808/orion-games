@@ -115,3 +115,6 @@ Sigils are 44px icon buttons without permanent name labels. Hover, keyboard focu
 
 ## Clockwork Fox — 2026-10-04
 Play [The Clockwork Fox](https://orion-lost-city.onrender.com/games/orion-fox/): plan a route, add arrow commands and repeats, and watch a brass fox find three treasures. Learn sequencing, counted repetition and debugging; earn the Footprint / 足跡 sigil. Eight replay/reset sets, bilingual explanations, original cinematic garden art and tablet-friendly controls. Fifteen missions are now playable; two remain planned.
+
+## Gearkeeper’s Vault — 2026-10-05
+[Play the Gearkeeper’s Vault](https://orion-lost-city.onrender.com/games/orion-gears/). Swap output wheels and add a middle gear to learn how gears change direction and speed. Restore three seals to collect the Motion / 傳動 sigil. Includes six replay/reset sets, bilingual hints and completion explanation, original cinematic workshop art and tablet-friendly controls. Sixteen missions are playable; two remain planned.

@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    gears: {
+      title: ['Gears pass a turn along!', '齒輪把轉動傳下去！'],
+      steps: [
+        ['⚙ ↻  ↺ ⚙', 'Two touching gears push each other’s teeth. When one turns clockwise, the other turns anticlockwise.', '兩個接觸的齒輪會推動對方的齒。一個順時針轉，另一個就逆時針轉。'],
+        ['12 → 24 · 1 → ½', 'Example: the driver has 12 teeth and the output has 24. The driver turns once while the bigger output turns half a turn. Fewer output teeth makes it faster.', '例子：主動輪有 12 齒，輸出輪有 24 齒。主動輪轉一圈，較大的輸出輪就轉半圈。輸出輪的齒數較少時，轉得較快。'],
+        ['↻ ⚙ ↺ ⚙ ↻', 'A middle gear reverses the direction again. The final wheel now turns the same way as the driver. Its speed still depends on the first and last gears.', '中間齒輪把方向再反轉一次。最後的輪現在跟主動輪同方向轉。最後速度仍然取決於第一個和最後一個齒輪。']
+      ],
+      takeaway: ['Gear size and the number of connections solve different problems: speed and direction. Our ideal model leaves out friction, load and motor power. Real gears must fit and line up carefully.', '齒輪大小和接觸次數解決不同問題：速度與方向。理想模型省略了摩擦、負載和馬達功率。真實齒輪必須合適並仔細對準。'],
+      question: ['Keep the first and last wheels unchanged. If you add one middle gear, what changes: speed, direction, or both?', '第一個和最後一個輪不變。加入一個中間齒輪後，速度、方向，還是兩者都會改變？']
+    },
     fox: {
       title: ['A program is a plan the fox can follow!', '程式是狐狸能跟着做的計劃！'],
       steps: [
