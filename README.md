@@ -17,7 +17,7 @@ English and Traditional Chinese are supported throughout. Progress and language 
 
 Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to auto-deploy the entire site through Render after its build-time regression checks. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. Seven more missions are planned in the initial collection; new science adventures can join alongside them. Add each future game under `dist/games/` and reuse `dist/shared/`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. One more mission is planned in the initial collection; new science adventures can join alongside them. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
 
@@ -118,3 +118,7 @@ Play [The Clockwork Fox](https://orion-lost-city.onrender.com/games/orion-fox/):
 
 ## Gearkeeper’s Vault — 2026-10-05
 [Play the Gearkeeper’s Vault](https://orion-lost-city.onrender.com/games/orion-gears/). Swap output wheels and add a middle gear to learn how gears change direction and speed. Restore three seals to collect the Motion / 傳動 sigil. Includes six replay/reset sets, bilingual hints and completion explanation, original cinematic workshop art and tablet-friendly controls. Sixteen missions are playable; two remain planned.
+
+- [The Broken Star Signal — parity and error detection](https://orion-lost-city.onrender.com/games/orion-signal/)
+
+Seventeen missions are playable. The signal mission tests one-bit and two-bit changes, earns the Star Speech Sigil, and includes eight reset/replay sets and bilingual completion discoveries. Run `node tests/signal.cjs` for all 256 flip masks and reward/persistence checks.

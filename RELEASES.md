@@ -17,3 +17,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-01 | The Prism Lantern Vault / 稜光燈密庫 | Physics: additive RGB light mixing | games/orion-light/ |
 | 2026-10-02 | The Gem Balance / 寶石天平室 | Mathematics: equality, unknown values and equal sharing | games/orion-balance/ |
 | 2026-10-03 | The Sunstone Courtyard / 日影石庭 | Science: light, opposite shadow direction and shadow length | games/orion-shadows/ |
+| 2026-10-04 | The Clockwork Fox / 迷路的機械狐狸 | Computing: sequencing and repeat | games/orion-fox/ |
+| 2026-10-05 | The Gearkeeper’s Vault / 齒輪守護者的密庫 | Engineering: gear direction and speed | games/orion-gears/ |
+| 2026-10-06 | The Broken Star Signal / 被干擾的星空訊號 | Computing: even parity and detection limits | games/orion-signal/ |

@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    signal: {
+      title: ['A small check can reveal a change!', '一個小檢查，可以揭示改變！'],
+      steps: [
+        ['1 0 1 1 | 1', 'Example: three message lamps are lit. Add one lit checking lamp: four is even. That extra lamp is called a parity bit.', '例子：三盞訊息燈亮着。加上一盞亮的檢查燈，四就是偶數。這個額外位元稱為同位元（parity bit）。'],
+        ['4 → 3 · ⚠', 'Change one lamp and the total becomes odd. The detector sounds an alarm! It knows something changed, but not which lamp.', '改變一盞燈，總數就變成奇數。偵測器會響起警報！它知道有改變，卻不知道是哪盞燈。'],
+        ['4 → 3 → 2 · ✓', 'Change two different lamps and the total is even again. No alarm, even though the message changed! A passed check is not proof that all is correct.', '改變兩盞不同的燈，總數又變回偶數。訊息變了，卻沒有警報！通過檢查不代表完全正確。']
+      ],
+      takeaway: ['One parity bit detects an odd number of flipped bits. An even number can go unnoticed. It cannot locate or repair the error. Real systems can use stronger checks. The original row in our experiment helps you compare; real receivers usually cannot see it.', '單個同位元能偵測奇數個位元翻轉；偶數個可能不被發現。它不能找出或修復錯誤。真實系統可以使用更強的檢查。實驗中的原始燈號方便你比較；真實接收者通常看不到它。'],
+      question: ['What would happen if three different lamps changed? Would the total stay even?', '如果三盞不同的燈改變，會怎樣？總數還會是偶數嗎？']
+    },
     gears: {
       title: ['Gears pass a turn along!', '齒輪把轉動傳下去！'],
       steps: [

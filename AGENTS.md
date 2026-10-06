@@ -126,3 +126,6 @@ Preserve mission/variant `fox`, eight sets, and `footprint` sigil. Commands use 
 
 ## Gearkeeper’s Vault — 2026-10-05
 Keep `gears` mission/variant (six sets) and `motion` sigil stable. Model external spur gears: fixed 12-tooth clockwise driver, output 6/12/24 teeth giving 2×/1×/½× speed. Each mesh reverses direction; adding one simple idler restores driver direction without changing output speed ratio. Require both attributes for all three seals. Preserve pause/reduced-motion support, numeric/direction labels, shared reset/replay/progress and bilingual discovery. Artwork is decorative; do not imply the simplified tooth shapes are a manufacturing design.
+
+## Broken Star Signal — 2026-10-06
+Preserve `signal` mission/variant (eight sets) and `starspeech` sigil. Even parity includes all four data bits and the checking bit. One odd number of flips triggers an alarm; an even number does not. Never equate no alarm with unchanged data or claim single-row parity can locate/repair an error. All three experiments are required. Count distinct final differences, not clicks; changing a lamp invalidates the previous test. Preserve shared reset/replay, bilingual hidden hints and completion discovery.
