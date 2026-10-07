@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    foodchains: {
+      title: ['Follow the food energy!', '跟着食物能量走！'],
+      steps: [
+        ['☀ → 🌿', 'Grass uses sunlight to make food. Oak leaves and tiny phytoplankton do this too. They are producers: the start of our three chains.', '草利用陽光製造養分。橡樹葉和微小的浮游植物也會這樣做。它們是生產者，是這三條食物鏈的起點。'],
+        ['🌿 → 🐇 → 🦊', 'Example: a rabbit eats grass; a fox can eat the rabbit. Energy passes with the food. The arrow points to the eater, not the food it wants!', '例子：兔吃草，狐狸可以吃兔。能量隨食物傳遞。箭頭指向吃東西的生物，不是它想吃的食物！'],
+        ['🌳 → 🐛 → 🐦', 'An oak leaf feeds a caterpillar, and a blue tit can eat the caterpillar. In the ocean, phytoplankton feed krill, and blue whales eat krill. Different places have different links.', '橡樹葉供毛毛蟲進食，藍山雀可以吃毛毛蟲。在海洋，磷蝦吃浮游植物，藍鯨吃磷蝦。不同地方有不同連繫。']
+      ],
+      takeaway: ['A food chain shows one route for energy. Real organisms can have several foods and predators, forming food webs. Our short examples leave out decomposers and many other links; they do not predict animal numbers.', '食物鏈顯示能量的一條路線。真實生物可能有多種食物和捕食者，形成食物網。這些短例子省略了分解者和很多其他連繫，也不能預測動物數量。'],
+      question: ['If you drew a rabbit eating grass, which way should your energy arrow point?', '畫出兔吃草時，能量箭頭應該指向哪一邊？']
+    },
     signal: {
       title: ['A small check can reveal a change!', '一個小檢查，可以揭示改變！'],
       steps: [

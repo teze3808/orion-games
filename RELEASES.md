@@ -20,3 +20,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-04 | The Clockwork Fox / 迷路的機械狐狸 | Computing: sequencing and repeat | games/orion-fox/ |
 | 2026-10-05 | The Gearkeeper’s Vault / 齒輪守護者的密庫 | Engineering: gear direction and speed | games/orion-gears/ |
 | 2026-10-06 | The Broken Star Signal / 被干擾的星空訊號 | Computing: even parity and detection limits | games/orion-signal/ |
+| 2026-10-07 | The Living Tapestry / 生命織錦寶庫 | Biology: food chains and energy flow | games/orion-foodchains/ |

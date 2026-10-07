@@ -122,3 +122,7 @@ Play [The Clockwork Fox](https://orion-lost-city.onrender.com/games/orion-fox/):
 - [The Broken Star Signal — parity and error detection](https://orion-lost-city.onrender.com/games/orion-signal/)
 
 Seventeen missions are playable. The signal mission tests one-bit and two-bit changes, earns the Star Speech Sigil, and includes eight reset/replay sets and bilingual completion discoveries. Run `node tests/signal.cjs` for all 256 flip masks and reward/persistence checks.
+
+- [The Living Tapestry — food chains and energy flow](https://orion-lost-city.onrender.com/games/orion-foodchains/)
+
+Eighteen missions are playable. Restore three habitat chains to earn the Connection Sigil. Six replay/reset journeys retain existing collection data. Run `node tests/foodchains.cjs` for 2,160 ordered selections and persistence/translation checks.

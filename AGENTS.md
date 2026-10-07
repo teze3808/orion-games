@@ -129,3 +129,6 @@ Keep `gears` mission/variant (six sets) and `motion` sigil stable. Model externa
 
 ## Broken Star Signal — 2026-10-06
 Preserve `signal` mission/variant (eight sets) and `starspeech` sigil. Even parity includes all four data bits and the checking bit. One odd number of flips triggers an alarm; an even number does not. Never equate no alarm with unchanged data or claim single-row parity can locate/repair an error. All three experiments are required. Count distinct final differences, not clicks; changing a lamp invalidates the previous test. Preserve shared reset/replay, bilingual hidden hints and completion discovery.
+
+## Living Tapestry — 2026-10-07
+Preserve `foodchains` mission/variant (six sets), `connection` sigil, and all-three-habitat reward. Arrows point from food to consumer, never toward an animal’s prey. Show the three documented chains as examples, not full diets or food webs. No population forecasts or universal claims that all ecosystems begin with sunlight. Reset/replay changes the whole habitat order and card layout; individual chains recur. Preserve touch/keyboard card selection and removal, hidden progressive hints, both languages, shared discovery and storage failure handling.
