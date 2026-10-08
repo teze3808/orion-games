@@ -47,7 +47,7 @@ A mysterious letter leads Orion to a lost city. Each independent mission reveals
 | balance | 寶石天平室 | Equality and unknown quantities | balance / 平衡 | Playable |
 | train | 水晶列車站 | Number sorting and pairwise swaps | order / 秩序 | Playable |
 | signal | 被干擾的星空訊號 | Parity and error detection | starspeech / 星語 | Playable |
-| maze | 智慧之心的地下迷城 | Weighted graphs and shortest paths | wisdom / 智慧 | Planned |
+| maze | 智慧之心的地下迷城 | Weighted graphs and shortest paths | wisdom / 智慧 | Playable |
 
 ## Current game and reward
 The gate accepts four digits, including leading zeroes. Its teaching hash is digit sum modulo 10; the original code is 1234 and stored hash is 0. Any hash-0 code opens it. Earn the Echo Sigil on the first successful gate opening, including the original code. Finding additional distinct collision codes is an optional learning challenge. Repeated attempts do not award duplicate sigils. The reward goal is shown after opening the gate; the hash rule stays in the hidden notes.
@@ -81,7 +81,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and eighteen missions are implemented, including the Living Tapestry. One mission card describes a planned game and must not be represented as playable. Continue those plans while adding chemistry, biology, engineering, and other science missions; the original list need not be completed first. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and nineteen missions are implemented, including the Heart of the Labyrinth. The initial collection is complete. [ROADMAP.md](ROADMAP.md) defines the next ten planned missions across physics, biology, maths, chemistry, computing, astronomy, engineering and Earth science. They remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -271,3 +271,6 @@ Validation for 2026-10-07: twenty test suites pass, including 2,160 possible ord
 Mission/variant `maze` (six sets), stable `wisdom` sigil, route `games/orion-maze/`. Nineteen playable missions, no remaining planned missions in the initial roadmap. Find a route from S to T minimizing summed positive edge weights across all three maps. Tap connected rooms, undo or clear a route, and compare tested totals. Accept all tied minima. Replay and collection reset change the saved weight journey; individual maps can recur. Preserve shared language, progress, discovery and honest save retry. A child-friendly animated completion lesson explains why fewer passages need not cost less. Original built-in ImageGen vault art is integrated in the scene and background; sources/model limits in SCIENCE.md and prompt in ARTWORK.md.
 Validation: 21 regression suites pass. New independent Floyd-Warshall oracle verifies all 144 simple routes across six three-map sets, plus both languages, invalid/incomplete/wrong paths, hints/undo, idempotent reward, reload/replay/reset and failed-save recovery. Browser play confirms three seals, wrong-route retry, keyboard input, bilingual state and completion overlay, and replay persistence. Tablet/phone checks use Chrome viewport emulation, not physical iPad Safari.
 Browser follow-up: Wisdom saved alongside the existing Ingenuity sigil; hub shows 19 available missions and whole-card navigation works. Replay set 6 survived reload. Artwork and readable map proportions inspected at 1024×768, 768×1024 and 390×844. Native reset of an empty separate localhost collection changed the maze to set 4 and retained English. No browser console errors. Render-origin collection was untouched.
+
+## Second expedition roadmap — 2026-10-08
+[ROADMAP.md](ROADMAP.md) is the current ten-mission planning queue, with bilingual stories, reserved mission/sigil IDs, interaction designs, success criteria, reset variants and model boundaries. Start with The Sunken Harbour, then alternate subjects in the suggested order. All ten are planned; the live hub still contains 19 playable games. Completion of either roadmap does not end future expansion.

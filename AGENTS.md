@@ -135,3 +135,6 @@ Preserve `foodchains` mission/variant (six sets), `connection` sigil, and all-th
 
 ## Heart of the Labyrinth — 2026-10-08
 Preserve `maze` mission/variant (six sets) and `wisdom` sigil. Minimize summed positive passage costs, not hops or drawn length. Accept all tied least-cost routes; require all three maps for reward. Undirected passages, fixed fictional energy costs, no repeated rooms. Keep tap/keyboard room selection, undo/clear, hidden clues, bilingual discovery, saved variants and failed-save handling. All initial planned missions are now playable; future daily missions should extend the world with varied subjects.
+
+## Second expedition queue — 2026-10-08
+Read ROADMAP.md alongside PROJECT.md when selecting the next daily mission. It reserves ten new mission/sigil IDs and defines stories, interaction, reward criteria, variants and model boundaries. Follow its varied subject order where practical, resume unfinished releases first, and update the roadmap on release. Keep planned missions documentation-only until playable and validated; do not add empty hub routes. Verify scientific sources during implementation. The roadmap is expandable, not a stopping condition for daily releases.

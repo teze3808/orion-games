@@ -17,7 +17,7 @@ English and Traditional Chinese are supported throughout. Progress and language 
 
 Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to auto-deploy the entire site through Render after its build-time regression checks. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. One more mission is planned in the initial collection; new science adventures can join alongside them. Add each future game under `dist/games/` and reuse `dist/shared/`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. The initial collection is complete: 19 games are playable. [The next ten-mission roadmap](ROADMAP.md) adds new adventures across eight subject areas; these plans are not yet playable. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
 
