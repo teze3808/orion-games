@@ -132,3 +132,6 @@ Preserve `signal` mission/variant (eight sets) and `starspeech` sigil. Even pari
 
 ## Living Tapestry — 2026-10-07
 Preserve `foodchains` mission/variant (six sets), `connection` sigil, and all-three-habitat reward. Arrows point from food to consumer, never toward an animal’s prey. Show the three documented chains as examples, not full diets or food webs. No population forecasts or universal claims that all ecosystems begin with sunlight. Reset/replay changes the whole habitat order and card layout; individual chains recur. Preserve touch/keyboard card selection and removal, hidden progressive hints, both languages, shared discovery and storage failure handling.
+
+## Heart of the Labyrinth — 2026-10-08
+Preserve `maze` mission/variant (six sets) and `wisdom` sigil. Minimize summed positive passage costs, not hops or drawn length. Accept all tied least-cost routes; require all three maps for reward. Undirected passages, fixed fictional energy costs, no repeated rooms. Keep tap/keyboard room selection, undo/clear, hidden clues, bilingual discovery, saved variants and failed-save handling. All initial planned missions are now playable; future daily missions should extend the world with varied subjects.

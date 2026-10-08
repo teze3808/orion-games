@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    maze: {
+      title: ['The cheapest path can take more steps!', '多走幾段，也可能更省！'],
+      steps: [
+        ['S → A → T', 'A map can be a network. Rooms are dots called vertices; passages are links called edges. Each number is the cost of using that passage.', '地圖可以是一個網絡。房間是稱為頂點的點，通道是稱為邊的連線。每個數字是走那條通道的成本。'],
+        ['2 + 3 = 5', 'Example: a passage costing 2 followed by one costing 3 uses 5 energy. Add every passage you travel through.', '例子：先走成本 2 的通道，再走成本 3 的通道，共用 5 能量。把經過的每條通道成本相加。'],
+        ['2 + 2 + 1 < 4 + 4', 'Example: three passages can cost 5 while two cost 8. The weighted shortest path has the smallest total, even if it takes more passages!', '例子：三條通道可以只用 5，兩條卻用 8。加權最短路徑的總成本最小，即使要走更多通道！']
+      ],
+      takeaway: ['Compare total cost, not how short a line looks. Our energy numbers are made up and stay fixed. Real route planners may use distance or time instead.', '比較總成本，不是線看起來有多短。遊戲的能量數字是虛構且固定的。真實路線規劃可以改用距離或時間。'],
+      question: ['Would you choose costs 1 + 1 + 1, or 2 + 2? Why?', '你會選成本 1 + 1 + 1，還是 2 + 2？為甚麼？']
+    },
     foodchains: {
       title: ['Follow the food energy!', '跟着食物能量走！'],
       steps: [

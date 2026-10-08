@@ -126,3 +126,5 @@ Seventeen missions are playable. The signal mission tests one-bit and two-bit ch
 - [The Living Tapestry — food chains and energy flow](https://orion-lost-city.onrender.com/games/orion-foodchains/)
 
 Eighteen missions are playable. Restore three habitat chains to earn the Connection Sigil. Six replay/reset journeys retain existing collection data. Run `node tests/foodchains.cjs` for 2,160 ordered selections and persistence/translation checks.
+
+2026-10-08: [The Heart of the Labyrinth](https://orion-lost-city.onrender.com/games/orion-maze/) teaches weighted shortest paths through three tap-to-trace treasure maps. Earn the Wisdom Sigil by finding a least-energy route on each map. English/Traditional Chinese, six reset/replay sets, undo, hidden clues and a completion explanation. The collection now has 19 playable missions; the initial roadmap is complete.
