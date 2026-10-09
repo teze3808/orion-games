@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: all ten missions below are planned, not playable.** The existing 19 games remain available. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
+**Status: The Sunken Harbour is playable (2026-10-09); the other nine missions are planned.** Twenty games are now available. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
 
 ## Mission queue
 
@@ -21,7 +21,9 @@ The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour,
 | 9 | The Chance Compass / 機遇羅盤 | Maths: probability versus individual outcomes | probability | possibility / 可能 / Possibility |
 | 10 | The Winter Lantern / 寒冬之燈 | Science: insulation and heat transfer | insulation | warmth / 暖光 / Warmth |
 
-## 1. The Sunken Harbour / 沉沒港灣
+## 1. The Sunken Harbour / 沉沒港灣 — released 2026-10-09
+**Playable:** [Open mission](https://orion-lost-city.onrender.com/games/orion-buoyancy/). Three trials: change mass to float; record sinking and floating at equal mass with different volumes; find the smallest integer volume that floats. Six saved question sets.
+
 **Story:** A treasure ferry waits beneath a ruined harbour arch. Help it carry crystal cargo without sinking. / 廢墟港口的拱門下停着寶藏渡船。幫它運送晶石，避免沉沒。
 **Play:** Slide cargo onto a pictured sealed cargo capsule; adjust its mass or outer volume using large handles. Lower it into a tank and watch it float or sink beside a live mass/volume comparison.
 **Discovery and reward:** Complete three cargo/volume challenges, including comparing two objects of equal mass but different volume, to earn Afloat. Goals must require comparing density, not memorizing an object's name.

@@ -138,3 +138,6 @@ Preserve `maze` mission/variant (six sets) and `wisdom` sigil. Minimize summed p
 
 ## Second expedition queue — 2026-10-08
 Read ROADMAP.md alongside PROJECT.md when selecting the next daily mission. It reserves ten new mission/sigil IDs and defines stories, interaction, reward criteria, variants and model boundaries. Follow its varied subject order where practical, resume unfinished releases first, and update the roadmap on release. Keep planned missions documentation-only until playable and validated; do not add empty hub routes. Verify scientific sources during implementation. The roadmap is expandable, not a stopping condition for daily releases.
+
+## Sunken Harbour — 2026-10-09
+Preserve `buoyancy` mission/variant (six sets) and `afloat` sigil. Average density uses total mass divided by sealed outer volume; fixed water is 1 kg/L. Distinguish surface floating, neutral submersion and sinking. Trial two requires recorded evidence of both sinking and floating at unchanged mass; one observation or repeated identical tests cannot satisfy it. Final trial requires smallest whole-litre volume, not any floating result. Keep quantitative labels, keyboard/touch sliders, reduced-motion support, bilingual discovery and shared storage/reset contracts. Next roadmap mission: pollination.

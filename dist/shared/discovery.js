@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    buoyancy: {
+      title: ['Heavy does not always mean sinking!', '重的東西不一定下沉！'],
+      steps: [
+        ['⚖ ÷ ▣', 'A sealed capsule has mass and takes up space. Mass divided by its whole outer volume is its average density. The air inside counts as part of that space!', '密封貨艙有質量，也佔據空間。質量除以整個外部體積，就是平均密度。裡面的空氣也佔這些空間！'],
+        ['3 ÷ 4 < 1', 'Example: 3 kg in 4 litres is less dense than our water at 1 kg per litre, so it floats at the surface. Put the same 3 kg in only 2 litres: it sinks.', '例子：3 公斤放在 4 公升中，密度比每公升 1 公斤的水小，所以浮在水面。同樣 3 公斤，體積只有 2 公升，就會下沉。'],
+        ['3 ÷ 3 = 1', 'Example: 3 kg in 3 litres matches the water’s density. Fully underwater, it can stay without rising or sinking. Matching density is different from floating with part above the surface.', '例子：3 公斤、3 公升，密度與水相同。完全浸在水中時，可以停留而不上浮或下沉。密度相等，與部分露出水面地浮着不同。']
+      ],
+      takeaway: ['Compare average density with the fluid. Our sealed-capsule model ignores leaks, waves and tipping. The water is fixed at 1 kg/L; other fluids can give different results.', '比較平均密度與液體密度。本密封貨艙模型忽略漏水、波浪和翻側。水固定為每公升 1 公斤；換另一種液體，結果可能不同。'],
+      question: ['Two capsules have the same mass. Could one float and the other sink? What could be different?', '兩個貨艙質量相同，會不會一個浮起、一個下沉？甚麼可能不同？']
+    },
     maze: {
       title: ['The cheapest path can take more steps!', '多走幾段，也可能更省！'],
       steps: [
