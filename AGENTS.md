@@ -141,3 +141,6 @@ Read ROADMAP.md alongside PROJECT.md when selecting the next daily mission. It r
 
 ## Sunken Harbour — 2026-10-09
 Preserve `buoyancy` mission/variant (six sets) and `afloat` sigil. Average density uses total mass divided by sealed outer volume; fixed water is 1 kg/L. Distinguish surface floating, neutral submersion and sinking. Trial two requires recorded evidence of both sinking and floating at unchanged mass; one observation or repeated identical tests cannot satisfy it. Final trial requires smallest whole-litre volume, not any floating result. Keep quantitative labels, keyboard/touch sliders, reduced-motion support, bilingual discovery and shared storage/reset contracts. Next roadmap mission: pollination.
+
+## Nectar Courier — 2026-10-10
+Preserve mission/variant `pollination` (six journeys), sigil `blossom`. Only a different compatible apple donor delivered to stigma solves each trial; require all three. Pollen on stigma can be transferred even when incompatible: distinguish transfer from compatibility and later fertilization. A/B/C are explicitly selected compatible same-bloom varieties, not all apples. Keep visible pollen, keyboard/touch choices, bilingual hidden clues/discovery, failed-save retry and shared reset contracts. Next roadmap mission: fractions.

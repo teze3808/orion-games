@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    pollination: {
+      title: ['A tiny delivery connects flowers!', '小小傳送，連起花朵！'],
+      steps: [
+        ['✿ ••• → 🐝', 'Anthers make pollen. When a bee visits, some grains can stick to its body. Pollen is not nectar: nectar is a sugary liquid the bee may drink.', '花藥產生花粉。蜜蜂到訪時，一些花粉可以黏在牠身上。花粉不是花蜜；花蜜是蜜蜂可能飲用的含糖液體。'],
+        ['🐝 ••• → ✿', 'When pollen reaches a flower’s stigma, that transfer is pollination. In our apple orchard, we choose a different compatible variety flowering at the same time.', '花粉到達花朵的柱頭，這個傳送就是傳粉。在這個蘋果園，我們選另一個相容、同期開花的品種。'],
+        ['✿ → … → 🌱', 'Fertilization is a later step. Successful pollination can help seeds develop, but a delivery does not guarantee a fruit. Our chest opening is story magic!', '受精是之後的步驟。成功傳粉有助種子發育，但送達花粉不保證結果。寶箱打開是故事魔法！']
+      ],
+      takeaway: ['Different plants have different needs. Some can use their own pollen, and wind can carry pollen too. Our three apple varieties are selected compatible examples, not a rule for every flower.', '不同植物需要不同。有些可用自己的花粉，風也能傳送花粉。這三種蘋果是選定的相容例子，不是所有花的規則。'],
+      question: ['If pollen lands on a petal, has it reached the stigma yet?', '花粉落在花瓣上，是否已經到達柱頭？']
+    },
     buoyancy: {
       title: ['Heavy does not always mean sinking!', '重的東西不一定下沉！'],
       steps: [

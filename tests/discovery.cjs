@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const source=fs.readFileSync('dist/shared/discovery.js','utf8');
-for(const kind of ['hash','cipher','binary','levers','mixtures','seeds','mist','circuits','logic','water','sort','light','balance','shadows','fox','gears','signal','foodchains','maze','buoyancy'])for(const lang of ['en','zh-Hant'])for(const reduced of [true,false]){
+for(const kind of ['hash','cipher','binary','levers','mixtures','seeds','mist','circuits','logic','water','sort','light','balance','shadows','fox','gears','signal','foodchains','maze','buoyancy','pollination'])for(const lang of ['en','zh-Hant'])for(const reduced of [true,false]){
  const ids={},events={},tasks=[],timers=new Map();let next=0,language=lang,reopen,opens=0;
  function element(){return{hidden:false,open:false,textContent:'',listeners:{},children:[],setAttribute(){},append(n){this.children.push(n)},replaceChildren(n){this.children=[n];this.textContent=n.textContent},addEventListener(k,f){this.listeners[k]=f},focus(){this.focused=true},showModal(){this.open=true;opens++},close(){this.open=false;this.listeners.close?.()}};}
  const body=element(),result=element();body.dataset={mission:kind};result.append=n=>reopen=n;
@@ -18,4 +18,4 @@ for(const kind of ['hash','cipher','binary','levers','mixtures','seeds','mist','
  update(true);flush();if(reduced)ids.discoveryPlay.onclick();for(let i=0;i<2;i++){const [id,f]=[...timers][0];timers.delete(id);f();}assert.equal(timers.size,0);assert(ids.discoveryNext.disabled);assert.match(ids.discoveryStep.textContent,/3/);
  const html=fs.readFileSync(`dist/games/orion-${kind}/index.html`,'utf8');assert(html.includes('shared/discovery.css'));assert(html.includes(`data-mission="${kind}"`));assert(html.indexOf('shared/discovery.js')<html.indexOf('src="game.js'));assert(fs.readFileSync(`dist/games/orion-${kind}/game.js`,'utf8').includes('OrionDiscovery?.update('));
 }
-console.log('PASS discoveries: all 20 lessons × 2 languages × motion preferences; hidden before success, once per session, reopen, Escape, language preservation, bounded playback and reset cancellation.');
+console.log('PASS discoveries: all 21 lessons × 2 languages × motion preferences; hidden before success, once per session, reopen, Escape, language preservation, bounded playback and reset cancellation.');

@@ -23,3 +23,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-07 | The Living Tapestry / 生命織錦寶庫 | Biology: food chains and energy flow | games/orion-foodchains/ |
 | 2026-10-08 | The Heart of the Labyrinth / 智慧之心的地下迷城 | Computing/maths: weighted shortest paths | games/orion-maze/ |
 | 2026-10-09 | The Sunken Harbour / 沉沒港灣 | Physics: average density and floating | games/orion-buoyancy/ |
+| 2026-10-10 | The Nectar Courier / 花蜜信使 | Biology: pollen transfer and compatible flowers | games/orion-pollination/ |

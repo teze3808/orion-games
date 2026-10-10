@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: The Sunken Harbour is playable (2026-10-09); the other nine missions are planned.** Twenty games are now available. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
+**Status: Sunken Harbour and Nectar Courier are playable (2026-10-10); eight missions remain planned.** Twenty-one games are now available. Next: Mosaic Treasury. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
 
 ## Mission queue
 
@@ -30,7 +30,8 @@ The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour,
 **New questions:** Vary mass, volume and cargo targets; validate that each is solvable.
 **Model boundary:** Use sealed objects in one fixed fluid, with average density controlling the result. Do not imply that all heavy objects sink, or model flooding/shape stability as if density alone explains them.
 
-## 2. The Nectar Courier / 花蜜信使
+## 2. The Nectar Courier / 花蜜信使 — released 2026-10-10
+**Playable:** [Open mission](https://orion-lost-city.onrender.com/games/orion-pollination/). Three flower deliveries, six saved journeys, Blossom Sigil.
 **Story:** The orchard keeper’s seed chest is silent. Follow a small pollinator between flowers to restore the orchard’s message. / 果園守護者的種子寶箱沉寂了。跟隨小小傳粉者，把花朵之間的訊息重新連起來。
 **Play:** Guide a pictured pollinator to collect pollen from anthers and transfer it to a receptive stigma on a compatible flower. Show the pollen as visible grains; tap-to-select is an alternative to dragging.
 **Discovery and reward:** Complete three compatible pollen transfers with different flower arrangements to earn Blossom; finish by identifying which transfer reached the stigma.
