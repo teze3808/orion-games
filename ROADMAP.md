@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: Sunken Harbour and Nectar Courier are playable (2026-10-10); eight missions remain planned.** Twenty-one games are now available. Next: Mosaic Treasury. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
+**Status: Sunken Harbour, Nectar Courier and Mosaic Treasury are playable (2026-10-11); seven missions remain planned.** Twenty-two games are now available. Next: Crystal Spring. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
 
 ## Mission queue
 
@@ -38,9 +38,10 @@ The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour,
 **New questions:** Shuffle flower positions and compatible species choices.
 **Model boundary:** Pollination is pollen transfer, not fertilization itself. Do not instantly depict a fruit as guaranteed, or imply that every plant needs an insect or a different individual plant. Select and document a suitable example species at implementation.
 
-## 3. The Mosaic Treasury / 碎片寶藏殿
+## 3. The Mosaic Treasury / 碎片寶藏殿 — released 2026-10-11
+**Playable:** [Open mission](https://orion-lost-city.onrender.com/games/orion-fractions/). Tap/keyboard tiles with selectable equal partitions; three seals, two distinct final representations, six journeys.
 **Story:** Three broken mosaics hide a golden door. Restore the glowing area even when the pieces change size. / 三幅破碎拼畫藏着金色大門。碎片大小改變了，也要拼回相同的發光部分。
-**Play:** Drag equal-area fraction tiles into matching whole panels. Split or join pieces; the target and filled area appear side by side.
+**Play:** Choose an equal partition and tap or keyboard-toggle tiles. Equal-sized target and working panels show areas together. Changing the partition starts a blank panel while retaining recorded matches.
 **Discovery and reward:** Match three targets using equivalent fractions, including one target represented in two different ways, to earn Unity.
 **New questions:** Change target fractions and available partitions while retaining enough pieces.
 **Model boundary:** Compare fractions of equal-sized wholes; avoid accidental unequal-area pieces or implying that bigger denominators always mean bigger fractions.

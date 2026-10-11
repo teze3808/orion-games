@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    fractions: {
+      title: ['Different pieces, the same amount!', '碎片不同，面積相同！'],
+      steps: [
+        ['1 / 2', 'The bottom number counts equal parts in a whole. The top number counts the parts we choose. One of two equal parts is one half.', '下面的數字是整體的等份數，上面的數字是選取的份數。兩等份中的一份，就是二分之一。'],
+        ['1/2 = 2/4', 'Example: split each half into two equal pieces. One glowing half becomes two glowing quarters. The glowing area has not changed!', '例子：把每一半再分成兩等份。一份發光的二分之一，變成兩份發光的四分之一。發光面積沒有改變！'],
+        ['2/4 = 4/8', 'These are equivalent fractions: different names for the same number. With the same-sized whole, they cover the same area. More pieces can mean smaller pieces, not more treasure.', '這些是等值分數：同一個數的不同名稱。整體大小相同時，它們蓋住相同面積。碎片更多，可以只是每片更小，不是寶藏更多。']
+      ],
+      takeaway: ['Keep the whole the same size when comparing areas. Multiplying both fraction numbers by the same positive whole number gives an equivalent fraction.', '比較面積時，整體大小要相同。把分子和分母同乘一個正整數，就得到等值分數。'],
+      question: ['If you split every glowing and unlit tile in two, does the fraction of glowing area change?', '如果把每塊發光和未發光的碎片都分成兩半，發光面積佔整體的分數會改變嗎？']
+    },
     pollination: {
       title: ['A tiny delivery connects flowers!', '小小傳送，連起花朵！'],
       steps: [

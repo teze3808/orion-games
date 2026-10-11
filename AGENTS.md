@@ -144,3 +144,6 @@ Preserve `buoyancy` mission/variant (six sets) and `afloat` sigil. Average densi
 
 ## Nectar Courier — 2026-10-10
 Preserve mission/variant `pollination` (six journeys), sigil `blossom`. Only a different compatible apple donor delivered to stigma solves each trial; require all three. Pollen on stigma can be transferred even when incompatible: distinguish transfer from compatibility and later fertilization. A/B/C are explicitly selected compatible same-bloom varieties, not all apples. Keep visible pollen, keyboard/touch choices, bilingual hidden clues/discovery, failed-save retry and shared reset contracts. Next roadmap mission: fractions.
+
+## Mosaic Treasury — 2026-10-11
+Preserve `fractions` mission/variant (six journeys), `unity` sigil. Equal-sized whole rectangles, equal-area cells, exact cross-product equality. Every seal requires a denominator different from target; final seal requires two distinct valid denominators. Duplicate layouts cannot advance evidence. Repartitioning retains evidence, explicit trial clear removes it. Preserve keyboard/touch choices, bilingual state/hints/discovery, shared reset/replay and honest save retry. Next roadmap mission: solutions.

@@ -17,7 +17,7 @@ English and Traditional Chinese are supported throughout. Progress and language 
 
 Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to auto-deploy the entire site through Render after its build-time regression checks. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. The initial collection is complete: 21 games are playable. [The next ten-mission roadmap](ROADMAP.md) adds new adventures across eight subject areas; Sunken Harbour and Nectar Courier are released and eight plans remain. Add each future game under `dist/games/` and reuse `dist/shared/`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. The initial collection is complete: 22 games are playable. [The next ten-mission roadmap](ROADMAP.md) adds new adventures across eight subject areas; Sunken Harbour, Nectar Courier and Mosaic Treasury are released and seven plans remain. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
 
@@ -132,3 +132,5 @@ Eighteen missions are playable. Restore three habitat chains to earn the Connect
 2026-10-09: [The Sunken Harbour](https://orion-lost-city.onrender.com/games/orion-buoyancy/) teaches average density and floating with three sealed-capsule experiments. Earn the Afloat / 浮航 Sigil. Six reset/replay sets, English/Traditional Chinese, hidden hints and an animated completion lesson.
 
 2026-10-10: [The Nectar Courier](https://orion-lost-city.onrender.com/games/orion-pollination/) teaches pollen transfer from anther to stigma and compatibility in a simplified apple orchard. Three flower seals earn Blossom / 花信; six replay/reset journeys, bilingual hints and a completion lesson.
+
+2026-10-11: [The Mosaic Treasury](https://orion-lost-city.onrender.com/games/orion-fractions/) explores equivalent fractions through equal-area tile puzzles. Earn Unity / 合一 after three seals, including two distinct final representations. Six bilingual reset/replay journeys, hidden hints and a completion lesson.
