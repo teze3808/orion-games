@@ -147,3 +147,6 @@ Preserve mission/variant `pollination` (six journeys), sigil `blossom`. Only a d
 
 ## Mosaic Treasury — 2026-10-11
 Preserve `fractions` mission/variant (six journeys), `unity` sigil. Equal-sized whole rectangles, equal-area cells, exact cross-product equality. Every seal requires a denominator different from target; final seal requires two distinct valid denominators. Duplicate layouts cannot advance evidence. Repartitioning retains evidence, explicit trial clear removes it. Preserve keyboard/touch choices, bilingual state/hints/discovery, shared reset/replay and honest save retry. Next roadmap mission: solutions.
+
+## Shared favicon — 2026-10-11
+Every hub/game HTML page uses `shared/favicon.svg` with a relative path and cache version. Preserve the gold arched treasure-gate icon on a dark teal tile; new missions should reuse it rather than blank or per-game placeholder favicons.
