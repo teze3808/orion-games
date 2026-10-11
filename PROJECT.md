@@ -291,3 +291,5 @@ Validation: all 24 regression suites pass. The new suite independently checks 73
 The hub and all 22 games share `dist/shared/favicon.svg`: a gold arched gate and diamond sigil on a dark teal rounded tile. The icon is a small, hand-authored vector for readable browser-tab rendering; it uses no font glyphs or external resources. Relative, versioned links replace blank and inconsistent inline favicons.
 
 Favicon refinement: the Emerald Portal adds faceted mint-green treasure, shaded gold stonework, a luminous teal interior and a small discovery sparkle. It remains a self-contained SVG with a versioned link on every entrypoint.
+
+Favicon refinement: at the user’s request, the central emerald is replaced by a golden key with a round bow and two teeth. The portal, teal glow and sparkle remain; all entrypoints use the new key cache version.

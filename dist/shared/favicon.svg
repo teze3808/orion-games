@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <title>Orion’s Lost City — Emerald Portal</title>
+  <title>Orion’s Lost City — Golden Key</title>
   <defs>
     <linearGradient id="night" x2=".8" y2="1"><stop stop-color="#164952"/><stop offset="1" stop-color="#06141e"/></linearGradient>
     <linearGradient id="gold" x2=".8" y2="1"><stop stop-color="#fff3b7"/><stop offset=".4" stop-color="#f5c762"/><stop offset=".72" stop-color="#b87929"/><stop offset="1" stop-color="#f8dc88"/></linearGradient>
@@ -13,10 +13,11 @@
   <path d="M14 51V28a18 18 0 0 1 36 0v23Z" fill="url(#gold)"/>
   <path d="M20 51V29a12 12 0 0 1 24 0v22Z" fill="url(#door)" stroke="#fff0aa" stroke-width="1"/>
   <path d="M17 43V28a15 15 0 0 1 30 0v15" fill="none" stroke="#fff3c3" stroke-width="1" opacity=".6"/>
-  <path d="m32 24 9 11-9 13-9-13Z" fill="#5ef6cf"/>
-  <path d="m32 24 0 24-9-13Z" fill="#1bbaa3"/>
-  <path d="m32 24 9 11-9-3-9 3Z" fill="#b4ffe5"/>
-  <path d="m32 32 9 3-9 13Z" fill="#32dbb7"/>
+  <g fill="none" stroke="#ffdf83" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="30" cy="28" r="5.5"/>
+    <path d="M30 34v12m0-1h6m-6-6h8"/>
+  </g>
+  <path d="M27 25a4 4 0 0 1 5-1" fill="none" stroke="#fff7d3" stroke-width="1.5" stroke-linecap="round"/>
   <path d="M18 50h28l4 5H14Z" fill="url(#gold)"/>
   <path d="M12 56h40" stroke="#f9dd91" stroke-width="3" stroke-linecap="round"/>
   <path d="m51 8 1.7 4.3L57 14l-4.3 1.7L51 20l-1.7-4.3L45 14l4.3-1.7Z" fill="#fff1bb"/>
