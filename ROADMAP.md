@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: Sunken Harbour, Nectar Courier and Mosaic Treasury are playable (2026-10-11); seven missions remain planned.** Twenty-two games are now available. Next: Crystal Spring. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
+**Status: Sunken Harbour, Nectar Courier, Mosaic Treasury and Crystal Spring are playable (2026-10-12); six missions remain planned.** Twenty-three games are now available. Next: Whispering Archive. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
 
 ## Mission queue
 
@@ -47,6 +47,8 @@ The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour,
 **Model boundary:** Compare fractions of equal-sized wholes; avoid accidental unequal-area pieces or implying that bigger denominators always mean bigger fractions.
 
 ## 4. The Crystal Spring / 晶泉的秘密
+
+Released 2026-10-12: `games/orion-solutions/`.
 **Story:** A spring keeper left a cloudy crystal bowl and three sealed messages. Discover how much crystal can dissolve. / 泉水守護者留下混濁晶碗和三封密信。找出水中能溶解多少晶石。
 **Play:** Add measured portions of a virtual soluble solid to water, stir to equilibrium and watch dissolved particles and remaining solid. Compare water amounts at the same temperature.
 **Discovery and reward:** Produce an unsaturated solution, demonstrate solid remaining at saturation, then dissolve a specified remaining amount by adding sufficient water; all three earn Clarity.

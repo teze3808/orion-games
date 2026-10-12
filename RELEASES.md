@@ -25,3 +25,5 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-09 | The Sunken Harbour / 沉沒港灣 | Physics: average density and floating | games/orion-buoyancy/ |
 | 2026-10-10 | The Nectar Courier / 花蜜信使 | Biology: pollen transfer and compatible flowers | games/orion-pollination/ |
 | 2026-10-11 | The Mosaic Treasury / 碎片寶藏殿 | Maths: equivalent fractions and equal-area models | games/orion-fractions/ |
+
+| 2026-10-12 | The Crystal Spring / 晶泉的秘密 | Chemistry: dissolving and saturation | games/orion-solutions/ |

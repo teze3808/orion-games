@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    solutions: {
+      title: ['Dissolved does not mean gone!', '溶解了，不是消失了！'],
+      steps: [
+        ['◆ → • •', 'Crystals spread through the water when they dissolve. We draw tiny dots to help you imagine it. The material is still there, even when you cannot see separate crystals.', '晶體溶解時，物質分散在水中。我們畫小點幫你想像。即使看不見獨立晶體，物質仍然存在。'],
+        ['2 / cup', 'Our imaginary Moon crystals have a limit: 2 units per cup at this temperature. At the limit, the solution is saturated. Adding extra crystals leaves solid behind after enough time.', '虛構月晶有上限：在這個溫度，每杯水 2 份。達到上限，就是飽和。再加晶體，等待足夠時間後仍有固體剩餘。'],
+        ['💧 + 💧', 'More water gives more room for crystals to dissolve. Stirring can make dissolving faster, but does not raise the limit. Different real substances have different limits.', '更多水讓更多晶體可以溶解。攪拌可加快溶解，但不提高上限。不同真實物質的上限各有不同。']
+      ],
+      takeaway: ['A clear solution can be saturated too! Our fixed-temperature numbers and enlarged dots are a simplified model, not a real crystal recipe.', '清澈溶液也可以是飽和的！固定溫度的數字和放大小點只是簡化模型，不是真實晶體配方。'],
+      question: ['If the last crystal disappears, can you tell just by looking whether more could dissolve?', '最後一塊晶體溶解了，只靠看，能知道是否還可以溶解更多嗎？']
+    },
     fractions: {
       title: ['Different pieces, the same amount!', '碎片不同，面積相同！'],
       steps: [

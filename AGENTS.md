@@ -150,3 +150,6 @@ Preserve `fractions` mission/variant (six journeys), `unity` sigil. Equal-sized 
 
 ## Shared favicon — 2026-10-11
 Every hub/game HTML page uses `shared/favicon.svg` with a relative path and cache version. Preserve the gold arched treasure-gate icon with a central golden key on a dark teal tile; new missions should reuse it rather than blank or per-game placeholder favicons.
+
+## Crystal Spring — 2026-10-12
+Preserve mission/variant `solutions` (six journeys), sigil `clarity`. Fixed-temperature fictional Moon crystals dissolve at most 2 units per water cup. Conserve total solid + dissolved units. Exact capacity is saturated, even without residue; trial one needs spare capacity. Trial three requires observing residue before adding water. All three seals required. Adding ingredients invalidates observation but does not turn already dissolved material back into solid. Stir & wait represents equilibrium time, not increased solubility. Keep scientific limits, bilingual hidden hints/discovery, shared reset/replay, save-failure recovery and key favicon. Next roadmap mission: compression.
