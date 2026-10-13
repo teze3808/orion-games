@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: Sunken Harbour, Nectar Courier, Mosaic Treasury and Crystal Spring are playable (2026-10-12); six missions remain planned.** Twenty-three games are now available. Next: Whispering Archive. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
+**Status: Sunken Harbour, Nectar Courier, Mosaic Treasury, Crystal Spring and Whispering Archive are playable (2026-10-13); five missions remain planned.** Twenty-four games are now available. Next: Moonkeeper’s Observatory. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
 
 ## Mission queue
 
@@ -56,6 +56,8 @@ Released 2026-10-12: `games/orion-solutions/`.
 **Model boundary:** Dissolved matter does not disappear. Keep temperature fixed, distinguish dissolving rate from equilibrium capacity, and do not teach a universal temperature rule. Choose one substance with sourced solubility or explicitly label fictional model units. Entirely virtual; no tasting or mixing instructions.
 
 ## 5. The Whispering Archive / 低語檔案館
+
+Released 2026-10-13: `games/orion-compression/`.
 **Story:** A narrow message tube leads into a sealed library. Pack repeated rune patterns into shorter messages without losing a single rune. / 細小傳訊管通往封閉圖書館。把重複符文縮成短訊，同時保留每一個符文。
 **Play:** Group adjacent identical symbols into a symbol-and-count token; expand tokens with a tap to compare the restored message with the original.
 **Discovery and reward:** Encode one message exactly, decode another, then choose whether raw or encoded form is smaller for a third under the displayed storage rule. Earn Memory only when all reconstructions and the comparison are correct.

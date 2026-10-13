@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    compression: {
+      title: ['Keep every rune, write fewer repeats!', '保留每個符文，少寫重複！'],
+      steps: [
+        ['☀ ☀ ☀ → ☀ × 3', 'Example: three neighbouring Sun runes can be stored as Sun and a count of 3. This is a run: identical symbols next to each other.', '例子：三個相鄰太陽符文，可記成太陽和數量 3。這就是一段遊程：相鄰相同的符號。'],
+        ['☾ × 2 → ☾ ☾', 'To unpack, write that many copies. Keep the order of the pairs. Restoring every original rune exactly is called lossless compression.', '解開時，按數量寫回符文，保留配對次序。能完整還原每個原符文，稱為無損壓縮。'],
+        ['☀ ☾ ☀ → 3 × 2', 'Our model charges 2 slots per pair. Three alternating runes need 3 raw slots but 6 packed slots! Runs help most when neighbours repeat many times.', '本模型每組配對佔 2 格。三個交替符文原本只佔 3 格，打包卻佔 6 格！相鄰符文重複很多次時，遊程才較有幫助。']
+      ],
+      takeaway: ['This is run-length encoding. It can shrink data, tie, or grow it. Our slots are a simplified storage rule; compression does not make a message secret.', '這是遊程編碼，可以縮小資料、保持大小或令它變大。格數是簡化儲存規則；壓縮不會讓訊息保密。'],
+      question: ['Which is easier to pack: six identical runes, or six alternating runes? Why?', '六個相同符文，還是六個交替符文，哪個較容易打包？為甚麼？']
+    },
     solutions: {
       title: ['Dissolved does not mean gone!', '溶解了，不是消失了！'],
       steps: [
