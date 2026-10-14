@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    moonphases: {
+      title: ['One Moon, changing views!', '同一個月亮，不同的景象！'],
+      steps: [
+        ['☀ → ◐', 'The Moon reflects sunlight. Outside an eclipse, the Sun lights half of it. The Moon does not switch its own light on and off.', '月亮反射陽光。日月食以外，太陽照亮它的一半。月亮不是自己開燈或關燈。'],
+        ['🌑 → 🌓 → 🌕', 'As the Moon travels around Earth, we see different amounts of its sunlit half. From new to full, the bright part grows: waxing.', '月亮繞地球運行，我們看見受光一半的不同比例。從新月到滿月，亮的部分增加，稱為漸盈。'],
+        ['🌕 → 🌗 → 🌑', 'After full Moon, the bright part shrinks: waning. Our north-up view shows waxing on the right and waning on the left. In the real sky, the view can look rotated.', '滿月之後，亮的部分減少，稱為漸虧。本模型北方朝上，所以盈月右亮、虧月左亮。真實天空中的景象可能旋轉。']
+      ],
+      takeaway: ['Ordinary phases are changing views, not Earth’s shadow. The Moon’s tilted orbit means eclipses do not happen every month. Our eight stops are a simplified model, not a calendar.', '普通月相是觀看角度改變，不是地球的影子。月亮軌道傾斜，所以不是每月都有日月食。八個停點是簡化模型，不是曆法。'],
+      question: ['Two Moons both look half bright. How could you tell whether the bright part is growing or shrinking?', '兩個月相都像半亮，怎樣分辨亮的部分正在增加還是減少？']
+    },
     compression: {
       title: ['Keep every rune, write fewer repeats!', '保留每個符文，少寫重複！'],
       steps: [

@@ -27,3 +27,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-11 | The Mosaic Treasury / 碎片寶藏殿 | Maths: equivalent fractions and equal-area models | games/orion-fractions/ |
 | 2026-10-12 | The Crystal Spring / 晶泉的秘密 | Chemistry: dissolving and saturation | games/orion-solutions/ |
 | 2026-10-13 | The Whispering Archive / 低語檔案館 | Computing: lossless run-length encoding | games/orion-compression/ |
+| 2026-10-14 | The Moonkeeper’s Observatory / 月相守望台 | Astronomy: Moon phases and waxing/waning | games/orion-moonphases/ |

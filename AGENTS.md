@@ -156,3 +156,6 @@ Preserve mission/variant `solutions` (six journeys), sigil `clarity`. Fixed-temp
 
 ## Whispering Archive — 2026-10-13
 Preserve mission/variant `compression` (six journeys), sigil `memory`. Pair = symbol/count, counts 1–9. Preserve order, exact reconstruction and one pair per maximal adjacent run for encoding. Decoding requires every original symbol; final comparison uses raw 1 slot/rune versus packed 2 slots/pair, accepting the correct smaller/equal answer. All three seals required. Keep visible shape/name labels, touch/keyboard editing, undo/clear, hidden hints, bilingual discovery and shared reset/save contracts. Never imply RLE always shrinks data or provides encryption. Next roadmap mission: moonphases.
+
+## Moonkeeper’s Observatory — 2026-10-14
+Preserve `moonphases` mission/variant (eight journeys), `orbit` sigil. Require exact phase, including waxing/waning side, in all three trials. Sun stays right; overhead motion is anticlockwise viewed above the north pole; Earth-view convention is north up. Ordinary phases are viewing geometry, not Earth’s shadow. Preserve projected terminator, explicit scale/orientation/eclipse limits, pointer cancellation restoring the start state, keyboard controls, hidden bilingual hints/discovery and shared save/reset contracts. Next roadmap mission: pulleys / Sky Crane.
