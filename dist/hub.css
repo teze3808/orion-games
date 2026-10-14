@@ -48,3 +48,7 @@ header{gap:12px;letter-spacing:.1em}.header-controls{display:flex;gap:10px;align
 @media(prefers-reduced-motion:reduce){.mission-overview .sigil{transition:none}.mission-overview .sigil:hover,.mission-overview .sigil:focus-visible{transform:none}}
 
 .sigils:has(.sigil-slot:hover) .sigil-slot:not(:hover) .sigil-tooltip{display:none}
+
+/* Completed missions recede, but remain available for replay. */
+.mission.available.collected{background:linear-gradient(145deg,#142725,#0b1c20);border-color:#45524b;filter:brightness(.72) saturate(.6)}
+.mission.available.collected:hover,.mission.available.collected:focus-within{filter:none;border-color:#b49860}

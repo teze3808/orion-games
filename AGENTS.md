@@ -159,3 +159,6 @@ Preserve mission/variant `compression` (six journeys), sigil `memory`. Pair = sy
 
 ## Moonkeeper’s Observatory — 2026-10-14
 Preserve `moonphases` mission/variant (eight journeys), `orbit` sigil. Require exact phase, including waxing/waning side, in all three trials. Sun stays right; overhead motion is anticlockwise viewed above the north pole; Earth-view convention is north up. Ordinary phases are viewing geometry, not Earth’s shadow. Preserve projected terminator, explicit scale/orientation/eclipse limits, pointer cancellation restoring the start state, keyboard controls, hidden bilingual hints/discovery and shared save/reset contracts. Next roadmap mission: pulleys / Sky Crane.
+
+## Completed mission cards — 2026-10-14
+The hub dims and desaturates mission cards whose sigils are collected, restoring full brightness on hover or keyboard focus. Completed cards remain fully clickable for replay; collection reset restores normal styling through the shared progress render. Keep bilingual collected labels and the separate gold sigil collection indicators.
