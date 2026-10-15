@@ -17,7 +17,7 @@ English and Traditional Chinese are supported throughout. Progress and language 
 
 Clone normally; there are no submodules. Run `python3 -m http.server 8765 --directory dist`. Push `main` to auto-deploy the entire site through Render after its build-time regression checks. Run `node tests/language-and-rewards.cjs` for behavior checks.
 
-Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. The initial collection is complete: 25 games are playable. [The next ten-mission roadmap](ROADMAP.md) adds new adventures across eight subject areas; Sunken Harbour, Nectar Courier, Mosaic Treasury, Crystal Spring, Whispering Archive and Moonkeeper’s Observatory are released and four plans remain. Add each future game under `dist/games/` and reuse `dist/shared/`.
+Read [PROJECT.md](PROJECT.md) for the story and architecture, and [AGENTS.md](AGENTS.md) for development rules. The initial collection is complete: 26 games are playable. [The next ten-mission roadmap](ROADMAP.md) adds new adventures across eight subject areas; Sunken Harbour, Nectar Courier, Mosaic Treasury, Crystal Spring, Whispering Archive, Moonkeeper’s Observatory and Sky Crane are released and three plans remain. Add each future game under `dist/games/` and reuse `dist/shared/`.
 
 The former standalone orion-hash history is preserved in this repository’s merge history.
 
@@ -138,3 +138,7 @@ Eighteen missions are playable. Restore three habitat chains to earn the Connect
 - [The Moonkeeper’s Observatory — Moon phases](https://orion-lost-city.onrender.com/games/orion-moonphases/)
 
 Drag the Moon or use keyboard controls to match three Earth-view phases. Eight saved journeys; run `node tests/moonphases.cjs`.
+
+- [The Sky Crane — pulleys and force–distance trade-off](https://orion-lost-city.onrender.com/games/orion-pulleys/)
+
+Choose a pulley arrangement and drag the rope or use the keyboard slider. Six saved journeys; run `node tests/pulleys.cjs`.

@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: Sunken Harbour, Nectar Courier, Mosaic Treasury, Crystal Spring, Whispering Archive and Moonkeeper’s Observatory are playable (2026-10-14); four missions remain planned.** Twenty-five games are now available. Next: Sky Crane. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
+**Status: Sunken Harbour, Nectar Courier, Mosaic Treasury, Crystal Spring, Whispering Archive, Moonkeeper’s Observatory and Sky Crane are playable (2026-10-15); three missions remain planned.** Twenty-six games are now available. Next: Fossil Staircase. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
 
 ## Mission queue
 
@@ -74,6 +74,8 @@ Released 2026-10-14: `games/orion-moonphases/`. Eight saved journeys, three phas
 **Model boundary:** Ordinary phases arise from viewing geometry, not Earth’s shadow. State the viewing convention, keep sunlight direction consistent and label distances/sizes as not to scale. Avoid accidentally simulating an eclipse at every new/full Moon.
 
 ## 7. The Sky Crane / 雲端吊塔
+
+Released 2026-10-15: `games/orion-pulleys/`. Six saved journeys; three lifts with fixed/movable pulley comparison.
 **Story:** A treasure lift hangs below a tower in the clouds. Build a pulley system the keeper can pull. / 寶藏升降台懸在雲端高塔下。組合滑輪，讓守護者能把寶藏拉起。
 **Play:** Choose from clearly pictured fixed and movable pulley arrangements; drag a rope handle. Compare pull force and rope distance with the load’s rise.
 **Discovery and reward:** Lift three loads to their marks under stated force limits and demonstrate the longer pull needed by a force-saving arrangement to earn Uplift.

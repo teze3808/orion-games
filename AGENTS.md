@@ -162,3 +162,6 @@ Preserve `moonphases` mission/variant (eight journeys), `orbit` sigil. Require e
 
 ## Completed mission cards — 2026-10-14
 The hub dims and desaturates mission cards whose sigils are collected, restoring full brightness on hover or keyboard focus. Completed cards remain fully clickable for replay; collection reset restores normal styling through the shared progress render. Keep bilingual collected labels and the separate gold sigil collection indicators.
+
+## Sky Crane — 2026-10-15
+Preserve `pulleys` mission/variant (six journeys), `uplift` sigil. Fixed wheel has advantage one; movable plus redirecting fixed wheel has two supporting rope sections and advantage two. Force × rope distance must equal load weight × rise. First and second trials compare identical weight/height; second halves the force limit. All three lifts required. Cancelled drags restore rope travel and cannot earn; slider supports keyboard/touch. Preserve ideal-model boundaries, bilingual hints/discovery, reset/replay and failed saves. Completed hub cards remain dimmed. Next planned mission: strata / Fossil Staircase.

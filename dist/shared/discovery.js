@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    pulleys: {
+      title: ['Less force, a longer pull!', '拉力較小，拉繩較長！'],
+      steps: [
+        ['↓ ⇄ ↑', 'A fixed pulley changes direction: pull the rope down and the chest goes up. It does not reduce the ideal force needed.', '定滑輪改變方向：向下拉繩，寶箱向上升。它不會減少理想模型所需的拉力。'],
+        ['│ ◯ │', 'Two rope sections hold our movable pulley. They share the load, so each needs only half the force. The other fixed wheel lets you pull downward.', '兩段繩支撐動滑輪，共同分擔負重，所以每段只需一半拉力。另一個定滑輪讓你向下拉。'],
+        ['2 m ↓ → 1 m ↑', 'Example: to lift a chest 1 metre with two supporting sections, pull 2 metres of rope. Half the force needs twice the distance!', '例子：兩段繩支撐時，讓寶箱升高 1 米，要拉 2 米繩。一半拉力需要兩倍距離！']
+      ],
+      takeaway: ['Pulleys trade force for distance; they do not create free energy. Our ideal model leaves out friction and the weight of ropes and wheels. Real cranes need extra force and careful design.', '滑輪用較長距離換取較小拉力，不會產生免費能量。本理想模型忽略摩擦、繩和滑輪的重量。真實吊機需要額外拉力和仔細設計。'],
+      question: ['If two rope sections lift a chest 2 metres, how much rope must you pull?', '兩段繩支撐寶箱，要升高 2 米，你需要拉多少米繩？']
+    },
     moonphases: {
       title: ['One Moon, changing views!', '同一個月亮，不同的景象！'],
       steps: [
