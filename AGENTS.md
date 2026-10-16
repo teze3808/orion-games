@@ -165,3 +165,6 @@ The hub dims and desaturates mission cards whose sigils are collected, restoring
 
 ## Sky Crane — 2026-10-15
 Preserve `pulleys` mission/variant (six journeys), `uplift` sigil. Fixed wheel has advantage one; movable plus redirecting fixed wheel has two supporting rope sections and advantage two. Force × rope distance must equal load weight × rise. First and second trials compare identical weight/height; second halves the force limit. All three lifts required. Cancelled drags restore rope travel and cannot earn; slider supports keyboard/touch. Preserve ideal-model boundaries, bilingual hints/discovery, reset/replay and failed saves. Completed hub cards remain dimmed. Next planned mission: strata / Fossil Staircase.
+
+## Fossil Staircase — 2026-10-16
+Preserve mission/variant `strata` (six journeys) and `deeptime` sigil. Require correct top-to-bottom order and the event marker in all three columns. Earlier deposits lie below later deposits only in the stated undisturbed sedimentary model. Fossil symbols are sample identifiers, not age clocks; the treasure event is fictional. Moving a layer clears the marker; cancelled/outside drags do nothing. Keep keyboard/tap arrows, bilingual hidden clues/discovery, non-repeating replay/reset and honest failed-save retries.

@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    strata: {
+      title: ['Read the rocks like a story!', '像故事一樣閱讀岩石！'],
+      steps: [
+        ['▱ → ▱▱ → ▱▱▱', 'Sediment settles in layers. Imagine stacking blankets: the first one stays underneath each new blanket.', '沉積物一層一層堆起來。想像疊毛毯：第一張留在下面，新毛毯鋪在上面。'],
+        ['↑ ▱ ▱ ↓', 'In an undisturbed rock column, the lower layers formed earlier than those above. This rule helps us put events in order.', '未受擾動的岩層中，下層比上層更早形成。這個規律幫我們排列事件先後。'],
+        ['A → ◆ → B', 'Example: an event after A but before B belongs between them. Knowing which came first does not tell us how many years ago it happened.', '例子：事件發生在 A 之後、B 之前，就放在兩者之間。知道先後，不等於知道發生在多少年前。']
+      ],
+      takeaway: ['This is relative dating. Our model has no overturned layers or missing deposits. The fossil drawings identify samples; they are not clocks. The treasure marker belongs to our imaginary story.', '這是相對定年。本模型沒有倒轉岩層或缺失沉積。化石圖案用來辨認樣本，不是時鐘。寶藏標記屬於我們的幻想故事。'],
+      question: ['If another layer settles on top, is it older or younger than the layer underneath?', '如果頂部再沉積一層，它比下面的一層更早還是更晚形成？']
+    },
     pulleys: {
       title: ['Less force, a longer pull!', '拉力較小，拉繩較長！'],
       steps: [

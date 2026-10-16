@@ -142,3 +142,5 @@ Drag the Moon or use keyboard controls to match three Earth-view phases. Eight s
 - [The Sky Crane — pulleys and force–distance trade-off](https://orion-lost-city.onrender.com/games/orion-pulleys/)
 
 Choose a pulley arrangement and drag the rope or use the keyboard slider. Six saved journeys; run `node tests/pulleys.cjs`.
+
+2026-10-16: [The Fossil Staircase](https://orion-lost-city.onrender.com/games/orion-strata/) teaches relative order in undisturbed rock layers. Drag or use arrows to arrange cards and place a story-event marker. Three columns earn Deep Time / 遠古. Six bilingual saved journeys; `node tests/strata.cjs`.

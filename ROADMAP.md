@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: Sunken Harbour, Nectar Courier, Mosaic Treasury, Crystal Spring, Whispering Archive, Moonkeeper’s Observatory and Sky Crane are playable (2026-10-15); three missions remain planned.** Twenty-six games are now available. Next: Fossil Staircase. This is the next daily-release queue, not a promise that untested games will ship on fixed dates. Resume an unfinished daily release before starting another; use RELEASES.md to prevent duplicate releases. Keep these IDs stable when implementing them.
+**Status: Eight second-expedition missions are playable through Fossil Staircase (2026-10-16); two remain planned.** Twenty-seven games are available. Next: Chance Compass. Resume unfinished daily work and use RELEASES.md to prevent duplicate releases.
 
 ## Mission queue
 
@@ -82,7 +82,9 @@ Released 2026-10-15: `games/orion-pulleys/`. Six saved journeys; three lifts wit
 **New questions:** Change load, lift height and allowable force, with validated feasible configurations.
 **Model boundary:** Use ideal massless ropes/pulleys without friction. Count supporting rope segments correctly; a fixed pulley changes direction but does not reduce ideal force. Less force is not free energy.
 
-## 8. The Fossil Staircase / 化石階梯
+## 8. The Fossil Staircase / 化石階梯 — released 2026-10-16
+**Playable:** [Open mission](https://orion-lost-city.onrender.com/games/orion-strata/). Three four-layer reconstructions plus event positions; six saved journeys.
+
 **Story:** A buried staircase crosses the city’s stone memory. Reassemble its layers to find where an ancient cache belongs. / 埋藏的階梯穿過古城的石頭記憶。重組岩層，找出古老寶匣所在的一層。
 **Play:** Slide illustrated layer cards into a vertical column using deposition clues. Compare older/younger relationships and position a treasure marker between two events.
 **Discovery and reward:** Correctly reconstruct three undisturbed layer sequences and their relative event order to earn Deep Time.
