@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    probability: {
+      title: ['Chance is not a promise!', '有機會，不等於一定！'],
+      steps: [
+        ['♦ ♦ ♦ ●', 'Imagine 3 red gems and 1 blue gem. Each gem is equally likely, so red has a 3 out of 4 chance. Blue can still be picked!', '想像袋中有 3 顆紅寶石、1 顆藍寶石。每顆機會相同，紅色機會是四分之三，但仍然可以抽中藍色！'],
+        ['♦ → bag → ♦ ●', 'Put the gem back and mix again. The bag has not changed, so the next draw has the same chances. A run of reds does not make blue due next.', '放回寶石再混合。袋子沒有改變，下一次機會也不變。連續抽到紅色，不代表下一次該輪到藍色。'],
+        ['10 → 100 → 1000', 'A short tally may look surprising. Over many draws, the proportions tend toward the bag’s chances, but they do not have to get closer at every step.', '短期紀錄可能出乎意料。抽取很多次後，比例傾向袋子的理論機會，但不是每一步都一定更接近。']
+      ],
+      takeaway: ['Probability describes how likely an outcome is, not what must happen next. Our virtual gems are equally selectable, and each is replaced. Your design and explanation earn the sigil, never lucky draws.', '概率描述結果有多大機會，不是預告下一次一定發生甚麼。虛擬寶石每顆被抽中的機會相同，而且每次放回。設計和解釋讓你獲得符印，不靠運氣。'],
+      question: ['If a bag has equal red and blue gems and you draw red three times, which colour is more likely next when each gem is replaced?', '袋中紅藍寶石數量相同，每次抽後放回。連續抽到三次紅色，下一次哪色機會較大？']
+    },
     strata: {
       title: ['Read the rocks like a story!', '像故事一樣閱讀岩石！'],
       steps: [

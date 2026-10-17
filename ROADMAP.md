@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: Eight second-expedition missions are playable through Fossil Staircase (2026-10-16); two remain planned.** Twenty-seven games are available. Next: Chance Compass. Resume unfinished daily work and use RELEASES.md to prevent duplicate releases.
+**Status: Nine second-expedition missions are playable through Chance Compass (2026-10-17); one remains planned.** Twenty-eight games are available. Next: Winter Lantern. Resume unfinished daily work and use RELEASES.md to prevent duplicate releases.
 
 ## Mission queue
 

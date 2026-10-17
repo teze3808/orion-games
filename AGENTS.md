@@ -168,3 +168,7 @@ Preserve `pulleys` mission/variant (six journeys), `uplift` sigil. Fixed wheel h
 
 ## Fossil Staircase — 2026-10-16
 Preserve mission/variant `strata` (six journeys) and `deeptime` sigil. Require correct top-to-bottom order and the event marker in all three columns. Earlier deposits lie below later deposits only in the stated undisturbed sedimentary model. Fossil symbols are sample identifiers, not age clocks; the treasure event is fictional. Moving a layer clears the marker; cancelled/outside drags do nothing. Keep keyboard/tap arrows, bilingual hidden clues/discovery, non-repeating replay/reset and honest failed-save retries.
+
+
+## Chance Compass — 2026-10-17
+Mission/variant `probability` has six saved journeys; stable sigil `possibility` / Possibility / 可能. Twenty-eight missions are playable; Winter Lantern remains planned. Build three gem bags: a favored colour, equal chances, and a target fraction. Observe at least ten draws with replacement per bag and explain the next draw. Random outcomes never gate the reward. Changing the bag clears observations. Preserve cancellation of pending draws, non-repeating replay/reset, bilingual completion discoveries and shared storage. Artwork prompt and probability sources are in ARTWORK.md and SCIENCE.md.
