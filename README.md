@@ -146,3 +146,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 2026-10-16: [The Fossil Staircase](https://orion-lost-city.onrender.com/games/orion-strata/) teaches relative order in undisturbed rock layers. Drag or use arrows to arrange cards and place a story-event marker. Three columns earn Deep Time / 遠古. Six bilingual saved journeys; `node tests/strata.cjs`.
 
 2026-10-17: [The Chance Compass](https://orion-lost-city.onrender.com/games/orion-probability/) teaches theoretical probability and random outcomes. Build three bags and investigate draws with replacement to earn Possibility / 可能. Six saved bilingual journeys; `node tests/probability.cjs`.
+
+2026-10-18: [The Winter Lantern](https://orion-lost-city.onrender.com/games/orion-insulation/) teaches insulation and fair comparisons. Compare jackets and thickness, then meet a warmth target to earn Warmth / 暖光. Six saved bilingual journeys; `node tests/insulation.cjs`. All ten second-expedition missions are now playable; daily expansion continues.

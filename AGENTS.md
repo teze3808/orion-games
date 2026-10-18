@@ -172,3 +172,7 @@ Preserve mission/variant `strata` (six journeys) and `deeptime` sigil. Require c
 
 ## Chance Compass — 2026-10-17
 Mission/variant `probability` has six saved journeys; stable sigil `possibility` / Possibility / 可能. Twenty-eight missions are playable; Winter Lantern remains planned. Build three gem bags: a favored colour, equal chances, and a target fraction. Observe at least ten draws with replacement per bag and explain the next draw. Random outcomes never gate the reward. Changing the bag clears observations. Preserve cancellation of pending draws, non-repeating replay/reset, bilingual completion discoveries and shared storage. Artwork prompt and probability sources are in ARTWORK.md and SCIENCE.md.
+
+
+## Winter Lantern — 2026-10-18
+Mission/variant `insulation` has six saved journeys; stable sigil `warmth` / Warmth / 暖光. Twenty-nine games are playable; the second expedition is complete and daily releases should continue with distinct new ideas. Require three full fair comparisons: different jacket types at equal thickness, same jacket at different thickness, and a wrapped B meeting a target against unwrapped A. Final temperature comparisons must be correct. Keep container, content, initial temperature, ambient and duration fixed within each pair. Use the documented illustrative exponential cooling model; no heat source and no claim of measured material constants. Cancel timers on stop/reset/pagehide; changed inputs invalidate evidence. Preserve shared bilingual discovery, progress, reset/replay and failed-save recovery.

@@ -4,7 +4,7 @@ Second expedition roadmap · approved planning request: 2026-10-08.
 
 The Wisdom Heart reveals ten paths beyond the ancient city: a submerged harbour, a moon observatory, a buried archive and living gardens. Each keeper has a separate mystery. Orion may explore any released mission in any order; no earlier game or sigil is required.
 
-**Status: Nine second-expedition missions are playable through Chance Compass (2026-10-17); one remains planned.** Twenty-eight games are available. Next: Winter Lantern. Resume unfinished daily work and use RELEASES.md to prevent duplicate releases.
+**Status: All ten second-expedition missions are playable through Winter Lantern (2026-10-18).** Twenty-nine games are available. Future daily releases should extend the story with distinct ideas across subjects; the completed roadmap is not a stopping point. Use RELEASES.md to prevent duplicate releases.
 
 ## Mission queue
 
@@ -98,7 +98,7 @@ Released 2026-10-15: `games/orion-pulleys/`. Six saved journeys; three lifts wit
 **New questions:** Change colour totals and feasible target ratios.
 **Model boundary:** Every gem is equally likely, draws replace the gem, and trials are independent. More likely does not mean certain; short runs need not match exact proportions. No wagers or gambling rewards.
 
-## 10. The Winter Lantern / 寒冬之燈
+## 10. The Winter Lantern / 寒冬之燈 — released 2026-10-18
 **Story:** A warm crystal lantern must survive a snowy journey to the city gate. Choose a jacket that slows its cooling. / 溫暖晶燈要穿過雪地到達城門。選擇外套，讓它慢一點冷卻。
 **Play:** Wrap identical virtual containers in different insulation, hold other conditions constant, and compare animated temperature curves over the same simulated duration.
 **Discovery and reward:** Complete three fair comparisons, identify the better insulator from evidence, and meet a warmth target under the documented model to earn Warmth.

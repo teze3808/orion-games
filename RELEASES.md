@@ -31,3 +31,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-15 | The Sky Crane / 雲端吊塔 | Engineering: pulleys and force–distance trade-off | games/orion-pulleys/ |
 | 2026-10-16 | The Fossil Staircase / 化石階梯 | Earth science: rock layers and relative time | games/orion-strata/ |
 | 2026-10-17 | The Chance Compass / 機遇羅盤 | Maths: probability, replacement and random outcomes | games/orion-probability/ |
+| 2026-10-18 | The Winter Lantern / 寒冬之燈 | Science: insulation, cooling and fair comparisons | games/orion-insulation/ |

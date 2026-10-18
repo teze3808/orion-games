@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    insulation: {
+      title: ['A jacket slows the journey of heat!', '外套讓熱慢一點離開！'],
+      steps: [
+        ['♨ → ❄', 'A warm lantern transfers heat to colder surroundings. Without a heater, it cools toward the surrounding temperature.', '溫暖晶燈把熱傳給較冷的環境。沒有加熱器，它逐漸冷卻，接近環境溫度。'],
+        ['A │ B', 'To compare jackets fairly, use identical lanterns, starting temperatures, surroundings and times. Change only the jacket type or its thickness, one at a time.', '公平比較外套時，晶燈、起始溫度、環境和時間要相同。每次只改變外套種類或厚度其中一項。'],
+        ['♨ ⇢ ▤ ⇢ ❄', 'Insulation resists heat transfer. In our model, a thicker jacket slows cooling more. The warmer final reading tells us which lantern lost less heat.', '隔熱層阻礙傳熱。本模型中，較厚外套更能減慢冷卻。最後讀數較暖，表示晶燈流失較少熱。']
+      ],
+      takeaway: ['Insulation supplies no heat and does not stop cooling forever. Our jacket numbers and simulated minutes illustrate the idea; real materials also depend on gaps, moisture and airflow. The glowing crystal is story magic.', '隔熱不提供熱，也不能永遠阻止冷卻。外套數值和模擬分鐘只是示意；真實材料也受空隙、水分和氣流影響。發光晶石是故事魔法。'],
+      question: ['Would insulation help a cold drink stay cool in a warm room? Which way would heat move?', '隔熱能幫冷飲在暖房間保持冰涼嗎？熱會向哪邊流動？']
+    },
     probability: {
       title: ['Chance is not a promise!', '有機會，不等於一定！'],
       steps: [
