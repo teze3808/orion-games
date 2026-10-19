@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    reflection: {
+      title: ['Meet your mirror partner!', '找到你的鏡像伙伴！'],
+      steps: [
+        ['◆ · │ · ◇', 'Imagine folding the garden along the mirror line. Every gold point should land exactly on its blue partner.', '想像沿鏡線摺起花園。每個金點應該剛好落在它的藍色伙伴上。'],
+        ['◆ ← │ → ◇', 'Partners sit on opposite sides, equally far from the line. Measure straight across at a right angle to the mirror line, even when the line slopes.', '伙伴在鏡線兩邊，離鏡線一樣遠。即使鏡線傾斜，也要沿着與鏡線成直角的方向量度。'],
+        ['◆ → ◇ → ◆', 'Reflection keeps distances and size. Reflect the reflected pattern across the same line again, and it returns to the original!', '反射保持距離和大小。把鏡像沿同一條線再反射一次，就會回到原圖！']
+      ],
+      takeaway: ['This is reflection symmetry. Our gems mark points at tile centres. The silver centres stay fixed. The garden picture is decoration; the grid is our geometry model, not a simulation of light rays.', '這是反射對稱。寶石代表格子中心的點，銀格中心保持不動。花園圖片是裝飾；格子是幾何模型，不是光線模擬。'],
+      question: ['What happens to a point that lies exactly on the mirror line?', '如果一個點剛好在鏡線上，反射後會在哪裏？']
+    },
     insulation: {
       title: ['A jacket slows the journey of heat!', '外套讓熱慢一點離開！'],
       steps: [

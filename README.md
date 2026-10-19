@@ -148,3 +148,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 2026-10-17: [The Chance Compass](https://orion-lost-city.onrender.com/games/orion-probability/) teaches theoretical probability and random outcomes. Build three bags and investigate draws with replacement to earn Possibility / 可能. Six saved bilingual journeys; `node tests/probability.cjs`.
 
 2026-10-18: [The Winter Lantern](https://orion-lost-city.onrender.com/games/orion-insulation/) teaches insulation and fair comparisons. Compare jackets and thickness, then meet a warmth target to earn Warmth / 暖光. Six saved bilingual journeys; `node tests/insulation.cjs`. All ten second-expedition missions are now playable; daily expansion continues.
+
+2026-10-19: [The Mirror Garden](https://orion-lost-city.onrender.com/games/orion-reflection/) teaches reflection across vertical, horizontal and diagonal lines. Place matching gems in three gardens to earn Twinlight / 雙光. Six saved bilingual sets; `node tests/reflection.cjs`.

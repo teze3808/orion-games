@@ -114,3 +114,6 @@ Released 2026-10-15: `games/orion-pulleys/`. Six saved journeys; three lifts wit
 - Research authoritative sources and record them in SCIENCE.md before implementing scientific behavior. The model boundaries above are design constraints, not substitutes for source verification.
 - Keep this roadmap in documentation until a mission is complete and checked. Add its hub card, href, variant bank and discovery lesson only when playable. Do not create empty routes or awardable placeholders.
 - Update this file’s status, PROJECT.md and RELEASES.md with each actual release; publish through the existing Render service only.
+
+## Continuing expedition — 2026-10-19
+The Mirror Garden / 鏡影花園 is released at `games/orion-reflection/`: mathematics, reflection symmetry. Stable mission `reflection`, sigil `twinlight` / 雙光. Thirty games now playable. New independent subject ideas continue after the ten-mission roadmap.
