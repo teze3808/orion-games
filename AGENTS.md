@@ -180,3 +180,7 @@ Mission/variant `insulation` has six saved journeys; stable sigil `warmth` / War
 
 ## Mirror Garden — 2026-10-19
 Mission/variant `reflection` (six saved journeys), sigil `twinlight` / Twinlight / 雙光. Thirty games playable. Restore three gold-point patterns across vertical x=3, horizontal y=3, and diagonal x=y lines on a 7×7 grid (zero-based internal coordinates, rows downwards). Require exactly three reflected points in every garden; no reward from partial matches. Tap/keyboard buttons toggle blue gems; original and mirror-line cells are fixed. Silver cells mark the line through their centres, not a wide mirror band. Preserve distance, involution, solvability, bilingual hints/discovery, saved variants and shared reset/reward behavior. Continue daily expansion beyond the completed roadmap.
+
+
+## Star Post — 2026-10-20
+Mission/variant `packets` (six saved sets), sigil `delivery` / Delivery / 傳訊. Thirty-one games playable. Rebuild four numbered pieces in each of three deliveries: out-of-order arrivals, duplicate arrivals (with legitimate repeated symbols), and a missing piece requiring a numbered resend request. Reject duplicated sequence numbers, not equal payload symbols. Require every slot in exact order and all deliveries before reward. Clicking a filled slot with no selected packet clears it; changing language preserves slots, selection and resend state. This is a toy whole-packet protocol; actual TCP numbers bytes. Preserve shared reset/replay/storage/discovery contracts.

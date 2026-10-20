@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    packets: {
+      title: ['A message can travel in pieces!', '訊息可以分成碎片旅行！'],
+      steps: [
+        ['3 1 4 2 → 1 2 3 4', 'Pieces may arrive out of order. Sequence information helps the receiver rebuild the original order.', '碎片可能不是按順序抵達。次序資訊幫接收方重組原本的順序。'],
+        ['1 2 2 3 4 → 1 2 3 4', 'A repeated number can identify a duplicate. Deliver that data once. Two equal symbols with different numbers may both belong in the message.', '重複編號可以識別副本，同一份資料只送出一次。兩個相同符號若編號不同，都可能是訊息的一部分。'],
+        ['1 2 ? 4 → ↻ 3', 'A gap reveals missing data. A reliable delivery system can arrange retransmission to recover it.', '缺口顯示有資料遺失。可靠傳送系統可以安排重傳，找回資料。']
+      ],
+      takeaway: ['Our toy protocol numbers whole packets. Real TCP numbers bytes and also uses acknowledgements, checksums and timers. Not all network protocols guarantee delivery. The brass tubes are story magic; this game sends no real messages.', '玩具協定為完整封包編號。真實 TCP 為位元組編號，也使用確認、檢查碼和計時器。不是所有網絡協定都保證送達。黃銅管是故事魔法；遊戲不會傳送真實訊息。'],
+      question: ['If two pieces both show a star but have numbers 1 and 3, should you discard one?', '兩個碎片都是星星，但編號是 1 和 3，應該丟棄其中一個嗎？']
+    },
     reflection: {
       title: ['Meet your mirror partner!', '找到你的鏡像伙伴！'],
       steps: [

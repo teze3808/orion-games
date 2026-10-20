@@ -117,3 +117,6 @@ Released 2026-10-15: `games/orion-pulleys/`. Six saved journeys; three lifts wit
 
 ## Continuing expedition — 2026-10-19
 The Mirror Garden / 鏡影花園 is released at `games/orion-reflection/`: mathematics, reflection symmetry. Stable mission `reflection`, sigil `twinlight` / 雙光. Thirty games now playable. New independent subject ideas continue after the ten-mission roadmap.
+
+## Continuing expedition — 2026-10-20
+The Star Post / 星光郵局 is playable at `games/orion-packets/`. Computing: ordered reassembly, duplicate data and retransmission. Mission `packets`, sigil `delivery` / 傳訊. Thirty-one games available.

@@ -33,3 +33,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-17 | The Chance Compass / 機遇羅盤 | Maths: probability, replacement and random outcomes | games/orion-probability/ |
 | 2026-10-18 | The Winter Lantern / 寒冬之燈 | Science: insulation, cooling and fair comparisons | games/orion-insulation/ |
 | 2026-10-19 | The Mirror Garden / 鏡影花園 | Maths: reflection symmetry and mirror lines | games/orion-reflection/ |
+| 2026-10-20 | The Star Post / 星光郵局 | Computing: packet order, duplicates and retransmission | games/orion-packets/ |
