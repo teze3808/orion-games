@@ -184,3 +184,7 @@ Mission/variant `reflection` (six saved journeys), sigil `twinlight` / Twinlight
 
 ## Star Post — 2026-10-20
 Mission/variant `packets` (six saved sets), sigil `delivery` / Delivery / 傳訊. Thirty-one games playable. Rebuild four numbered pieces in each of three deliveries: out-of-order arrivals, duplicate arrivals (with legitimate repeated symbols), and a missing piece requiring a numbered resend request. Reject duplicated sequence numbers, not equal payload symbols. Require every slot in exact order and all deliveries before reward. Clicking a filled slot with no selected packet clears it; changing language preserves slots, selection and resend state. This is a toy whole-packet protocol; actual TCP numbers bytes. Preserve shared reset/replay/storage/discovery contracts.
+
+
+## Atom Treasury — 2026-10-21
+Mission/variant `atoms` (six saved journeys), sigil `matter` / Matter / 物質. Supply whole diatomic molecule tiles to match a fixed target of two or four H2O, NH3 or HCl molecules. All three mosaics require equal counts of each element. Preserve fixed molecule composition, live labelled atom counts, 0–6 bounds, bilingual hints/discovery, shared replay/reset and honest save recovery. The model counts atoms, not reaction conditions, rates, shapes or energy; matching counts does not establish feasibility. No real chemical handling.

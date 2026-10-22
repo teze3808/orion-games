@@ -120,3 +120,6 @@ The Mirror Garden / 鏡影花園 is released at `games/orion-reflection/`: mathe
 
 ## Continuing expedition — 2026-10-20
 The Star Post / 星光郵局 is playable at `games/orion-packets/`. Computing: ordered reassembly, duplicate data and retransmission. Mission `packets`, sigil `delivery` / 傳訊. Thirty-one games available.
+
+
+2026-10-21: Continuing expedition adds Atom Treasury, a playable chemistry atom-conservation puzzle. Continue varied daily missions beyond the original roadmap.

@@ -162,3 +162,7 @@ Exact grid transformations: (x,y)→(6−x,y), (x,6−y), or (y,x). Rows increas
 
 ## The Star Post — 2026-10-20
 Primary source: [IETF RFC 9293](https://www.rfc-editor.org/info/rfc9293/), §2.2, §3.4 and §3.10.7: TCP provides reliable ordered byte-stream service, uses sequence information to detect duplicate data, and retransmits lost data. The game simplifies this to four whole-packet IDs and single-symbol payloads. A numbered request button stands in for recovery; no ACK timing, byte ranges, checksums, flow/congestion control, connection handshake or real network is simulated. Not every protocol guarantees delivery. Duplicate means the same sequence number here, not merely equal symbols. All input comes from a trusted fixed scenario, with no damaged or conflicting copies. Story tubes are decorative.
+
+
+## Atom Treasury (2026-10-21)
+Source: OpenStax Chemistry 2e §4.1, https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations (checked 2026-10-21). Conservation requires equal atom counts for each element; coefficients change whole molecule quantities, not formulas. Models: 2 H2 + O2 → 2 H2O; N2 + 3 H2 → 2 NH3; H2 + Cl2 → 2 HCl. Fixed product count 2 or 4; no smallest-coefficient requirement. Diagrams are labelled atom inventories, not molecular geometry, scale, electron/bond or reaction-condition simulations. No claim reactions occur spontaneously or safely: all play uses virtual tiles, never physical materials. Artwork is decorative story imagery.

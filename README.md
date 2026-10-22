@@ -152,3 +152,6 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 2026-10-19: [The Mirror Garden](https://orion-lost-city.onrender.com/games/orion-reflection/) teaches reflection across vertical, horizontal and diagonal lines. Place matching gems in three gardens to earn Twinlight / 雙光. Six saved bilingual sets; `node tests/reflection.cjs`.
 
 2026-10-20: [The Star Post](https://orion-lost-city.onrender.com/games/orion-packets/) teaches reliable message reconstruction. Three deliveries earn Delivery / 傳訊. Six bilingual saved sets; `node tests/packets.cjs`.
+
+
+- [The Atom Treasury / 原子寶庫](https://orion-lost-city.onrender.com/games/orion-atoms/) — conservation of atoms through molecule tiles.

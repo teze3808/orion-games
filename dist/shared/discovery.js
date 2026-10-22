@@ -2,6 +2,16 @@
 (() => {
   'use strict';
   const lessons = {
+    atoms: {
+      title: ['Atoms are tiny building blocks!', '原子是微小的積木！'],
+      steps: [
+        ['H–H  +  O–O', 'Each letter stands for a kind of atom. A molecule is a group of atoms joined together. Count each kind separately.', '每個字母代表一種原子。分子是一組連在一起的原子，每種要分開數。'],
+        ['2 H₂ + O₂ → 2 H₂O', 'Example: two hydrogen molecules and one oxygen molecule contain four H atoms and two O atoms. Two water molecules have those same counts!', '例子：兩個氫分子和一個氧分子，共有四個 H 和兩個 O 原子。兩個水分子的原子數目也一樣！'],
+        ['H: 4 → 4    O: 2 → 2', 'A chemical reaction rearranges atoms. None of each kind should disappear or appear. Change how many whole molecules you use, not the atoms inside a molecule.', '化學反應重新排列原子，每種原子都不會憑空消失或出現。改變完整分子的數目，不改變一個分子裏面的原子。']
+      ],
+      takeaway: ['Count each kind of atom before and after. Equal counts are necessary, but do not tell us whether or how a real reaction will happen. These are picture puzzles, not instructions for mixing chemicals.', '比較前後每種原子的數目。數目相同是必要的，但不能告訴我們真實反應會否發生或如何進行。這是圖像謎題，不是混合化學品的指示。'],
+      question: ['Why can adding one whole water molecule change both the H count and the O count?', '為甚麼增加一個完整水分子，H 和 O 的數目都會改變？']
+    },
     packets: {
       title: ['A message can travel in pieces!', '訊息可以分成碎片旅行！'],
       steps: [
