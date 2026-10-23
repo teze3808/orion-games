@@ -123,3 +123,7 @@ The Star Post / 星光郵局 is playable at `games/orion-packets/`. Computing: o
 
 
 2026-10-21: Continuing expedition adds Atom Treasury, a playable chemistry atom-conservation puzzle. Continue varied daily missions beyond the original roadmap.
+
+
+### 2026-10-23 — Moonwing Archive (playable)
+Biology: use observable features and a dichotomous identification key. Three visitors, eight fictional beetles, six journeys; Insight / 明察 Sigil. Continues the subject mix beyond the completed roadmap. Next releases remain open to distinct science, engineering, mathematics and computing ideas.

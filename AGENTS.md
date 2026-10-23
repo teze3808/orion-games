@@ -188,3 +188,7 @@ Mission/variant `packets` (six saved sets), sigil `delivery` / Delivery / 傳訊
 
 ## Atom Treasury — 2026-10-21
 Mission/variant `atoms` (six saved journeys), sigil `matter` / Matter / 物質. Supply whole diatomic molecule tiles to match a fixed target of two or four H2O, NH3 or HCl molecules. All three mosaics require equal counts of each element. Preserve fixed molecule composition, live labelled atom counts, 0–6 bounds, bilingual hints/discovery, shared replay/reset and honest save recovery. The model counts atoms, not reaction conditions, rates, shapes or energy; matching counts does not establish feasibility. No real chemical handling.
+
+
+## Moonwing Archive — 2026-10-23
+Mission/variant `keys` (six saved journeys), sigil `insight` / Insight / 明察. Identify three fictional beetles using a two-choice key over antenna tips, back spots and body shape. All three correct complete paths are required for reward. Preserve the 8→4→2→1 narrowing, reversible choices, accurate labelled drawings and fixed trait-to-name mapping. The eight names/species are invented: this key does not identify real beetles or represent evolutionary relationships. Preserve bilingual hidden dismissible clues, completion discovery, non-repeating replay/full reset, saved questions and honest save retry.

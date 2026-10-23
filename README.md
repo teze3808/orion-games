@@ -155,3 +155,7 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 
 - [The Atom Treasury / 原子寶庫](https://orion-lost-city.onrender.com/games/orion-atoms/) — conservation of atoms through molecule tiles.
+
+
+### The Moonwing Archive / 月翼檔案館
+[Play the identification-key mission](https://orion-lost-city.onrender.com/games/orion-keys/). Observe three fictional beetles, follow branching feature choices, and earn the Insight / 明察 Sigil. Includes English/Traditional Chinese, touch/keyboard controls, six reset/replay journeys and an animated completion explanation.

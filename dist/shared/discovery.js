@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const lessons = {
+    keys: {"title": ["A feature can point the way!", "特徵可以帶路！"], "steps": [["8 → 4", "Look closely. An identification key asks about features you can observe, such as spots or antenna shapes.", "仔細看。檢索表會問你能觀察的特徵，例如斑點或觸角形狀。"], ["4 → 2 → 1", "Each fork gives two choices. Follow the matching one until a name remains. A wrong turn can lead to the wrong name: go back and check!", "每個分支有兩個選項。選吻合的一個，直到剩下一個名字。走錯分支可能找到錯誤名字：退回去檢查吧！"], ["❦ → ? → ❦", "A key only covers its own collection. Our imaginary beetles make a practice puzzle; real animals need an appropriate real-world key.", "檢索表只適用於它涵蓋的群組。我們用虛構甲蟲練習；真實動物需要適用的真實檢索表。"]], "takeaway": ["Use visible evidence, not guesses. Our three-feature key distinguishes eight invented beetles. It does not show which species evolved from which.", "使用看得見的證據，不要猜。三種特徵區分了八種虛構甲蟲，但不能顯示物種的演化關係。"], "question": ["Could you make a two-choice key for your toys? Which features would you use?", "你能為玩具製作每步兩個選項的檢索表嗎？你會用哪些特徵？"]},
     atoms: {
       title: ['Atoms are tiny building blocks!', '原子是微小的積木！'],
       steps: [

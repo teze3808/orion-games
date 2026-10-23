@@ -166,3 +166,11 @@ Primary source: [IETF RFC 9293](https://www.rfc-editor.org/info/rfc9293/), §2.2
 
 ## Atom Treasury (2026-10-21)
 Source: OpenStax Chemistry 2e §4.1, https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations (checked 2026-10-21). Conservation requires equal atom counts for each element; coefficients change whole molecule quantities, not formulas. Models: 2 H2 + O2 → 2 H2O; N2 + 3 H2 → 2 NH3; H2 + Cl2 → 2 HCl. Fixed product count 2 or 4; no smallest-coefficient requirement. Diagrams are labelled atom inventories, not molecular geometry, scale, electron/bond or reaction-condition simulations. No claim reactions occur spontaneously or safely: all play uses virtual tiles, never physical materials. Artwork is decorative story imagery.
+
+
+## Moonwing Archive: identification keys (2026-10-23)
+Learning objective: use visible traits to navigate a two-choice identification key and verify the resulting identity. Source: [US National Park Service, Using Dichotomous Keys](https://www.nps.gov/teachers/classrooms/dichotomous-key.htm), consulted 2026-10-23. Its educational objective describes identification through observable traits and paired choices; the observation guidance distinguishes visible evidence from guessed behaviour.
+
+Model: eight invented beetles exhaust the binary combinations of plain/rounded antenna tips, absent/four back spots, round/long body. A fixed identity maps to each feature triple. Question order varies but does not change the identification. Each selected branch halves the remaining group; wrong observations still reach a name, which must be checked against the visitor. The three-stage reward requires correct complete paths, not simply reaching any leaf.
+
+Limits: simplified flat drawings and fantasy names are not real species diagnoses, anatomical measurements, or an evolutionary tree. A real key applies to a specified group/region and may need microscopic features, additional evidence or expert verification. No live animals are collected, handled or harmed. Story artwork is decorative, independent of the precise SVG observation drawings.
