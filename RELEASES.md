@@ -37,3 +37,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 | 2026-10-22 (resumed Oct 21 mission) | The Atom Treasury / 原子寶庫 | Chemistry: conservation of atoms | games/orion-atoms/ |
 | 2026-10-23 | The Moonwing Archive / 月翼檔案館 | Biology: observable traits and identification keys | games/orion-keys/ |
+| 2026-10-24 | The Garden of Measures / 量度花園 | Maths: area and perimeter | games/orion-measures/ |

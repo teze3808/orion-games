@@ -159,3 +159,7 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 ### The Moonwing Archive / 月翼檔案館
 [Play the identification-key mission](https://orion-lost-city.onrender.com/games/orion-keys/). Observe three fictional beetles, follow branching feature choices, and earn the Insight / 明察 Sigil. Includes English/Traditional Chinese, touch/keyboard controls, six reset/replay journeys and an animated completion explanation.
+
+
+### The Garden of Measures / 量度花園
+[Play the area and perimeter mission](https://orion-lost-city.onrender.com/games/orion-measures/). Shape three gardens, compare soil area and fencing, and earn the Measure / 量度 Sigil. Both languages, six journeys and animated completion discovery.

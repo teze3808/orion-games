@@ -154,3 +154,10 @@ Built-in ImageGen, single new `illustration-story` asset (no CLI fallback). Save
 
 Exact generation prompt:
 > Use case: illustration-story. Asset type: landscape game environment for The Moonwing Archive, a child-friendly biology mystery in Orion's Lost City. Primary request: realistic cinematic ancient naturalist's conservatory archive, a magnificent brass magnifying lens beside an open illustrated field journal and a tiny jewel-like beetle resting freely on a leaf, carved stone cabinets, ferns and a small closed treasure casket. Moonlight through a tall arched window, warm amber desk lantern, rich believable aged wood and patinated brass, deep atmospheric background, welcoming wonder. Wide composition with the lens, beetle leaf and casket across the middle horizontal band for a shallow game header crop; detailed foreground and spacious depth. No people, no trapped or pinned animals, no readable text, no labels, no interface, no watermark. Decorative story scene, not a scientific diagram.
+
+
+## Garden of Measures — 2026-10-24
+Built-in ImageGen, one new illustration-story image. Optimized asset: `dist/games/orion-measures/garden-measures.jpg`; original retained in Codex generated_images as `exec-81e63fed-897f-47e4-aa96-d0d8e7196fb8.png`. Integrated into the top progress scene and full-page background. Deterministic SVG unit squares show the actual mathematical experiment.
+
+Exact prompt:
+> Use case: illustration-story. Create a wide realistic cinematic game environment for The Garden of Measures in Orion's Lost City. An ancient moonlit courtyard with a rectangular sunken garden of luminous green herbs, fine square sandstone paving, a brass measuring cord and a small ornate treasure chest beside the garden. Believable worn stone, dew on leaves, carved arches, gentle amber lanterns, deep blue moonlight, welcoming child-friendly mystery, rich environmental depth. Main garden and treasure across the middle horizontal band, suitable for shallow header cropping and atmospheric background. No people, readable words, numbers, interface, diagrams or watermark.

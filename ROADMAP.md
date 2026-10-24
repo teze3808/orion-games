@@ -127,3 +127,7 @@ The Star Post / 星光郵局 is playable at `games/orion-packets/`. Computing: o
 
 ### 2026-10-23 — Moonwing Archive (playable)
 Biology: use observable features and a dichotomous identification key. Three visitors, eight fictional beetles, six journeys; Insight / 明察 Sigil. Continues the subject mix beyond the completed roadmap. Next releases remain open to distinct science, engineering, mathematics and computing ideas.
+
+
+### 2026-10-24 — Garden of Measures (playable)
+Mathematics: distinguish area from perimeter with three rectangle challenges. Six saved journeys; Measure / 量度 Sigil. Continues the expanding subject mix.

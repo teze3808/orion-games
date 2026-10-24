@@ -174,3 +174,9 @@ Learning objective: use visible traits to navigate a two-choice identification k
 Model: eight invented beetles exhaust the binary combinations of plain/rounded antenna tips, absent/four back spots, round/long body. A fixed identity maps to each feature triple. Question order varies but does not change the identification. Each selected branch halves the remaining group; wrong observations still reach a name, which must be checked against the visitor. The three-stage reward requires correct complete paths, not simply reaching any leaf.
 
 Limits: simplified flat drawings and fantasy names are not real species diagnoses, anatomical measurements, or an evolutionary tree. A real key applies to a specified group/region and may need microscopic features, additional evidence or expert verification. No live animals are collected, handled or harmed. Story artwork is decorative, independent of the precise SVG observation drawings.
+
+
+## Garden of Measures: area and perimeter (2026-10-24)
+Source: [OpenStax Prealgebra 2e, 9.4 Use Properties of Rectangles, Triangles, and Trapezoids](https://openstax.org/books/prealgebra-2e/pages/9-4-use-properties-of-rectangles-triangles-and-trapezoids). Rectangle area is width times height in square units; perimeter is the sum of its four sides in length units. The independent test oracle counts unit squares and exposed unit edges, rather than reproducing the production formulas.
+
+Six paired designs have equal area and different perimeters. The final challenge holds the first fence length fixed and asks for strictly greater area, without requiring a maximum. All variants are exhaustively solvable in the 1–8 integer side-length range. Rotated solutions are valid. This is an ideal flat grid: no fence thickness, paths, plant spacing, costs or real construction advice. Story scenery is decorative, not a scale plan.
