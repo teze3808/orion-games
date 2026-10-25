@@ -196,3 +196,7 @@ Mission/variant `keys` (six saved journeys), sigil `insight` / Insight / 明察.
 
 ## Garden of Measures — 2026-10-24
 Mission/variant `measures` (six saved journeys), sigil `measure` / Measure / 量度. Reshape rectangles with integer width/height 1–8. First match area and perimeter, then preserve area with less perimeter, then preserve the first perimeter with strictly more area. Require all three correct gardens. Accept rotated rectangles and all valid final designs. Preserve live unit-square/outer-edge drawings, keyboard/touch sliders, bilingual dismissible hints, shared discovery, save recovery and non-repeating replay/full reset. The flat model excludes fence thickness and plant spacing; decorative artwork is not to scale.
+
+
+## Magnet Ferry — 2026-10-25
+Mission/variant `magnets` (six saved journeys), sigil `compass` / Compass / 磁向. Two aligned bar magnets: fixed dock on the left, guided ferry on the right. Compare the facing ends; unlike poles attract left and like poles repel right. Flipping invalidates the current observation without deleting the test record. Require attraction, repulsion, then tests with both dock poles plus a correct hidden-pole identification. Hide both ends and colour clues on the final ferry magnet until success. Motion is symbolic, with no force/speed/distance claim. Preserve bilingual hints/discovery, shared replay/reset and honest save retry.

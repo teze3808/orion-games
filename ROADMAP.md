@@ -131,3 +131,7 @@ Biology: use observable features and a dichotomous identification key. Three vis
 
 ### 2026-10-24 — Garden of Measures (playable)
 Mathematics: distinguish area from perimeter with three rectangle challenges. Six saved journeys; Measure / 量度 Sigil. Continues the expanding subject mix.
+
+
+### 2026-10-25 — Magnet Ferry (playable)
+Physics: magnetic poles, attraction/repulsion and evidence-based identification. Six journeys; Compass / 磁向 Sigil. Continues the expanding subject mix.

@@ -163,3 +163,7 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 ### The Garden of Measures / 量度花園
 [Play the area and perimeter mission](https://orion-lost-city.onrender.com/games/orion-measures/). Shape three gardens, compare soil area and fencing, and earn the Measure / 量度 Sigil. Both languages, six journeys and animated completion discovery.
+
+
+### The Magnet Ferry / 磁石渡船
+[Play the magnetic-poles mission](https://orion-lost-city.onrender.com/games/orion-magnets/). Test attraction and repulsion, identify a hidden pole from two observations, and earn the Compass / 磁向 Sigil. Six journeys, both languages and a completion lesson.

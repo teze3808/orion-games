@@ -161,3 +161,10 @@ Built-in ImageGen, one new illustration-story image. Optimized asset: `dist/game
 
 Exact prompt:
 > Use case: illustration-story. Create a wide realistic cinematic game environment for The Garden of Measures in Orion's Lost City. An ancient moonlit courtyard with a rectangular sunken garden of luminous green herbs, fine square sandstone paving, a brass measuring cord and a small ornate treasure chest beside the garden. Believable worn stone, dew on leaves, carved arches, gentle amber lanterns, deep blue moonlight, welcoming child-friendly mystery, rich environmental depth. Main garden and treasure across the middle horizontal band, suitable for shallow header cropping and atmospheric background. No people, readable words, numbers, interface, diagrams or watermark.
+
+
+## Magnet Ferry — 2026-10-25
+Built-in ImageGen; one original illustration-story image. Optimized asset `dist/games/orion-magnets/magnet-ferry.jpg`; original `exec-2a1b1401-234c-484d-a14d-9f35103aa401.png` retained under Codex generated_images. Used for the top progress scene and coherent page background. The labelled SVG experiment is the scientific model; the artwork is decorative.
+
+Exact prompt:
+> Use case: illustration-story. Original realistic cinematic environment for The Magnet Ferry, a child-friendly science treasure mystery in Orion's Lost City. Wide underground moonlit harbour, small ornate wooden treasure ferry floating beside a worn stone jetty, two polished red-and-blue bar-magnet artefacts displayed on bronze supports, mysterious carved arches and luminous mineral veins, calm turquoise water, warm lanterns and silver moonlight from a cavern opening. Believable wood, brass, stone and wet reflections, rich depth, welcoming wonder. Ferry and jetty across the central horizontal band for a shallow game header crop. No people, readable letters or numbers, diagrams, interface or watermark. Decorative fantasy scene, not a scientific diagram.
