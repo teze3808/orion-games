@@ -39,3 +39,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-23 | The Moonwing Archive / 月翼檔案館 | Biology: observable traits and identification keys | games/orion-keys/ |
 | 2026-10-24 | The Garden of Measures / 量度花園 | Maths: area and perimeter | games/orion-measures/ |
 | 2026-10-25 | The Magnet Ferry / 磁石渡船 | Physics: attraction, repulsion and magnetic poles | games/orion-magnets/ |
+| 2026-10-26 | The Star Map Vault / 星圖寶庫 | Maths: coordinates and displacement | games/orion-coordinates/ |

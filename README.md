@@ -167,3 +167,7 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 ### The Magnet Ferry / 磁石渡船
 [Play the magnetic-poles mission](https://orion-lost-city.onrender.com/games/orion-magnets/). Test attraction and repulsion, identify a hidden pole from two observations, and earn the Compass / 磁向 Sigil. Six journeys, both languages and a completion lesson.
+
+
+### Star Map Vault / 星圖寶庫 — 2026-10-26
+36 playable missions. Learn ordered coordinates and displacement by moving a blue marker through three maps. Earn the Wayfinder / 尋路 Sigil. Six reset/replay sets, English/Traditional Chinese, hidden clues and completion discovery. [Play](https://orion-lost-city.onrender.com/games/orion-coordinates/).

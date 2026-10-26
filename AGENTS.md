@@ -200,3 +200,7 @@ Mission/variant `measures` (six saved journeys), sigil `measure` / Measure / 量
 
 ## Magnet Ferry — 2026-10-25
 Mission/variant `magnets` (six saved journeys), sigil `compass` / Compass / 磁向. Two aligned bar magnets: fixed dock on the left, guided ferry on the right. Compare the facing ends; unlike poles attract left and like poles repel right. Flipping invalidates the current observation without deleting the test record. Require attraction, repulsion, then tests with both dock poles plus a correct hidden-pole identification. Hide both ends and colour clues on the final ferry magnet until success. Motion is symbolic, with no force/speed/distance claim. Preserve bilingual hints/discovery, shared replay/reset and honest save retry.
+
+
+## Star Map Vault — 2026-10-26
+Mission/variant `coordinates` (six saved journeys), sigil `wayfinder` / Wayfinder / 尋路. Locate two reversed ordered pairs and then a displacement destination. All three exact points required; sliders accept whole numbers 0–5. X increases right, Y increases up; points sit on crossings and the origin is bottom-left. The gold diamond marks the final starting point, not the answer. Preserve accessible sliders, bilingual hidden/dismissible hints and completion discovery, shared replay/reset, unknown IDs and honest failed-save retry. This flat puzzle map is not an astronomical coordinate chart.

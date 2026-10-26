@@ -135,3 +135,7 @@ Mathematics: distinguish area from perimeter with three rectangle challenges. Si
 
 ### 2026-10-25 — Magnet Ferry (playable)
 Physics: magnetic poles, attraction/repulsion and evidence-based identification. Six journeys; Compass / 磁向 Sigil. Continues the expanding subject mix.
+
+
+## Star Map Vault — 2026-10-26
+Mission/variant `coordinates` (six saved journeys), sigil `wayfinder` / Wayfinder / 尋路. Locate two reversed ordered pairs and then a displacement destination. All three exact points required; sliders accept whole numbers 0–5. X increases right, Y increases up; points sit on crossings and the origin is bottom-left. The gold diamond marks the final starting point, not the answer. Preserve accessible sliders, bilingual hidden/dismissible hints and completion discovery, shared replay/reset, unknown IDs and honest failed-save retry. This flat puzzle map is not an astronomical coordinate chart.
