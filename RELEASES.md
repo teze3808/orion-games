@@ -40,3 +40,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-24 | The Garden of Measures / 量度花園 | Maths: area and perimeter | games/orion-measures/ |
 | 2026-10-25 | The Magnet Ferry / 磁石渡船 | Physics: attraction, repulsion and magnetic poles | games/orion-magnets/ |
 | 2026-10-26 | The Star Map Vault / 星圖寶庫 | Maths: coordinates and displacement | games/orion-coordinates/ |
+| 2026-10-27 | The Cloud Cargo Vault / 雲端貨倉 | Computing: stacks and last-in-first-out | games/orion-stack/ |

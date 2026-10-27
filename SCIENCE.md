@@ -190,3 +190,7 @@ The qualitative model uses aligned bar magnets, fixed dock left, ferry constrain
 
 ## Star Map Vault — coordinates (2026-10-26)
 Learning objective: interpret ordered pairs (x, y), distinguish reversed coordinates, and add horizontal/vertical displacement. X right, Y up, origin (0, 0), points on intersections. Source: [Maths Is Fun — Cartesian Coordinates](https://www.mathsisfun.com/data/cartesian-coordinates.html), checked 2026-10-26. The game restricts points to integer coordinates 0–5, while general coordinates can be negative or fractional. No real astronomical coordinate system or scale is represented; artwork is decorative. All six final destinations remain in bounds.
+
+
+## Cloud Cargo Vault — stacks (2026-10-27)
+Learning objective: reason about a stack, where push adds at the top and pop removes the latest item. Source: [NIST Dictionary of Algorithms and Data Structures — stack](https://xlinux.nist.gov/dads/HTML/stack.html), checked 2026-10-27. For this puzzle, all items are loaded before unloading, reversing the input order. General stacks can interleave pushes and pops; the batch phase rule is not a universal stack property. Three/four labelled crates are a bounded data model. Fantasy cargo artwork is not an engineering or safety design.

@@ -204,3 +204,7 @@ Mission/variant `magnets` (six saved journeys), sigil `compass` / Compass / 磁�
 
 ## Star Map Vault — 2026-10-26
 Mission/variant `coordinates` (six saved journeys), sigil `wayfinder` / Wayfinder / 尋路. Locate two reversed ordered pairs and then a displacement destination. All three exact points required; sliders accept whole numbers 0–5. X increases right, Y increases up; points sit on crossings and the origin is bottom-left. The gold diamond marks the final starting point, not the answer. Preserve accessible sliders, bilingual hidden/dismissible hints and completion discovery, shared replay/reset, unknown IDs and honest failed-save retry. This flat puzzle map is not an astronomical coordinate chart.
+
+
+## Cloud Cargo Vault — 2026-10-27
+Mission/variant `stack` (six saved journeys), sigil `skyhold` / Skyhold / 雲藏. Plan loading so three batches unload in the requested order. Push adds at the top; undo and unloading remove only the top. Require a full load before delivery and all three exact output sequences before reward. Prevent duplicate/missing crates and loading/undo during unloading. Retry resets only the current batch; replay and full reset choose a different saved journey. Preserve bilingual hidden clues/discovery and shared reward/save contracts. The load-all then unload-all restriction belongs to this puzzle; general stacks allow interleaving operations. Crates represent data, not a physical safety model.

@@ -171,3 +171,7 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 ### Star Map Vault / 星圖寶庫 — 2026-10-26
 36 playable missions. Learn ordered coordinates and displacement by moving a blue marker through three maps. Earn the Wayfinder / 尋路 Sigil. Six reset/replay sets, English/Traditional Chinese, hidden clues and completion discovery. [Play](https://orion-lost-city.onrender.com/games/orion-coordinates/).
+
+
+### Cloud Cargo Vault / 雲端貨倉 — 2026-10-27
+37 playable missions. Learn stacks and last-in-first-out by loading and unloading treasure crates in three batches. Earn Skyhold / 雲藏. Six saved replay/reset journeys, English/Traditional Chinese and completion discovery. [Play](https://orion-lost-city.onrender.com/games/orion-stack/).
