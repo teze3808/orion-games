@@ -41,3 +41,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-25 | The Magnet Ferry / 磁石渡船 | Physics: attraction, repulsion and magnetic poles | games/orion-magnets/ |
 | 2026-10-26 | The Star Map Vault / 星圖寶庫 | Maths: coordinates and displacement | games/orion-coordinates/ |
 | 2026-10-27 | The Cloud Cargo Vault / 雲端貨倉 | Computing: stacks and last-in-first-out | games/orion-stack/ |
+| 2026-10-28 | The Colour Spring / 彩泉秘境 | Chemistry: concentration and dilution | games/orion-dilution/ |

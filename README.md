@@ -175,3 +175,7 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 ### Cloud Cargo Vault / 雲端貨倉 — 2026-10-27
 37 playable missions. Learn stacks and last-in-first-out by loading and unloading treasure crates in three batches. Earn Skyhold / 雲藏. Six saved replay/reset journeys, English/Traditional Chinese and completion discovery. [Play](https://orion-lost-city.onrender.com/games/orion-stack/).
+
+
+### The Colour Spring / 彩泉秘境 — 2026-10-28
+38 playable missions. Explore concentration, dilution and equal-ratio mixtures with two illustrated vessels. Earn Tint / 彩泉. Six saved journeys, English/Traditional Chinese and completion discovery. [Play](https://orion-lost-city.onrender.com/games/orion-dilution/).

@@ -143,3 +143,7 @@ Mission/variant `coordinates` (six saved journeys), sigil `wayfinder` / Wayfinde
 
 ## Cloud Cargo Vault — 2026-10-27
 Mission/variant `stack` (six saved journeys), sigil `skyhold` / Skyhold / 雲藏. Plan loading so three batches unload in the requested order. Push adds at the top; undo and unloading remove only the top. Require a full load before delivery and all three exact output sequences before reward. Prevent duplicate/missing crates and loading/undo during unloading. Retry resets only the current batch; replay and full reset choose a different saved journey. Preserve bilingual hidden clues/discovery and shared reward/save contracts. The load-all then unload-all restriction belongs to this puzzle; general stacks allow interleaving operations. Crates represent data, not a physical safety model.
+
+
+## Colour Spring — 2026-10-28
+Mission/variant `dilution` (six saved journeys), sigil `tint` / Tint / 彩泉. Match a reference concentration, dilute with a fixed dissolved amount to half concentration, then prepare a larger batch at the same concentration. Require all three seals. Compare exact amount/volume ratios; accept every valid larger mixture. Dilution cannot reduce the starting volume or change solute amount. Preserve bilingual hidden clues, shared discovery, saved non-repeating replay/reset, unknown sigils and honest save retry. All solute is dissolved and evenly mixed in this ideal model; volume means final solution volume, not water alone. Shading is illustrative, not a measured colour scale.

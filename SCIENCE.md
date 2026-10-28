@@ -194,3 +194,8 @@ Learning objective: interpret ordered pairs (x, y), distinguish reversed coordin
 
 ## Cloud Cargo Vault — stacks (2026-10-27)
 Learning objective: reason about a stack, where push adds at the top and pop removes the latest item. Source: [NIST Dictionary of Algorithms and Data Structures — stack](https://xlinux.nist.gov/dads/HTML/stack.html), checked 2026-10-27. For this puzzle, all items are loaded before unloading, reversing the input order. General stacks can interleave pushes and pops; the batch phase rule is not a universal stack property. Three/four labelled crates are a bounded data model. Fantasy cargo artwork is not an engineering or safety design.
+
+
+## Colour Spring — concentration and dilution
+Sources: [OpenStax Chemistry 2e §3.3](https://openstax.org/books/chemistry-2e/pages/3-3-molarity), [RMIT concentration and dilution](https://learninglab.rmit.edu.au/chemistry/solutions-and-concentrations/concentration-and-dilution/).
+Concentration compares dissolved amount with final solution volume. Adding solvent without losing solute increases volume and lowers concentration. Scaling both amount and volume equally preserves concentration. The game uses fictional colour units per cup, not molarity units. Everything dissolves and mixes uniformly, with no reaction or saturation limit. The blue shading is an illustrative monotonic guide, not calibrated optics. Outside the fixed-solute dilution challenge, sliders prepare a new ideal mixture: reducing volume does not simulate pouring out a real solution. No real chemicals, tasting or handling are requested. All three stages use exact integer cross multiplication; displayed decimals are rounded.
