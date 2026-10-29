@@ -179,3 +179,7 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 ### The Colour Spring / 彩泉秘境 — 2026-10-28
 38 playable missions. Explore concentration, dilution and equal-ratio mixtures with two illustrated vessels. Earn Tint / 彩泉. Six saved journeys, English/Traditional Chinese and completion discovery. [Play](https://orion-lost-city.onrender.com/games/orion-dilution/).
+
+
+### The Echo Cavern / 回音洞窟 — 2026-10-29
+39 playable missions. Match recorded echoes by estimating cave-wall distances, discover the sound’s round trip, and earn Resonance / 鳴響. Six saved journeys, English/Traditional Chinese and an illustrated completion lesson. [Play](https://orion-lost-city.onrender.com/games/orion-echo/).

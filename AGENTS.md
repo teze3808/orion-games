@@ -212,3 +212,7 @@ Mission/variant `stack` (six saved journeys), sigil `skyhold` / Skyhold / 雲藏
 
 ## Colour Spring — 2026-10-28
 Mission/variant `dilution` (six saved journeys), sigil `tint` / Tint / 彩泉. Match a reference concentration, dilute with a fixed dissolved amount to half concentration, then prepare a larger batch at the same concentration. Require all three seals. Compare exact amount/volume ratios; accept every valid larger mixture. Dilution cannot reduce the starting volume or change solute amount. Preserve bilingual hidden clues, shared discovery, saved non-repeating replay/reset, unknown sigils and honest save retry. All solute is dissolved and evenly mixed in this ideal model; volume means final solution volume, not water alone. Shading is illustrative, not a measured colour scale.
+
+
+## Echo Cavern — 2026-10-29
+Mission/variant `echo` (six saved journeys), sigil `resonance` / Resonance / 鳴響. Restore three wall distances by matching recorded echo return times. Slider steps represent 17 metres; bounds are 17–170 m. Use the ideal fixed air speed 340 m/s and round-trip time 2d/v. Require all three correct chambers before reward. Moving the slider clears the old reading; retry keeps the same target. Preserve bilingual hidden clues/discovery, non-repeating saved replay/reset, unknown sigils and honest save retry. The silent pulse animation is illustrative and slowed, not a stopwatch. One ideal reflection only; real caves and temperature-dependent sound speed are outside the model. Lake artwork does not imply underwater sonar.
