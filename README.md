@@ -183,3 +183,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 ### The Echo Cavern / 回音洞窟 — 2026-10-29
 39 playable missions. Match recorded echoes by estimating cave-wall distances, discover the sound’s round trip, and earn Resonance / 鳴響. Six saved journeys, English/Traditional Chinese and an illustrated completion lesson. [Play](https://orion-lost-city.onrender.com/games/orion-echo/).
+
+- [The Butterfly Conservatory — butterfly life cycle](https://orion-lost-city.onrender.com/games/orion-butterfly/) (2026-10-30). The collection now has 40 playable missions.

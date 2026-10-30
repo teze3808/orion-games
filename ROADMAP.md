@@ -151,3 +151,7 @@ Mission/variant `dilution` (six saved journeys), sigil `tint` / Tint / 彩泉. M
 
 ## Echo Cavern — 2026-10-29
 Mission/variant `echo` (six saved journeys), sigil `resonance` / Resonance / 鳴響. Restore three wall distances by matching recorded echo return times. Slider steps represent 17 metres; bounds are 17–170 m. Use the ideal fixed air speed 340 m/s and round-trip time 2d/v. Require all three correct chambers before reward. Moving the slider clears the old reading; retry keeps the same target. Preserve bilingual hidden clues/discovery, non-repeating saved replay/reset, unknown sigils and honest save retry. The silent pulse animation is illustrative and slowed, not a stopwatch. One ideal reflection only; real caves and temperature-dependent sound speed are outside the model. Lake artwork does not imply underwater sonar.
+
+
+## Butterfly Conservatory — 2026-10-30
+Mission/variant `butterfly` (six saved journeys), sigil `renewal` / Renewal / 蛻變. Restore three illustrated life-cycle mosaics, starting from different requested stages. Each picture is used once; order follows egg → caterpillar → chrysalis → adult, with adult → egg explicitly marked as a new generation. Undo and clear support exploration; require all three mosaics before reward. Preserve shared bilingual hints, discovery, idempotent rewards, save retry, non-repeating replay and collection reset. Generic drawings omit larval instars, durations and species differences; no specimen handling is required.
