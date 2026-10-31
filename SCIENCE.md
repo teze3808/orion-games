@@ -209,3 +209,8 @@ An echo is reflected sound; a stationary listener colocated with the source meas
 ## Butterfly Conservatory — life cycles (2026-10-30)
 Sources: [Florida Museum: Butterfly Life Cycle](https://www.floridamuseum.ufl.edu/educators/resource/butterfly-life-cycle/) and [Smithsonian: Butterflies and Beyond](https://naturalhistory.si.edu/education/teaching-resources/life-science/butterflies-and-beyond).
 Complete metamorphosis has egg, larva (caterpillar), pupa (chrysalis), and adult stages. After mating, adult females lay eggs for a new generation; an adult does not become an egg. The pupa is a living developmental stage. Generic diagrams are not to scale and do not depict a particular species, durations, or every larval instar. The garden artwork is decorative. All activities are virtual; no wildlife collection or handling is needed.
+
+
+## Ramp Treasury — inclined planes (2026-10-31)
+Sources: [Georgia State University HyperPhysics: Inclined Plane](https://www.hyperphysics.phy-astr.gsu.edu/hbase/Mechanics/incline.html), [Government of Northwest Territories: Basic Machines](https://www.ece.gov.nt.ca/sites/ece/files/resources/asm_-_science_module_1.pdf).
+For steady motion with a pull parallel to a frictionless ramp, force × sloping length = weight × height. Height is 1 m and weight 120 N in this model. A longer ramp reduces required force while increasing travel; ideal work remains 120 J. Real friction and acceleration are omitted. Weight is force, not mass. The shortest qualifying integer length minimizes ramp material within this simplified challenge, not every engineering cost. All experiments are virtual; no heavy-object handling required.

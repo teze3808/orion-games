@@ -155,3 +155,7 @@ Mission/variant `echo` (six saved journeys), sigil `resonance` / Resonance / 鳴
 
 ## Butterfly Conservatory — 2026-10-30
 Mission/variant `butterfly` (six saved journeys), sigil `renewal` / Renewal / 蛻變. Restore three illustrated life-cycle mosaics, starting from different requested stages. Each picture is used once; order follows egg → caterpillar → chrysalis → adult, with adult → egg explicitly marked as a new generation. Undo and clear support exploration; require all three mosaics before reward. Preserve shared bilingual hints, discovery, idempotent rewards, save retry, non-repeating replay and collection reset. Generic drawings omit larval instars, durations and species differences; no specimen handling is required.
+
+
+## Ramp Treasury — 2026-10-31
+Mission/variant `ramp` (six saved journeys), sigil `ascent` / Ascent / 登高. Design three shortest whole-metre ramps within pulling-force limits. Sloping length is 2–10 m, height 1 m and weight 120 N; ideal steady force is 120/L. Require all three designs. Longer-than-needed ramps give informative retry feedback. Preserve shared bilingual clues/discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. The model omits friction and acceleration; N is force, not mass. Decorative mountain artwork is not a safety plan.

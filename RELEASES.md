@@ -44,3 +44,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-28 | The Colour Spring / 彩泉秘境 | Chemistry: concentration and dilution | games/orion-dilution/ |
 | 2026-10-29 | The Echo Cavern / 回音洞窟 | Physics: echoes and round-trip distance | games/orion-echo/ |
 | 2026-10-30 | The Butterfly Conservatory / 蝴蝶秘園 | Biology: life cycle and complete metamorphosis | games/orion-butterfly/ |
+| 2026-10-31 | The Ramp Treasury / 斜坡寶庫 | Engineering: inclined planes, force and distance | games/orion-ramp/ |
