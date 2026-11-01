@@ -198,3 +198,8 @@ Prompt: “Use case: illustration-story. Original realistic cinematic artwork fo
 ## Ramp Treasury — 2026-10-31
 Built-in ImageGen, original generation without references. Optimized JPEG quality 82 at `dist/games/orion-ramp/ramp-treasury.jpg`, integrated into top scene and background; inspected tablet and phone crops.
 Prompt: “Use case: illustration-story. Original realistic cinematic artwork for a child-friendly treasure mystery, The Ramp Treasury. Ancient mountainside stone treasury with a broad gently rising carved stone ramp leading to an ornate golden coffer, brass lanterns, ivy, misty distant mountain arches and warm sunrise. Believable stone textures and brass, atmospheric depth, welcoming mystery, no danger or people. Wide landscape composition with ramp and golden coffer in central horizontal band for a shallow game progress banner. No text, UI or watermark. Decorative fantasy setting, not an engineering diagram.”
+
+
+## Gem Caravans — 2026-11-01
+Built-in ImageGen, original generation without references. Optimized JPEG quality 82 saved at `dist/games/orion-caravan/gem-caravans.jpg`, integrated into top progress scene and background. Inspected tablet/mobile crops.
+Prompt: “Use case: illustration-story. Original realistic cinematic child-friendly treasure game artwork, The Gem Caravans. An ancient desert caravan courtyard at blue hour, ornate wooden treasure chests with red and blue gemstones on a central stone table, silk awnings, warm brass lanterns, sandstone arches and distant dunes. Believable wood, jewels and stone, atmospheric depth, welcoming mysterious mood. Wide landscape; central treasure table and gems visible in a shallow horizontal banner. No people, text, UI or watermark. Decorative fantasy setting, not a maths diagram.”

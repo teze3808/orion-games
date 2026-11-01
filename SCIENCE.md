@@ -214,3 +214,7 @@ Complete metamorphosis has egg, larva (caterpillar), pupa (chrysalis), and adult
 ## Ramp Treasury — inclined planes (2026-10-31)
 Sources: [Georgia State University HyperPhysics: Inclined Plane](https://www.hyperphysics.phy-astr.gsu.edu/hbase/Mechanics/incline.html), [Government of Northwest Territories: Basic Machines](https://www.ece.gov.nt.ca/sites/ece/files/resources/asm_-_science_module_1.pdf).
 For steady motion with a pull parallel to a frictionless ramp, force × sloping length = weight × height. Height is 1 m and weight 120 N in this model. A longer ramp reduces required force while increasing travel; ideal work remains 120 J. Real friction and acceleration are omitted. Weight is force, not mass. The shortest qualifying integer length minimizes ramp material within this simplified challenge, not every engineering cost. All experiments are virtual; no heavy-object handling required.
+
+
+## Gem Caravans — common factors (2026-11-01)
+Reference: [OpenStax Prealgebra 2e: Greatest Common Factor](https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials). A common factor divides both totals exactly; the greatest common factor gives the most identical whole-gem packs. For each colour, packed count plus remainder equals its original inventory. Unlike colours need not have equal totals or equal per-pack counts. Physical sizes, box capacity and transport economics are omitted. All puzzle GCFs are within the 1–12 control range.

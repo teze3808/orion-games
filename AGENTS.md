@@ -224,3 +224,7 @@ Mission/variant `butterfly` (six saved journeys), sigil `renewal` / Renewal / �
 
 ## Ramp Treasury — 2026-10-31
 Mission/variant `ramp` (six saved journeys), sigil `ascent` / Ascent / 登高. Design three shortest whole-metre ramps within pulling-force limits. Sloping length is 2–10 m, height 1 m and weight 120 N; ideal steady force is 120/L. Require all three designs. Longer-than-needed ramps give informative retry feedback. Preserve shared bilingual clues/discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. The model omits friction and acceleration; N is force, not mass. Decorative mountain artwork is not a safety plan.
+
+
+## Gem Caravans — 2026-11-01
+Mission/variant `caravan` (six saved journeys), sigil `sharing` / Sharing / 均分. Split two whole-number gem inventories into the greatest number of identical packs with no leftovers. Slider accepts 1–12 packs. Every pack has the same red count and the same blue count; red and blue counts need not equal each other. Require all three inventories. Display each pack and colour-specific remainders live; distinguish leftover failures from valid but non-maximal splits. Preserve bilingual clues/discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. Box capacity, physical gem size and transport costs are outside this arithmetic model.

@@ -187,3 +187,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Butterfly Conservatory — butterfly life cycle](https://orion-lost-city.onrender.com/games/orion-butterfly/) (2026-10-30). The collection now has 40 playable missions.
 
 - [The Ramp Treasury — inclined planes](https://orion-lost-city.onrender.com/games/orion-ramp/) (2026-10-31). The collection now has 41 playable missions.
+
+- [The Gem Caravans — greatest common factor](https://orion-lost-city.onrender.com/games/orion-caravan/) (2026-11-01). The collection now has 42 playable missions.
