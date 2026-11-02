@@ -189,3 +189,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Ramp Treasury — inclined planes](https://orion-lost-city.onrender.com/games/orion-ramp/) (2026-10-31). The collection now has 41 playable missions.
 
 - [The Gem Caravans — greatest common factor](https://orion-lost-city.onrender.com/games/orion-caravan/) (2026-11-01). The collection now has 42 playable missions.
+
+- 2026-11-02: [The Twin Lantern Vault / 雙燈寶庫](https://orion-lost-city.onrender.com/games/orion-xor/) — computing: XOR, four touch switches, six saved journeys and the Switchlight Sigil. 43 playable missions.

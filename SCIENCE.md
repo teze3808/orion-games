@@ -218,3 +218,10 @@ For steady motion with a pull parallel to a frictionless ramp, force × sloping 
 
 ## Gem Caravans — common factors (2026-11-01)
 Reference: [OpenStax Prealgebra 2e: Greatest Common Factor](https://openstax.org/books/prealgebra-2e/pages/10-6-introduction-to-factoring-polynomials). A common factor divides both totals exactly; the greatest common factor gives the most identical whole-gem packs. For each colour, packed count plus remainder equals its original inventory. Unlike colours need not have equal totals or equal per-pack counts. Physical sizes, box capacity and transport economics are omitted. All puzzle GCFs are within the 1–12 control range.
+
+
+## Twin Lantern Vault — XOR (2026-11-02)
+- Learning objective: compare paired bits and discover that different inputs produce 1, matching inputs produce 0; use an XOR mask to match three four-bit targets.
+- Source: [MDN, Bitwise XOR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR), consulted 2026-11-02. Its truth table and per-position definition support the implementation. Values are restricted to 0–15, so JavaScript's 32-bit conversion has no effect on this four-bit model.
+- Limits: ideal data bits represented as lamps, not light addition, electrical wiring, or secure encryption. Decorative artwork has no diagrammatic meaning. No real electricity experiments required.
+- Validation: independent per-bit inequality oracle for all 256 input/mask pairs and 576 puzzle outcomes; involution; both languages; all-stage reward gate; invalid controls; non-repeating replay/reset; persistence; failed saves and recovery.

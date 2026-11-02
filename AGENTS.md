@@ -228,3 +228,7 @@ Mission/variant `ramp` (six saved journeys), sigil `ascent` / Ascent / 登高. D
 
 ## Gem Caravans — 2026-11-01
 Mission/variant `caravan` (six saved journeys), sigil `sharing` / Sharing / 均分. Split two whole-number gem inventories into the greatest number of identical packs with no leftovers. Slider accepts 1–12 packs. Every pack has the same red count and the same blue count; red and blue counts need not equal each other. Require all three inventories. Display each pack and colour-specific remainders live; distinguish leftover failures from valid but non-maximal splits. Preserve bilingual clues/discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. Box capacity, physical gem size and transport costs are outside this arithmetic model.
+
+
+## Twin Lantern Vault — 2026-11-02
+Mission/variant `xor` (six saved journeys), sigil `switchlight` / Switchlight / 轉光. Toggle a four-bit mask to transform an incoming lantern pattern into the target using bitwise XOR. Require all three exact patterns before reward. Each toggle changes one corresponding bit; toggling twice restores it. Preserve numeric on/off labels, keyboard/touch switches, bilingual hidden dismissible hints and completion discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. Lanterns model data bits, not physical light mixing or a wiring circuit; this puzzle is not secure encryption.
