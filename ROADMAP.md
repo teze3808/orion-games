@@ -167,3 +167,7 @@ Mission/variant `caravan` (six saved journeys), sigil `sharing` / Sharing / 均�
 
 ## Twin Lantern Vault — 2026-11-02
 Mission/variant `xor` (six saved journeys), sigil `switchlight` / Switchlight / 轉光. Toggle a four-bit mask to transform an incoming lantern pattern into the target using bitwise XOR. Require all three exact patterns before reward. Each toggle changes one corresponding bit; toggling twice restores it. Preserve numeric on/off labels, keyboard/touch switches, bilingual hidden dismissible hints and completion discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. Lanterns model data bits, not physical light mixing or a wiring circuit; this puzzle is not secure encryption.
+
+
+## Inkkeeper’s Archive — 2026-11-03
+Mission/variant `ink` (six saved journeys), sigil `spectrum` / Spectrum / 色譜. Identify the ingredients of three fictional inks by comparing finished paper chromatograms with three known dye standards. Ruby, Amber and Sapphire have distinct spots at 2, 5 and 8 cm from the origin; the solvent front is 10 cm. All three exact ingredient sets required. Keep labelled distances, accessible symbols, reversible dye selection, bilingual hidden clues/discovery, shared replay/reset, unknown sigils and honest save retry. Same paper/solvent throughout. Real substances may overlap; a matching spot alone does not prove identity. This is a virtual comparison, not a real-time separation or chemical recipe.

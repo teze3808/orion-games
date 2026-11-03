@@ -225,3 +225,10 @@ Reference: [OpenStax Prealgebra 2e: Greatest Common Factor](https://openstax.org
 - Source: [MDN, Bitwise XOR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR), consulted 2026-11-02. Its truth table and per-position definition support the implementation. Values are restricted to 0–15, so JavaScript's 32-bit conversion has no effect on this four-bit model.
 - Limits: ideal data bits represented as lamps, not light addition, electrical wiring, or secure encryption. Decorative artwork has no diagrammatic meaning. No real electricity experiments required.
 - Validation: independent per-bit inequality oracle for all 256 input/mask pairs and 576 puzzle outcomes; involution; both languages; all-stage reward gate; invalid controls; non-repeating replay/reset; persistence; failed saves and recovery.
+
+
+## Inkkeeper’s Archive — chromatography (2026-11-03)
+- Learning objective: use separated spots and known standards to identify components of a model mixture under the same conditions.
+- Sources consulted 2026-11-03: [Royal Society of Chemistry, Paper chromatography practical resources](https://edu.rsc.org/practical/paper-chromatography-practical-videos-14-16-years/4018537.article) and [RSC chromatography teaching notes](https://edu.rsc.org/download?ac=13852). These support separation during solvent movement and differing distribution between mobile and stationary phases.
+- Simplifications: three fictional, nonreacting dyes; fixed solvent/paper; ideal fully resolved spots; no quantitative concentration, reaction, timing, or solvent choice. Distances 2/5/8 cm with a 10 cm front are invented teaching data, not measured properties of real red/yellow/blue dyes. Symbols label dyes for accessibility, not physical shapes. Real substances can co-migrate; a matching spot alone is not conclusive identification. The art is decorative. No handling instructions or actual chemicals required.
+- Verification: 288 selection outcomes across six journeys and two languages; independent ingredient-set oracle; SVG spot positions/counts; bounds; all-three reward gate; failed-save recovery; persistent non-repeating replay/reset.

@@ -47,3 +47,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-10-31 | The Ramp Treasury / 斜坡寶庫 | Engineering: inclined planes, force and distance | games/orion-ramp/ |
 | 2026-11-01 | The Gem Caravans / 寶石商隊 | Maths: common factors and equal grouping | games/orion-caravan/ |
 | 2026-11-02 | The Twin Lantern Vault / 雙燈寶庫 | Computing: XOR and bit toggling | games/orion-xor/ |
+| 2026-11-03 | The Inkkeeper’s Archive / 墨守者檔案館 | Chemistry: chromatography and mixture identification | games/orion-ink/ |
