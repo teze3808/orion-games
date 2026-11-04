@@ -236,3 +236,7 @@ Mission/variant `xor` (six saved journeys), sigil `switchlight` / Switchlight / 
 
 ## Inkkeeper’s Archive — 2026-11-03
 Mission/variant `ink` (six saved journeys), sigil `spectrum` / Spectrum / 色譜. Identify the ingredients of three fictional inks by comparing finished paper chromatograms with three known dye standards. Ruby, Amber and Sapphire have distinct spots at 2, 5 and 8 cm from the origin; the solvent front is 10 cm. All three exact ingredient sets required. Keep labelled distances, accessible symbols, reversible dye selection, bilingual hidden clues/discovery, shared replay/reset, unknown sigils and honest save retry. Same paper/solvent throughout. Real substances may overlap; a matching spot alone does not prove identity. This is a virtual comparison, not a real-time separation or chemical recipe.
+
+
+## Dawn Observatory — 2026-11-04
+Mission/variant `dawn` (six saved journeys), sigil `daybreak` / Daybreak / 破曉. Rotate Earth with a slider or forward-turn button to match three observations of sunrise, noon, sunset or midnight. View from above the North Pole, Sun on the right, anticlockwise rotation, observer on the equator. Require all three observations. Preserve bilingual hidden clues and completion discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. Fixed sunlight, no tilt, atmosphere, seasons or orbital motion; not to scale. Positions represent local solar phases, not time-zone clock readings.

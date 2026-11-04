@@ -193,3 +193,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - 2026-11-02: [The Twin Lantern Vault / 雙燈寶庫](https://orion-lost-city.onrender.com/games/orion-xor/) — computing: XOR, four touch switches, six saved journeys and the Switchlight Sigil. 43 playable missions.
 
 - 2026-11-03: [The Inkkeeper’s Archive / 墨守者檔案館](https://orion-lost-city.onrender.com/games/orion-ink/) — chemistry: paper chromatography, dye comparison, six saved journeys and the Spectrum Sigil. 44 playable missions.
+
+- [The Dawn Observatory / 黎明天文臺](https://orion-lost-city.onrender.com/games/orion-dawn/) — Earth rotation and day/night.
