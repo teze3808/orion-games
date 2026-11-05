@@ -425,3 +425,7 @@ Validation: 46 Node suites passed locally with --jitless, including 288 ingredie
 Mission/variant `dawn` (six saved journeys), sigil `daybreak` / Daybreak / 破曉. Rotate Earth with a slider or forward-turn button to match three observations of sunrise, noon, sunset or midnight. View from above the North Pole, Sun on the right, anticlockwise rotation, observer on the equator. Require all three observations. Preserve bilingual hidden clues and completion discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery. Fixed sunlight, no tilt, atmosphere, seasons or orbital motion; not to scale. Positions represent local solar phases, not time-zone clock readings.
 
 Validation: all 47 Node suites pass (including 288 phase outcomes and cardinal observer geometry). Browser verified wrong/retry, rotation, both languages, hidden hints, three-stage completion and discovery, saved sigil on the hub, replay/reload, 1024×768 and 768×1024 tablet layouts and phone framing. Full-collection reset tested in isolated storage; real browser collections preserved.
+
+
+## The Walled Garden / 圍牆花園 — 2026-11-05
+Six saved journeys of three rectangular planting beds. A fixed number of unit fence pieces encloses a changing number of unit squares. Both orientations of a correct rectangle earn credit. The third bed uses the largest area for its fence length. Award Moonflower / 月華 only after all three beds. Model assumes whole positive side lengths, negligible wall thickness and one seed per unit square.

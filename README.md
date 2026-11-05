@@ -195,3 +195,4 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - 2026-11-03: [The Inkkeeper’s Archive / 墨守者檔案館](https://orion-lost-city.onrender.com/games/orion-ink/) — chemistry: paper chromatography, dye comparison, six saved journeys and the Spectrum Sigil. 44 playable missions.
 
 - [The Dawn Observatory / 黎明天文臺](https://orion-lost-city.onrender.com/games/orion-dawn/) — Earth rotation and day/night.
+- [The Walled Garden / 圍牆花園](https://orion-lost-city.onrender.com/games/orion-garden/) — reshape a fixed fence to plant a target area.
