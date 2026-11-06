@@ -196,3 +196,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 - [The Dawn Observatory / 黎明天文臺](https://orion-lost-city.onrender.com/games/orion-dawn/) — Earth rotation and day/night.
 - [The Walled Garden / 圍牆花園](https://orion-lost-city.onrender.com/games/orion-garden/) — reshape a fixed fence to plant a target area.
+
+- [The Lantern Ferry / 燈火渡輪](https://orion-lost-city.onrender.com/games/orion-queue/) — first-in, first-out queues.

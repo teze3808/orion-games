@@ -229,3 +229,8 @@ Prompt: “Use case: illustration-story. Original realistic cinematic child-frie
 ## Walled Garden — 2026-11-05
 Original built-in ImageGen, optimized JPEG. The fountain and seed chest appear in the progress scene and background. Prompt:
 > Original realistic cinematic environment for The Walled Garden, a child's treasure mystery. Wide landscape photograph-like view of a moonlit terraced walled garden in a lost mountain city, waist-high warm limestone garden beds, a beautiful bronze watering fountain and a small antique brass seed chest with sunflower clasp prominently in the center horizontal band, fireflies, moss and fragrant green seedlings. Moonlight and amber lanterns, believable worn stone and copper textures, deep atmospheric arches. Welcoming, mysterious, no people, text, numbers, diagrams or interface. Strong central focal point visible in both panoramic and phone crops.
+
+## Lantern Ferry — 2026-11-06
+Original built-in ImageGen. Optimized JPEG at dist/games/orion-queue/lantern-ferry.jpg; source exec-d832af47-9144-4dc1-88af-1d8368749370.png. Used for the top progress scene and background.
+Prompt:
+> Original realistic cinematic wide environment for a child-friendly treasure mystery game, The Lantern Ferry. Ancient lost city river landing at blue hour, ornate wooden ferry with brass lanterns moored at a worn stone jetty, welcoming amber light, mysterious treasure chest on the jetty, moonlit river reflections and distant forest arches. Believable aged timber, rope, patinated bronze and wet stone, detailed realistic lighting and deep atmosphere. Ferry and chest occupy the middle horizontal band for panoramic header and phone crops. No people, words, numbers, labels or interface. Welcoming discovery, not frightening.

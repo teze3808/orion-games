@@ -242,3 +242,9 @@ Sources: [ESO: What causes day and night?](https://supernova.eso.org/exhibition/
 
 ## The Walled Garden / 圍牆花園 — 2026-11-05
 Six saved journeys of three rectangular planting beds. A fixed number of unit fence pieces encloses a changing number of unit squares. Both orientations of a correct rectangle earn credit. The third bed uses the largest area for its fence length. Award Moonflower / 月華 only after all three beds. Model assumes whole positive side lengths, negligible wall thickness and one seed per unit square.
+
+
+## The Lantern Ferry / 燈火渡輪 — 2026-11-06
+Mission/variant queue (six saved journeys); unique Boarding / 登船 sigil, boarding. Join at the back and board from the front. Arrivals and departures may interleave, and boarded travellers cannot join again. Three exact ticket sequences earn the sigil. Undo removes the latest waiting arrival as an explicitly documented puzzle-editing aid, not a queue operation. One FIFO line, no priority system or physical capacity simulation. Preserve bilingual hints, discovery overlay, saved replay/reset, unknown sigils and save-failure recovery.
+
+Source: [NIST Dictionary of Algorithms and Data Structures: queue](https://xlinux.nist.gov/dads/HTML/queue.html). Enqueue appends at the tail; dequeue removes the earliest item at the head. This mission models that data ordering with symbolic travellers.

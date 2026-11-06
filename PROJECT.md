@@ -429,3 +429,9 @@ Validation: all 47 Node suites pass (including 288 phase outcomes and cardinal o
 
 ## The Walled Garden / 圍牆花園 — 2026-11-05
 Six saved journeys of three rectangular planting beds. A fixed number of unit fence pieces encloses a changing number of unit squares. Both orientations of a correct rectangle earn credit. The third bed uses the largest area for its fence length. Award Moonflower / 月華 only after all three beds. Model assumes whole positive side lengths, negligible wall thickness and one seed per unit square.
+
+
+## The Lantern Ferry / 燈火渡輪 — 2026-11-06
+Mission/variant queue (six saved journeys); unique Boarding / 登船 sigil, boarding. Join at the back and board from the front. Arrivals and departures may interleave, and boarded travellers cannot join again. Three exact ticket sequences earn the sigil. Undo removes the latest waiting arrival as an explicitly documented puzzle-editing aid, not a queue operation. One FIFO line, no priority system or physical capacity simulation. Preserve bilingual hints, discovery overlay, saved replay/reset, unknown sigils and save-failure recovery.
+
+Validation: all 49 Node suites pass; queue test covers 648 batch permutations plus interleaved arrivals/departures, guards, hints, both languages, reward persistence, replay/reset, corrupted/blocked storage and save retry. Browser checked incomplete/wrong/retry, hidden clues, three-stage completion, bilingual discovery, saved hub reward, non-repeating replay/reload, phone and both tablet orientations. Real collections preserved; full reset verified with isolated test storage.
