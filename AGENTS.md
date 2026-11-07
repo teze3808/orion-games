@@ -248,3 +248,7 @@ Six saved journeys of three rectangular planting beds. A fixed number of unit fe
 
 ## The Lantern Ferry / 燈火渡輪 — 2026-11-06
 Mission/variant queue (six saved journeys); unique Boarding / 登船 sigil, boarding. Join at the back and board from the front. Arrivals and departures may interleave, and boarded travellers cannot join again. Three exact ticket sequences earn the sigil. Undo removes the latest waiting arrival as an explicitly documented puzzle-editing aid, not a queue operation. One FIFO line, no priority system or physical capacity simulation. Preserve bilingual hints, discovery overlay, saved replay/reset, unknown sigils and save-failure recovery.
+
+
+## The Springkeeper’s Gate / 彈簧守護者之門 — 2026-11-07
+Mission/variant `springs` (six saved journeys); unique `elastic` / Elastic / 彈力 sigil. Adjust pulling force from 0 to 12 N to align three spring tips with target extensions. Stages use stiffnesses 1, 2 and 3 N/cm; extension equals force divided by stiffness. Extension means extra length, not total spring length. Model shows static equilibrium within the proportional range, with no oscillation, friction or permanent deformation. Require three successful alignments before awarding. Preserve bilingual hidden clues and discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery.
