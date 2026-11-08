@@ -187,3 +187,7 @@ Mission/variant queue (six saved journeys); unique Boarding / 登船 sigil, boar
 
 ## The Springkeeper’s Gate / 彈簧守護者之門 — 2026-11-07
 Mission/variant `springs` (six saved journeys); unique `elastic` / Elastic / 彈力 sigil. Adjust pulling force from 0 to 12 N to align three spring tips with target extensions. Stages use stiffnesses 1, 2 and 3 N/cm; extension equals force divided by stiffness. Extension means extra length, not total spring length. Model shows static equilibrium within the proportional range, with no oscillation, friction or permanent deformation. Require three successful alignments before awarding. Preserve bilingual hidden clues and discovery, saved non-repeating replay/reset, unknown sigils and honest save recovery.
+
+
+## The Prime Gem Archive / 質數寶石檔案館 — 2026-11-08
+Mission/variant `primes` (six saved journeys); unique `indivisible` / Primeheart / 質心 sigil. Classify three gem counts using rectangular arrays. A composite answer requires an observed filled rectangle with both dimensions greater than one; a prime answer requires testing every offered row count (2 through n−1). The number 1 is neither; 2 is prime and has no intermediate row counts. Preserve exact gem counts and visibly empty dashed spaces, bilingual hidden clues/discovery, saved non-repeating replay/reset, unknown sigils and save recovery. Every tray must be classified correctly before reward. This is positive whole-number factor exploration, not a fast primality algorithm; decorative gem sizes do not affect counts.

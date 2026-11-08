@@ -53,3 +53,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-11-05 | The Walled Garden / 圍牆花園 | Mathematics: perimeter and area | games/orion-garden/ |
 | 2026-11-06 | The Lantern Ferry / 燈火渡輪 | Computing: FIFO queues | games/orion-queue/ |
 | 2026-11-07 | The Springkeeper’s Gate / 彈簧守護者之門 | Physics: spring force, extension and stiffness | games/orion-springs/ |
+| 2026-11-08 | The Prime Gem Archive / 質數寶石檔案館 | Mathematics: primes, composites and factors | games/orion-primes/ |
