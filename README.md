@@ -202,3 +202,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Springkeeper’s Gate / 彈簧守護者之門](https://orion-lost-city.onrender.com/games/orion-springs/) — pulling force, spring extension and stiffness.
 
 - [The Prime Gem Archive / 質數寶石檔案館](https://orion-lost-city.onrender.com/games/orion-primes/) — discover primes and factors by arranging gemstones.
+
+- [The Pea Keeper’s Conservatory / 豌豆守護者的溫室](https://orion-lost-city.onrender.com/games/orion-inheritance/) — combine parent alleles and discover inheritance possibilities.
