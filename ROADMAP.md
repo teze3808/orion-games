@@ -195,3 +195,7 @@ Mission/variant `primes` (six saved journeys); unique `indivisible` / Primeheart
 
 ## The Pea Keeper’s Conservatory / 豌豆守護者的溫室 — 2026-11-09
 Mission/variant `inheritance` (six saved journeys), sigil `heritage` / Heritage / 傳承. Restore three 2×2 offspring charts by combining the top and side parent alleles. Tap or keyboard-cycle each box through blank, PP, Pp and pp; require all four exact combinations in all three crosses. P is dominant purple and p recessive white in this simplified single-gene pea flower model. Every box represents one equally likely gamete combination, not one guaranteed plant in a batch of four. Preserve bilingual hints/discovery, focus after cell cycling, saved non-repeating replay/reset, unknown sigils and honest save retry. No real breeding or handling of specimens is required.
+
+
+## The Indicator Lantern Lab / 指示燈籠實驗室 — 2026-11-10
+Mission/variant `ph` (six saved journeys), sigil `indicator` / Indicator / 辨色. Test three fictional aqueous samples per lantern and select the acidic, neutral, then alkaline sample. Require all three readings and the correct selection in each of three stages. At 25 °C, below pH 7 is acidic, 7 neutral and above 7 alkaline. Readings start hidden; bottles have identical untested appearance. Category colours are symbolic, not a real indicator chart. Preserve bilingual progressive clues/discovery, keyboard focus, non-repeating replay/reset, unknown sigils and honest save recovery. No real chemical handling, mixing or drinking is required.
