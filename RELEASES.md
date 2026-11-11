@@ -56,3 +56,4 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-11-08 | The Prime Gem Archive / 質數寶石檔案館 | Mathematics: primes, composites and factors | games/orion-primes/ |
 | 2026-11-09 | The Pea Keeper’s Conservatory / 豌豆守護者的溫室 | Biology: inheritance and allele combinations | games/orion-inheritance/ |
 | 2026-11-10 | The Indicator Lantern Lab / 指示燈籠實驗室 | Chemistry: pH, acidity and alkalinity | games/orion-ph/ |
+| 2026-11-11 | The Harbour Bell Tower / 海港雙鐘樓 | Mathematics: least common multiples | games/orion-bells/ |

@@ -264,3 +264,6 @@ Mission/variant `inheritance` (six saved journeys), sigil `heritage` / Heritage 
 
 ## The Indicator Lantern Lab / 指示燈籠實驗室 — 2026-11-10
 Mission/variant `ph` (six saved journeys), sigil `indicator` / Indicator / 辨色. Test three fictional aqueous samples per lantern and select the acidic, neutral, then alkaline sample. Require all three readings and the correct selection in each of three stages. At 25 °C, below pH 7 is acidic, 7 neutral and above 7 alkaline. Readings start hidden; bottles have identical untested appearance. Category colours are symbolic, not a real indicator chart. Preserve bilingual progressive clues/discovery, keyboard focus, non-repeating replay/reset, unknown sigils and honest save recovery. No real chemical handling, mixing or drinking is required.
+
+## The Harbour Bell Tower / 海港雙鐘樓 — 2026-11-11
+Both bells chime at minute zero. Move the clock through whole minutes and find the first later shared chime in each of three locks. Only the smallest positive common multiple opens a lock. Six saved journeys use stable mission ID `bells` and award `unison` / 齊鳴 once. The latest five positive chimes for each bell remain visible in the log.

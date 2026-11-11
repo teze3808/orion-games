@@ -254,3 +254,8 @@ Prompt:
 Original built-in ImageGen. Optimized JPEG: `dist/games/orion-ph/indicator-lab.jpg`; source `exec-6ecc32b9-b26d-4928-85b4-2eaf1e408e8d.png`. Main top progress scene and atmospheric background. Tablet and phone crops retain the lantern and chest. Decorative laboratory setting, not an experimental apparatus diagram.
 Prompt:
 > Use case: stylized-concept. Original realistic cinematic panoramic environment for a child-friendly treasure mystery, The Indicator Lantern Lab. Ancient lost-city laboratory with elegant clear glass sample vials on a dark stone bench, a brass optical lantern with softly glowing rainbow glass panels and a small engraved treasure chest. Moonlight through arched windows, amber lanterns, believable glass reflections, patinated copper and worn stone, atmospheric depth, welcoming scientific discovery. Central lantern and chest in the middle horizontal band for shallow header and phone crops. No text, numbers, labels, people, flames under vessels or interface.
+
+## Harbour Bell Tower — 2026-11-11
+Original ImageGen artwork, optimized as `dist/games/orion-bells/harbour.jpg` for the progress scene and background.
+
+> Photoreal cinematic wide panorama inside an ancient harbour bell tower at blue hour. Two beautifully crafted hanging bronze bells, one silver patina and one honey gold, side by side in a timber arch centered across the middle horizontal band, with engraved clockwork dials below, distant ocean and lantern-lit harbour through arched windows, small sea chest, salt-worn stone, moonlit water reflections, warm welcoming treasure mystery for children. Keep both bells readable in wide shallow banner and central mobile crop. No text, numbers, people or interface.

@@ -206,3 +206,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Pea Keeper’s Conservatory / 豌豆守護者的溫室](https://orion-lost-city.onrender.com/games/orion-inheritance/) — combine parent alleles and discover inheritance possibilities.
 
 - [The Indicator Lantern Lab / 指示燈籠實驗室](https://orion-lost-city.onrender.com/games/orion-ph/) — test fictional samples and compare pH readings. 51 playable missions.
+
+- [The Harbour Bell Tower / 海港雙鐘樓](https://orion-lost-city.onrender.com/games/orion-bells/) — explore common multiples with two clockwork bells.
