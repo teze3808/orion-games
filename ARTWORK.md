@@ -259,3 +259,8 @@ Prompt:
 Original ImageGen artwork, optimized as `dist/games/orion-bells/harbour.jpg` for the progress scene and background.
 
 > Photoreal cinematic wide panorama inside an ancient harbour bell tower at blue hour. Two beautifully crafted hanging bronze bells, one silver patina and one honey gold, side by side in a timber arch centered across the middle horizontal band, with engraved clockwork dials below, distant ocean and lantern-lit harbour through arched windows, small sea chest, salt-worn stone, moonlit water reflections, warm welcoming treasure mystery for children. Keep both bells readable in wide shallow banner and central mobile crop. No text, numbers, people or interface.
+
+## Pixelwright’s Workshop — 2026-11-12
+ImageGen original in `dist/games/orion-pixels/workshop.jpg`, optimized for the progress banner and background.
+
+> Wide realistic cinematic panorama of a moonlit lost-city mosaic workshop. Centerpiece: a small antique rectangular panel of inlaid square gold and dark lapis tesserae forming a simple star, resting upright beside a carved cedar treasure coffer on a stone bench. Around it, bowls of tesserae, bronze artisan tools, soft lantern light, broad arch framing a blue mountainside, rich worn material details, welcoming child-friendly mystery. Frame panel and coffer centered along middle horizontal band for shallow desktop and phone crops. No writing, labels, people or interface.

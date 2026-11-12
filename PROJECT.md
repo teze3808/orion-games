@@ -81,7 +81,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and fifty-two missions are implemented, including The Harbour Bell Tower. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and fifty-three missions are implemented, including The Pixelwright’s Workshop. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -462,3 +462,6 @@ Validation: all 53 Node suites pass, including 864 sample/evidence combinations,
 
 ## The Harbour Bell Tower / 海港雙鐘樓 — 2026-11-11
 Both bells chime at minute zero. Move the clock through whole minutes and find the first later shared chime in each of three locks. Only the smallest positive common multiple opens a lock. Six saved journeys use stable mission ID `bells` and award `unison` / 齊鳴 once. The latest five positive chimes for each bell remain visible in the log.
+
+## The Pixelwright’s Workshop / 像素工坊 — 2026-11-12
+Decode a three-row plan, repair two flipped tiles and encode a reference mosaic. All nine positions must match at each stage to earn Pixelweave / 織像. Six saved journeys use mission ID `pixels` and sigil ID `pixelweave`.

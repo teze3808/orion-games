@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Pixelwright’s Workshop</title>
+<link rel="icon" href="../../shared/favicon.svg?v=20261011-key"><link rel="stylesheet" href="style.css?v=20261112"><link rel="stylesheet" href="../../shared/discovery.css?v=20261020"></head>
+<body data-mission="pixels"><main>
+<header><a href="../../" data-en="← Mission map" data-zh="← 任務地圖"></a><label>Language / 語言 <select id="language"><option value="en">English</option><option value="zh-Hant">繁體中文</option></select></label></header>
+<div class="title"><h1 data-en="The Pixelwright’s Workshop" data-zh="像素工坊"></h1><details><summary data-en="Read the story" data-zh="閱讀故事"></summary><p data-en="Orion found a cedar chest in an abandoned workshop. Its maker left three tiny tile plans. Restore the pictures to uncover the maker’s seal." data-zh="Orion 在古老工坊找到一個雪松木箱。工匠留下了三張小小的拼畫圖則。修復圖畫，尋回工匠的印記。"></p></details></div>
+<div class="scene"><img src="workshop.jpg" alt="" width="1440" height="720"><span id="progress"></span></div>
+<div class="bench"><section><h2 id="stageTitle"></h2><p id="instruction"></p><p class="legend" data-en="◆ Gold = 1　· Blue = 0" data-zh="◆ 金色 = 1　· 藍色 = 0"></p><div id="board"><button id="tile0" type="button"></button>
+<button id="tile1" type="button"></button>
+<button id="tile2" type="button"></button>
+<button id="tile3" type="button"></button>
+<button id="tile4" type="button"></button>
+<button id="tile5" type="button"></button>
+<button id="tile6" type="button"></button>
+<button id="tile7" type="button"></button>
+<button id="tile8" type="button"></button></div></section>
+<section class="result-panel"><h2 id="referenceTitle"></h2><div id="reference"></div><p id="feedback" role="status"></p><div class="buttons"><button id="check" class="primary" data-en="Check mosaic" data-zh="檢查拼畫"></button><button id="hint" aria-expanded="false" aria-controls="clues">✧</button><button id="next" hidden data-en="Next mosaic →" data-zh="下一幅拼畫 →"></button></div><div id="clues" hidden><ol id="hints"></ol><button id="close" data-en="Close clues" data-zh="收起提示"></button></div>
+<div id="reward" hidden><h3 data-en="▦ The Pixelweave Sigil" data-zh="▦ 織像符印"></h3><p id="saved" role="status"></p><button id="retrySave" data-en="Save sigil again" data-zh="再次儲存符印"></button><a href="../../" data-en="Return to my sigils" data-zh="返回我的符印"></a> <button id="replay" data-en="Try new mosaics" data-zh="試玩新拼畫"></button></div></section></div></main>
+<script src="../../shared/i18n.js?v=20261110"></script><script src="../../shared/progress.js?v=20261112-pixels"></script><script src="../../shared/discovery.js?v=20261112-pixels"></script><script src="game.js?v=20261112"></script></body></html>

@@ -270,3 +270,7 @@ Sources checked 2026-11-10: [USGS: pH and Water](https://www.usgs.gov/water-scie
 ## The Harbour Bell Tower / 海港雙鐘樓 — 2026-11-11
 Both bells chime at minute zero. Move the clock through whole minutes and find the first later shared chime in each of three locks. Only the smallest positive common multiple opens a lock. Six saved journeys use stable mission ID `bells` and award `unison` / 齊鳴 once. The latest five positive chimes for each bell remain visible in the log.
 The model assumes simultaneous starts and constant whole-minute periods. The harbour setting supplies the story. [OpenStax, Prealgebra 2e, §2.5](https://openstax.org/books/prealgebra-2e/pages/2-5-prime-factorization-and-the-least-common-multiple) describes finding the least common multiple by listing multiples.
+
+## The Pixelwright’s Workshop / 像素工坊 — 2026-11-12
+Decode a three-row plan, repair two flipped tiles and encode a reference mosaic. All nine positions must match at each stage to earn Pixelweave / 織像. Six saved journeys use mission ID `pixels` and sigil ID `pixelweave`.
+The model fixes width, height, reading order and a two-colour palette. Nine bits describe pixel values alone. File formats may also store dimensions, palette and other metadata. [University of Canterbury Computer Science Field Guide, binary bitmap example](https://www.csfieldguide.org.nz/en/chapters/coding-compression/run-length-encoding/).
