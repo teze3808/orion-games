@@ -58,3 +58,5 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-11-10 | The Indicator Lantern Lab / 指示燈籠實驗室 | Chemistry: pH, acidity and alkalinity | games/orion-ph/ |
 | 2026-11-11 | The Harbour Bell Tower / 海港雙鐘樓 | Mathematics: least common multiples | games/orion-bells/ |
 | 2026-11-12 | The Pixelwright’s Workshop / 像素工坊 | Computing: one-bit bitmap representation | games/orion-pixels/ |
+
+| 2026-11-13 | The Mountain Map Room / 山徑藏圖室 | Geography: map scale | games/orion-mapscale/ |

@@ -274,3 +274,6 @@ The model assumes simultaneous starts and constant whole-minute periods. The har
 ## The Pixelwright’s Workshop / 像素工坊 — 2026-11-12
 Decode a three-row plan, repair two flipped tiles and encode a reference mosaic. All nine positions must match at each stage to earn Pixelweave / 織像. Six saved journeys use mission ID `pixels` and sigil ID `pixelweave`.
 The model fixes width, height, reading order and a two-colour palette. Nine bits describe pixel values alone. File formats may also store dimensions, palette and other metadata. [University of Canterbury Computer Science Field Guide, binary bitmap example](https://www.csfieldguide.org.nz/en/chapters/coding-compression/run-length-encoding/).
+
+## Mountain Map Room
+Equal intervals on each schematic strip represent equal ground distances. The mountain panorama is decorative. The model omits slope and does not predict hiking time. Source: [USGS, Finding Your Way With Map and Compass](https://www.usgs.gov/educational-resources/finding-your-way-map-and-compass).

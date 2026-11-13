@@ -264,3 +264,6 @@ Original ImageGen artwork, optimized as `dist/games/orion-bells/harbour.jpg` for
 ImageGen original in `dist/games/orion-pixels/workshop.jpg`, optimized for the progress banner and background.
 
 > Wide realistic cinematic panorama of a moonlit lost-city mosaic workshop. Centerpiece: a small antique rectangular panel of inlaid square gold and dark lapis tesserae forming a simple star, resting upright beside a carved cedar treasure coffer on a stone bench. Around it, bowls of tesserae, bronze artisan tools, soft lantern light, broad arch framing a blue mountainside, rich worn material details, welcoming child-friendly mystery. Frame panel and coffer centered along middle horizontal band for shallow desktop and phone crops. No writing, labels, people or interface.
+
+## Mountain Map Room — 2026-11-13
+ImageGen original, optimized as atlas.jpg. Prompt: Wide cinematic realistic photograph, ancient mountain cartographer’s map room at dawn, focal subject centered in horizontal middle band: a detailed relief map carved into a walnut table with winding lapis rivers and brass measuring dividers, aged parchment and a small locked brass casket. Through a stone arch layers of misty alpine peaks, amber sunlight, jade shadows, inviting atmospheric child-friendly adventure. No people, text, labels, borders or interface. 2:1 panoramic composition.

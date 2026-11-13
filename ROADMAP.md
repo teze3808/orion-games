@@ -205,3 +205,5 @@ Both bells chime at minute zero. Move the clock through whole minutes and find t
 
 ## The Pixelwright’s Workshop / 像素工坊 — 2026-11-12
 Decode a three-row plan, repair two flipped tiles and encode a reference mosaic. All nine positions must match at each stage to earn Pixelweave / 織像. Six saved journeys use mission ID `pixels` and sigil ID `pixelweave`.
+
+2026-11-13 · Playable · The Mountain Map Room / 山徑藏圖室 — geography, map scale.

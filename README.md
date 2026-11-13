@@ -210,3 +210,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Harbour Bell Tower / 海港雙鐘樓](https://orion-lost-city.onrender.com/games/orion-bells/) — explore common multiples with two clockwork bells.
 
 - [The Pixelwright’s Workshop / 像素工坊](https://orion-lost-city.onrender.com/games/orion-pixels/) — decode, repair and encode a tiny two-colour image.
+
+- [The Mountain Map Room / 山徑藏圖室](https://orion-lost-city.onrender.com/games/orion-mapscale/) — measure three mountain routes using a map scale.
