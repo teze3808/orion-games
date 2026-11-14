@@ -212,3 +212,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Pixelwright’s Workshop / 像素工坊](https://orion-lost-city.onrender.com/games/orion-pixels/) — decode, repair and encode a tiny two-colour image.
 
 - [The Mountain Map Room / 山徑藏圖室](https://orion-lost-city.onrender.com/games/orion-mapscale/) — measure three mountain routes using a map scale.
+
+- [The Tidekeeper’s Archive / 潮汐守護者的檔案館](https://orion-lost-city.onrender.com/games/orion-median/) — put water levels in order and find the median.

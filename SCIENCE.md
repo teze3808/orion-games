@@ -277,3 +277,6 @@ The model fixes width, height, reading order and a two-colour palette. Nine bits
 
 ## Mountain Map Room
 Equal intervals on each schematic strip represent equal ground distances. The mountain panorama is decorative. The model omits slope and does not predict hiking time. Source: [USGS, Finding Your Way With Map and Compass](https://www.usgs.gov/educational-resources/finding-your-way-map-and-compass).
+
+## Tidekeeper’s Archive
+Fictional gauge readings above the same local zero, in centimetres. With an odd sample size the median is the middle ordered observation, retaining duplicates. Even samples require averaging the two central observations and are outside this puzzle. This is a statistics exercise, not a tide forecast. [NIST, Measures of Location](https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm).

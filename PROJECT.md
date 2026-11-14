@@ -468,3 +468,6 @@ Decode a three-row plan, repair two flipped tiles and encode a reference mosaic.
 
 ## The Mountain Map Room / 山徑藏圖室 — 2026-11-13
 Read three strip maps, count equal intervals and use each chart’s scale to determine ground distance. The final route includes a camp stop and both legs count. Six saved journeys award Trailmark / 路標 once after three correct distances.
+
+## The Tidekeeper’s Archive / 潮汐守護者的檔案館 — 2026-11-14
+Order three or five water-level readings and select the central position. Keep repeated readings and a high outlying value in the final ledger. Six saved journeys, three completed records, one Stillwater / 靜水 sigil.

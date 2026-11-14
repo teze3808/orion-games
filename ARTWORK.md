@@ -267,3 +267,6 @@ ImageGen original in `dist/games/orion-pixels/workshop.jpg`, optimized for the p
 
 ## Mountain Map Room — 2026-11-13
 ImageGen original, optimized as atlas.jpg. Prompt: Wide cinematic realistic photograph, ancient mountain cartographer’s map room at dawn, focal subject centered in horizontal middle band: a detailed relief map carved into a walnut table with winding lapis rivers and brass measuring dividers, aged parchment and a small locked brass casket. Through a stone arch layers of misty alpine peaks, amber sunlight, jade shadows, inviting atmospheric child-friendly adventure. No people, text, labels, borders or interface. 2:1 panoramic composition.
+
+## Tidekeeper’s Archive — 2026-11-14
+Original ImageGen scene, optimized as archive.jpg. Prompt: Cinematic realistic wide panoramic still, an ancient Venetian tidal archive at blue hour, a brass water-level staff with engraved unlabeled tick marks standing in a stone seawater channel, a small bronze chest on a dry step beside it, thin ripples, teal reflections and warm lantern light, distant arches in mist, finely textured wet stone and bronze, magical welcoming quiet adventure. Central half of composition contains chest and staff near waterline for compact banner crops. No people, text, letters or UI.
