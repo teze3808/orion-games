@@ -209,3 +209,5 @@ Decode a three-row plan, repair two flipped tiles and encode a reference mosaic.
 2026-11-13 · Playable · The Mountain Map Room / 山徑藏圖室 — geography, map scale.
 
 2026-11-14 · Playable · The Tidekeeper’s Archive / 潮汐守護者的檔案館 — median of ordered readings.
+
+2026-11-15 · Playable · The Sandstone Vault / 砂岩密庫 — force, area and pressure.

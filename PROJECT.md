@@ -471,3 +471,6 @@ Read three strip maps, count equal intervals and use each chart’s scale to det
 
 ## The Tidekeeper’s Archive / 潮汐守護者的檔案館 — 2026-11-14
 Order three or five water-level readings and select the central position. Keep repeated readings and a high outlying value in the final ledger. Six saved journeys, three completed records, one Stillwater / 靜水 sigil.
+
+## The Sandstone Vault / 砂岩密庫 — 2026-11-15
+Adjust contact area under fixed loads to match three average pressures. P = F/A, uniform normal loading and negligible base weight. Six saved journeys, unique Footing / 穩基 sigil. Sand depth is not simulated. Complete all three seals for the reward.

@@ -62,3 +62,5 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-11-13 | The Mountain Map Room / 山徑藏圖室 | Geography: map scale | games/orion-mapscale/ |
 
 | 2026-11-14 | The Tidekeeper’s Archive / 潮汐守護者的檔案館 | Statistics: median | games/orion-median/ |
+
+| 2026-11-15 | The Sandstone Vault / 砂岩密庫 | Physics: pressure and contact area | games/orion-pressure/ |

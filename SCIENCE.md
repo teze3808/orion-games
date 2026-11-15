@@ -280,3 +280,6 @@ Equal intervals on each schematic strip represent equal ground distances. The mo
 
 ## Tidekeeper’s Archive
 Fictional gauge readings above the same local zero, in centimetres. With an odd sample size the median is the middle ordered observation, retaining duplicates. Even samples require averaging the two central observations and are outside this puzzle. This is a statistics exercise, not a tide forecast. [NIST, Measures of Location](https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm).
+
+## Sandstone Vault
+Adjust contact area under fixed loads to match three average pressures. P = F/A, uniform normal loading and negligible base weight. Six saved journeys, unique Footing / 穩基 sigil. Sand depth is not simulated. Complete all three seals for the reward. [OpenStax, Pressure](https://openstax.org/books/college-physics-2e/pages/11-3-pressure).

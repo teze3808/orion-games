@@ -270,3 +270,6 @@ ImageGen original, optimized as atlas.jpg. Prompt: Wide cinematic realistic phot
 
 ## Tidekeeper’s Archive — 2026-11-14
 Original ImageGen scene, optimized as archive.jpg. Prompt: Cinematic realistic wide panoramic still, an ancient Venetian tidal archive at blue hour, a brass water-level staff with engraved unlabeled tick marks standing in a stone seawater channel, a small bronze chest on a dry step beside it, thin ripples, teal reflections and warm lantern light, distant arches in mist, finely textured wet stone and bronze, magical welcoming quiet adventure. Central half of composition contains chest and staff near waterline for compact banner crops. No people, text, letters or UI.
+
+## Sandstone Vault — 2026-11-15
+Original ImageGen art optimized as vault.jpg. Prompt: Wide cinematic photorealistic ancient desert treasure laboratory, warm dawn rays across sandstone pillars, central bronze chest beside a heavy carved stone resting on a broad bronze footplate in a shallow sand tray, fine sand grains, believable weathered materials, mysterious carved vault door behind, tranquil welcoming adventure, no people or text, horizontal panoramic composition keeping chest and stone in central band for banner crops. Detailed physical environment, teal shadows and amber sunlight.
