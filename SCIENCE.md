@@ -283,3 +283,6 @@ Fictional gauge readings above the same local zero, in centimetres. With an odd 
 
 ## Sandstone Vault
 Adjust contact area under fixed loads to match three average pressures. P = F/A, uniform normal loading and negligible base weight. Six saved journeys, unique Footing / 穩基 sigil. Sand depth is not simulated. Complete all three seals for the reward. [OpenStax, Pressure](https://openstax.org/books/college-physics-2e/pages/11-3-pressure).
+
+## Helix Library
+Complete three aligned complementary strands using A–T and C–G pairs. Six saved journeys, unique Blueprint / 藍圖 sigil. The flattened ladder is a base-pair diagram, not a directional sequence notation or a replication simulation. Decorative colours and helix artwork are not molecular geometry. [NHGRI, Base Pair](https://www.genome.gov/genetics-glossary/Base-Pair).

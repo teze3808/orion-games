@@ -216,3 +216,5 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Tidekeeper’s Archive / 潮汐守護者的檔案館](https://orion-lost-city.onrender.com/games/orion-median/) — put water levels in order and find the median.
 
 - [The Sandstone Vault / 砂岩密庫](https://orion-lost-city.onrender.com/games/orion-pressure/) — spread a fixed force over different contact areas.
+
+- [The Helix Library / 螺旋藏書館](https://orion-lost-city.onrender.com/games/orion-dna/) — rebuild complementary DNA partners.

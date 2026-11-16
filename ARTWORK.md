@@ -273,3 +273,6 @@ Original ImageGen scene, optimized as archive.jpg. Prompt: Cinematic realistic w
 
 ## Sandstone Vault — 2026-11-15
 Original ImageGen art optimized as vault.jpg. Prompt: Wide cinematic photorealistic ancient desert treasure laboratory, warm dawn rays across sandstone pillars, central bronze chest beside a heavy carved stone resting on a broad bronze footplate in a shallow sand tray, fine sand grains, believable weathered materials, mysterious carved vault door behind, tranquil welcoming adventure, no people or text, horizontal panoramic composition keeping chest and stone in central band for banner crops. Detailed physical environment, teal shadows and amber sunlight.
+
+## Helix Library — 2026-11-16
+Original ImageGen art optimized as library.jpg. Prompt: Photorealistic cinematic ancient botanical seed library under a glass dome at moonrise, central brass teaching model of a double helix on a wooden laboratory bench beside a small emerald-inlaid treasure chest and sealed seed jars. Lush ferns, warm lanterns, blue moonlight, believable carved wood brass and glass textures, depth and gentle mystery for a child's adventure. Wide horizontal panoramic composition with helix and chest in central band, no text, people or interface.

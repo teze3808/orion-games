@@ -474,3 +474,6 @@ Order three or five water-level readings and select the central position. Keep r
 
 ## The Sandstone Vault / 砂岩密庫 — 2026-11-15
 Adjust contact area under fixed loads to match three average pressures. P = F/A, uniform normal loading and negligible base weight. Six saved journeys, unique Footing / 穩基 sigil. Sand depth is not simulated. Complete all three seals for the reward.
+
+## The Helix Library / 螺旋藏書館 — 2026-11-16
+Complete three aligned complementary strands using A–T and C–G pairs. Six saved journeys, unique Blueprint / 藍圖 sigil. The flattened ladder is a base-pair diagram, not a directional sequence notation or a replication simulation. Decorative colours and helix artwork are not molecular geometry.
