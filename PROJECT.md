@@ -477,3 +477,7 @@ Adjust contact area under fixed loads to match three average pressures. P = F/A,
 
 ## The Helix Library / 螺旋藏書館 — 2026-11-16
 Complete three aligned complementary strands using A–T and C–G pairs. Six saved journeys, unique Blueprint / 藍圖 sigil. The flattened ladder is a base-pair diagram, not a directional sequence notation or a replication simulation. Decorative colours and helix artwork are not molecular geometry.
+
+
+## Molecule Cabinet — 2026-11-17
+Mission/variant `substances` has six saved journeys. Classify all three molecular samples to earn `essence` / Essence / 本質. Each journey covers an element, a compound and a mixture. Molecule diagrams retain atom letters and bonds, with bilingual hidden clues, completion discovery, honest save retry and shared non-repeating replay/reset. Artwork is decorative; scientific diagrams use symbolic colours and omit true geometry, motion, scale and reactions.

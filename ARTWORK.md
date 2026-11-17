@@ -276,3 +276,7 @@ Original ImageGen art optimized as vault.jpg. Prompt: Wide cinematic photorealis
 
 ## Helix Library — 2026-11-16
 Original ImageGen art optimized as library.jpg. Prompt: Photorealistic cinematic ancient botanical seed library under a glass dome at moonrise, central brass teaching model of a double helix on a wooden laboratory bench beside a small emerald-inlaid treasure chest and sealed seed jars. Lush ferns, warm lanterns, blue moonlight, believable carved wood brass and glass textures, depth and gentle mystery for a child's adventure. Wide horizontal panoramic composition with helix and chest in central band, no text, people or interface.
+
+
+## Molecule Cabinet — 2026-11-17
+Built-in ImageGen; illustration-story. Asset: `dist/games/orion-substances/cabinet.jpg`, optimized JPEG 1440×720. Original prompt: “Cinematic realistic ancient chemistry cabinet inside a mysterious stone observatory, central wooden bench with three clear sealed glass display domes containing small brass and coloured enamel molecular teaching models, a locked jewel-inlaid brass chest beside them, amber lamplight and teal moonlight, finely detailed wood glass and stone, welcoming child-friendly treasure mystery, wide panoramic framing, no words letters labels people or interface.” Decorative art; actual sample diagrams are separately labelled.

@@ -66,3 +66,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-11-15 | The Sandstone Vault / 砂岩密庫 | Physics: pressure and contact area | games/orion-pressure/ |
 
 | 2026-11-16 | The Helix Library / 螺旋藏書館 | Biology: complementary DNA bases | games/orion-dna/ |
+
+
+| 2026-11-17 | The Molecule Cabinet / 分子秘櫃 | Chemistry: elements, compounds and mixtures | games/orion-substances/ |

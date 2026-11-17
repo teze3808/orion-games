@@ -213,3 +213,7 @@ Decode a three-row plan, repair two flipped tiles and encode a reference mosaic.
 2026-11-15 · Playable · The Sandstone Vault / 砂岩密庫 — force, area and pressure.
 
 2026-11-16 · Playable · The Helix Library / 螺旋藏書館 — DNA base pairing.
+
+
+## 2026-11-17 — Playable
+The Molecule Cabinet / 分子秘櫃: classify elements, compounds and mixtures from particle models. Essence / 本質 sigil. `games/orion-substances/`.

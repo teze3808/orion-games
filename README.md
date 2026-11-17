@@ -218,3 +218,6 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 - [The Sandstone Vault / 砂岩密庫](https://orion-lost-city.onrender.com/games/orion-pressure/) — spread a fixed force over different contact areas.
 
 - [The Helix Library / 螺旋藏書館](https://orion-lost-city.onrender.com/games/orion-dna/) — rebuild complementary DNA partners.
+
+
+- [The Molecule Cabinet / 分子秘櫃](https://orion-lost-city.onrender.com/games/orion-substances/) — classify three particle samples to earn Essence / 本質.

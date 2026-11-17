@@ -286,3 +286,7 @@ Adjust contact area under fixed loads to match three average pressures. P = F/A,
 
 ## Helix Library
 Complete three aligned complementary strands using A–T and C–G pairs. Six saved journeys, unique Blueprint / 藍圖 sigil. The flattened ladder is a base-pair diagram, not a directional sequence notation or a replication simulation. Decorative colours and helix artwork are not molecular geometry. [NHGRI, Base Pair](https://www.genome.gov/genetics-glossary/Base-Pair).
+
+
+## The Molecule Cabinet — 2026-11-17
+Source: [OpenStax Chemistry 2e §1.2](https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter), accessed 2026-11-17. Elements contain one atom type; compounds chemically combine elements; mixtures contain multiple substances. Samples use H₂, O₂, H₂O and CO₂. Pure molecular samples repeat identical molecules; mixtures contain distinct substances. This limited molecular set does not cover ionic solids, allotropes or all forms of matter. Colours, spacing, bond thickness and flat arrangement are symbolic, not geometry or bond-order claims. No reactions or real chemical handling. Decorative cabinet models are not evidence; only labelled gameplay particles determine answers.
