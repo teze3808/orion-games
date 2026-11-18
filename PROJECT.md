@@ -81,7 +81,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and fifty-three missions are implemented, including The Pixelwright’s Workshop. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and fifty-nine missions are implemented, including The Turning Mosaic Hall. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -481,3 +481,9 @@ Complete three aligned complementary strands using A–T and C–G pairs. Six sa
 
 ## Molecule Cabinet — 2026-11-17
 Mission/variant `substances` has six saved journeys. Classify all three molecular samples to earn `essence` / Essence / 本質. Each journey covers an element, a compound and a mixture. Molecule diagrams retain atom letters and bonds, with bilingual hidden clues, completion discovery, honest save retry and shared non-repeating replay/reset. Artwork is decorative; scientific diagrams use symbolic colours and omit true geometry, motion, scale and reactions.
+
+
+## Turning Mosaic Hall — 2026-11-18
+Mission/variant `rotation`, six saved journeys, sigil `turnstone` / Turnstone / 轉石. Restore three 3×3 patterns after clockwise quarter-turn, half-turn and anticlockwise quarter-turn about their centre. Every gold and empty cell must match. Both symbols and colours indicate state. Preserve bilingual clues, discovery, idempotent reward, honest save retry, replay/reset and storage keys.
+
+Validation: all regression suites pass, including 9,216 rotation arrangements with independent mapping oracles, fixed-centre and tile-count checks, input guards, rewards, replay and save recovery. Isolated Chrome verified keyboard control, wrong answers, hidden progressive clues, both languages, all three locks, bilingual discovery, reward persistence after reload, full collection reset and a new pattern. Artwork and layout inspected at 390×844, 768×1024 and 1024×768. No console errors. These viewport checks are not physical iPad Safari testing.

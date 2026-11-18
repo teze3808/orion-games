@@ -217,3 +217,7 @@ Decode a three-row plan, repair two flipped tiles and encode a reference mosaic.
 
 ## 2026-11-17 — Playable
 The Molecule Cabinet / 分子秘櫃: classify elements, compounds and mixtures from particle models. Essence / 本質 sigil. `games/orion-substances/`.
+
+
+## 2026-11-18 — Playable
+The Turning Mosaic Hall / 轉紋大廳: mathematics, rotations about a fixed centre. Three restored mosaics earn Turnstone / 轉石. `games/orion-rotation/`.

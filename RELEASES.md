@@ -69,3 +69,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-17 | The Molecule Cabinet / 分子秘櫃 | Chemistry: elements, compounds and mixtures | games/orion-substances/ |
+
+
+| 2026-11-18 | The Turning Mosaic Hall / 轉紋大廳 | Mathematics: quarter- and half-turn rotations | games/orion-rotation/ |

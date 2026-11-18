@@ -221,3 +221,6 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 
 - [The Molecule Cabinet / 分子秘櫃](https://orion-lost-city.onrender.com/games/orion-substances/) — classify three particle samples to earn Essence / 本質.
+
+
+- [The Turning Mosaic Hall / 轉紋大廳](https://orion-lost-city.onrender.com/games/orion-rotation/) — explore quarter- and half-turns; earn Turnstone / 轉石.

@@ -290,3 +290,7 @@ Complete three aligned complementary strands using A–T and C–G pairs. Six sa
 
 ## The Molecule Cabinet — 2026-11-17
 Source: [OpenStax Chemistry 2e §1.2](https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter), accessed 2026-11-17. Elements contain one atom type; compounds chemically combine elements; mixtures contain multiple substances. Samples use H₂, O₂, H₂O and CO₂. Pure molecular samples repeat identical molecules; mixtures contain distinct substances. This limited molecular set does not cover ionic solids, allotropes or all forms of matter. Colours, spacing, bond thickness and flat arrangement are symbolic, not geometry or bond-order claims. No reactions or real chemical handling. Decorative cabinet models are not evidence; only labelled gameplay particles determine answers.
+
+
+## Turning Mosaic Hall — 2026-11-18
+Source: [Math Is Fun: Rotation](https://www.mathsisfun.com/geometry/rotation.html), accessed 2026-11-18. Rotation preserves shape, size and point distances from its centre. The 3×3 grid uses exact 90°, 180° and 270° clockwise permutations; 270° clockwise equals 90° anticlockwise. Centre is fixed. No reflection, scaling, physical gear simulation or continuous-angle rounding. Stone colours/symbols encode occupancy; decorative artwork is not a puzzle solution.
