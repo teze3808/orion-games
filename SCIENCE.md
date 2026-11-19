@@ -294,3 +294,7 @@ Source: [OpenStax Chemistry 2e §1.2](https://openstax.org/books/chemistry-2e/pa
 
 ## Turning Mosaic Hall — 2026-11-18
 Source: [Math Is Fun: Rotation](https://www.mathsisfun.com/geometry/rotation.html), accessed 2026-11-18. Rotation preserves shape, size and point distances from its centre. The 3×3 grid uses exact 90°, 180° and 270° clockwise permutations; 270° clockwise equals 90° anticlockwise. Centre is fixed. No reflection, scaling, physical gear simulation or continuous-angle rounding. Stone colours/symbols encode occupancy; decorative artwork is not a puzzle solution.
+
+
+## Lantern Clock Chamber — 2026-11-19
+Source: [OpenStax University Physics §15.4](https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums), accessed 2026-11-19. Small-angle ideal simple pendulum: T = 2π√(L/g), g = 9.81 m/s². L is pivot to bob centre. Fixed small release angle (illustrated ±10°), massless inextensible cord, point bob, no friction/damping. Uses the small-angle approximation, not the exact finite-amplitude solution. Timings are computed model readings rounded to 0.1 s, not measured browser elapsed time. Animation illustrates one complete cycle; CSS easing approximates sinusoidal motion. Reduced-motion mode retains the measurement wait and text but omits movement. No real swinging equipment required. Decorative clock mechanisms do not determine the result.

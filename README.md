@@ -224,3 +224,6 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 
 - [The Turning Mosaic Hall / 轉紋大廳](https://orion-lost-city.onrender.com/games/orion-rotation/) — explore quarter- and half-turns; earn Turnstone / 轉石.
+
+
+- [The Lantern Clock Chamber / 擺燈鐘室](https://orion-lost-city.onrender.com/games/orion-pendulum/) — explore pendulum length and full-swing time; earn Timekeeper / 守時.

@@ -72,3 +72,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-18 | The Turning Mosaic Hall / 轉紋大廳 | Mathematics: quarter- and half-turn rotations | games/orion-rotation/ |
+
+
+| 2026-11-19 | The Lantern Clock Chamber / 擺燈鐘室 | Physics: pendulum length and period | games/orion-pendulum/ |

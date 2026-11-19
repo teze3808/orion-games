@@ -221,3 +221,7 @@ The Molecule Cabinet / 分子秘櫃: classify elements, compounds and mixtures f
 
 ## 2026-11-18 — Playable
 The Turning Mosaic Hall / 轉紋大廳: mathematics, rotations about a fixed centre. Three restored mosaics earn Turnstone / 轉石. `games/orion-rotation/`.
+
+
+## 2026-11-19 — Playable
+The Lantern Clock Chamber / 擺燈鐘室: physics, pendulum length and period. Three measured clock settings earn Timekeeper / 守時. `games/orion-pendulum/`.
