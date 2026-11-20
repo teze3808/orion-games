@@ -75,3 +75,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-19 | The Lantern Clock Chamber / 擺燈鐘室 | Physics: pendulum length and period | games/orion-pendulum/ |
+
+
+| 2026-11-20 | The Carry Lantern Vault / 進位燈寶庫 | Computing: binary addition and carrying | games/orion-carry/ |

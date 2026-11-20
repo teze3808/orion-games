@@ -225,3 +225,7 @@ The Turning Mosaic Hall / 轉紋大廳: mathematics, rotations about a fixed cen
 
 ## 2026-11-19 — Playable
 The Lantern Clock Chamber / 擺燈鐘室: physics, pendulum length and period. Three measured clock settings earn Timekeeper / 守時. `games/orion-pendulum/`.
+
+
+## 2026-11-20 — Playable
+The Carry Lantern Vault / 進位燈寶庫: computing, binary addition with carry propagation. Three restored boards earn Carrylight / 進光. `games/orion-carry/`.

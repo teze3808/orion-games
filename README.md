@@ -227,3 +227,6 @@ Choose a pulley arrangement and drag the rope or use the keyboard slider. Six sa
 
 
 - [The Lantern Clock Chamber / 擺燈鐘室](https://orion-lost-city.onrender.com/games/orion-pendulum/) — explore pendulum length and full-swing time; earn Timekeeper / 守時.
+
+
+- [The Carry Lantern Vault / 進位燈寶庫](https://orion-lost-city.onrender.com/games/orion-carry/) — explore binary addition and carrying; earn Carrylight / 進光.

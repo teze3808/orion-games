@@ -298,3 +298,7 @@ Source: [Math Is Fun: Rotation](https://www.mathsisfun.com/geometry/rotation.htm
 
 ## Lantern Clock Chamber — 2026-11-19
 Source: [OpenStax University Physics §15.4](https://openstax.org/books/university-physics-volume-1/pages/15-4-pendulums), accessed 2026-11-19. Small-angle ideal simple pendulum: T = 2π√(L/g), g = 9.81 m/s². L is pivot to bob centre. Fixed small release angle (illustrated ±10°), massless inextensible cord, point bob, no friction/damping. Uses the small-angle approximation, not the exact finite-amplitude solution. Timings are computed model readings rounded to 0.1 s, not measured browser elapsed time. Animation illustrates one complete cycle; CSS easing approximates sinusoidal motion. Reduced-motion mode retains the measurement wait and text but omits movement. No real swinging equipment required. Decorative clock mechanisms do not determine the result.
+
+
+## Carry Lantern Vault — 2026-11-20
+Source: [Cornell CS 3410: Numbers, Addition](https://www.cs.cornell.edu/courses/cs3410/2025fa/notes/numbers.html), accessed 2026-11-20. Each column adds two bits and the incoming carry. Sum bit is the remainder on division by two; carry is the quotient, sent one column left. Inputs are unsigned 1–7 and the four-bit result always fits, so signed arithmetic, overflow and circuit timing are outside this model. Carry boxes show incoming bits aligned above their destination columns; the rightmost carry is fixed at zero. Lantern art is decorative, not a circuit design.
