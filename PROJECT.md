@@ -81,7 +81,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and sixty-one missions are implemented, including The Carry Lantern Vault. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and sixty-two missions are implemented, including The Carry Lantern Vault. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -499,3 +499,8 @@ Validation: all regression suites pass. New coverage checks 108 measured trial o
 Mission/variant `carry`, six saved journeys; `carrylight` / Carrylight / 進光 sigil. Add two unsigned three-bit numbers in a four-column board. Fill all four sum bits and three incoming carry bits; the rightmost incoming carry is fixed at zero. Each journey progresses from no carry to a single carry to chained carries. Require all three exact boards. Preserve labelled column values, hidden bilingual clues/discovery, saved variants, idempotent rewards, save retry and collection reset.
 
 Validation: all regression suites pass, including 39,366 full/incomplete boards checked against integer sums and an independent remainder-based carry oracle. Coverage includes no/single/chained carries, input bounds, cycling, clear, hints, reward gates, replay and failed-save recovery. Isolated Chrome verified keyboard controls, language-preserved entries, missing-carry rejection, all three locks, bilingual discovery, replay/reload, saved reward and full collection reset with a new puzzle. Both languages and artwork checked at 390×844, 768×1024 and 1024×768; tablet play fits one screen, no horizontal overflow or console errors. Viewport testing is not physical iPad Safari testing.
+
+
+2026-11-21: The Rainpath Valley / 雨徑山谷 adds Earth science height-map routing. Reach three reservoirs through strictly downhill edge-neighbour moves to earn Flowtrail / 水徑. Six saved journeys, undo, route reset, hidden progressive hints and bilingual post-play model notes. Collection now has 62 playable missions.
+
+Validation: all repository suites passed, including exhaustive runoff moves across six maps, independent solvable-route checks, save failure recovery and idempotent rewards. Isolated browser checks passed for keyboard/touch controls, invalid moves, undo/reset, hidden hints, both languages, three-stage success/discovery, replay/reload, saved sigil and hub reset. Original artwork loads at 1440px; phone and tablet layouts checked.

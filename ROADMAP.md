@@ -229,3 +229,6 @@ The Lantern Clock Chamber / 擺燈鐘室: physics, pendulum length and period. T
 
 ## 2026-11-20 — Playable
 The Carry Lantern Vault / 進位燈寶庫: computing, binary addition with carry propagation. Three restored boards earn Carrylight / 進光. `games/orion-carry/`.
+
+
+Implemented 2026-11-21: The Rainpath Valley / 雨徑山谷 — runoff height-map routes; three reservoirs, Flowtrail / 水徑符印.

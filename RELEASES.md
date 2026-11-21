@@ -78,3 +78,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-20 | The Carry Lantern Vault / 進位燈寶庫 | Computing: binary addition and carrying | games/orion-carry/ |
+
+
+| 2026-11-21 | The Rainpath Valley / 雨徑山谷 | Earth science: downhill runoff and height maps | games/orion-runoff/ |

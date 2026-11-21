@@ -302,3 +302,7 @@ Source: [OpenStax University Physics §15.4](https://openstax.org/books/universi
 
 ## Carry Lantern Vault — 2026-11-20
 Source: [Cornell CS 3410: Numbers, Addition](https://www.cs.cornell.edu/courses/cs3410/2025fa/notes/numbers.html), accessed 2026-11-20. Each column adds two bits and the incoming carry. Sum bit is the remainder on division by two; carry is the quotient, sent one column left. Inputs are unsigned 1–7 and the four-bit result always fits, so signed arithmetic, overflow and circuit timing are outside this model. Carry boxes show incoming bits aligned above their destination columns; the rightmost carry is fixed at zero. Lantern art is decorative, not a circuit design.
+
+
+## Rainpath Valley — 2026-11-21
+Primary objective: infer downhill routes from land elevations. Source: [USGS Rivers, Streams and Creeks](https://www.usgs.gov/water-science-school/science/rivers-streams-and-creeks), consulted 2026-11-21: gravity drives surface runoff downhill; rainfall can also infiltrate. Model: a chosen path on a 3×3 height grid, strictly lower orthogonal neighbours only; no flow rates, infiltration, erosion, accumulation/overtopping or diagonal flow. A low dead end cannot be escaped in this simplified model. Undo edits a plan, not physical uphill flow. Goal is reach cell 8 on three maps. Artwork is decorative and not a terrain measurement.
