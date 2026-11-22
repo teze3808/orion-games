@@ -81,3 +81,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-21 | The Rainpath Valley / 雨徑山谷 | Earth science: downhill runoff and height maps | games/orion-runoff/ |
+
+
+| 2026-11-22 | The Atomkeeper’s Forge / 原子守護者的工坊 | Chemistry: conservation of atoms and balancing equations | games/orion-reactions/ |

@@ -81,7 +81,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and sixty-two missions are implemented, including The Carry Lantern Vault. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and sixty-three missions are implemented, including The Atomkeeper’s Forge. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -504,3 +504,9 @@ Validation: all regression suites pass, including 39,366 full/incomplete boards 
 2026-11-21: The Rainpath Valley / 雨徑山谷 adds Earth science height-map routing. Reach three reservoirs through strictly downhill edge-neighbour moves to earn Flowtrail / 水徑. Six saved journeys, undo, route reset, hidden progressive hints and bilingual post-play model notes. Collection now has 62 playable missions.
 
 Validation: all repository suites passed, including exhaustive runoff moves across six maps, independent solvable-route checks, save failure recovery and idempotent rewards. Isolated browser checks passed for keyboard/touch controls, invalid moves, undo/reset, hidden hints, both languages, three-stage success/discovery, replay/reload, saved sigil and hub reset. Original artwork loads at 1440px; phone and tablet layouts checked.
+
+
+## Atomkeeper’s Forge — 2026-11-22
+Mission/variant `reactions` (six saved journeys), sigil `conservation` / Conservation / 守恆. Adjust three molecule coefficients (1–6) while formulas stay fixed. Match every element on both sides in the smallest positive whole-number ratio for all three tablets. Live atom ledger and one-molecule inventories support discovery. Multiples receive correct-but-reduce feedback. Preserve hidden bilingual clues/discovery, replay/reset, storage keys and honest reward save retry. Diagrams omit real reaction conditions and geometry.
+
+Validation: all regression suites passed, including 3,888 coefficient combinations checked with independently parsed molecular formulas and tabulated minimal ratios. Browser checks passed for wrong and non-minimal answers, clear/retry, keyboard controls, bilingual state, hidden clues, all three tablets, discovery, replay/reload, saved sigil and full collection reset. Artwork and layout checked at phone and both tablet orientations in an isolated Chrome session; no physical iPad Safari test.

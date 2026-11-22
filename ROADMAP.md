@@ -232,3 +232,6 @@ The Carry Lantern Vault / 進位燈寶庫: computing, binary addition with carry
 
 
 Implemented 2026-11-21: The Rainpath Valley / 雨徑山谷 — runoff height-map routes; three reservoirs, Flowtrail / 水徑符印.
+
+
+Implemented 2026-11-22: Atomkeeper’s Forge — conservation of atoms, smallest whole-number reaction ratios, virtual diagrams only.
