@@ -235,3 +235,6 @@ Implemented 2026-11-21: The Rainpath Valley / 雨徑山谷 — runoff height-map
 
 
 Implemented 2026-11-22: Atomkeeper’s Forge — conservation of atoms, smallest whole-number reaction ratios, virtual diagrams only.
+
+
+Implemented 2026-11-23: Star-Sail Loft — triangle interior-angle sum and missing angles, six saved journeys.

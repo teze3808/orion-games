@@ -236,3 +236,6 @@ Playable: [The Rainpath Valley / 雨徑山谷](https://orion-lost-city.onrender.
 
 
 Playable: [The Atomkeeper’s Forge / 原子守護者的工坊](https://orion-lost-city.onrender.com/games/orion-reactions/) — balance three reaction tablets and collect Conservation / 守恆.
+
+
+Playable: [The Star-Sail Loft / 星帆閣](https://orion-lost-city.onrender.com/games/orion-angles/) — restore three missing triangle angles and earn Starcorner / 星角.

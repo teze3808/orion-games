@@ -84,3 +84,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-22 | The Atomkeeper’s Forge / 原子守護者的工坊 | Chemistry: conservation of atoms and balancing equations | games/orion-reactions/ |
+
+
+| 2026-11-23 | The Star-Sail Loft / 星帆閣 | Mathematics: triangle interior angles | games/orion-angles/ |
