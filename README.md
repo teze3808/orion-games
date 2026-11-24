@@ -239,3 +239,6 @@ Playable: [The Atomkeeper’s Forge / 原子守護者的工坊](https://orion-lo
 
 
 Playable: [The Star-Sail Loft / 星帆閣](https://orion-lost-city.onrender.com/games/orion-angles/) — restore three missing triangle angles and earn Starcorner / 星角.
+
+
+Playable: [The Mistglass Conservatory / 霧晶溫室](https://orion-lost-city.onrender.com/games/orion-diffusion/) — observe diffusion, distinguish net flow from equal exchange and earn Exchange / 交流.

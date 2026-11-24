@@ -238,3 +238,6 @@ Implemented 2026-11-22: Atomkeeper’s Forge — conservation of atoms, smallest
 
 
 Implemented 2026-11-23: Star-Sail Loft — triangle interior-angle sum and missing angles, six saved journeys.
+
+
+Implemented 2026-11-24: Mistglass Conservatory — diffusion and dynamic equilibrium; six saved three-trial journeys.

@@ -81,7 +81,7 @@ Run: `python3 -m http.server 8765 --directory dist`.
 Render is the user-selected host; publish `dist` from `main` through the existing `orion-lost-city` static site. GitHub hosts source and CI only; GitHub Pages deployment is retired. There is no active Sites deployment. The former standalone hash repository is retired.
 
 ## Scope and next work
-The hub and sixty-four missions are implemented, including The Star-Sail Loft. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
+The hub and sixty-five missions are implemented, including The Mistglass Conservatory. The initial collection and all ten missions in the second expedition are complete. Future daily releases extend the story with new distinct ideas across subjects; roadmap completion does not stop releases. Unreleased plans remain documentation-only until playable and checked. Do not create accounts, paid features, leaderboards, or a backend without a new requirement.
 
 ## Repository structure
 `orion-games` owns the hub and every game as regular files. There are no submodules or separate game deployments. A normal clone gets the complete project. All edits are committed and pushed here.
@@ -516,3 +516,9 @@ Validation: all regression suites passed, including 3,888 coefficient combinatio
 Mission/variant `angles` (six saved journeys), sigil `starcorner` / Starcorner / 星角. Infer a missing interior angle from two known angles of an ideal flat triangle. True-shape diagrams are calculated from the given angles; a separate movable gauge shows the proposal without distorting the fixed plan. Slider and 5-degree buttons offer 5–170°. All three exact angles required. Preserve hidden bilingual clues, completion discovery, saved replay/reset and honest save recovery.
 
 Validation: all regression suites passed, including 612 angle attempts and independent vector-angle checks of the drawn triangles. Isolated Chrome checks cover keyboard slider/buttons, incorrect answers and retry, language-preserved inputs, hidden hints, three-sail success, bilingual discovery, replay/reload, saved sigil, full collection reset and new questions. Phone and tablet artwork/layout checked; no physical iPad Safari test.
+
+
+## Mistglass Conservatory — 2026-11-24
+Mission/variant `diffusion` (six saved journeys), sigil `exchange` / Exchange / 交流. Observe a simultaneous quarter-transfer between equal-volume chambers, then classify net movement from the two crossing counts. Require observation and a correct classification in all three trials; every journey includes left, right and equal exchange. Reset pair retains the question; replay/full reset changes the saved journey. Explicitly labelled average-flow model, not stochastic molecular motion or a real rate. Preserve bilingual hidden clues/discovery and honest save retry.
+
+Validation: all regression suites passed. New tests cover 144 observation/classification combinations, particle conservation, halved concentration imbalance, positive two-way exchange at equilibrium, reset, invalid choices, hidden hints, three-stage rewards, replay and failed-save recovery. Isolated Chrome verified keyboard selection, evidence gate, wrong/retry, both languages, all three observations, bilingual discovery, saved hub sigil, replay/reload and full reset with new questions. Original artwork and controls checked at 390×844, 768×1024 and 1024×768; no horizontal overflow or console errors. These are viewport tests, not physical iPad Safari checks.
