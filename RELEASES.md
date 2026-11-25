@@ -90,3 +90,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-24 | The Mistglass Conservatory / 霧晶溫室 | Biology: diffusion and dynamic equilibrium | games/orion-diffusion/ |
+
+
+| 2026-11-25 | The Clockwork Assembly Dock / 機巧裝配碼頭 | Computing: dependencies and topological ordering | games/orion-dependencies/ |

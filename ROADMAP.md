@@ -241,3 +241,6 @@ Implemented 2026-11-23: Star-Sail Loft — triangle interior-angle sum and missi
 
 
 Implemented 2026-11-24: Mistglass Conservatory — diffusion and dynamic equilibrium; six saved three-trial journeys.
+
+
+Implemented 2026-11-25: Clockwork Assembly Dock — dependencies/topological ordering; multiple valid orders accepted.

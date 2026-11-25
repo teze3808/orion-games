@@ -242,3 +242,6 @@ Playable: [The Star-Sail Loft / 星帆閣](https://orion-lost-city.onrender.com/
 
 
 Playable: [The Mistglass Conservatory / 霧晶溫室](https://orion-lost-city.onrender.com/games/orion-diffusion/) — observe diffusion, distinguish net flow from equal exchange and earn Exchange / 交流.
+
+
+Playable: [The Clockwork Assembly Dock / 機巧裝配碼頭](https://orion-lost-city.onrender.com/games/orion-dependencies/) — arrange prerequisite-respecting plans and earn Sequencecraft / 序巧.
