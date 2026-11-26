@@ -322,3 +322,9 @@ Source: [OpenStax Biology 2e, Passive Transport](https://openstax.org/books/biol
 
 ## Clockwork Assembly Dock — 2026-11-25
 Sources: [Princeton Algorithms: Topological](https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/Topological.html) and [Cornell: Graph Representations and Traversals](https://www.cs.cornell.edu/courses/cs3110/2009sp/lectures/lec22.html), consulted 2026-11-25. A topological ordering puts each source before its destination for every directed edge; DAGs may have multiple valid orders. Game uses declared fictional rune dependencies, not boat-engineering instructions. Three DAG shapes with six label permutations; no durations, concurrency or cycles in playable puzzles. Validity checks all edges and unique full task coverage. The last two plans deliberately admit alternative orders.
+
+
+## Starwind Courier — 2026-11-26
+Objective: use total distance divided by total elapsed time to determine average speed, including stops and unequal-duration segments. The steady-speed comparison covers `speed × total time`; a match gives the recorded average. Accept exact integer speeds and require three records. Each of six journeys has one moving segment, two moving segments of 10 s and 20 s, then 10 s of travel plus 10 s waiting. Unequal-duration segments must not be averaged with equal weights.
+
+Source: [OpenStax Physics §2.2, Speed and Velocity](https://openstax.org/books/physics/pages/2-2-speed-and-velocity), accessed 2026-11-26: average versus instantaneous speed, distance/time relation, units and unequal-duration averaging. Waiting contributes elapsed time with zero added distance. Records are fictional exact measurements; no wind, acceleration, propulsion or fuel model. The artwork is decorative, and the labelled distance bars are not flight paths or a real-time simulation. Average speed is a scalar; no velocity/direction claim is made. Model notes appear in the bilingual completion discovery.

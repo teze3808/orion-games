@@ -245,3 +245,6 @@ Playable: [The Mistglass Conservatory / 霧晶溫室](https://orion-lost-city.on
 
 
 Playable: [The Clockwork Assembly Dock / 機巧裝配碼頭](https://orion-lost-city.onrender.com/games/orion-dependencies/) — arrange prerequisite-respecting plans and earn Sequencecraft / 序巧.
+
+
+2026-11-26: [The Starwind Courier / 星風信使](https://orion-lost-city.onrender.com/games/orion-speed/) — average speed, unequal journey segments and waiting time; six saved journeys and the Starwind / 星風 sigil.
