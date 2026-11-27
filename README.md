@@ -248,3 +248,6 @@ Playable: [The Clockwork Assembly Dock / 機巧裝配碼頭](https://orion-lost-
 
 
 2026-11-26: [The Starwind Courier / 星風信使](https://orion-lost-city.onrender.com/games/orion-speed/) — average speed, unequal journey segments and waiting time; six saved journeys and the Starwind / 星風 sigil.
+
+
+2026-11-27: [The Pearlkeeper’s Treasury / 珍珠守護者的寶庫](https://orion-lost-city.onrender.com/games/orion-mean/) — redistribute pearls to discover arithmetic mean; six saved journeys and the Pearlheart / 珠心 sigil.

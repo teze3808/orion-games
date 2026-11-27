@@ -246,3 +246,6 @@ Implemented 2026-11-24: Mistglass Conservatory — diffusion and dynamic equilib
 Implemented 2026-11-25: Clockwork Assembly Dock — dependencies/topological ordering; multiple valid orders accepted.
 
 Implemented 2026-11-26: Starwind Courier — average speed across unequal-duration segments and stops.
+
+
+Implemented 2026-11-27: Pearlkeeper’s Treasury — arithmetic mean through equal-share redistribution, including empty bowls.

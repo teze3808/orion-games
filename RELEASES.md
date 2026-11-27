@@ -95,3 +95,6 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 | 2026-11-25 | The Clockwork Assembly Dock / 機巧裝配碼頭 | Computing: dependencies and topological ordering | games/orion-dependencies/ |
 
 | 2026-11-26 | The Starwind Courier / 星風信使 | Physics: average speed, total distance and elapsed time | games/orion-speed/ |
+
+
+| 2026-11-27 | The Pearlkeeper’s Treasury / 珍珠守護者的寶庫 | Mathematics: arithmetic mean and equal sharing | games/orion-mean/ |

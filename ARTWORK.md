@@ -321,3 +321,10 @@ Built-in ImageGen, original mission artwork. Asset: `dist/games/orion-speed/cour
 
 Prompt:
 > Use case: illustration-story. Original realistic cinematic wide 2:1 artwork for a welcoming child-friendly treasure mystery game, The Starwind Courier. A small elegant cream-sailed fantasy airship with warm brass fittings moored beside an ancient mountain harbour balcony, a detailed golden treasure chest and antique navigation clock on a stone pedestal close beside the ship in the centre. Deep blue moonlit clouds, distant lantern-lit towers, warm amber lantern glow, believable woven canvas, carved wood, weathered stone, burnished brass, rich atmospheric depth. Compose the ship and chest together centrally so they remain clear in responsive framing. Beautiful high-detail realistic materials, peaceful adventurous mood. No words, numbers, labels, diagrams, people, UI or watermark. Decorative story artwork, not an engineering design.
+
+
+## Pearlkeeper’s Treasury — 2026-11-27
+Built-in ImageGen original artwork, optimized to 1440×720 JPEG quality 85 in `dist/games/orion-mean/pearls.jpg`. Full image contained in the top scene; matching subdued background. Decorative pearls are not the numerical puzzle.
+Prompt:
+> Original realistic cinematic wide 2:1 story artwork for a child-friendly treasure learning game. A serene ancient underwater treasury seen inside a dry glass-domed chamber: an ornate open mother-of-pearl treasure chest on a carved stone table, several shallow bronze bowls of luminous white pearls beside it, coral gardens and gentle sea turtles beyond tall arched windows, blue-green filtered sunlight and warm golden lanterns. Detailed believable nacre, aged brass, carved stone, water caustics, welcoming mysterious atmosphere, rich depth. Chest and bowls clustered centrally for mobile framing. No text, no numbers, no diagrams, no people, no UI or watermark. Decorative environment not a counting diagram.
+
