@@ -327,4 +327,3 @@ Prompt:
 Built-in ImageGen original artwork, optimized to 1440×720 JPEG quality 85 in `dist/games/orion-mean/pearls.jpg`. Full image contained in the top scene; matching subdued background. Decorative pearls are not the numerical puzzle.
 Prompt:
 > Original realistic cinematic wide 2:1 story artwork for a child-friendly treasure learning game. A serene ancient underwater treasury seen inside a dry glass-domed chamber: an ornate open mother-of-pearl treasure chest on a carved stone table, several shallow bronze bowls of luminous white pearls beside it, coral gardens and gentle sea turtles beyond tall arched windows, blue-green filtered sunlight and warm golden lanterns. Detailed believable nacre, aged brass, carved stone, water caustics, welcoming mysterious atmosphere, rich depth. Chest and bowls clustered centrally for mobile framing. No text, no numbers, no diagrams, no people, no UI or watermark. Decorative environment not a counting diagram.
-

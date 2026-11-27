@@ -333,4 +333,3 @@ Source: [OpenStax Physics §2.2, Speed and Velocity](https://openstax.org/books/
 ## Pearlkeeper’s Treasury — 2026-11-27
 Learning objective: arithmetic mean as a conserved total divided into equal shares. A one-pearl transfer preserves total count; success requires all bowls equal and the original total retained. Each journey includes three, four and five bowls, all with integer means. Empty bowls are values of zero, not missing data. The lesson notes that other means can be fractional or absent from the original data. Pearl size is irrelevant; illustrations are decorative, labelled dots are counting tokens.
 Source: [OpenStax Contemporary Mathematics §8.3](https://openstax.org/books/contemporary-mathematics/pages/8-3-mean-median-and-mode), accessed 2026-11-27: mean is sum of values divided by number of values. No claim is made that means always describe a typical member or equal the median.
-
