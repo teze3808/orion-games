@@ -98,3 +98,5 @@ Dates use Asia/Hong_Kong. Check this log before adding a daily mission; resume o
 
 
 | 2026-11-27 | The Pearlkeeper’s Treasury / 珍珠守護者的寶庫 | Mathematics: arithmetic mean and equal sharing | games/orion-mean/ |
+
+| 2026-11-28 | The Isotope Lantern Archive / 同位素燈檔案館 | Chemistry: isotopes, protons and neutrons | games/orion-isotopes/ |

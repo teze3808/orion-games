@@ -251,3 +251,5 @@ Playable: [The Clockwork Assembly Dock / 機巧裝配碼頭](https://orion-lost-
 
 
 2026-11-27: [The Pearlkeeper’s Treasury / 珍珠守護者的寶庫](https://orion-lost-city.onrender.com/games/orion-mean/) — redistribute pearls to discover arithmetic mean; six saved journeys and the Pearlheart / 珠心 sigil.
+
+2026-11-28: [The Isotope Lantern Archive / 同位素燈檔案館](https://orion-lost-city.onrender.com/games/orion-isotopes/) — compare proton and neutron counts to identify isotopes; six saved journeys and the Kinship / 同源 sigil.

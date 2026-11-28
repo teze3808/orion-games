@@ -249,3 +249,5 @@ Implemented 2026-11-26: Starwind Courier — average speed across unequal-durati
 
 
 Implemented 2026-11-27: Pearlkeeper’s Treasury — arithmetic mean through equal-share redistribution, including empty bowls.
+
+Implemented 2026-11-28: Isotope Lantern Archive — same-element isotopes, proton identity and mass number.
